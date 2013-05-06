@@ -735,23 +735,23 @@ window.onkeydown=function(e){
         if(get('distance-value').value.length>0){
             calculate_distance()
         }
+        if(get('red').value.length>0||get('green').value.length>0||get('blue').value.length>0){
+            calculate_hex()
+        }
         if(get('liquid-value').value.length>0){
             calculate_liquid()
         }
         if(get('mass-value').value.length>0){
             calculate_mass()
         }
+        if(get('hex-torgb').value.length>0){
+            calculate_rgb()
+        }
         if(get('temperature-value').value.length>0){
             calculate_temperature()
         }
         if(get('time-value').value.length>0){
             calculate_time()
-        }
-        if(get('hex-torgb').value.length>0){
-            hr()
-        }
-        if(get('red').value.length>0||get('green').value.length>0||get('blue').value.length>0){
-            rh()
         }
     }
 }
