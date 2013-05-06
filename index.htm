@@ -1,0 +1,203 @@
+<!doctype html>
+<meta charset=utf-8>
+<title>Unit Converter</title>
+<link href=unitconverter.css rel=stylesheet>
+
+<div style=text-align:right>
+
+<select id=area-left>
+<option value=0>degree (°)</option>
+<option value=1>gradian (gon)</option>
+<option selected value=2>radian (rad)</option>
+<option value=3>turn</option>
+</select>
+<input id=area-value size=9 type=text><br>
+
+<select id=distance-left>
+<option value=0>centimetre (cm)</option>
+<option value=1>foot (ft)</option>
+<option value=2>inch (in)</option>
+<option value=3>kilometre (km)</option>
+<option value=4>metre (m)</option>
+<option selected value=5>mile (mi)</option>
+<option value=6>millimetre (mm)</option>
+<option value=7>yard (yd)</option>
+</select>
+<input id=distance-value size=9 type=text><br>
+
+<select id=liquid-left>
+<option value=0>centilitre (cl)</option>
+<option selected value=1>imperial fluid ounce (fl oz)</option>
+<option value=2>imperial gallon (gal)</option>
+<option value=3>imperial pint (pt)</option>
+<option value=4>imperial quart (qt)</option>
+<option value=5>kilolitre (kl)</option>
+<option value=6>litre (l)</option>
+<option value=7>millilitre (ml)</option>
+<option value=8>US fluid ounce (fl oz)</option>
+<option value=9>US gallon (gal)</option>
+<option value=10>US pint (pt)</option>
+<option value=11>US quart (qt)</option>
+</select>
+<input id=liquid-value size=9 type=text><br>
+
+<select id=mass-left>
+<option value=0>centigram (cg)</option>
+<option value=1>gram (g)</option>
+<option value=2>kilogram (kg)</option>
+<option value=3>milligram (mg)</option>
+<option value=4>ounce (oz)</option>
+<option selected value=5>pound (lb)</option>
+</select>
+<input id=mass-value size=9 type=text><br>
+
+<select id=speed-left>
+<option value=0>feet per second (ft/s)</option>
+<option selected value=1>kilometres per hour (kph)</option>
+<option value=2>knots</option>
+<option value=3>metres per second (m/s)</option>
+<option value=4>miles per hour (mph)</option>
+</select>
+<input id=speed-value size=9 type=text><br>
+
+<select id=temperature-left>
+<option value=0>Celsius (°C)</option>
+<option value=1>Delisle (°D)</option>
+<option selected value=2>Fahrenheit (°F)</option>
+<option value=3>Kelvin (K)</option>
+<option value=4>Newton (°N)</option>
+<option value=5>Rankine (°Ra)</option>
+<option value=6>Réaumur (°Ré)</option>
+<option value=7>Rømer (°Rø)</option>
+</select>
+<input id=temperature-value size=9 type=text><br>
+
+<select id=time-left>
+<option value=0>day (d)</option>
+<option value=1>fortnight</option>
+<option value=2>helek (hl)</option>
+<option selected value=3>hour (h)</option>
+<option value=4>Internet Time (.beat)</option>
+<option value=5>lunar day</option>
+<option value=6>Martian solar day (sol)</option>
+<option value=7>microcentury (µc.)</option>
+<option value=8>minute (min)</option>
+<option value=9>second (s)</option>
+<option value=10>week</option>
+<option value=11>year (a)</option>
+</select>
+<input id=time-value size=9 type=text><br>
+
+<input id=hex-torgb maxlength=6 size=9 type=text><br>
+<input id=red maxlength=3 size=1 type=text><input id=green maxlength=3 size=1 type=text><input id=blue maxlength=3 size=1 type=text>
+
+</div>
+
+<div style=text-align:center>
+<input onclick=calculate_area() type=button value=→→→→→><br>
+<input onclick=calculate_distance() type=button value=→→→→→><br>
+<input onclick=calculate_liquid() type=button value=→→→→→><br>
+<input onclick=calculate_mass() type=button value=→→→→→><br>
+<input onclick=calculate_speed() type=button value=→→→→→><br>
+<input onclick=calculate_temperature() type=button value=→→→→→><br>
+<input onclick=calculate_time() type=button value=→→→→→><br>
+<input onclick=calculate_rgb() type=button value=Hex→RGB><br>
+<input onclick=calculate_hex() type=button value=RGB→Hex>
+</div>
+
+<div>
+
+<input id=area-result readonly size=9 type=text>
+<select id=area-right>
+<option value=0>degree (°)</option>
+<option selected value=1>gradian (gon)</option>
+<option value=2>radian (rad)</option>
+<option value=3>turn</option>
+</select><br>
+
+<input id=distance-result readonly size=9 type=text>
+<select id=distance-right>
+<option value=0>centimetre (cm)</option>
+<option value=1>foot (ft)</option>
+<option value=2>inch (in)</option>
+<option value=3>kilometre (km)</option>
+<option selected value=4>metre (m)</option>
+<option value=5>mile (mi)</option>
+<option value=6>millimetre (mm)</option>
+<option value=7>yard (yd)</option>
+</select><br>
+
+<input id=liquid-result readonly size=9 type=text>
+<select id=liquid-right>
+<option value=0>centilitre (cl)</option>
+<option value=1>imperial fluid ounce (fl oz)</option>
+<option value=2>imperial gallon (gal)</option>
+<option value=3>imperial pint (pt)</option>
+<option value=4>imperial quart (qt)</option>
+<option value=5>kilolitre (kl)</option>
+<option selected value=6>litre (l)</option>
+<option value=7>millilitre (ml)</option>
+<option value=8>US fluid ounce (fl oz)</option>
+<option value=9>US gallon (gal)</option>
+<option value=10>US pint (pt)</option>
+<option value=11>US quart (qt)</option>
+</select><br>
+
+<input id=mass-result readonly size=9 type=text>
+<select id=mass-right>
+<option value=0>centigram (cg)</option>
+<option selected value=1>gram (g)</option>
+<option value=2>kilogram (kg)</option>
+<option value=3>milligram (mg)</option>
+<option value=4>ounce (oz)</option>
+<option value=5>pound (lb)</option>
+</select><br>
+
+<input id=speed-result readonly size=9 type=text>
+<select id=speed-right>
+<option value=0>feet per second (ft/s)</option>
+<option value=1>kilometres per hour (kph)</option>
+<option value=2>knots</option>
+<option selected value=3>metres per second (m/s)</option>
+<option value=4>miles per hour (mph)</option>
+</select><br>
+
+<input id=temperature-result readonly size=9 type=text>
+<select id=temperature-right>
+<option value=0>Celsius (°C)</option>
+<option value=1>Delisle (°D)</option>
+<option value=2>Fahrenheit (°F)</option>
+<option selected value=3>Kelvin (K)</option>
+<option value=4>Newton (°N)</option>
+<option value=5>Rankine (°Ra)</option>
+<option value=6>Réaumur (°Ré)</option>
+<option value=7>Rømer (°Rø)</option>
+</select><br>
+
+<input id=time-result readonly size=9 type=text>
+<select id=time-right>
+<option value=0>day (d)</option>
+<option value=1>fortnight</option>
+<option value=2>helek (hl)</option>
+<option value=3>hour (h)</option>
+<option value=4>Internet Time (.beat)</option>
+<option value=5>lunar day</option>
+<option value=6>Martian solar day (sol)</option>
+<option value=7>microcentury (µc.)</option>
+<option value=8>minute (min)</option>
+<option selected value=9>second (s)</option>
+<option value=10>week</option>
+<option value=11>year (a)</option>
+</select>
+
+<br>
+<input id=rgb maxlength=13 readonly size=9 type=text><br>
+<input id=hex maxlength=6 readonly size=9 type=text>
+
+</div>
+
+<br>
+<input id=decimals maxlength=2 size=1 type=text value=5>Decimals
+
+
+<script src=unitconverter.js></script>
