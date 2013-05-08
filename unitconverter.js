@@ -332,7 +332,7 @@ function calculate_mass(){
             0,          /*centigram to centigram, not used*/
             i/1e3,      /*centigram to gram*/
             i/1e5,      /*centigram to kilogram*/
-            i/10,       /*centigram to milligram*/
+            i*10,       /*centigram to milligram*/
             i/28349.5,  /*centigram to ounce*/
             i/453592    /*centigram to pound*/
         ][get('mass-right').value],
