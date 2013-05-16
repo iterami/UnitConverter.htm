@@ -1,10 +1,10 @@
 function calculate_area(){
     verify_decimals();
-    i=parseFloat(get('area-value').value);
+    i = parseFloat(get('area-value').value);
     if(isNaN(i)){
-        i=get('area-value').value=0
+        i=get('area-value').value = 0
     }
-    get('area-result').value=get('area-left').value==get('area-right').value?i:[
+    get('area-result').value = get('area-left').value==get('area-right').value ? i : [
         [
             0,                  /*degree to degree, not used*/
             i*10/9,             /*degree to gradian*/
@@ -30,17 +30,17 @@ function calculate_area(){
             0                   /*turn to turn, not used*/
         ][get('area-right').value]
     ][get('area-left').value];
-    if(get('area-result').value%1!=0){
-        get('area-result').value=parseFloat(get('area-result').value).toFixed(get('decimals').value)
+    if(get('area-result').value%1!==0){
+        get('area-result').value = parseFloat(get('area-result').value).toFixed(get('decimals').value)
     }
 }
 function calculate_distance(){
     verify_decimals();
-    i=parseFloat(get('distance-value').value);
+    i = parseFloat(get('distance-value').value);
     if(isNaN(i)){
-        i=get('distance-value').value=0
+        i=get('distance-value').value = 0
     }
-    get('distance-result').value=get('distance-left').value==get('distance-right').value?i:[
+    get('distance-result').value = get('distance-left').value===get('distance-right').value ? i : [
         [
             0,              /*centimetre to centimetre, not used*/
             i/30.48,        /*centimetre to foot*/
@@ -122,32 +122,32 @@ function calculate_distance(){
             0               /*yard to yard, not used*/
         ][get('distance-right').value]
     ][get('distance-left').value];
-    if(get('distance-result').value%1!=0){
-        get('distance-result').value=parseFloat(get('distance-result').value).toFixed(get('decimals').value)
+    if(get('distance-result').value%1!==0){
+        get('distance-result').value = parseFloat(get('distance-result').value).toFixed(get('decimals').value)
     }
 }
 function calculate_hex(){
     if(get('red').value.length<1){
-        get('red').value=0
+        get('red').value = 0
     }
     if(get('green').value.length<1){
-        get('green').value=0
+        get('green').value = 0
     }
     if(get('blue').value.length<1){
-        get('blue').value=0
+        get('blue').value = 0
     }
-    var r=Math.max(0,Math.min(parseInt(get('red').value,10),255));
-    var g=Math.max(0,Math.min(parseInt(get('green').value,10),255));
-    var b=Math.max(0,Math.min(parseInt(get('blue').value,10),255));
-    get('hex').value=gethex((r-r%16)/16)+gethex(r%16)+''+gethex((g-g%16)/16)+gethex(g%16)+''+gethex((b-b%16)/16)+gethex(b%16)
+    var r = Math.max(0,Math.min(parseInt(get('red').value,10),255));
+    var g = Math.max(0,Math.min(parseInt(get('green').value,10),255));
+    var b = Math.max(0,Math.min(parseInt(get('blue').value,10),255));
+    get('hex').value = gethex((r-r%16)/16)+gethex(r%16)+''+gethex((g-g%16)/16)+gethex(g%16)+''+gethex((b-b%16)/16)+gethex(b%16)
 }
 function calculate_liquid(){
     verify_decimals();
-    i=parseFloat(get('liquid-value').value);
+    i = parseFloat(get('liquid-value').value);
     if(isNaN(i)){
-        i=get('liquid-value').value=0
+        i=get('liquid-value').value = 0
     }
-    get('liquid-result').value=get('liquid-left').value==get('liquid-right').value?i:[
+    get('liquid-result').value = get('liquid-left').value===get('liquid-right').value ? i : [
         [
             0,              /*centilitre to centilitre, not used*/
             i/2.84130742,   /*centilitre to imperial fluid ounce*/
@@ -317,17 +317,17 @@ function calculate_liquid(){
             0               /*US quart to US quart, not used*/
         ][get('liquid-right').value]
     ][get('liquid-left').value];
-    if(get('liquid-result').value%1!=0){
-        get('liquid-result').value=parseFloat(get('liquid-result').value).toFixed(get('decimals').value)
+    if(get('liquid-result').value%1!==0){
+        get('liquid-result').value = parseFloat(get('liquid-result').value).toFixed(get('decimals').value)
     }
 }
 function calculate_mass(){
     verify_decimals();
-    i=parseFloat(get('mass-value').value);
+    i = parseFloat(get('mass-value').value);
     if(isNaN(i)){
-        i=get('mass-value').value=0
+        i=get('mass-value').value = 0
     }
-    get('mass-result').value=get('mass-left').value==get('mass-right').value?i:[
+    get('mass-result').value = get('mass-left').value===get('mass-right').value ? i : [
         [
             0,          /*centigram to centigram, not used*/
             i/1e3,      /*centigram to gram*/
@@ -377,24 +377,24 @@ function calculate_mass(){
             0           /*pound to pound, not used*/
         ][get('mass-right').value]
     ][get('mass-left').value];
-    if(get('mass-result').value%1!=0){
-        get('mass-result').value=parseFloat(get('mass-result').value).toFixed(get('decimals').value)
+    if(get('mass-result').value%1!==0){
+        get('mass-result').value = parseFloat(get('mass-result').value).toFixed(get('decimals').value)
     }
 }
 function calculate_rgb(){
     if(get('hex-torgb').value.length<1){
-        get('hex-torgb').value='000'
+        get('hex-torgb').value = '000'
     }
-    i=get('hex-torgb').value.length==3;
-    get('rgb').value=parseInt(i?get('hex-torgb').value.substring(0,1)+''+get('hex-torgb').value.substring(0,1):get('hex-torgb').value.substring(0,2),16)+', '+parseInt(i?get('hex-torgb').value.substring(1,2)+''+get('hex-torgb').value.substring(1,2):get('hex-torgb').value.substring(2,4),16)+', '+parseInt(i?get('hex-torgb').value.substring(2,3)+''+get('hex-torgb').value.substring(2,3):get('hex-torgb').value.substring(4,6),16)
+    i = get('hex-torgb').value.length===3;
+    get('rgb').value = parseInt(i ? get('hex-torgb').value.substring(0,1)+''+get('hex-torgb').value.substring(0,1) : get('hex-torgb').value.substring(0,2),16)+', '+parseInt(i ? get('hex-torgb').value.substring(1,2)+''+get('hex-torgb').value.substring(1,2) : get('hex-torgb').value.substring(2,4),16)+', '+parseInt(i ? get('hex-torgb').value.substring(2,3)+''+get('hex-torgb').value.substring(2,3) : get('hex-torgb').value.substring(4,6),16)
 }
 function calculate_speed(){
     verify_decimals();
-    i=parseFloat(get('speed-value').value);
+    i = parseFloat(get('speed-value').value);
     if(isNaN(i)){
-        i=get('speed-value').value=0
+        i=get('speed-value').value = 0
     }
-    get('speed-result').value=get('speed-left').value==get('speed-right').value?i:[
+    get('speed-result').value = get('speed-left').value===get('speed-right').value ? i : [
         [
             0,             /*feet per second to feet per second, not usede*/
             i*1.09728,     /*feet per second to kilometres per hour*/
@@ -431,17 +431,17 @@ function calculate_speed(){
             0              /*miles per hour to miles per hour, not used*/
         ][get('speed-right').value]
     ][get('speed-left').value];
-    if(get('speed-result').value%1!=0){
-        get('speed-result').value=parseFloat(get('speed-result').value).toFixed(get('decimals').value)
+    if(get('speed-result').value%1!==0){
+        get('speed-result').value = parseFloat(get('speed-result').value).toFixed(get('decimals').value)
     }
 }
 function calculate_temperature(){
     verify_decimals();
-    i=parseFloat(get('temperature-value').value);
+    i = parseFloat(get('temperature-value').value);
     if(isNaN(i)){
-        i=get('temperature-value').value=0
+        i=get('temperature-value').value = 0
     }
-    get('temperature-result').value=get('temperature-left').value==get('temperature-right').value?i:[
+    get('temperature-result').value = get('temperature-left').value===get('temperature-right').value ? i : [
         [
             0,                    /*Celsius to Celsius, not used*/
             (100-i)*1.5,          /*Celsius to Delisle*/
@@ -523,17 +523,17 @@ function calculate_temperature(){
             0                     /*Rømer to Rømer, not used*/
         ][get('temperature-right').value]
     ][get('temperature-left').value];
-    if(get('temperature-result').value%1!=0){
-        get('temperature-result').value=parseFloat(get('temperature-result').value).toFixed(get('decimals').value)
+    if(get('temperature-result').value%1!==0){
+        get('temperature-result').value = parseFloat(get('temperature-result').value).toFixed(get('decimals').value)
     }
 }
 function calculate_time(){
     verify_decimals();
-    i=parseFloat(get('time-value').value);
+    i = parseFloat(get('time-value').value);
     if(isNaN(i)){
-        i=get('time-value').value=0
+        i=get('time-value').value = 0
     }
-    get('time-result').value=get('time-left').value==get('time-right').value?i:[
+    get('time-result').value = get('time-left').value===get('time-right').value ? i : [
         [
             0,                 /*day to day, not used*/
             i/14,              /*day to fortnight*/
@@ -703,8 +703,8 @@ function calculate_time(){
             0                  /*year to year, not used*/
         ][get('time-right').value]
     ][get('time-left').value];
-    if(get('time-result').value%1!=0){
-        get('time-result').value=parseFloat(get('time-result').value).toFixed(get('decimals').value)
+    if(get('time-result').value%1!==0){
+        get('time-result').value = parseFloat(get('time-result').value).toFixed(get('decimals').value)
     }
 }
 function get(i){
@@ -715,19 +715,19 @@ function gethex(i){
 }
 function verify_decimals(){
     if(isNaN(get('decimals').value)){
-        get('decimals').value=5
+        get('decimals').value = 5
     }else if(get('decimals').value<0){
-        get('decimals').value=0
+        get('decimals').value = 0
     }else if(get('decimals').value>20){
-        get('decimals').value=20
+        get('decimals').value = 20
     }
 }
 
-var i=0;
+var i = 0;
 
-window.onkeydown=function(e){
-    i=window.event?event:e;
-    i=i.charCode?i.charCode:i.keyCode;
+window.onkeydown = function(e){
+    i = window.event?event:e;
+    i = i.charCode?i.charCode:i.keyCode;
     if(i==13){/*Enter*/
         if(get('area-value').value.length>0){
             calculate_area()
@@ -735,7 +735,7 @@ window.onkeydown=function(e){
         if(get('distance-value').value.length>0){
             calculate_distance()
         }
-        if(get('red').value.length>0||get('green').value.length>0||get('blue').value.length>0){
+        if(get('red').value.length>0 || get('green').value.length>0 || get('blue').value.length>0){
             calculate_hex()
         }
         if(get('liquid-value').value.length>0){
