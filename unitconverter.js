@@ -1,9 +1,11 @@
 function calculate_area(){
     verify_decimals();
+
     i = parseFloat(get('area-value').value);
     if(isNaN(i)){
         i = get('area-value').value = 0
     }
+
     get('area-result').value = get('area-left').value == get('area-right').value ? i : [
         [
             0,                    /*degree to degree, not used*/
@@ -30,16 +32,20 @@ function calculate_area(){
             0                     /*turn to turn, not used*/
         ][get('area-right').value]
     ][get('area-left').value];
+
     if(get('area-result').value % 1 !== 0){
         get('area-result').value = parseFloat(get('area-result').value).toFixed(get('decimals').value)
     }
 }
+
 function calculate_distance(){
     verify_decimals();
+
     i = parseFloat(get('distance-value').value);
     if(isNaN(i)){
         i = get('distance-value').value = 0
     }
+
     get('distance-result').value = get('distance-left').value == get('distance-right').value ? i : [
         [
             0,                /*centimetre to centimetre, not used*/
@@ -122,10 +128,12 @@ function calculate_distance(){
             0                 /*yard to yard, not used*/
         ][get('distance-right').value]
     ][get('distance-left').value];
+
     if(get('distance-result').value % 1 !== 0){
         get('distance-result').value = parseFloat(get('distance-result').value).toFixed(get('decimals').value)
     }
 }
+
 function calculate_hex(){
     if(get('red').value.length < 1){
         get('red').value = 0
@@ -136,17 +144,21 @@ function calculate_hex(){
     if(get('blue').value.length < 1){
         get('blue').value = 0
     }
+
     var r = Math.max(0,Math.min(parseInt(get('red').value,10),255));
     var g = Math.max(0,Math.min(parseInt(get('green').value,10),255));
     var b = Math.max(0,Math.min(parseInt(get('blue').value,10),255));
     get('hex').value = gethex((r - r % 16) / 16) + gethex(r % 16) + ''+gethex((g - g % 16) / 16) + gethex(g % 16) + '' + gethex((b - b % 16) / 16) + gethex(b % 16)
 }
+
 function calculate_liquid(){
     verify_decimals();
+
     i = parseFloat(get('liquid-value').value);
     if(isNaN(i)){
         i = get('liquid-value').value = 0
     }
+
     get('liquid-result').value = get('liquid-left').value == get('liquid-right').value ? i : [
         [
             0,                /*centilitre to centilitre, not used*/
@@ -317,16 +329,20 @@ function calculate_liquid(){
             0                 /*US quart to US quart, not used*/
         ][get('liquid-right').value]
     ][get('liquid-left').value];
+
     if(get('liquid-result').value % 1 !== 0){
         get('liquid-result').value = parseFloat(get('liquid-result').value).toFixed(get('decimals').value)
     }
 }
+
 function calculate_mass(){
     verify_decimals();
+
     i = parseFloat(get('mass-value').value);
     if(isNaN(i)){
         i = get('mass-value').value = 0
     }
+
     get('mass-result').value = get('mass-left').value == get('mass-right').value ? i : [
         [
             0,            /*centigram to centigram, not used*/
@@ -377,10 +393,12 @@ function calculate_mass(){
             0             /*pound to pound, not used*/
         ][get('mass-right').value]
     ][get('mass-left').value];
+
     if(get('mass-result').value % 1 !== 0){
         get('mass-result').value = parseFloat(get('mass-result').value).toFixed(get('decimals').value)
     }
 }
+
 function calculate_rgb(){
     if(get('hex-torgb').value.length < 1){
         get('hex-torgb').value = '000'
@@ -390,12 +408,15 @@ function calculate_rgb(){
         + parseInt(i ? get('hex-torgb').value.substring(1,2) + '' + get('hex-torgb').value.substring(1,2) : get('hex-torgb').value.substring(2,4),16) + ', '
         + parseInt(i ? get('hex-torgb').value.substring(2,3) + '' + get('hex-torgb').value.substring(2,3) : get('hex-torgb').value.substring(4,6),16)
 }
+
 function calculate_speed(){
     verify_decimals();
+
     i = parseFloat(get('speed-value').value);
     if(isNaN(i)){
         i = get('speed-value').value = 0
     }
+
     get('speed-result').value = get('speed-left').value == get('speed-right').value ? i : [
         [
             0,               /*feet per second to feet per second, not usede*/
@@ -433,16 +454,20 @@ function calculate_speed(){
             0                /*miles per hour to miles per hour, not used*/
         ][get('speed-right').value]
     ][get('speed-left').value];
+
     if(get('speed-result').value % 1 !== 0){
         get('speed-result').value = parseFloat(get('speed-result').value).toFixed(get('decimals').value)
     }
 }
+
 function calculate_temperature(){
     verify_decimals();
+
     i = parseFloat(get('temperature-value').value);
     if(isNaN(i)){
         i = get('temperature-value').value = 0
     }
+
     get('temperature-result').value = get('temperature-left').value == get('temperature-right').value ? i : [
         [
             0,                      /*Celsius to Celsius, not used*/
@@ -525,16 +550,20 @@ function calculate_temperature(){
             0                       /*Rømer to Rømer, not used*/
         ][get('temperature-right').value]
     ][get('temperature-left').value];
+
     if(get('temperature-result').value % 1 !== 0){
         get('temperature-result').value = parseFloat(get('temperature-result').value).toFixed(get('decimals').value)
     }
 }
+
 function calculate_time(){
     verify_decimals();
+
     i = parseFloat(get('time-value').value);
     if(isNaN(i)){
         i = get('time-value').value = 0
     }
+
     get('time-result').value = get('time-left').value == get('time-right').value ? i : [
         [
             0,                   /*day to day, not used*/
@@ -705,16 +734,20 @@ function calculate_time(){
             0                    /*year to year, not used*/
         ][get('time-right').value]
     ][get('time-left').value];
+
     if(get('time-result').value % 1 !== 0){
         get('time-result').value = parseFloat(get('time-result').value).toFixed(get('decimals').value)
     }
 }
+
 function get(i){
     return document.getElementById(i)
 }
+
 function gethex(i){
     return '0123456789abcdef'.charAt(i)
 }
+
 function verify_decimals(){
     if(isNaN(get('decimals').value)){
         get('decimals').value = 5
