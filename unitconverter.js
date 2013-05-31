@@ -9,26 +9,26 @@ function calculate_area(){
     get('area-result').value = get('area-left').value == get('area-right').value ? i : [
         [
             0,                    /*degree to degree, not used*/
-            i * 10/9,             /*degree to gradian*/
+            i * 10 / 9,           /*degree to gradian*/
             i * (Math.Pi / 180),  /*degree to radian*/
             i / 360               /*degree to turn*/
         ][get('area-right').value],
         [
-            i * 9/10,             /*gradian to degree*/
+            i * 9 / 10,           /*gradian to degree*/
             0,                    /*gradian to gradian, not used*/
             i * Math.Pi / 200,    /*gradian to radian*/
             i / 400               /*gradian to turn*/
         ][get('area-right').value],
         [
-            i * (180/Math.PI),    /*radian to degree*/
-            i * 200/Math.PI,      /*radian to gradian*/
+            i * (180 / Math.PI),  /*radian to degree*/
+            i * 200 / Math.PI,    /*radian to gradian*/
             0,                    /*radian to radian, not used*/
-            i / (2*Math.PI)       /*radian to turn*/
+            i / (2 * Math.PI)     /*radian to turn*/
         ][get('area-right').value],
         [
             i * 360,              /*turn to degree*/
             i * 400,              /*turn to gradian*/
-            i * (2*Math.PI),      /*turn to radian*/
+            i * (2 * Math.PI),    /*turn to radian*/
             0                     /*turn to turn, not used*/
         ][get('area-right').value]
     ][get('area-left').value];
@@ -470,84 +470,84 @@ function calculate_temperature(){
 
     get('temperature-result').value = get('temperature-left').value == get('temperature-right').value ? i : [
         [
-            0,                      /*Celsius to Celsius, not used*/
-            (100 - i)*1.5,          /*Celsius to Delisle*/
-            i * 1.8+32,             /*Celsius to Fahrenheit*/
-            i + 273.15,             /*Celsius to Kelvin*/
-            i * .33,                /*Celsius to Newton*/
-            (i + 273.15)*1.8,       /*Celsius to Rankine*/
-            i / 1.25,               /*Celsius to Réaumur*/
-            i * 21/40+7.5           /*Celsius to Rømer*/
+            0,                            /*Celsius to Celsius, not used*/
+            (100 - i) * 1.5,              /*Celsius to Delisle*/
+            i * 1.8 + 32,                 /*Celsius to Fahrenheit*/
+            i + 273.15,                   /*Celsius to Kelvin*/
+            i * .33,                      /*Celsius to Newton*/
+            (i + 273.15) * 1.8,           /*Celsius to Rankine*/
+            i / 1.25,                     /*Celsius to Réaumur*/
+            i * 21 / 40 + 7.5             /*Celsius to Rømer*/
         ][get('temperature-right').value],
         [
-            100 - i / 1.5,          /*Delisle to Celsius*/
-            0,                      /*Delisle to Delisle, not used*/
-            212 - i * 1.2,          /*Delisle to Fahrenheit*/
-            373.15 - i / 1.5,       /*Delisle to Kelvin*/
-            33-(i * 11/50),         /*Delisle to Newton*/
-            671.67 - i * 1.2,       /*Delisle to Rankine*/
-            80-(i * 8/15),          /*Delisle to Réaumur*/
-            60-(i * 7/20)           /*Delisle to Rømer*/
+            100 - i / 1.5,                /*Delisle to Celsius*/
+            0,                            /*Delisle to Delisle, not used*/
+            212 - i * 1.2,                /*Delisle to Fahrenheit*/
+            373.15 - i / 1.5,             /*Delisle to Kelvin*/
+            33 - (i * 11 / 50),           /*Delisle to Newton*/
+            671.67 - i * 1.2,             /*Delisle to Rankine*/
+            80 - (i * 8 / 15),            /*Delisle to Réaumur*/
+            60 - (i * 7 / 20)             /*Delisle to Rømer*/
         ][get('temperature-right').value],
         [
-            (i - 32)/1.8,           /*Fahrenheit to Celsius*/
-            (212 - i)/1.2,          /*Fahrenheit to Delisle*/
-            0,                      /*Fahrenheit to Fahrenheit, not used*/
-            (i - 32)/1.8+273.15,    /*Fahrenheit to Kelvin*/
-            (i - 32)*11/60,         /*Fahrenheit to Newton*/
-            i + 459.67,             /*Fahrenheit to Rankine*/
-            (i - 32)*4/9,           /*Fahrenheit to Réaumur*/
-            (i - 32)*7/24+7.5       /*Fahrenheit to Rømer*/
+            (i - 32) / 1.8,               /*Fahrenheit to Celsius*/
+            (212 - i) / 1.2,              /*Fahrenheit to Delisle*/
+            0,                            /*Fahrenheit to Fahrenheit, not used*/
+            (i - 32) / 1.8 + 273.15,      /*Fahrenheit to Kelvin*/
+            (i - 32) * 11 / 60,           /*Fahrenheit to Newton*/
+            i + 459.67,                   /*Fahrenheit to Rankine*/
+            (i - 32) * 4 / 9,             /*Fahrenheit to Réaumur*/
+            (i - 32) * 7 / 24 + 7.5       /*Fahrenheit to Rømer*/
         ][get('temperature-right').value],
         [
-            i - 273.15,             /*Kelvin to Celsius*/
-            (373.15 - i)*1.5,       /*Kelvin to Delisle*/
-            (i - 273.15)*1.8+32,    /*Kelvin to Fahrenheit*/
-            0,                      /*Kelvin to Kelvin, not used*/
-            (i - 273.15)*.33,       /*Kelvin to Newton*/
-            i * 1.8,                /*Kelvin to Rankine*/
-            (i - 273.15)/1.25,      /*Kelvin to Réaumur*/
-            (i - 273.15)*21/40+7.5  /*Kelvin to Rømer*/
+            i - 273.15,                   /*Kelvin to Celsius*/
+            (373.15 - i) * 1.5,           /*Kelvin to Delisle*/
+            (i - 273.15) * 1.8 + 32,      /*Kelvin to Fahrenheit*/
+            0,                            /*Kelvin to Kelvin, not used*/
+            (i - 273.15) * .33,           /*Kelvin to Newton*/
+            i * 1.8,                      /*Kelvin to Rankine*/
+            (i - 273.15) / 1.25,          /*Kelvin to Réaumur*/
+            (i - 273.15) * 21 / 40 + 7.5  /*Kelvin to Rømer*/
         ][get('temperature-right').value],
         [
-            i / .33,                /*Newton to Celsius*/
-            (33 - i)*50/11,         /*Newton to Delisle*/
-            i * 60/11+32,           /*Newton to Fahrenheit*/
-            i / .33+273.15,         /*Newton to Kelvin*/
-            0,                      /*Newton to Newton, not used*/
-            i * 60/11+491.67,       /*Newton to Rankine*/
-            i * 80/33,              /*Newton to Réaumur*/
-            i * 35/22+7.5           /*Newton to Rømer*/
+            i / .33,                      /*Newton to Celsius*/
+            (33 - i) * 50 / 11,           /*Newton to Delisle*/
+            i * 60 / 11 + 32,             /*Newton to Fahrenheit*/
+            i / .33 + 273.15,             /*Newton to Kelvin*/
+            0,                            /*Newton to Newton, not used*/
+            i * 60 / 11 + 491.67,         /*Newton to Rankine*/
+            i * 80 / 33,                  /*Newton to Réaumur*/
+            i * 35 / 22 + 7.5             /*Newton to Rømer*/
         ][get('temperature-right').value],
         [
-            (i - 491.67)/1.8,       /*Rankine to Celsius*/
-            (671.67 - i)/1.2,       /*Rankine to Delisle*/
-            i - 459.67,             /*Rankine to Fahrenheit*/
-            i / 1.8,                /*Rankine to Kelvin*/
-            (i - 491.67)*11/60,     /*Rankine to Newton*/
-            0,                      /*Rankine to Rankine, not used*/
-            (i - 491.67)*4/9,       /*Rankine to Réaumur*/
-            (i - 491.67)*7/24+7.5   /*Rankine to Rømer*/
+            (i - 491.67) / 1.8,           /*Rankine to Celsius*/
+            (671.67 - i) / 1.2,           /*Rankine to Delisle*/
+            i - 459.67,                   /*Rankine to Fahrenheit*/
+            i / 1.8,                      /*Rankine to Kelvin*/
+            (i - 491.67) * 11 / 60,       /*Rankine to Newton*/
+            0,                            /*Rankine to Rankine, not used*/
+            (i - 491.67) * 4 / 9,         /*Rankine to Réaumur*/
+            (i - 491.67) * 7 / 24 + 7.5   /*Rankine to Rømer*/
         ][get('temperature-right').value],
         [
-            i * 1.25,               /*Réaumur to Celsius*/
-            (80 - i)*15/8,          /*Réaumur to Delisle*/
-            i * 9/4+32,             /*Réaumur to Fahrenheit*/
-            i * 1.25+273.15,        /*Réaumur to Kelvin*/
-            i * 80/33,              /*Réaumur to Newton*/
-            i * 9/4+491.67,         /*Réaumur to Rankine*/
-            0,                      /*Réaumur to Réaumur, not used*/
-            i * 21/32+7.5           /*Réaumur to Rømer*/
+            i * 1.25,                     /*Réaumur to Celsius*/
+            (80 - i) * 15 / 8,            /*Réaumur to Delisle*/
+            i * 9/4 + 32,                 /*Réaumur to Fahrenheit*/
+            i * 1.25 + 273.15,            /*Réaumur to Kelvin*/
+            i * 80 / 33,                  /*Réaumur to Newton*/
+            i * 9 / 4 + 491.67,           /*Réaumur to Rankine*/
+            0,                            /*Réaumur to Réaumur, not used*/
+            i * 21 / 32 + 7.5             /*Réaumur to Rømer*/
         ][get('temperature-right').value],
         [
-            (i - 7.5)*40/21,        /*Rømer to Celsius*/
-            (60 - i)*20/7,          /*Rømer to Delisle*/
-            (i - 7.5)*24/7+32,      /*Rømer to Fahrenheit*/
-            (i - 7.5)*40/21+273.15, /*Rømer to Kelvin*/
-            (i - 7.5)*22/35,        /*Rømer to Newton*/
-            (i - 7.5)*24/7+491.67,  /*Rømer to Rankine*/
-            (i - 7.5)*32/21,        /*Rømer to Réaumur*/
-            0                       /*Rømer to Rømer, not used*/
+            (i - 7.5) * 40 / 21,          /*Rømer to Celsius*/
+            (60 - i) * 20 / 7,            /*Rømer to Delisle*/
+            (i - 7.5) * 24 / 7 + 32,      /*Rømer to Fahrenheit*/
+            (i - 7.5) * 40 / 21 + 273.15, /*Rømer to Kelvin*/
+            (i - 7.5) * 22 / 35,          /*Rømer to Newton*/
+            (i - 7.5) * 24 / 7 + 491.67,  /*Rømer to Rankine*/
+            (i - 7.5) * 32 / 21,          /*Rømer to Réaumur*/
+            0                             /*Rømer to Rømer, not used*/
         ][get('temperature-right').value]
     ][get('temperature-left').value];
 
@@ -763,7 +763,8 @@ var i = 0;
 window.onkeydown = function(e){
     i = window.event ? event : e;
     i = i.charCode ? i.charCode : i.keyCode;
-    if(i==13){/*Enter*/
+
+    if(i === 13){/*Enter*/
         if(get('area-value').value.length > 0){
             calculate_area()
         }
