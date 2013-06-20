@@ -1,7 +1,7 @@
 div{
-    display:inline-block;
-    line-height:2em
+    display: inline-block;
+    line-height: 2em;
 }
 input[type=button]{
-    cursor:pointer
+    cursor: pointer;
 }
