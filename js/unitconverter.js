@@ -3,7 +3,8 @@ function calculate_area(){
 
     i = parseFloat(get('area-value').value);
     if(isNaN(i)){
-        i = get('area-value').value = 0;
+        get('area-value').value = 0;
+        i = 0;
     }
 
     get('area-result').value = get('area-left').value == get('area-right').value ? i : [
@@ -43,7 +44,8 @@ function calculate_distance(){
 
     i = parseFloat(get('distance-value').value);
     if(isNaN(i)){
-        i = get('distance-value').value = 0;
+        get('distance-value').value = 0;
+        i = 0;
     }
 
     get('distance-result').value = get('distance-left').value == get('distance-right').value ? i : [
@@ -147,10 +149,12 @@ function calculate_hex(){
         get('blue').value = 0;
     }
 
-    var r = Math.max(0,Math.min(parseInt(get('red').value,10),255));
-    var g = Math.max(0,Math.min(parseInt(get('green').value,10),255));
-    var b = Math.max(0,Math.min(parseInt(get('blue').value,10),255));
-    get('hex').value = gethex((r - r % 16) / 16) + gethex(r % 16) + ''+gethex((g - g % 16) / 16) + gethex(g % 16) + '' + gethex((b - b % 16) / 16) + gethex(b % 16);
+    var r = Math.max(0,Math.min(parseInt(get('red').value,10), 255));
+    var g = Math.max(0,Math.min(parseInt(get('green').value,10), 255));
+    var b = Math.max(0,Math.min(parseInt(get('blue').value,10), 255));
+    get('hex').value = gethex((r - r % 16) / 16) + gethex(r % 16)
+                + '' + gethex((g - g % 16) / 16) + gethex(g % 16)
+                + '' + gethex((b - b % 16) / 16) + gethex(b % 16);
 }
 
 function calculate_liquid(){
@@ -158,7 +162,8 @@ function calculate_liquid(){
 
     i = parseFloat(get('liquid-value').value);
     if(isNaN(i)){
-        i = get('liquid-value').value = 0;
+        get('liquid-value').value = 0;
+        i = 0;
     }
 
     get('liquid-result').value = get('liquid-left').value == get('liquid-right').value ? i : [
@@ -342,7 +347,8 @@ function calculate_mass(){
 
     i = parseFloat(get('mass-value').value);
     if(isNaN(i)){
-        i = get('mass-value').value = 0;
+        get('mass-value').value = 0;
+        i = 0;
     }
 
     get('mass-result').value = get('mass-left').value == get('mass-right').value ? i : [
@@ -407,9 +413,15 @@ function calculate_rgb(){
     }
 
     i = get('hex-torgb').value.length === 3;
-    get('rgb').value = parseInt(i ? get('hex-torgb').value.substring(0,1) + '' + get('hex-torgb').value.substring(0,1) : get('hex-torgb').value.substring(0,2),16) + ', '
-        + parseInt(i ? get('hex-torgb').value.substring(1,2) + '' + get('hex-torgb').value.substring(1,2) : get('hex-torgb').value.substring(2,4),16) + ', '
-        + parseInt(i ? get('hex-torgb').value.substring(2,3) + '' + get('hex-torgb').value.substring(2,3) : get('hex-torgb').value.substring(4,6),16);
+    get('rgb').value = parseInt(i ?
+            get('hex-torgb').value.substring(0,1) + '' + get('hex-torgb').value.substring(0,1)
+          : get('hex-torgb').value.substring(0,2),16) + ', '
+        + parseInt(i ?
+            get('hex-torgb').value.substring(1,2) + '' + get('hex-torgb').value.substring(1,2)
+          : get('hex-torgb').value.substring(2,4),16) + ', '
+        + parseInt(i ?
+            get('hex-torgb').value.substring(2,3) + '' + get('hex-torgb').value.substring(2,3)
+          : get('hex-torgb').value.substring(4,6),16);
 }
 
 function calculate_speed(){
@@ -417,7 +429,8 @@ function calculate_speed(){
 
     i = parseFloat(get('speed-value').value);
     if(isNaN(i)){
-        i = get('speed-value').value = 0;
+        get('speed-value').value = 0;
+        i = 0;
     }
 
     get('speed-result').value = get('speed-left').value == get('speed-right').value ? i : [
@@ -468,7 +481,8 @@ function calculate_temperature(){
 
     i = parseFloat(get('temperature-value').value);
     if(isNaN(i)){
-        i = get('temperature-value').value = 0;
+        get('temperature-value').value = 0;
+        i = 0;
     }
 
     get('temperature-result').value = get('temperature-left').value == get('temperature-right').value ? i : [
@@ -564,7 +578,8 @@ function calculate_time(){
 
     i = parseFloat(get('time-value').value);
     if(isNaN(i)){
-        i = get('time-value').value = 0;
+        get('time-value').value = 0;
+        i = 0;
     }
 
     get('time-result').value = get('time-left').value == get('time-right').value ? i : [
