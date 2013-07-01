@@ -654,7 +654,7 @@ function calculate_time(){
             i / 365242           /* Internet Time to year */
         ][get('time-right').value],
         [
-            i / 0.03660098822,   /* lunar day to day */
+            i / .03660098822,    /* lunar day to day */
             i * 1.95154761905,   /* lunar day to fortnight */
             i * 708177.6864,     /* lunar day to helek */
             i * 655.72,          /* lunar day to hour */
@@ -690,7 +690,7 @@ function calculate_time(){
             i / 748.443880786,   /* microcentury to lunar day */
             i / 28.1468611287,   /* microcentury to Martian solar day */
             0,                   /* microcentury to microcentury, not used */
-            i / 0.01902346227,   /* microcentury to minute */
+            i / .01902346227,    /* microcentury to minute */
             i * 3154,            /* microcentury to second */
             i * .00521494708,    /* microcentury to week */
             i * .000099946       /* microcentury to year */
