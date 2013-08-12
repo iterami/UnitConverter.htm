@@ -136,27 +136,6 @@ function calculate_distance(){
     }
 }
 
-function calculate_hex(){
-    if(get('red').value.length < 1){
-        get('red').value = 0;
-    }
-
-    if(get('green').value.length < 1){
-        get('green').value = 0;
-    }
-
-    if(get('blue').value.length < 1){
-        get('blue').value = 0;
-    }
-
-    var r = Math.max(0,Math.min(parseInt(get('red').value,10), 255));
-    var g = Math.max(0,Math.min(parseInt(get('green').value,10), 255));
-    var b = Math.max(0,Math.min(parseInt(get('blue').value,10), 255));
-    get('hex').value = gethex((r - r % 16) / 16) + gethex(r % 16)
-                + '' + gethex((g - g % 16) / 16) + gethex(g % 16)
-                + '' + gethex((b - b % 16) / 16) + gethex(b % 16);
-}
-
 function calculate_liquid(){
     verify_decimals();
 
@@ -405,23 +384,6 @@ function calculate_mass(){
     if(get('mass-result').value % 1 !== 0){
         get('mass-result').value = parseFloat(get('mass-result').value).toFixed(get('decimals').value);
     }
-}
-
-function calculate_rgb(){
-    if(get('hex-torgb').value.length < 1){
-        get('hex-torgb').value = '000';
-    }
-
-    i = get('hex-torgb').value.length === 3;
-    get('rgb').value = parseInt(i ?
-            get('hex-torgb').value.substring(0,1) + '' + get('hex-torgb').value.substring(0,1)
-          : get('hex-torgb').value.substring(0,2),16) + ', '
-        + parseInt(i ?
-            get('hex-torgb').value.substring(1,2) + '' + get('hex-torgb').value.substring(1,2)
-          : get('hex-torgb').value.substring(2,4),16) + ', '
-        + parseInt(i ?
-            get('hex-torgb').value.substring(2,3) + '' + get('hex-torgb').value.substring(2,3)
-          : get('hex-torgb').value.substring(4,6),16);
 }
 
 function calculate_speed(){
@@ -762,10 +724,6 @@ function get(i){
     return document.getElementById(i);
 }
 
-function gethex(i){
-    return '0123456789abcdef'.charAt(i);
-}
-
 function verify_decimals(){
     if(isNaN(get('decimals').value)){
         get('decimals').value = 5;
@@ -793,10 +751,6 @@ window.onkeydown = function(e){
             calculate_distance();
         }
 
-        if(get('red').value.length > 0 || get('green').value.length > 0 || get('blue').value.length > 0){
-            calculate_hex();
-        }
-
         if(get('liquid-value').value.length > 0){
             calculate_liquid();
         }
@@ -805,8 +759,8 @@ window.onkeydown = function(e){
             calculate_mass();
         }
 
-        if(get('hex-torgb').value.length > 0){
-            calculate_rgb();
+        if(get('speed-value').value.length > 0){
+            calculate_speed();
         }
 
         if(get('temperature-value').value.length > 0){
