@@ -9,28 +9,28 @@ function calculate_area(){
 
     get('area-result').value = [
         [
-            i,                    // degree to degree, not used
+            i,                    // degree to degree
             i * 10 / 9,           // degree to gradian
             i * (Math.Pi / 180),  // degree to radian
             i / 360               // degree to turn
         ][get('area-right').value],
         [
             i * 9 / 10,           // gradian to degree
-            i,                    // gradian to gradian, not used
+            i,                    // gradian to gradian
             i * Math.Pi / 200,    // gradian to radian
             i / 400               // gradian to turn
         ][get('area-right').value],
         [
             i * (180 / Math.PI),  // radian to degree
             i * 200 / Math.PI,    // radian to gradian
-            i,                    // radian to radian, not used
+            i,                    // radian to radian
             i / (2 * Math.PI)     // radian to turn
         ][get('area-right').value],
         [
             i * 360,              // turn to degree
             i * 400,              // turn to gradian
             i * (2 * Math.PI),    // turn to radian
-            i                     // turn to turn, not used
+            i                     // turn to turn
         ][get('area-right').value]
     ][get('area-left').value];
 
@@ -50,7 +50,7 @@ function calculate_distance(){
 
     get('distance-result').value = [
         [
-            i,                // centimetre to centimetre, not used
+            i,                // centimetre to centimetre
             i / 45.72,        // centimetre to cubit
             i / 30.48,        // centimetre to foot
             i / 2.54,         // centimetre to inch
@@ -62,7 +62,7 @@ function calculate_distance(){
         ][get('distance-right').value],
         [
             i * 45.72,        // cubit to centimetre
-            i,                // cubit to cubit, not used
+            i,                // cubit to cubit
             i * 1.5,          // cubit to foot
             i * 18,           // cubit to inch
             i * .0004572,     // cubit to kilometre
@@ -74,7 +74,7 @@ function calculate_distance(){
         [
             i * 30.48,        // foot to centimetre
             i / 1.5,          // foot to cubit
-            i,                // foot to foot, not used
+            i,                // foot to foot
             i * 12,           // foot to inch
             i / 3280.839895,  // foot to kilometre
             i / 3.280839895,  // foot to metre
@@ -86,7 +86,7 @@ function calculate_distance(){
             i * 2.54,         // inch to centimetre
             i / 18,           // inch to cubit
             i / 12,           // inch to foot
-            i,                // inch to inch, not used
+            i,                // inch to inch
             i / 39370.1,      // inch to kilometre
             i / 39.3701,      // inch to metre
             i / 63360,        // inch to mile
@@ -98,7 +98,7 @@ function calculate_distance(){
             i / .0004572,     // kilometre to cubit
             i * 3280.839895,  // kilometre to foot
             i * 39370.1,      // kilometre to inch
-            i,                // kilometre to kilometre, not used
+            i,                // kilometre to kilometre
             i * 1e3,          // kilometre to metre
             i / 1.609344,     // kilometre to mile
             i * 1e6,          // kilometre to millimetre
@@ -110,7 +110,7 @@ function calculate_distance(){
             i * 3.280839895,  // metre to foot
             i * 39.3701,      // metre to inch
             i / 1e3,          // metre to kilometre
-            i,                // metre to metre, not used
+            i,                // metre to metre
             i / 1609.344,     // metre to mile
             i * 1e3,          // metre to millimetre
             i * 1.09361       // metre to yard
@@ -122,7 +122,7 @@ function calculate_distance(){
             i * 63360,        // mile to inch
             i * 1.609344,     // mile to kilometre
             i * 1609.344,     // mile to metre
-            i,                // mile to mile, not used
+            i,                // mile to mile
             i * 1609344,      // mile to millimetre
             i * 1760          // mile to yard
         ][get('distance-right').value],
@@ -134,7 +134,7 @@ function calculate_distance(){
             i / 1e6,          // millimetre to kilometre
             i / 1e3,          // millimetre to metre
             i / 1609344,      // millimetre to mile
-            i,                // millimetre to millimetre, not used
+            i,                // millimetre to millimetre
             i / 914.4         // millimetre to yard
         ][get('distance-right').value],
         [
@@ -146,7 +146,7 @@ function calculate_distance(){
             i / 1.09361,      // yard to metre
             i / 1760,         // yard to mile
             i * 914.4,        // yard to millimetre
-            i                 // yard to yard, not used
+            i                 // yard to yard
         ][get('distance-right').value]
     ][get('distance-left').value];
 
@@ -166,7 +166,7 @@ function calculate_liquid(){
 
     get('liquid-result').value = [
         [
-            i,                // centilitre to centilitre, not used
+            i,                // centilitre to centilitre
             i / 2.84130742,   // centilitre to imperial fluid ounce
             i / 454.609188,   // centilitre to imperial gallon
             i / 56.8261485,   // centilitre to imperial pint
@@ -181,7 +181,7 @@ function calculate_liquid(){
         ][get('liquid-right').value],
         [
             i * 2.84130742,   // imperial fluid ounce to centilitre
-            i,                // imperial fluid ounce to imperial fluid ounce, not used
+            i,                // imperial fluid ounce to imperial fluid ounce
             i / 160,          // imperial fluid ounce to imperial gallon
             i / 20,           // imperial fluid ounce to imperial pint
             i / 40,           // imperial fluid ounce to imperial quart
@@ -196,7 +196,7 @@ function calculate_liquid(){
         [
             i * 454.609188,   // imperial gallon to centilitre
             i * 160,          // imperial gallon to imperial fluid ounce
-            i,                // imperial gallon to imperial gallon, not used
+            i,                // imperial gallon to imperial gallon
             i * 8,            // imperial gallon to imperial pint
             i * 4,            // imperial gallon to imperial quart
             i / 219.969157,   // imperial gallon to kilolitre
@@ -211,7 +211,7 @@ function calculate_liquid(){
             i * 56.8261485,   // imperial pint to centilitre
             i * 20,           // imperial pint to imperial fluid ounce
             i / 8,            // imperial pint to imperial gallon
-            i,                // imperial pint to imperial pint, not used
+            i,                // imperial pint to imperial pint
             i / 2,            // imperial pint to imperial quart
             i / 1759.75326,   // imperial pint to kilolitre
             i / 1.75975326,   // imperial pint to litre
@@ -226,7 +226,7 @@ function calculate_liquid(){
             i * 40,           // imperial quart to imperial fluid ounce
             i / 4,            // imperial quart to imperial gallon
             i * 2,            // imperial quart to imperial pint
-            i,                // imperial quart to imperial quart, not used
+            i,                // imperial quart to imperial quart
             i / 879.87663,    // imperial quart to kilolitre
             i * 1.1365225,    // imperial quart to litre
             i * 1136.5225,    // imperial quart to millilitre
@@ -241,7 +241,7 @@ function calculate_liquid(){
             i * 219.969157,   // kilolitre to imperial gallon
             i * 1759.75326,   // kilolitre to imperial pint
             i * 879.87663,    // kilolitre to imperial quart
-            i,                // kilolitre to kilolitre, not used
+            i,                // kilolitre to kilolitre
             i * 1e3,          // kilolitre to litre
             i * 1e6,          // kilolitre to millilitre
             i * 33814.0227,   // kilolitre to US fluid ounce
@@ -256,7 +256,7 @@ function calculate_liquid(){
             i * 1.75975326,   // litre to imperial pint
             i * .879877,      // litre to imperial quart
             i / 1e3,          // litre to kilolitre
-            i,                // litre to litre, not used
+            i,                // litre to litre
             i * 1e3,          // litre to millilitre
             i * 33.8140227,   // litre to US fluid ounce
             i / 3.785411784,  // litre to US gallon
@@ -271,7 +271,7 @@ function calculate_liquid(){
             i * .00087987663, // millilitre to imperial quart
             i / 1e6,          // millilitre to kilolitre
             i / 1e3,          // millilitre to litre
-            i,                // millilitre to millilitre, not used
+            i,                // millilitre to millilitre
             i / 295.735296,   // millilitre to US fluid ounce
             i / 37854.11784,  // millilitre to US gallon
             i / 473.176473,   // millilitre to US pint
@@ -286,7 +286,7 @@ function calculate_liquid(){
             i / 33814.0227,   // US fluid ounce to kilolitre
             i / 33.8140227,   // US fluid ounce to litre
             i * 29.5735296,   // US fluid ounce to millilitre
-            i,                // US fluid ounce to US fluid ounce, not used
+            i,                // US fluid ounce to US fluid ounce
             i / 128,          // US fluid ounce to US gallon
             i / 16,           // US fluid ounce to US pint
             i / 32            // US fluid ounce to US quart
@@ -301,7 +301,7 @@ function calculate_liquid(){
             i * 3.785411784,  // US gallon to litre
             i * 3785.411784,  // US gallon to millilitre
             i * 128,          // US gallon to US fluid ounce
-            i,                // US gallon to US gallon, not used
+            i,                // US gallon to US gallon
             i * 8,            // US gallon to US pint
             i * 4             // US gallon to US quart
         ][get('liquid-right').value],
@@ -316,7 +316,7 @@ function calculate_liquid(){
             i * 473.176473,   // US pint to millilitre
             i * 16,           // US pint to US fluid ounce
             i / 8,            // US pint to US gallon
-            i,                // US pint to US pint, not used
+            i,                // US pint to US pint
             i / 2             // US pint to US quart
         ][get('liquid-right').value],
         [
@@ -331,7 +331,7 @@ function calculate_liquid(){
             i * 32,           // US quart to US fluid ounce
             i / 4,            // US quart to US gallon
             i * 2,            // US quart to US pint
-            i                 // US quart to US quart, not used
+            i                 // US quart to US quart
         ][get('liquid-right').value]
     ][get('liquid-left').value];
 
@@ -351,52 +351,67 @@ function calculate_mass(){
 
     get('mass-result').value = [
         [
-            i,            // centigram to centigram, not used
-            i / 1e3,      // centigram to gram
-            i / 1e5,      // centigram to kilogram
-            i * 10,       // centigram to milligram
-            i / 28349.5,  // centigram to ounce
-            i / 453592    // centigram to pound
+            i,              // centigram to centigram
+            i / 1e3,        // centigram to gram
+            i / 1e5,        // centigram to kilogram
+            i * 10,         // centigram to milligram
+            i / 28349.5,    // centigram to ounce
+            i / 453592,     // centigram to pound
+            i / 635029.318  // centigram to stone
         ][get('mass-right').value],
         [
-            i * 1e3,      // gram to centigram
-            i,            // gram to gram, not used
-            i / 1e3,      // gram to kilogram
-            i * 1e3,      // gram to milligram
-            i / 28.3495,  // gram to ounce
-            i / 453.592   // gram to pound
+            i * 1e3,        // gram to centigram
+            i,              // gram to gram
+            i / 1e3,        // gram to kilogram
+            i * 1e3,        // gram to milligram
+            i / 28.3495,    // gram to ounce
+            i / 453.592,    // gram to pound
+            i / 6350.29318  // gram to stone
         ][get('mass-right').value],
         [
-            i * 1e5,      // kilogram to centigram
-            i * 1e3,      // kilogram to gram
-            i,            // kilogram to kilogram, not used
-            i * 1e6,      // kilogram to milligram
-            i * .0283495, // kilogram to ounce
-            i / .453592   // kilogram to pound
+            i * 1e5,        // kilogram to centigram
+            i * 1e3,        // kilogram to gram
+            i,              // kilogram to kilogram
+            i * 1e6,        // kilogram to milligram
+            i * .0283495,   // kilogram to ounce
+            i / .453592,    // kilogram to pound
+            i / 6.35029318  // kilogram to stone
         ][get('mass-right').value],
         [
-            i / 10,       // milligram to centigram
-            i / 1e3,      // milligram to gram
-            i / 1e6,      // milligram to kilogram
-            i,            // milligram to milligram, not used
-            i / 28349.5,  // milligram to ounce
-            i / 453592    // milligram to pound
+            i / 10,         // milligram to centigram
+            i / 1e3,        // milligram to gram
+            i / 1e6,        // milligram to kilogram
+            i,              // milligram to milligram
+            i / 28349.5,    // milligram to ounce
+            i / 453592,     // milligram to pound
+            i / 6350293.18  // milligram to stone
         ][get('mass-right').value],
         [
-            i * 28349.5,  // ounce to centigram
-            i * 28.3495,  // ounce to gram
-            i / 35.274,   // ounce to kilogram
-            i * 28349.5,  // ounce to milligram
-            i,            // ounce to ounce, not used
-            i / 16        // ounce to pound
+            i * 28349.5,    // ounce to centigram
+            i * 28.3495,    // ounce to gram
+            i / 35.274,     // ounce to kilogram
+            i * 28349.5,    // ounce to milligram
+            i,              // ounce to ounce
+            i / 16,         // ounce to pound
+            i / 224         // ounce to stone
         ][get('mass-right').value],
         [
-            i * 453592,   // pound to centigram
-            i * 453.592,  // pound to gram
-            i / 2.20462,  // pound to kilogram
-            i * 453592,   // pound to milligram
-            i * 16,       // pound to ounce
-            i             // pound to pound, not used
+            i * 453592,     // pound to centigram
+            i * 453.592,    // pound to gram
+            i / 2.20462,    // pound to kilogram
+            i * 453592,     // pound to milligram
+            i * 16,         // pound to ounce
+            i,              // pound to pound
+            i / 14          // pound to stone
+        ][get('mass-right').value],
+        [
+            i * 635029.318, // stone to centigram
+            i * 6350.29318, // stone to gram
+            i * 6.35029318, // stone to kilogram
+            i * 6350293.18, // stone to milligram
+            i * 244,        // stone to ounce
+            i * 14,         // stone to pound
+            i               // stone to stone
         ][get('mass-right').value]
     ][get('mass-left').value];
 
@@ -416,7 +431,7 @@ function calculate_speed(){
 
     get('speed-result').value = [
         [
-            i,               // feet per second to feet per second, not usede
+            i,               // feet per second to feet per seconde
             i * 1.09728,     // feet per second to kilometres per hour
             i * .592484,     // feet per second to knots
             i / 3.28084,     // feet per second to metres per second
@@ -424,7 +439,7 @@ function calculate_speed(){
         ][get('speed-right').value],
         [
             i / 1.09728,     // kilometres per hour to feet per second
-            i,               // kilometres per hour to kilometres per hour, not used
+            i,               // kilometres per hour to kilometres per hour
             i / 1.852,       // kilometres per hour to knots
             i / 3.6,         // kilometres per hour to metres per second
             i / 1.60934      // kilometres per hour to miles per hour
@@ -432,7 +447,7 @@ function calculate_speed(){
         [
             i / .592484,     // knots to feet per second
             i * 1.852,       // knots to kilometres per hour
-            i,               // knots to knots, not used
+            i,               // knots to knots
             i / 1.94384449,  // knots to metres per second
             i * 1.15077945   // knots to miles per hour
         ][get('speed-right').value],
@@ -440,7 +455,7 @@ function calculate_speed(){
             i * 3.28084,     // metres per second to feet per second
             i * 3.6,         // metres per second to kilometres per hour
             i * 1.94384449,  // metres per second to knots
-            i,               // metres per second to metres per second, not used
+            i,               // metres per second to metres per second
             i * 2.23694      // metres per second to miles per hour
         ][get('speed-right').value],
         [
@@ -448,7 +463,7 @@ function calculate_speed(){
             i * 1.60934,     // miles per hour to kilometres per hour
             i / 1.15077945,  // miles per hour to knots
             i / 2.23694,     // miles per hour to metres per second
-            i                // miles per hour to miles per hour, not used
+            i                // miles per hour to miles per hour
         ][get('speed-right').value]
     ][get('speed-left').value];
 
@@ -468,7 +483,7 @@ function calculate_temperature(){
 
     get('temperature-result').value = [
         [
-            i,                            // Celsius to Celsius, not used
+            i,                            // Celsius to Celsius
             (100 - i) * 1.5,              // Celsius to Delisle
             i * 1.8 + 32,                 // Celsius to Fahrenheit
             i + 273.15,                   // Celsius to Kelvin
@@ -479,7 +494,7 @@ function calculate_temperature(){
         ][get('temperature-right').value],
         [
             100 - i / 1.5,                // Delisle to Celsius
-            i,                            // Delisle to Delisle, not used
+            i,                            // Delisle to Delisle
             212 - i * 1.2,                // Delisle to Fahrenheit
             373.15 - i / 1.5,             // Delisle to Kelvin
             33 - (i * 11 / 50),           // Delisle to Newton
@@ -490,7 +505,7 @@ function calculate_temperature(){
         [
             (i - 32) / 1.8,               // Fahrenheit to Celsius
             (212 - i) / 1.2,              // Fahrenheit to Delisle
-            i,                            // Fahrenheit to Fahrenheit, not used
+            i,                            // Fahrenheit to Fahrenheit
             (i - 32) / 1.8 + 273.15,      // Fahrenheit to Kelvin
             (i - 32) * 11 / 60,           // Fahrenheit to Newton
             i + 459.67,                   // Fahrenheit to Rankine
@@ -501,7 +516,7 @@ function calculate_temperature(){
             i - 273.15,                   // Kelvin to Celsius
             (373.15 - i) * 1.5,           // Kelvin to Delisle
             (i - 273.15) * 1.8 + 32,      // Kelvin to Fahrenheit
-            i,                            // Kelvin to Kelvin, not used
+            i,                            // Kelvin to Kelvin
             (i - 273.15) * .33,           // Kelvin to Newton
             i * 1.8,                      // Kelvin to Rankine
             (i - 273.15) / 1.25,          // Kelvin to Réaumur
@@ -512,7 +527,7 @@ function calculate_temperature(){
             (33 - i) * 50 / 11,           // Newton to Delisle
             i * 60 / 11 + 32,             // Newton to Fahrenheit
             i / .33 + 273.15,             // Newton to Kelvin
-            i,                            // Newton to Newton, not used
+            i,                            // Newton to Newton
             i * 60 / 11 + 491.67,         // Newton to Rankine
             i * 80 / 33,                  // Newton to Réaumur
             i * 35 / 22 + 7.5             // Newton to Rømer
@@ -523,7 +538,7 @@ function calculate_temperature(){
             i - 459.67,                   // Rankine to Fahrenheit
             i / 1.8,                      // Rankine to Kelvin
             (i - 491.67) * 11 / 60,       // Rankine to Newton
-            i,                            // Rankine to Rankine, not used
+            i,                            // Rankine to Rankine
             (i - 491.67) * 4 / 9,         // Rankine to Réaumur
             (i - 491.67) * 7 / 24 + 7.5   // Rankine to Rømer
         ][get('temperature-right').value],
@@ -534,7 +549,7 @@ function calculate_temperature(){
             i * 1.25 + 273.15,            // Réaumur to Kelvin
             i * 80 / 33,                  // Réaumur to Newton
             i * 9 / 4 + 491.67,           // Réaumur to Rankine
-            i,                            // Réaumur to Réaumur, not used
+            i,                            // Réaumur to Réaumur
             i * 21 / 32 + 7.5             // Réaumur to Rømer
         ][get('temperature-right').value],
         [
@@ -545,7 +560,7 @@ function calculate_temperature(){
             (i - 7.5) * 22 / 35,          // Rømer to Newton
             (i - 7.5) * 24 / 7 + 491.67,  // Rømer to Rankine
             (i - 7.5) * 32 / 21,          // Rømer to Réaumur
-            i                             // Rømer to Rømer, not used
+            i                             // Rømer to Rømer
         ][get('temperature-right').value]
     ][get('temperature-left').value];
 
@@ -565,7 +580,7 @@ function calculate_time(){
 
     get('time-result').value = [
         [
-            i,                   // day to day, not used
+            i,                   // day to day
             i / 14,              // day to fortnight
             i * 25920,           // day to helek
             i * 24,              // day to hour
@@ -580,7 +595,7 @@ function calculate_time(){
         ][get('time-right').value],
         [
             i * 14,              // fortnight to day
-            i,                   // fortnight to fortnight, not used
+            i,                   // fortnight to fortnight
             i * 362880,          // fortnight to helek
             i * 336,             // fortnight to hour
             i * 14000,           // fortnight to Internet Time
@@ -595,7 +610,7 @@ function calculate_time(){
         [
             i / 25920,           // helek to day
             i / 362880,          // helek to fortnight
-            i,                   // helek to helek, not used
+            i,                   // helek to helek
             i / 1080,            // helek to hour
             i / 25.920,          // helek to Internet Time
             i / 708177.6864,     // helek to lunar day
@@ -610,7 +625,7 @@ function calculate_time(){
             i / 24,              // hour to day
             i / 366,             // hour to fortnight
             i * 1080,            // hour to helek
-            i,                   // hour to hour, not used
+            i,                   // hour to hour
             i * 41.666,          // hour to Internet Time
             i / 655.72,          // hour to lunar day
             i / 24.65979,        // hour to Martian solar day
@@ -625,7 +640,7 @@ function calculate_time(){
             i / 14000,           // Internet Time to fortnight
             i * 25.920,          // Internet Time to helek
             i / 41.666,          // Internet Time to hour
-            i,                   // Internet Time to Internet Time, not used
+            i,                   // Internet Time to Internet Time
             i / 27312.04944,     // Internet Time to lunar day
             i / 1027.129064,     // Internet Time to Martian solar day
             i / 36.49178,        // Internet Time to microcentury
@@ -640,7 +655,7 @@ function calculate_time(){
             i * 708177.6864,     // lunar day to helek
             i * 655.72,          // lunar day to hour
             i * 27312.04944,     // lunar day to Internet Time
-            i,                   // lunar day to lunar day, not used
+            i,                   // lunar day to lunar day
             i / .0376071765,     // lunar day to Martian solar day
             i * 748.443880786,   // lunar day to microcentury
             i * 39343.2,         // lunar day to minute
@@ -655,7 +670,7 @@ function calculate_time(){
             i * 24.65979,        // Martian solar day to hour
             i * 1027.129064,     // Martian solar day to Internet Time
             i * .0376071765,     // Martian solar day to lunar day
-            i,                   // Martian solar day to Martian solar day, not used
+            i,                   // Martian solar day to Martian solar day
             i * 28.1468611287,   // Martian solar day to microcentury
             i * 1479.59,         // Martian solar day to minute
             i * 88775.2,         // Martian solar day to second
@@ -670,7 +685,7 @@ function calculate_time(){
             i * 36.49178,        // microcentury to Internet Time
             i / 748.443880786,   // microcentury to lunar day
             i / 28.1468611287,   // microcentury to Martian solar day
-            i,                   // microcentury to microcentury, not used
+            i,                   // microcentury to microcentury
             i / .01902346227,    // microcentury to minute
             i * 3154,            // microcentury to second
             i * .00521494708,    // microcentury to week
@@ -685,7 +700,7 @@ function calculate_time(){
             i / 39343.2,         // minute to lunar day
             i / 1479.59,         // minute to Martian solar day
             i * .01902346227,    // minute to microcentury
-            i,                   // minute to minute, not used
+            i,                   // minute to minute
             i * 60,              // minute to second
             i / 10080,           // minute to week
             i / 525949           // minute to year
@@ -700,7 +715,7 @@ function calculate_time(){
             i / 88775.2,         // second to Martian solar day
             i / 3154,            // second to microcentury
             i / 60,              // second to minute
-            i,                   // second to second, not used
+            i,                   // second to second
             i / 604800,          // second to week
             i / 31556908.8       // second to year
         ][get('time-right').value],
@@ -715,7 +730,7 @@ function calculate_time(){
             i / .00521494708,    // week to microcentury
             i * 10080,           // week to minute
             i * 604800,          // week to second
-            i,                   // week to week, not used
+            i,                   // week to week
             i / 52.1775          // week to year
         ][get('time-right').value],
         [
@@ -730,7 +745,7 @@ function calculate_time(){
             i * 525949,          // year to minute
             i * 31556908.8,      // year to second
             i * 52.1775,         // year to week
-            i                    // year to year, not used
+            i                    // year to year
         ][get('time-right').value]
     ][get('time-left').value];
 
