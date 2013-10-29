@@ -431,7 +431,7 @@ function calculate_speed(){
 
     get('speed-result').value = [
         [
-            i,               // feet per second to feet per seconde
+            i,               // feet per second to feet per second
             i * 1.09728,     // feet per second to kilometres per hour
             i * .592484,     // feet per second to knots
             i / 3.28084,     // feet per second to metres per second
