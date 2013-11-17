@@ -7,7 +7,7 @@ function calculate_angle(){
         i = 0;
     }
 
-	var pi = Math.PI;
+    var pi = Math.PI;
 
     get('angle-result').value = [
         [
