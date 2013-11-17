@@ -1,3 +1,46 @@
+function calculate_angle(){
+    verify_decimals();
+
+    i = parseFloat(get('angle-value').value);
+    if(isNaN(i)){
+        get('angle-value').value = 0;
+        i = 0;
+    }
+
+	var pi = Math.PI;
+
+    get('angle-result').value = [
+        [
+            i,                    // degree to degree
+            i * 10 / 9,           // degree to gradian
+            i * (pi / 180),       // degree to radian
+            i / 360               // degree to turn
+        ][get('angle-right').value],
+        [
+            i * 9 / 10,           // gradian to degree
+            i,                    // gradian to gradian
+            i * pi / 200,         // gradian to radian
+            i / 400               // gradian to turn
+        ][get('angle-right').value],
+        [
+            i * (180 / pi),       // radian to degree
+            i * 200 / pi,         // radian to gradian
+            i,                    // radian to radian
+            i / (2 * pi)          // radian to turn
+        ][get('angle-right').value],
+        [
+            i * 360,              // turn to degree
+            i * 400,              // turn to gradian
+            i * (2 * pi),         // turn to radian
+            i                     // turn to turn
+        ][get('angle-right').value]
+    ][get('angle-left').value];
+
+    if(get('angle-result').value % 1 !== 0){
+        get('angle-result').value = parseFloat(get('angle-result').value).toFixed(get('decimals').value);
+    }
+}
+
 function calculate_area(){
     verify_decimals();
 
@@ -9,28 +52,28 @@ function calculate_area(){
 
     get('area-result').value = [
         [
-            i,                    // degree to degree
-            i * 10 / 9,           // degree to gradian
-            i * (Math.Pi / 180),  // degree to radian
-            i / 360               // degree to turn
+            i,                    // acre to acre
+            i * 40.4685642,       // acre to are
+            i / 2.47105,          // acre to hectare
+            i * 4046.86           // acre to metres squared
         ][get('area-right').value],
         [
-            i * 9 / 10,           // gradian to degree
-            i,                    // gradian to gradian
-            i * Math.Pi / 200,    // gradian to radian
-            i / 400               // gradian to turn
+            i / 40.4685642,       // are to acre
+            i,                    // are to are
+            i / 100,              // are to hectare
+            i * 100               // are to meters squared
         ][get('area-right').value],
         [
-            i * (180 / Math.PI),  // radian to degree
-            i * 200 / Math.PI,    // radian to gradian
-            i,                    // radian to radian
-            i / (2 * Math.PI)     // radian to turn
+            i * 2.47105,          // hectare to acre
+            i * 100,              // hectare to are
+            i,                    // hectare to hectare
+            i * 10000             // hectare to metres squared
         ][get('area-right').value],
         [
-            i * 360,              // turn to degree
-            i * 400,              // turn to gradian
-            i * (2 * Math.PI),    // turn to radian
-            i                     // turn to turn
+            i * 4046.86,          // metres squared to acre
+            i / 100,              // metres squared to are
+            i / 10000,            // metres squared to hectare
+            i                     // metres squared to metres squared
         ][get('area-right').value]
     ][get('area-left').value];
 
@@ -38,6 +81,7 @@ function calculate_area(){
         get('area-result').value = parseFloat(get('area-result').value).toFixed(get('decimals').value);
     }
 }
+
 
 function calculate_distance(){
     verify_decimals();
