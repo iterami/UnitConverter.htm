@@ -82,7 +82,6 @@ function calculate_area(){
     }
 }
 
-
 function calculate_distance(){
     verify_decimals();
 
