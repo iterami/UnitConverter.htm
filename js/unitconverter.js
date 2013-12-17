@@ -55,25 +55,36 @@ function calculate_area(){
             i,                    // acre to acre
             i * 40.4685642,       // acre to are
             i / 2.47105,          // acre to hectare
-            i * 4046.86           // acre to metres squared
+            i * 4046.86,          // acre to metres squared
+            i / 247.105           // acre to kilometres squared
         ][get('area-right').value],
         [
             i / 40.4685642,       // are to acre
             i,                    // are to are
             i / 100,              // are to hectare
-            i * 100               // are to meters squared
+            i * 100,              // are to meters squared
+            i / 10000             // are to kilometers squared
         ][get('area-right').value],
         [
             i * 2.47105,          // hectare to acre
             i * 100,              // hectare to are
             i,                    // hectare to hectare
-            i * 10000             // hectare to metres squared
+            i * 10000,            // hectare to metres squared
+            i / 100               // hectare to metres squared
         ][get('area-right').value],
         [
             i * 4046.86,          // metres squared to acre
             i / 100,              // metres squared to are
             i / 10000,            // metres squared to hectare
-            i                     // metres squared to metres squared
+            i,                    // metres squared to metres squared
+            i / 1000000           // metres squared to kilometres squared
+        ][get('area-right').value],
+        [
+            i * 247.105,          // kilometres squared to acre
+            i * 10000,            // kilometres squared to are
+            i * 100,              // kilometres squared to hectare
+            i * 1000000,          // kilometres squared to metres squared
+            i                     // kilometres squared to kilometres squared
         ][get('area-right').value]
     ][get('area-left').value];
 
