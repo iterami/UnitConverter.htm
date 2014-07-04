@@ -7,31 +7,29 @@ function calculate_angle(){
         i = 0;
     }
 
-    var pi = Math.PI;
-
     document.getElementById('angle-result').value = [
       [
         i,                    // degree to degree
         i * 10 / 9,           // degree to gradian
-        i * (pi / 180),       // degree to radian
+        i * (Math.PI / 180),  // degree to radian
         i / 360               // degree to turn
       ][document.getElementById('angle-right').value],
       [
         i * 9 / 10,           // gradian to degree
         i,                    // gradian to gradian
-        i * pi / 200,         // gradian to radian
+        i * Math.PI / 200,    // gradian to radian
         i / 400               // gradian to turn
       ][document.getElementById('angle-right').value],
       [
-        i * (180 / pi),       // radian to degree
-        i * 200 / pi,         // radian to gradian
+        i * (180 / Math.PI),  // radian to degree
+        i * 200 / Math.PI,    // radian to gradian
         i,                    // radian to radian
-        i / (2 * pi)          // radian to turn
+        i / (2 * Math.PI)     // radian to turn
       ][document.getElementById('angle-right').value],
       [
         i * 360,              // turn to degree
         i * 400,              // turn to gradian
-        i * (2 * pi),         // turn to radian
+        i * (2 * Math.PI),    // turn to radian
         i                     // turn to turn
       ][document.getElementById('angle-right').value]
     ][document.getElementById('angle-left').value];
