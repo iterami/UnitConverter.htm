@@ -859,4 +859,4 @@ window.onkeydown = function(e){
             calculate_time();
         }
     }
-}
+};
