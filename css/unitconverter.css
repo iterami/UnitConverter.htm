@@ -7,6 +7,3 @@ div{
     display: inline-block;
     line-height: 2em;
 }
-input[type=button]{
-    cursor: pointer;
-}
