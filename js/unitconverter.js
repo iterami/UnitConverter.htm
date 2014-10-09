@@ -826,6 +826,7 @@ function verify_decimals(){
     }
 }
 
+document.getElementById('angle-value').oninput = calculate_angle;
 document.getElementById('area-value').oninput = calculate_area;
 document.getElementById('distance-value').oninput = calculate_distance;
 document.getElementById('liquid-value').oninput = calculate_liquid;
@@ -833,38 +834,3 @@ document.getElementById('mass-value').oninput = calculate_mass;
 document.getElementById('speed-value').oninput = calculate_speed;
 document.getElementById('temperature-value').oninput = calculate_temperature;
 document.getElementById('time-value').oninput = calculate_time;
-
-window.onkeydown = function(e){
-    var key = window.event ? event : e;
-    key = key.charCode ? key.charCode : key.keyCode;
-
-    if(key === 13){// Enter
-        if(document.getElementById('area-value').value.length > 0){
-            calculate_area();
-        }
-
-        if(document.getElementById('distance-value').value.length > 0){
-            calculate_distance();
-        }
-
-        if(document.getElementById('liquid-value').value.length > 0){
-            calculate_liquid();
-        }
-
-        if(document.getElementById('mass-value').value.length > 0){
-            calculate_mass();
-        }
-
-        if(document.getElementById('speed-value').value.length > 0){
-            calculate_speed();
-        }
-
-        if(document.getElementById('temperature-value').value.length > 0){
-            calculate_temperature();
-        }
-
-        if(document.getElementById('time-value').value.length > 0){
-            calculate_time();
-        }
-    }
-};
