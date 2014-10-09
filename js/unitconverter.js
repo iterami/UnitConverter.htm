@@ -826,6 +826,14 @@ function verify_decimals(){
     }
 }
 
+document.getElementById('area-value').oninput = calculate_area;
+document.getElementById('distance-value').oninput = calculate_distance;
+document.getElementById('liquid-value').oninput = calculate_liquid;
+document.getElementById('mass-value').oninput = calculate_mass;
+document.getElementById('speed-value').oninput = calculate_speed;
+document.getElementById('temperature-value').oninput = calculate_temperature;
+document.getElementById('time-value').oninput = calculate_time;
+
 window.onkeydown = function(e){
     var key = window.event ? event : e;
     key = key.charCode ? key.charCode : key.keyCode;
