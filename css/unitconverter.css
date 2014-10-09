@@ -2,8 +2,15 @@ body,
 input{
     background: #000;
     color: #aaa;
+    text-align: center;
 }
 div{
     display: inline-block;
     line-height: 2em;
+}
+.input{
+    text-align: right;
+}
+.output{
+    text-align: left;
 }

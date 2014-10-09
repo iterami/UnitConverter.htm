@@ -3,8 +3,8 @@
 <title>UnitConverter.htm</title>
 <link href=css/unitconverter.css rel=stylesheet>
 
-<div style=text-align:right>
-    <select id=angle-left>
+<div class=input>
+    <select id=angle-input>
         <option value=0>degree (°)</option>
         <option value=1>gradian (gon)</option>
         <option value=2>radian (rad)</option>
@@ -12,7 +12,7 @@
     </select>
     <input id=angle-value size=15><br>
 
-    <select id=area-left>
+    <select id=area-input>
         <option value=0>acre (ac)</option>
         <option value=1>are (a)</option>
         <option value=2>hectare (ha)</option>
@@ -21,7 +21,7 @@
     </select>
     <input id=area-value size=15><br>
 
-    <select id=distance-left>
+    <select id=distance-input>
         <option value=0>centimetre (cm)</option>
         <option value=1>cubit</option>
         <option value=2>foot (ft)</option>
@@ -34,7 +34,7 @@
     </select>
     <input id=distance-value size=15><br>
 
-    <select id=liquid-left>
+    <select id=liquid-input>
         <option value=0>centilitre (cl)</option>
         <option selected value=1>imperial fluid ounce (fl oz)</option>
         <option value=2>imperial gallon (gal)</option>
@@ -50,7 +50,7 @@
     </select>
     <input id=liquid-value size=15><br>
 
-    <select id=mass-left>
+    <select id=mass-input>
         <option value=0>centigram (cg)</option>
         <option value=1>gram (g)</option>
         <option value=2>kilogram (kg)</option>
@@ -61,7 +61,7 @@
     </select>
     <input id=mass-value size=15><br>
 
-    <select id=speed-left>
+    <select id=speed-input>
         <option value=0>feet per second (ft/s)</option>
         <option selected value=1>kilometres per hour (kph)</option>
         <option value=2>knots</option>
@@ -70,7 +70,7 @@
     </select>
     <input id=speed-value size=15><br>
 
-    <select id=temperature-left>
+    <select id=temperature-input>
         <option value=0>Celsius (°C)</option>
         <option value=1>Delisle (°D)</option>
         <option selected value=2>Fahrenheit (°F)</option>
@@ -82,7 +82,7 @@
     </select>
     <input id=temperature-value size=15><br>
 
-    <select id=time-left>
+    <select id=time-input>
         <option value=0>day (d)</option>
         <option value=1>fortnight</option>
         <option value=2>helek (hl)</option>
@@ -99,7 +99,7 @@
     <input id=time-value size=15>
 </div>
 
-<div style=text-align:center>
+<div>
     <input onclick=calculate_angle() type=button value=→→→→→><br>
     <input onclick=calculate_area() type=button value=→→→→→><br>
     <input onclick=calculate_distance() type=button value=→→→→→><br>
@@ -110,9 +110,9 @@
     <input onclick=calculate_time() type=button value=→→→→→>
 </div>
 
-<div>
+<div class=output>
     <input id=angle-result readonly size=15>
-    <select id=angle-right>
+    <select id=angle-output>
         <option value=0>degree (°)</option>
         <option value=1>gradian (gon)</option>
         <option selected value=2>radian (rad)</option>
@@ -120,7 +120,7 @@
     </select><br>
 
     <input id=area-result readonly size=15>
-    <select id=area-right>
+    <select id=area-output>
         <option value=0>acre (ac)</option>
         <option value=1>are (a)</option>
         <option value=2>hectare (ha)</option>
@@ -129,7 +129,7 @@
     </select><br>
 
     <input id=distance-result readonly size=15>
-    <select id=distance-right>
+    <select id=distance-output>
         <option value=0>centimetre (cm)</option>
         <option value=1>cubit</option>
         <option value=2>foot (ft)</option>
@@ -142,7 +142,7 @@
     </select><br>
 
     <input id=liquid-result readonly size=15>
-    <select id=liquid-right>
+    <select id=liquid-output>
         <option value=0>centilitre (cl)</option>
         <option value=1>imperial fluid ounce (fl oz)</option>
         <option value=2>imperial gallon (gal)</option>
@@ -158,7 +158,7 @@
     </select><br>
 
     <input id=mass-result readonly size=15>
-    <select id=mass-right>
+    <select id=mass-output>
         <option value=0>centigram (cg)</option>
         <option value=1>gram (g)</option>
         <option selected value=2>kilogram (kg)</option>
@@ -169,7 +169,7 @@
     </select><br>
 
     <input id=speed-result readonly size=15>
-    <select id=speed-right>
+    <select id=speed-output>
         <option value=0>feet per second (ft/s)</option>
         <option value=1>kilometres per hour (kph)</option>
         <option value=2>knots</option>
@@ -178,7 +178,7 @@
     </select><br>
 
     <input id=temperature-result readonly size=15>
-    <select id=temperature-right>
+    <select id=temperature-output>
         <option value=0>Celsius (°C)</option>
         <option value=1>Delisle (°D)</option>
         <option value=2>Fahrenheit (°F)</option>
@@ -190,7 +190,7 @@
     </select><br>
 
     <input id=time-result readonly size=15>
-    <select id=time-right>
+    <select id=time-output>
         <option value=0>day (d)</option>
         <option value=1>fortnight</option>
         <option value=2>helek (hl)</option>
