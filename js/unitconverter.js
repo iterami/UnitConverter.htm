@@ -826,11 +826,34 @@ function verify_decimals(){
     }
 }
 
+document.getElementById('angle-input').onchange = calculate_angle;
+document.getElementById('angle-output').onchange = calculate_angle;
 document.getElementById('angle-value').oninput = calculate_angle;
+
+document.getElementById('area-input').onchange = calculate_area;
+document.getElementById('area-output').onchange = calculate_area;
 document.getElementById('area-value').oninput = calculate_area;
+
+document.getElementById('distance-input').onchange = calculate_distance;
+document.getElementById('distance-output').onchange = calculate_distance;
 document.getElementById('distance-value').oninput = calculate_distance;
+
+document.getElementById('liquid-input').onchange = calculate_liquid;
+document.getElementById('liquid-output').onchange = calculate_liquid;
 document.getElementById('liquid-value').oninput = calculate_liquid;
+
+document.getElementById('mass-input').onchange = calculate_mass;
+document.getElementById('mass-output').onchange = calculate_mass;
 document.getElementById('mass-value').oninput = calculate_mass;
+
+document.getElementById('speed-input').onchange = calculate_speed;
+document.getElementById('speed-output').onchange = calculate_speed;
 document.getElementById('speed-value').oninput = calculate_speed;
+
+document.getElementById('temperature-input').onchange = calculate_temperature;
+document.getElementById('temperature-output').onchange = calculate_temperature;
 document.getElementById('temperature-value').oninput = calculate_temperature;
+
+document.getElementById('time-input').onchange = calculate_time;
+document.getElementById('time-output').onchange = calculate_time;
 document.getElementById('time-value').oninput = calculate_time;
