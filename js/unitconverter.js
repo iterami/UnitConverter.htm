@@ -1,10 +1,10 @@
 function calculate_angle(){
     verify_decimals();
 
-    var i = parseFloat(document.getElementById('angle-value').value);
+    var i = document.getElementById('angle-value').value;
     if(isNaN(i)){
-        document.getElementById('angle-value').value = 0;
-        i = 0;
+        document.getElementById('angle-result').value = '';
+        return;
     }
 
     document.getElementById('angle-result').value = [
@@ -43,10 +43,10 @@ function calculate_angle(){
 function calculate_area(){
     verify_decimals();
 
-    var i = parseFloat(document.getElementById('area-value').value);
+    var i = document.getElementById('area-value').value;
     if(isNaN(i)){
-        document.getElementById('area-value').value = 0;
-        i = 0;
+        document.getElementById('area-result').value = '';
+        return;
     }
 
     document.getElementById('area-result').value = [
@@ -96,10 +96,10 @@ function calculate_area(){
 function calculate_distance(){
     verify_decimals();
 
-    var i = parseFloat(document.getElementById('distance-value').value);
+    var i = document.getElementById('distance-value').value;
     if(isNaN(i)){
-        document.getElementById('distance-value').value = 0;
-        i = 0;
+        document.getElementById('distance-result').value = '';
+        return;
     }
 
     document.getElementById('distance-result').value = [
@@ -213,10 +213,10 @@ function calculate_distance(){
 function calculate_liquid(){
     verify_decimals();
 
-    var i = parseFloat(document.getElementById('liquid-value').value);
+    var i = document.getElementById('liquid-value').value;
     if(isNaN(i)){
-        document.getElementById('liquid-value').value = 0;
-        i = 0;
+        document.getElementById('liquid-result').value = '';
+        return;
     }
 
     document.getElementById('liquid-result').value = [
@@ -399,10 +399,10 @@ function calculate_liquid(){
 function calculate_mass(){
     verify_decimals();
 
-    var i = parseFloat(document.getElementById('mass-value').value);
+    var i = document.getElementById('mass-value').value;
     if(isNaN(i)){
-        document.getElementById('mass-value').value = 0;
-        i = 0;
+        document.getElementById('mass-result').value = '';
+        return;
     }
 
     document.getElementById('mass-result').value = [
@@ -480,10 +480,10 @@ function calculate_mass(){
 function calculate_speed(){
     verify_decimals();
 
-    var i = parseFloat(document.getElementById('speed-value').value);
+    var i = document.getElementById('speed-value').value;
     if(isNaN(i)){
-        document.getElementById('speed-value').value = 0;
-        i = 0;
+        document.getElementById('speed-result').value = '';
+        return;
     }
 
     document.getElementById('speed-result').value = [
@@ -533,10 +533,10 @@ function calculate_speed(){
 function calculate_temperature(){
     verify_decimals();
 
-    var i = parseFloat(document.getElementById('temperature-value').value);
+    var i = document.getElementById('temperature-value').value;
     if(isNaN(i)){
-        document.getElementById('temperature-value').value = 0;
-        i = 0;
+        document.getElementById('temperature-result').value = '';
+        return;
     }
 
     document.getElementById('temperature-result').value = [
@@ -631,10 +631,10 @@ function calculate_temperature(){
 function calculate_time(){
     verify_decimals();
 
-    var i = parseFloat(document.getElementById('time-value').value);
+    var i = document.getElementById('time-value').value;
     if(isNaN(i)){
-        document.getElementById('time-value').value = 0;
-        i = 0;
+        document.getElementById('time-result').value = '';
+        return;
     }
 
     document.getElementById('time-result').value = [
