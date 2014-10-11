@@ -55,6 +55,7 @@ function calculate_area(){
         i * 40.4685642,       // acre to are
         i / 2.47105,          // acre to hectare
         i * 4046.86,          // acre to metres squared
+        i / 640,              // acre to miles squared
         i / 247.105           // acre to kilometres squared
       ][document.getElementById('area-output').value],
       [
@@ -62,6 +63,7 @@ function calculate_area(){
         i,                    // are to are
         i / 100,              // are to hectare
         i * 100,              // are to meters squared
+        i / 25899.8811,       // are to miles squared
         i / 10000             // are to kilometers squared
       ][document.getElementById('area-output').value],
       [
@@ -69,6 +71,7 @@ function calculate_area(){
         i * 100,              // hectare to are
         i,                    // hectare to hectare
         i * 10000,            // hectare to metres squared
+        i / 258.999,          // hectare to miles squared
         i / 100               // hectare to metres squared
       ][document.getElementById('area-output').value],
       [
@@ -76,13 +79,23 @@ function calculate_area(){
         i / 100,              // metres squared to are
         i / 10000,            // metres squared to hectare
         i,                    // metres squared to metres squared
+        i / 2589990,          // metres squared to miles squared
         i / 1000000           // metres squared to kilometres squared
+      ][document.getElementById('area-output').value],
+      [
+        i * 640,              // miles squared to acre
+        i * 25899.8811,       // miles squared to are
+        i * 258.999,          // miles squared to hectare
+        i * 2589990,          // miles squared to metres squared
+        i,                    // miles squared to miles squared
+        i * 2.58999           // miles squared to kilometres squared
       ][document.getElementById('area-output').value],
       [
         i * 247.105,          // kilometres squared to acre
         i * 10000,            // kilometres squared to are
         i * 100,              // kilometres squared to hectare
         i * 1000000,          // kilometres squared to metres squared
+        i / 2.58999,          // kilometers squared to miles squared
         i                     // kilometres squared to kilometres squared
       ][document.getElementById('area-output').value]
     ][document.getElementById('area-input').value];
