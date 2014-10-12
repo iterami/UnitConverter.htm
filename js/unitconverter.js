@@ -1,3 +1,14 @@
+function calculate_all(){
+    calculate_angle();
+    calculate_area();
+    calculate_distance();
+    calculate_liquid();
+    calculate_mass();
+    calculate_speed();
+    calculate_temperature();
+    calculate_time();
+}
+
 function calculate_angle(){
     verify_decimals();
 
@@ -838,6 +849,8 @@ function verify_decimals(){
         document.getElementById('decimals').value = 20;
     }
 }
+
+document.getElementById('decimals').oninput = calculate_all;
 
 document.getElementById('angle-input').onchange = calculate_angle;
 document.getElementById('angle-output').onchange = calculate_angle;
