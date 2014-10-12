@@ -455,6 +455,7 @@ function calculate_mass(){
         i,              // centigram to centigram
         i / 1e3,        // centigram to gram
         i / 1e5,        // centigram to kilogram
+        i / 1e8,        // centigram to metric tonne
         i * 10,         // centigram to milligram
         i / 28349.5,    // centigram to ounce
         i / 453592,     // centigram to pound
@@ -464,6 +465,7 @@ function calculate_mass(){
         i * 1e3,        // gram to centigram
         i,              // gram to gram
         i / 1e3,        // gram to kilogram
+        i / 1e6,        // gram to metric tonne
         i * 1e3,        // gram to milligram
         i / 28.3495,    // gram to ounce
         i / 453.592,    // gram to pound
@@ -473,15 +475,27 @@ function calculate_mass(){
         i * 1e5,        // kilogram to centigram
         i * 1e3,        // kilogram to gram
         i,              // kilogram to kilogram
+        i / 1e3,        // kilogram to metric tonne
         i * 1e6,        // kilogram to milligram
         i * .0283495,   // kilogram to ounce
         i / .453592,    // kilogram to pound
         i / 6.35029318, // kilogram to stone
       ][document.getElementById('mass-output').value],
       [
+        i * 1e8,        // metric tonne to centigram
+        i * 1e6,        // metric tonne to gram
+        i * 1e3,        // metric tonne to kilogram
+        i,              // metric tonne to metric tonne
+        i * 1e9,        // metric tonne to milligram
+        i * 35273.9619, // metric tonne to ounce
+        i * 2204.62262, // metric tonne to pound
+        i * 157.473044, // metric tonne to stone
+      ][document.getElementById('mass-output').value],
+      [
         i / 10,         // milligram to centigram
         i / 1e3,        // milligram to gram
         i / 1e6,        // milligram to kilogram
+        i / 1e9,        // milligram to metric tonne
         i,              // milligram to milligram
         i / 28349.5,    // milligram to ounce
         i / 453592,     // milligram to pound
@@ -490,7 +504,8 @@ function calculate_mass(){
       [
         i * 28349.5,    // ounce to centigram
         i * 28.3495,    // ounce to gram
-        i / 35.274,     // ounce to kilogram
+        i / 35.2739619, // ounce to kilogram
+        i / 35273.9619, // ounce to metric tonne
         i * 28349.5,    // ounce to milligram
         i,              // ounce to ounce
         i / 16,         // ounce to pound
@@ -499,7 +514,8 @@ function calculate_mass(){
       [
         i * 453592,     // pound to centigram
         i * 453.592,    // pound to gram
-        i / 2.20462,    // pound to kilogram
+        i / 2.20462262, // pound to kilogram
+        i / 2204.62262, // pound to metric tonne
         i * 453592,     // pound to milligram
         i * 16,         // pound to ounce
         i,              // pound to pound
@@ -509,6 +525,7 @@ function calculate_mass(){
         i * 635029.318, // stone to centigram
         i * 6350.29318, // stone to gram
         i * 6.35029318, // stone to kilogram
+        i / 157.473044, // stone to metric tonne
         i * 6350293.18, // stone to milligram
         i * 244,        // stone to ounce
         i * 14,         // stone to pound
