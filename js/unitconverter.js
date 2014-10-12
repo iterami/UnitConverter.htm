@@ -50,7 +50,7 @@ function calculate_angle(){
         i * 400,              // turn to gradian
         i * (2 * Math.PI),    // turn to radian
         i                     // turn to turn
-      ][document.getElementById('angle-output').value]
+      ][document.getElementById('angle-output').value],
     ][document.getElementById('angle-input').value];
 
     if(document.getElementById('angle-result').value % 1 !== 0){
@@ -114,7 +114,7 @@ function calculate_area(){
         i,                    // kilometres squared to kilometres squared
         i * 1000000,          // kilometres squared to metres squared
         i / 2.58999,          // kilometers squared to miles squared
-      ][document.getElementById('area-output').value]
+      ][document.getElementById('area-output').value],
     ][document.getElementById('area-input').value];
 
     if(document.getElementById('area-result').value % 1 !== 0){
@@ -250,7 +250,7 @@ function calculate_distance(){
         i * 914.4,        // yard to millimetre
         i / 2025.37,      // yard to nautical mile
         i,                // yard to yard
-      ][document.getElementById('distance-output').value]
+      ][document.getElementById('distance-output').value],
     ][document.getElementById('distance-input').value];
 
     if(document.getElementById('distance-result').value % 1 !== 0){
@@ -434,7 +434,7 @@ function calculate_liquid(){
         i / 4,            // US quart to US gallon
         i * 2,            // US quart to US pint
         i,                // US quart to US quart
-      ][document.getElementById('liquid-output').value]
+      ][document.getElementById('liquid-output').value],
     ][document.getElementById('liquid-input').value];
 
     if(document.getElementById('liquid-result').value % 1 !== 0){
@@ -530,7 +530,7 @@ function calculate_mass(){
         i * 244,        // stone to ounce
         i * 14,         // stone to pound
         i,              // stone to stone
-      ][document.getElementById('mass-output').value]
+      ][document.getElementById('mass-output').value],
     ][document.getElementById('mass-input').value];
 
     if(document.getElementById('mass-result').value % 1 !== 0){
@@ -581,7 +581,7 @@ function calculate_speed(){
         i / 1.15077945,  // miles per hour to knots
         i / 2.23694,     // miles per hour to metres per second
         i,               // miles per hour to miles per hour
-      ][document.getElementById('speed-output').value]
+      ][document.getElementById('speed-output').value],
     ][document.getElementById('speed-input').value];
 
     if(document.getElementById('speed-result').value % 1 !== 0){
@@ -677,7 +677,7 @@ function calculate_temperature(){
         (i - 7.5) * 24 / 7 + 491.67,  // Rømer to Rankine
         (i - 7.5) * 32 / 21,          // Rømer to Réaumur
         i,                            // Rømer to Rømer
-      ][document.getElementById('temperature-output').value]
+      ][document.getElementById('temperature-output').value],
     ][document.getElementById('temperature-input').value];
 
     if(document.getElementById('temperature-result').value % 1 !== 0){
@@ -861,7 +861,7 @@ function calculate_time(){
         i * 31556908.8,      // year to second
         i * 52.1775,         // year to week
         i,                   // year to year
-      ][document.getElementById('time-output').value]
+      ][document.getElementById('time-output').value],
     ][document.getElementById('time-input').value];
 
     if(document.getElementById('time-result').value % 1 !== 0){
