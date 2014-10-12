@@ -136,6 +136,7 @@ function calculate_distance(){
         i / 1e3,          // centimetre to metre
         i / 160934.4,     // centimetre to mile
         i * 10,           // centimetre to millimetre
+        i / 185200,       // centimetre to nautical mile
         i / 91.44,        // centimetre to yard
       ][document.getElementById('distance-output').value],
       [
@@ -147,6 +148,7 @@ function calculate_distance(){
         i * .4572,        // cubit to metre
         i / 3520,         // cubit to mile
         i * 457.2,        // cubit to millimetre
+        i / 4050.74366,   // cubit to nautical mile
         i / 2,            // cubit to yard
       ][document.getElementById('distance-output').value],
       [
@@ -158,6 +160,7 @@ function calculate_distance(){
         i / 3.280839895,  // foot to metre
         i / 5280,         // foot to mile
         i * 304.8,        // foot to millimetre
+        i / 6076.12,      // foot to nautical mile
         i / 3,            // foot to yard
       ][document.getElementById('distance-output').value],
       [
@@ -169,6 +172,7 @@ function calculate_distance(){
         i / 39.3701,      // inch to metre
         i / 63360,        // inch to mile
         i * 25.4,         // inch to millimetre
+        i / 72913.4,      // inch to nautical mile
         i / 36,           // inch to yard
       ][document.getElementById('distance-output').value],
       [
@@ -180,6 +184,7 @@ function calculate_distance(){
         i * 1e3,          // kilometre to metre
         i / 1.609344,     // kilometre to mile
         i * 1e6,          // kilometre to millimetre
+        i / 1.852,        // kilometre to nautical mile
         i / 1093.61,      // kilometre to yard
       ][document.getElementById('distance-output').value],
       [
@@ -191,6 +196,7 @@ function calculate_distance(){
         i,                // metre to metre
         i / 1609.344,     // metre to mile
         i * 1e3,          // metre to millimetre
+        i / 1852,         // metre to nautical mile
         i * 1.09361,      // metre to yard
       ][document.getElementById('distance-output').value],
       [
@@ -202,6 +208,7 @@ function calculate_distance(){
         i * 1609.344,     // mile to metre
         i,                // mile to mile
         i * 1609344,      // mile to millimetre
+        i / 1.15078,      // mile to nautical mile
         i * 1760,         // mile to yard
       ][document.getElementById('distance-output').value],
       [
@@ -213,7 +220,20 @@ function calculate_distance(){
         i / 1e3,          // millimetre to metre
         i / 1609344,      // millimetre to mile
         i,                // millimetre to millimetre
+        i / 1852000,      // millimetre to nautical mile
         i / 914.4,        // millimetre to yard
+      ][document.getElementById('distance-output').value],
+      [
+        i * 185200,       // nautical mile to centimetre
+        i * 4050.74366,   // nautical mile to cubit
+        i * 6076.12,      // nautical mile to foot
+        i * 72913.4,      // nautical mile to inch
+        i * 1.852,        // nautical mile to kilometre
+        i * 1852,         // nautical mile to metre
+        i * 1.15078,      // nautical mile to mile
+        i * 1852000,      // nautical mile to millimetre
+        i,                // nautical mile to nautical mile
+        i * 2025.37,      // nautical mile to yard
       ][document.getElementById('distance-output').value],
       [
         i * 91.44,        // yard to centimetre
@@ -224,6 +244,7 @@ function calculate_distance(){
         i / 1.09361,      // yard to metre
         i / 1760,         // yard to mile
         i * 914.4,        // yard to millimetre
+        i / 2025.37,      // yard to nautical mile
         i,                // yard to yard
       ][document.getElementById('distance-output').value]
     ][document.getElementById('distance-input').value];
