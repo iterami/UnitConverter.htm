@@ -1,4 +1,14 @@
 function calculate_all(){
+    if(isNaN(document.getElementById('decimals').value)){
+        document.getElementById('decimals').value = 5;
+
+    }else if(document.getElementById('decimals').value < 0){
+        document.getElementById('decimals').value = 0;
+
+    }else if(document.getElementById('decimals').value > 20){
+        document.getElementById('decimals').value = 20;
+    }
+
     calculate_angle();
     calculate_area();
     calculate_distance();
@@ -10,8 +20,6 @@ function calculate_all(){
 }
 
 function calculate_angle(){
-    verify_decimals();
-
     var i = document.getElementById('angle-value').value;
     if(isNaN(i)){
         document.getElementById('angle-result').value = '';
@@ -52,8 +60,6 @@ function calculate_angle(){
 }
 
 function calculate_area(){
-    verify_decimals();
-
     var i = document.getElementById('area-value').value;
     if(isNaN(i)){
         document.getElementById('area-result').value = '';
@@ -118,8 +124,6 @@ function calculate_area(){
 }
 
 function calculate_distance(){
-    verify_decimals();
-
     var i = document.getElementById('distance-value').value;
     if(isNaN(i)){
         document.getElementById('distance-result').value = '';
@@ -256,8 +260,6 @@ function calculate_distance(){
 }
 
 function calculate_liquid(){
-    verify_decimals();
-
     var i = document.getElementById('liquid-value').value;
     if(isNaN(i)){
         document.getElementById('liquid-result').value = '';
@@ -442,8 +444,6 @@ function calculate_liquid(){
 }
 
 function calculate_mass(){
-    verify_decimals();
-
     var i = document.getElementById('mass-value').value;
     if(isNaN(i)){
         document.getElementById('mass-result').value = '';
@@ -523,8 +523,6 @@ function calculate_mass(){
 }
 
 function calculate_speed(){
-    verify_decimals();
-
     var i = document.getElementById('speed-value').value;
     if(isNaN(i)){
         document.getElementById('speed-result').value = '';
@@ -576,8 +574,6 @@ function calculate_speed(){
 }
 
 function calculate_temperature(){
-    verify_decimals();
-
     var i = document.getElementById('temperature-value').value;
     if(isNaN(i)){
         document.getElementById('temperature-result').value = '';
@@ -674,8 +670,6 @@ function calculate_temperature(){
 }
 
 function calculate_time(){
-    verify_decimals();
-
     var i = document.getElementById('time-value').value;
     if(isNaN(i)){
         document.getElementById('time-result').value = '';
@@ -856,18 +850,6 @@ function calculate_time(){
     if(document.getElementById('time-result').value % 1 !== 0){
         document.getElementById('time-result').value =
           parseFloat(document.getElementById('time-result').value).toFixed(document.getElementById('decimals').value);
-    }
-}
-
-function verify_decimals(){
-    if(isNaN(document.getElementById('decimals').value)){
-        document.getElementById('decimals').value = 5;
-
-    }else if(document.getElementById('decimals').value < 0){
-        document.getElementById('decimals').value = 0;
-
-    }else if(document.getElementById('decimals').value > 20){
-        document.getElementById('decimals').value = 20;
     }
 }
 
