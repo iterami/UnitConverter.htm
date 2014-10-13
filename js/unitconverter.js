@@ -55,10 +55,10 @@ function calculate_angle(){
     calculate(
       'angle',
       [
-        360,
-        400,
-        Math.PI * 2,
-        1,
+        360,         // turn to degree
+        400,         // turn to gradian
+        Math.PI * 2, // turn to radian
+        1,           // turn to turn
       ],
       3
     );
@@ -68,12 +68,12 @@ function calculate_area(){
     calculate(
       'area',
       [
-        1 / 4046.86,
-        .01,
-        .0001,
-        .000001,
-        1,
-        1 / 2589990,
+        1 / 4046.86, // metres squared to acre
+        .01,         // metres squared to are
+        .0001,       // metres squared to hectare
+        .000001,     // metres squared to kilometres squared
+        1,           // metres squared to metres squared
+        1 / 2589990, // metres squared to miles
       ],
       4
     );
@@ -83,16 +83,16 @@ function calculate_distance(){
     calculate(
       'distance',
       [
-        100,
-        1 / .4572,
-        3.280839895,
-        39.3701,
-        .001,
-        1,
-        1 / 1609.344,
-        1000,
-        1 / 1852,
-        1.09361,
+        100,          // metre to centimetre
+        1 / .4572,    // metre to cubit
+        3.280839895,  // metre to foot
+        39.3701,      // metre to inch
+        .001,         // metre to kilometre
+        1,            // metre to metre
+        1 / 1609.344, // metre to mile
+        1000,         // metre to millimetre
+        1 / 1852,     // metre to nautical mile
+        1.09361,      // metre to yard
       ],
       5
     );
@@ -102,18 +102,18 @@ function calculate_liquid(){
     calculate(
       'liquid',
       [
-        100,
-        35.1950652,
-        1 / 4.546094188,
-        1.75975326,
-        .879877,
-        .0001,
-        1,
-        1000,
-        33.8140227,
-        1 / 3.785411784,
-        2.11338,
-        1.05669,
+        100,             // litre to centilitre
+        35.1950652,      // litre to imperial fluid ounce
+        1 / 4.546094188, // litre to imperial fluid gallon
+        1.75975326,      // litre to imperial fluid pint
+        .879877,         // litre to imperial fluid quart
+        .0001,           // litre to kilolitre
+        1,               // litre to litre
+        1000,            // litre to millilitre
+        33.8140227,      // litre to US fluid ounce
+        1 / 3.785411784, // litre to US fluid gallon
+        2.11338,         // litre to US fluid pint
+        1.05669,         // litre to US fluid quart
       ],
       6
     );
@@ -123,14 +123,14 @@ function calculate_mass(){
     calculate(
       'mass',
       [
-        100,
-        1,
-        .001,
-        .000001,
-        1000,
-        1 / 28.3495,
-        1 / 453.592,
-        1 / 6350.29318,
+        100,            // gram to centigram
+        1,              // gram to gram
+        .001,           // gram to kilogram
+        .000001,        // gram to metric tonne
+        1000,           // gram to milligram
+        1 / 28.3495,    // gram to ounce
+        1 / 453.592,    // gram to pound
+        1 / 6350.29318, // gram to stone
       ],
       1
     );
@@ -140,11 +140,11 @@ function calculate_speed(){
     calculate(
       'speed',
       [
-        3.28084,
-        3.6,
-        1.94384449,
-        1,
-        2.23694,
+        3.28084,    // metres per second to feet per second
+        3.6,        // metres per second to kilometres per hour
+        1.94384449, // metres per second to knots
+        1,          // metres per second to metres per second
+        2.23694,    // metres per second to miles per hour
       ],
       3
     );
@@ -250,18 +250,18 @@ function calculate_time(){
     calculate(
       'time',
       [
-        1 / 86400,
-        1 / 1209600,
-        .3,
-        1 / 3600,
-        .01157,
-        1 / 2360592,
-        1 / 88775.2,
-        1 / 3154,
-        1 / 60,
-        1,
-        1 / 604800,
-        1 / 31556908.8,
+        1 / 86400,      // second to day
+        1 / 1209600,    // second to fortnight
+        .3,             // second to helek
+        1 / 3600,       // second to hour
+        .01157,         // second to Internet Time
+        1 / 2360592,    // second to lunar day
+        1 / 88775.2,    // second to Martian solar day
+        1 / 3154,       // second to microcentury
+        1 / 60,         // second to minute
+        1,              // second to second
+        1 / 604800,     // second to week
+        1 / 31556908.8, // second to year
       ],
       9
     );
