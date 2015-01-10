@@ -70,6 +70,7 @@ function calculate_area(){
       [
         1 / 4046.86, // metres squared to acre
         .01,         // metres squared to are
+        10.7639,     // metres squared to feet squared
         .0001,       // metres squared to hectare
         .000001,     // metres squared to kilometres squared
         1,           // metres squared to metres squared
