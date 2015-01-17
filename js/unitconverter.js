@@ -99,27 +99,6 @@ function calculate_distance(){
     );
 }
 
-function calculate_liquid(){
-    calculate(
-      'liquid',
-      [
-        100,             // litre to centilitre
-        35.1950652,      // litre to imperial fluid ounce
-        1 / 4.546094188, // litre to imperial fluid gallon
-        1.75975326,      // litre to imperial fluid pint
-        .879877,         // litre to imperial fluid quart
-        .0001,           // litre to kilolitre
-        1,               // litre to litre
-        1000,            // litre to millilitre
-        33.8140227,      // litre to US fluid ounce
-        1 / 3.785411784, // litre to US fluid gallon
-        2.11338,         // litre to US fluid pint
-        1.05669,         // litre to US fluid quart
-      ],
-      6
-    );
-}
-
 function calculate_mass(){
     calculate(
       'mass',
@@ -268,6 +247,27 @@ function calculate_time(){
     );
 }
 
+function calculate_volume(){
+    calculate(
+      'volume',
+      [
+        100,             // litre to centilitre
+        35.1950652,      // litre to imperial fluid ounce
+        1 / 4.546094188, // litre to imperial fluid gallon
+        1.75975326,      // litre to imperial fluid pint
+        .879877,         // litre to imperial fluid quart
+        .0001,           // litre to kilolitre
+        1,               // litre to litre
+        1000,            // litre to millilitre
+        33.8140227,      // litre to US fluid ounce
+        1 / 3.785411784, // litre to US fluid gallon
+        2.11338,         // litre to US fluid pint
+        1.05669,         // litre to US fluid quart
+      ],
+      6
+    );
+}
+
 document.getElementById('decimals').oninput = calculate_all;
 
 document.getElementById('angle-input').onchange = calculate_angle;
@@ -281,10 +281,6 @@ document.getElementById('area-value').oninput = calculate_area;
 document.getElementById('distance-input').onchange = calculate_distance;
 document.getElementById('distance-output').onchange = calculate_distance;
 document.getElementById('distance-value').oninput = calculate_distance;
-
-document.getElementById('liquid-input').onchange = calculate_liquid;
-document.getElementById('liquid-output').onchange = calculate_liquid;
-document.getElementById('liquid-value').oninput = calculate_liquid;
 
 document.getElementById('mass-input').onchange = calculate_mass;
 document.getElementById('mass-output').onchange = calculate_mass;
@@ -301,3 +297,7 @@ document.getElementById('temperature-value').oninput = calculate_temperature;
 document.getElementById('time-input').onchange = calculate_time;
 document.getElementById('time-output').onchange = calculate_time;
 document.getElementById('time-value').oninput = calculate_time;
+
+document.getElementById('volume-input').onchange = calculate_volume;
+document.getElementById('volume-output').onchange = calculate_volume;
+document.getElementById('volume-value').oninput = calculate_volume;
