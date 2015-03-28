@@ -44,11 +44,11 @@ function calculate_all(){
     calculate_angle();
     calculate_area();
     calculate_distance();
-    calculate_liquid();
     calculate_mass();
     calculate_speed();
     calculate_temperature();
     calculate_time();
+    calculate_volume();
 }
 
 function calculate_angle(){
@@ -268,36 +268,23 @@ function calculate_volume(){
     );
 }
 
-document.getElementById('decimals').oninput = calculate_all;
+window.onload = function(e){
+    var types = [
+      'angle',
+      'area',
+      'distance',
+      'mass',
+      'speed',
+      'temperature',
+      'time',
+      'volume',
+    ];
 
-document.getElementById('angle-input').onchange = calculate_angle;
-document.getElementById('angle-output').onchange = calculate_angle;
-document.getElementById('angle-value').oninput = calculate_angle;
+    for(var type in types){
+        document.getElementById(types[type] + '-input').onchange = window['calculate_' + types[type]];
+        document.getElementById(types[type] + '-output').onchange = window['calculate_' + types[type]];
+        document.getElementById(types[type] + '-value').oninput = window['calculate_' + types[type]];
+    }
 
-document.getElementById('area-input').onchange = calculate_area;
-document.getElementById('area-output').onchange = calculate_area;
-document.getElementById('area-value').oninput = calculate_area;
-
-document.getElementById('distance-input').onchange = calculate_distance;
-document.getElementById('distance-output').onchange = calculate_distance;
-document.getElementById('distance-value').oninput = calculate_distance;
-
-document.getElementById('mass-input').onchange = calculate_mass;
-document.getElementById('mass-output').onchange = calculate_mass;
-document.getElementById('mass-value').oninput = calculate_mass;
-
-document.getElementById('speed-input').onchange = calculate_speed;
-document.getElementById('speed-output').onchange = calculate_speed;
-document.getElementById('speed-value').oninput = calculate_speed;
-
-document.getElementById('temperature-input').onchange = calculate_temperature;
-document.getElementById('temperature-output').onchange = calculate_temperature;
-document.getElementById('temperature-value').oninput = calculate_temperature;
-
-document.getElementById('time-input').onchange = calculate_time;
-document.getElementById('time-output').onchange = calculate_time;
-document.getElementById('time-value').oninput = calculate_time;
-
-document.getElementById('volume-input').onchange = calculate_volume;
-document.getElementById('volume-output').onchange = calculate_volume;
-document.getElementById('volume-value').oninput = calculate_volume;
+    document.getElementById('decimals').oninput = calculate_all;
+};
