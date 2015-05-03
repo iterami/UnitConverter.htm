@@ -55,10 +55,10 @@ function calculate_angle(){
     calculate(
       'angle',
       [
-        360,         // turn to degree
-        400,         // turn to gradian
-        Math.PI * 2, // turn to radian
-        1,           // turn to turn
+        360,         // turn -> degree
+        400,         // turn -> gradian
+        Math.PI * 2, // turn -> radian
+        1,           // turn -> turn
       ],
       3
     );
@@ -68,13 +68,13 @@ function calculate_area(){
     calculate(
       'area',
       [
-        1 / 4046.86, // metres squared to acre
-        .01,         // metres squared to are
-        10.7639,     // metres squared to feet squared
-        .0001,       // metres squared to hectare
-        .000001,     // metres squared to kilometres squared
-        1,           // metres squared to metres squared
-        1 / 2589990, // metres squared to miles
+        1 / 4046.86, // metres squared -> acre
+        .01,         // metres squared -> are
+        10.7639,     // metres squared -> feet squared
+        .0001,       // metres squared -> hectare
+        .000001,     // metres squared -> kilometres squared
+        1,           // metres squared -> metres squared
+        1 / 2589990, // metres squared -> miles
       ],
       4
     );
@@ -84,16 +84,16 @@ function calculate_distance(){
     calculate(
       'distance',
       [
-        100,          // metre to centimetre
-        1 / .4572,    // metre to cubit
-        3.280839895,  // metre to foot
-        39.3701,      // metre to inch
-        .001,         // metre to kilometre
-        1,            // metre to metre
-        1 / 1609.344, // metre to mile
-        1000,         // metre to millimetre
-        1 / 1852,     // metre to nautical mile
-        1.09361,      // metre to yard
+        100,          // metre -> centimetre
+        1 / .4572,    // metre -> cubit
+        3.280839895,  // metre -> foot
+        39.3701,      // metre -> inch
+        .001,         // metre -> kilometre
+        1,            // metre -> metre
+        1 / 1609.344, // metre -> mile
+        1000,         // metre -> millimetre
+        1 / 1852,     // metre -> nautical mile
+        1.09361,      // metre -> yard
       ],
       5
     );
@@ -103,14 +103,16 @@ function calculate_mass(){
     calculate(
       'mass',
       [
-        100,            // gram to centigram
-        1,              // gram to gram
-        .001,           // gram to kilogram
-        .000001,        // gram to metric tonne
-        1000,           // gram to milligram
-        1 / 28.3495,    // gram to ounce
-        1 / 453.592,    // gram to pound
-        1 / 6350.29318, // gram to stone
+        100,            // gram -> centigram
+        1,              // gram -> gram
+        1 / 1016050,    // gram -> imperial ton
+        .001,           // gram -> kilogram
+        .000001,        // gram -> metric tonne
+        1000,           // gram -> milligram
+        1 / 28.3495,    // gram -> ounce
+        1 / 453.592,    // gram -> pound
+        1 / 6350.29318, // gram -> stone
+        1 / 907185,     // gram -> US ton
       ],
       1
     );
@@ -120,11 +122,11 @@ function calculate_speed(){
     calculate(
       'speed',
       [
-        3.28084,    // metres per second to feet per second
-        3.6,        // metres per second to kilometres per hour
-        1.94384449, // metres per second to knots
-        1,          // metres per second to metres per second
-        2.23694,    // metres per second to miles per hour
+        3.28084,    // metres per second -> feet per second
+        3.6,        // metres per second -> kilometres per hour
+        1.94384449, // metres per second -> knots
+        1,          // metres per second -> metres per second
+        2.23694,    // metres per second -> miles per hour
       ],
       3
     );
@@ -139,84 +141,84 @@ function calculate_temperature(){
 
     document.getElementById('temperature-result').value = [
       [
-        i,                            // Celsius to Celsius
-        (100 - i) * 1.5,              // Celsius to Delisle
-        i * 1.8 + 32,                 // Celsius to Fahrenheit
-        i + 273.15,                   // Celsius to Kelvin
-        i * .33,                      // Celsius to Newton
-        (i + 273.15) * 1.8,           // Celsius to Rankine
-        i / 1.25,                     // Celsius to Réaumur
-        i * 21 / 40 + 7.5,            // Celsius to Rømer
+        i,                            // Celsius -> Celsius
+        (100 - i) * 1.5,              // Celsius -> Delisle
+        i * 1.8 + 32,                 // Celsius -> Fahrenheit
+        i + 273.15,                   // Celsius -> Kelvin
+        i * .33,                      // Celsius -> Newton
+        (i + 273.15) * 1.8,           // Celsius -> Rankine
+        i / 1.25,                     // Celsius -> Réaumur
+        i * 21 / 40 + 7.5,            // Celsius -> Rømer
       ][document.getElementById('temperature-output').value],
       [
-        100 - i / 1.5,                // Delisle to Celsius
-        i,                            // Delisle to Delisle
-        212 - i * 1.2,                // Delisle to Fahrenheit
-        373.15 - i / 1.5,             // Delisle to Kelvin
-        33 - (i * 11 / 50),           // Delisle to Newton
-        671.67 - i * 1.2,             // Delisle to Rankine
-        80 - (i * 8 / 15),            // Delisle to Réaumur
-        60 - (i * 7 / 20),            // Delisle to Rømer
+        100 - i / 1.5,                // Delisle -> Celsius
+        i,                            // Delisle -> Delisle
+        212 - i * 1.2,                // Delisle -> Fahrenheit
+        373.15 - i / 1.5,             // Delisle -> Kelvin
+        33 - (i * 11 / 50),           // Delisle -> Newton
+        671.67 - i * 1.2,             // Delisle -> Rankine
+        80 - (i * 8 / 15),            // Delisle -> Réaumur
+        60 - (i * 7 / 20),            // Delisle -> Rømer
       ][document.getElementById('temperature-output').value],
       [
-        (i - 32) / 1.8,               // Fahrenheit to Celsius
-        (212 - i) / 1.2,              // Fahrenheit to Delisle
-        i,                            // Fahrenheit to Fahrenheit
-        (i - 32) / 1.8 + 273.15,      // Fahrenheit to Kelvin
-        (i - 32) * 11 / 60,           // Fahrenheit to Newton
-        i + 459.67,                   // Fahrenheit to Rankine
-        (i - 32) * 4 / 9,             // Fahrenheit to Réaumur
-        (i - 32) * 7 / 24 + 7.5,      // Fahrenheit to Rømer
+        (i - 32) / 1.8,               // Fahrenheit -> Celsius
+        (212 - i) / 1.2,              // Fahrenheit -> Delisle
+        i,                            // Fahrenheit -> Fahrenheit
+        (i - 32) / 1.8 + 273.15,      // Fahrenheit -> Kelvin
+        (i - 32) * 11 / 60,           // Fahrenheit -> Newton
+        i + 459.67,                   // Fahrenheit -> Rankine
+        (i - 32) * 4 / 9,             // Fahrenheit -> Réaumur
+        (i - 32) * 7 / 24 + 7.5,      // Fahrenheit -> Rømer
       ][document.getElementById('temperature-output').value],
       [
-        i - 273.15,                   // Kelvin to Celsius
-        (373.15 - i) * 1.5,           // Kelvin to Delisle
-        (i - 273.15) * 1.8 + 32,      // Kelvin to Fahrenheit
-        i,                            // Kelvin to Kelvin
-        (i - 273.15) * .33,           // Kelvin to Newton
-        i * 1.8,                      // Kelvin to Rankine
-        (i - 273.15) / 1.25,          // Kelvin to Réaumur
-        (i - 273.15) * 21 / 40 + 7.5, // Kelvin to Rømer
+        i - 273.15,                   // Kelvin -> Celsius
+        (373.15 - i) * 1.5,           // Kelvin -> Delisle
+        (i - 273.15) * 1.8 + 32,      // Kelvin -> Fahrenheit
+        i,                            // Kelvin -> Kelvin
+        (i - 273.15) * .33,           // Kelvin -> Newton
+        i * 1.8,                      // Kelvin -> Rankine
+        (i - 273.15) / 1.25,          // Kelvin -> Réaumur
+        (i - 273.15) * 21 / 40 + 7.5, // Kelvin -> Rømer
       ][document.getElementById('temperature-output').value],
       [
-        i / .33,                      // Newton to Celsius
-        (33 - i) * 50 / 11,           // Newton to Delisle
-        i * 60 / 11 + 32,             // Newton to Fahrenheit
-        i / .33 + 273.15,             // Newton to Kelvin
-        i,                            // Newton to Newton
-        i * 60 / 11 + 491.67,         // Newton to Rankine
-        i * 80 / 33,                  // Newton to Réaumur
-        i * 35 / 22 + 7.5,            // Newton to Rømer
+        i / .33,                      // Newton -> Celsius
+        (33 - i) * 50 / 11,           // Newton -> Delisle
+        i * 60 / 11 + 32,             // Newton -> Fahrenheit
+        i / .33 + 273.15,             // Newton -> Kelvin
+        i,                            // Newton -> Newton
+        i * 60 / 11 + 491.67,         // Newton -> Rankine
+        i * 80 / 33,                  // Newton -> Réaumur
+        i * 35 / 22 + 7.5,            // Newton -> Rømer
       ][document.getElementById('temperature-output').value],
       [
-        (i - 491.67) / 1.8,           // Rankine to Celsius
-        (671.67 - i) / 1.2,           // Rankine to Delisle
-        i - 459.67,                   // Rankine to Fahrenheit
-        i / 1.8,                      // Rankine to Kelvin
-        (i - 491.67) * 11 / 60,       // Rankine to Newton
-        i,                            // Rankine to Rankine
-        (i - 491.67) * 4 / 9,         // Rankine to Réaumur
-        (i - 491.67) * 7 / 24 + 7.5,  // Rankine to Rømer
+        (i - 491.67) / 1.8,           // Rankine -> Celsius
+        (671.67 - i) / 1.2,           // Rankine -> Delisle
+        i - 459.67,                   // Rankine -> Fahrenheit
+        i / 1.8,                      // Rankine -> Kelvin
+        (i - 491.67) * 11 / 60,       // Rankine -> Newton
+        i,                            // Rankine -> Rankine
+        (i - 491.67) * 4 / 9,         // Rankine -> Réaumur
+        (i - 491.67) * 7 / 24 + 7.5,  // Rankine -> Rømer
       ][document.getElementById('temperature-output').value],
       [
-        i * 1.25,                     // Réaumur to Celsius
-        (80 - i) * 15 / 8,            // Réaumur to Delisle
-        i * 9/4 + 32,                 // Réaumur to Fahrenheit
-        i * 1.25 + 273.15,            // Réaumur to Kelvin
-        i * 80 / 33,                  // Réaumur to Newton
-        i * 9 / 4 + 491.67,           // Réaumur to Rankine
-        i,                            // Réaumur to Réaumur
-        i * 21 / 32 + 7.5,            // Réaumur to Rømer
+        i * 1.25,                     // Réaumur -> Celsius
+        (80 - i) * 15 / 8,            // Réaumur -> Delisle
+        i * 9/4 + 32,                 // Réaumur -> Fahrenheit
+        i * 1.25 + 273.15,            // Réaumur -> Kelvin
+        i * 80 / 33,                  // Réaumur -> Newton
+        i * 9 / 4 + 491.67,           // Réaumur -> Rankine
+        i,                            // Réaumur -> Réaumur
+        i * 21 / 32 + 7.5,            // Réaumur -> Rømer
       ][document.getElementById('temperature-output').value],
       [
-        (i - 7.5) * 40 / 21,          // Rømer to Celsius
-        (60 - i) * 20 / 7,            // Rømer to Delisle
-        (i - 7.5) * 24 / 7 + 32,      // Rømer to Fahrenheit
-        (i - 7.5) * 40 / 21 + 273.15, // Rømer to Kelvin
-        (i - 7.5) * 22 / 35,          // Rømer to Newton
-        (i - 7.5) * 24 / 7 + 491.67,  // Rømer to Rankine
-        (i - 7.5) * 32 / 21,          // Rømer to Réaumur
-        i,                            // Rømer to Rømer
+        (i - 7.5) * 40 / 21,          // Rømer -> Celsius
+        (60 - i) * 20 / 7,            // Rømer -> Delisle
+        (i - 7.5) * 24 / 7 + 32,      // Rømer -> Fahrenheit
+        (i - 7.5) * 40 / 21 + 273.15, // Rømer -> Kelvin
+        (i - 7.5) * 22 / 35,          // Rømer -> Newton
+        (i - 7.5) * 24 / 7 + 491.67,  // Rømer -> Rankine
+        (i - 7.5) * 32 / 21,          // Rømer -> Réaumur
+        i,                            // Rømer -> Rømer
       ][document.getElementById('temperature-output').value],
     ][document.getElementById('temperature-input').value];
 
@@ -230,18 +232,18 @@ function calculate_time(){
     calculate(
       'time',
       [
-        1 / 86400,      // second to day
-        1 / 1209600,    // second to fortnight
-        .3,             // second to helek
-        1 / 3600,       // second to hour
-        .01157,         // second to Internet Time
-        1 / 2360592,    // second to lunar day
-        1 / 88775.2,    // second to Martian solar day
-        1 / 3154,       // second to microcentury
-        1 / 60,         // second to minute
-        1,              // second to second
-        1 / 604800,     // second to week
-        1 / 31556908.8, // second to year
+        1 / 86400,      // second -> day
+        1 / 1209600,    // second -> fortnight
+        .3,             // second -> helek
+        1 / 3600,       // second -> hour
+        .01157,         // second -> Internet Time
+        1 / 2360592,    // second -> lunar day
+        1 / 88775.2,    // second -> Martian solar day
+        1 / 3154,       // second -> microcentury
+        1 / 60,         // second -> minute
+        1,              // second -> second
+        1 / 604800,     // second -> week
+        1 / 31556908.8, // second -> year
       ],
       9
     );
@@ -251,18 +253,18 @@ function calculate_volume(){
     calculate(
       'volume',
       [
-        100,             // litre to centilitre
-        35.1950652,      // litre to imperial fluid ounce
-        1 / 4.546094188, // litre to imperial fluid gallon
-        1.75975326,      // litre to imperial fluid pint
-        .879877,         // litre to imperial fluid quart
-        .0001,           // litre to kilolitre
-        1,               // litre to litre
-        1000,            // litre to millilitre
-        33.8140227,      // litre to US fluid ounce
-        1 / 3.785411784, // litre to US fluid gallon
-        2.11338,         // litre to US fluid pint
-        1.05669,         // litre to US fluid quart
+        100,             // litre -> centilitre
+        35.1950652,      // litre -> imperial fluid ounce
+        1 / 4.546094188, // litre -> imperial fluid gallon
+        1.75975326,      // litre -> imperial fluid pint
+        .879877,         // litre -> imperial fluid quart
+        .0001,           // litre -> kilolitre
+        1,               // litre -> litre
+        1000,            // litre -> millilitre
+        33.8140227,      // litre -> US fluid ounce
+        1 / 3.785411784, // litre -> US fluid gallon
+        2.11338,         // litre -> US fluid pint
+        1.05669,         // litre -> US fluid quart
       ],
       6
     );
