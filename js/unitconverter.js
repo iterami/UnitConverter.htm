@@ -1,9 +1,105 @@
-function calculate(group, formulas, default_unit){
+function calculate(group){
+    group = group.substring(
+      0,
+      group.indexOf('-')
+    );
+
     // If entered input is not a number, clear result field and return.
     if(isNaN(document.getElementById(group + '-value').value)){
         document.getElementById(group + '-result').value = '';
         return;
     }
+
+    // Load appropriate formulas and defaults.
+    var formula = {
+      'angle': [
+        360,         // turn -> degree
+        400,         // turn -> gradian
+        Math.PI * 2, // turn -> radian
+        1,           // turn -> turn
+      ],
+      'area': [
+        1 / 4046.86, // metres squared -> acre
+        .01,         // metres squared -> are
+        10.7639,     // metres squared -> feet squared
+        .0001,       // metres squared -> hectare
+        .000001,     // metres squared -> kilometres squared
+        1,           // metres squared -> metres squared
+        1 / 2589990, // metres squared -> miles
+      ],
+      'distance': [
+        100,          // metre -> centimetre
+        1 / .4572,    // metre -> cubit
+        3.280839895,  // metre -> foot
+        39.3701,      // metre -> inch
+        .001,         // metre -> kilometre
+        1,            // metre -> metre
+        1 / 1609.344, // metre -> mile
+        1000,         // metre -> millimetre
+        1 / 1852,     // metre -> nautical mile
+        1.09361,      // metre -> yard
+      ],
+      'mass': [
+        100,            // gram -> centigram
+        1,              // gram -> gram
+        1 / 1016050,    // gram -> imperial ton
+        .001,           // gram -> kilogram
+        .000001,        // gram -> metric tonne
+        1000,           // gram -> milligram
+        1 / 28.3495,    // gram -> ounce
+        1 / 453.592,    // gram -> pound
+        1 / 6350.29318, // gram -> stone
+        1 / 907185,     // gram -> US ton
+      ],
+      'speed': [
+        100,            // gram -> centigram
+        1,              // gram -> gram
+        1 / 1016050,    // gram -> imperial ton
+        .001,           // gram -> kilogram
+        .000001,        // gram -> metric tonne
+        1000,           // gram -> milligram
+        1 / 28.3495,    // gram -> ounce
+        1 / 453.592,    // gram -> pound
+        1 / 6350.29318, // gram -> stone
+        1 / 907185,     // gram -> US ton
+      ],
+      'time': [
+        1 / 86400,      // second -> day
+        1 / 1209600,    // second -> fortnight
+        .3,             // second -> helek
+        1 / 3600,       // second -> hour
+        .01157,         // second -> Internet Time
+        1 / 2360592,    // second -> lunar day
+        1 / 88775.2,    // second -> Martian solar day
+        1 / 3154,       // second -> microcentury
+        1 / 60,         // second -> minute
+        1,              // second -> second
+        1 / 604800,     // second -> week
+        1 / 31556908.8, // second -> year
+      ],
+      'volume': [
+        100,             // litre -> centilitre
+        35.1950652,      // litre -> imperial fluid ounce
+        1 / 4.546094188, // litre -> imperial fluid gallon
+        1.75975326,      // litre -> imperial fluid pint
+        .879877,         // litre -> imperial fluid quart
+        .0001,           // litre -> kilolitre
+        1,               // litre -> litre
+        1000,            // litre -> millilitre
+        33.8140227,      // litre -> US fluid ounce
+        1 / 3.785411784, // litre -> US fluid gallon
+        2.11338,         // litre -> US fluid pint
+        1.05669,         // litre -> US fluid quart
+      ],
+    }[group];
+    var default_unit = {
+      'angle': 3,
+      'distance': 5,
+      'mass': 1,
+      'speed': 3,
+      'time': 9,
+      'volume': 6,
+    }[group];
 
     // Fetch entered input and selected units.
     var input = document.getElementById(group + '-input').value;
@@ -14,11 +110,11 @@ function calculate(group, formulas, default_unit){
     if(input != output){
         // If the input unit is not the default unit, convert to the default unit.
         if(input != default_unit){
-            result /= formulas[input];
+            result /= formula[input];
         }
 
         // Convert the entered input from the default unit to the output unit.
-        result *= formulas[output];
+        result *= formula[output];
     }
 
     // Make sure only allowed number of decimal places are displayed.
@@ -41,95 +137,14 @@ function calculate_all(){
         document.getElementById('decimals').value = 20;
     }
 
-    calculate_angle();
-    calculate_area();
-    calculate_distance();
-    calculate_mass();
-    calculate_speed();
-    calculate_temperature();
-    calculate_time();
-    calculate_volume();
-}
-
-function calculate_angle(){
-    calculate(
-      'angle',
-      [
-        360,         // turn -> degree
-        400,         // turn -> gradian
-        Math.PI * 2, // turn -> radian
-        1,           // turn -> turn
-      ],
-      3
-    );
-}
-
-function calculate_area(){
-    calculate(
-      'area',
-      [
-        1 / 4046.86, // metres squared -> acre
-        .01,         // metres squared -> are
-        10.7639,     // metres squared -> feet squared
-        .0001,       // metres squared -> hectare
-        .000001,     // metres squared -> kilometres squared
-        1,           // metres squared -> metres squared
-        1 / 2589990, // metres squared -> miles
-      ],
-      4
-    );
-}
-
-function calculate_distance(){
-    calculate(
-      'distance',
-      [
-        100,          // metre -> centimetre
-        1 / .4572,    // metre -> cubit
-        3.280839895,  // metre -> foot
-        39.3701,      // metre -> inch
-        .001,         // metre -> kilometre
-        1,            // metre -> metre
-        1 / 1609.344, // metre -> mile
-        1000,         // metre -> millimetre
-        1 / 1852,     // metre -> nautical mile
-        1.09361,      // metre -> yard
-      ],
-      5
-    );
-}
-
-function calculate_mass(){
-    calculate(
-      'mass',
-      [
-        100,            // gram -> centigram
-        1,              // gram -> gram
-        1 / 1016050,    // gram -> imperial ton
-        .001,           // gram -> kilogram
-        .000001,        // gram -> metric tonne
-        1000,           // gram -> milligram
-        1 / 28.3495,    // gram -> ounce
-        1 / 453.592,    // gram -> pound
-        1 / 6350.29318, // gram -> stone
-        1 / 907185,     // gram -> US ton
-      ],
-      1
-    );
-}
-
-function calculate_speed(){
-    calculate(
-      'speed',
-      [
-        3.28084,    // metres per second -> feet per second
-        3.6,        // metres per second -> kilometres per hour
-        1.94384449, // metres per second -> knots
-        1,          // metres per second -> metres per second
-        2.23694,    // metres per second -> miles per hour
-      ],
-      3
-    );
+    calculate('angle');
+    calculate('area');
+    calculate('distance');
+    calculate('mass');
+    calculate('speed');
+    calculate('temperature');
+    calculate('time');
+    calculate('volume');
 }
 
 function calculate_temperature(){
@@ -228,48 +243,6 @@ function calculate_temperature(){
     }
 }
 
-function calculate_time(){
-    calculate(
-      'time',
-      [
-        1 / 86400,      // second -> day
-        1 / 1209600,    // second -> fortnight
-        .3,             // second -> helek
-        1 / 3600,       // second -> hour
-        .01157,         // second -> Internet Time
-        1 / 2360592,    // second -> lunar day
-        1 / 88775.2,    // second -> Martian solar day
-        1 / 3154,       // second -> microcentury
-        1 / 60,         // second -> minute
-        1,              // second -> second
-        1 / 604800,     // second -> week
-        1 / 31556908.8, // second -> year
-      ],
-      9
-    );
-}
-
-function calculate_volume(){
-    calculate(
-      'volume',
-      [
-        100,             // litre -> centilitre
-        35.1950652,      // litre -> imperial fluid ounce
-        1 / 4.546094188, // litre -> imperial fluid gallon
-        1.75975326,      // litre -> imperial fluid pint
-        .879877,         // litre -> imperial fluid quart
-        .0001,           // litre -> kilolitre
-        1,               // litre -> litre
-        1000,            // litre -> millilitre
-        33.8140227,      // litre -> US fluid ounce
-        1 / 3.785411784, // litre -> US fluid gallon
-        2.11338,         // litre -> US fluid pint
-        1.05669,         // litre -> US fluid quart
-      ],
-      6
-    );
-}
-
 window.onload = function(e){
     var types = [
       'angle',
@@ -277,16 +250,23 @@ window.onload = function(e){
       'distance',
       'mass',
       'speed',
-      'temperature',
+      //'temperature',
       'time',
       'volume',
     ];
 
     for(var type in types){
-        document.getElementById(types[type] + '-input').onchange = window['calculate_' + types[type]];
-        document.getElementById(types[type] + '-output').onchange = window['calculate_' + types[type]];
-        document.getElementById(types[type] + '-value').oninput = window['calculate_' + types[type]];
+        document.getElementById(types[type] + '-input').onchange
+          = document.getElementById(types[type] + '-output').onchange
+          = document.getElementById(types[type] + '-value').oninput = function(){
+            calculate(this.id);
+        };
     }
+
+    // Temperature is different, for now.
+    document.getElementById('temperature-input').onchange
+      = document.getElementById('temperature-output').onchange
+      = document.getElementById('temperature-value').oninput = calculate_temperature;
 
     document.getElementById('decimals').oninput = calculate_all;
 };
