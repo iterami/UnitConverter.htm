@@ -239,7 +239,9 @@ function calculate_temperature(){
 
     if(document.getElementById('temperature-result').value % 1 !== 0){
         document.getElementById('temperature-result').value =
-          parseFloat(document.getElementById('temperature-result').value).toFixed(document.getElementById('decimals').value);
+          parseFloat(document.getElementById('temperature-result').value).toFixed(
+            document.getElementById('decimals').value
+          );
     }
 }
 
