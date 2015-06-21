@@ -15,3 +15,6 @@ div{
 .output{
     text-align: left;
 }
+select{
+    cursor: pointer;
+}
