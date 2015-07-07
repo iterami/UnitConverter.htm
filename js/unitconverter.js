@@ -1,3 +1,5 @@
+'use strict';
+
 function calculate(group){
     group = group.substring(
       0,
