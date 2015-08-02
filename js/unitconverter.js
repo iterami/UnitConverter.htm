@@ -47,6 +47,7 @@ function calculate(group){
         1 / 1016046.08, // gram -> long ton
         .001,           // gram -> kilogram
         .000001,        // gram -> metric tonne
+        1000000,        // gram -> microgram
         1000,           // gram -> milligram
         1 / 28.3495,    // gram -> ounce
         1 / 453.592,    // gram -> pound
