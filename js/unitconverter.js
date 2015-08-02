@@ -41,6 +41,12 @@ function calculate(group){
         1 / 1852,     // metre -> nautical mile
         1.09361,      // metre -> yard
       ],
+      'fuel': [
+        2.82481, // kilometres per litre -> imperial miles per gallon
+        1,       // kilometres per litre -> kilometres per litre
+        100,     // kilometres per litre -> litres per 100 kilometres
+        2.35215, // kilometres per litre -> US miles per gallon
+      ],
       'mass': [
         100,            // gram -> centigram
         1,              // gram -> gram
@@ -55,11 +61,11 @@ function calculate(group){
         1 / 6350.29318, // gram -> stone
       ],
       'speed': [
-        1 / 0.3048,  // metres per second -> feet per second
-        3.6,         // metres per second -> kilometres per hour
-        1.94384,     // metres per second -> knots
-        1,           // metres per second -> metres per second
-        2.23694,     // metres per second -> miles per hour
+        1 / 0.3048, // metres per second -> feet per second
+        3.6,        // metres per second -> kilometres per hour
+        1.94384,    // metres per second -> knots
+        1,          // metres per second -> metres per second
+        2.23694,    // metres per second -> miles per hour
       ],
       'time': [
         1 / 86400,      // second -> day
@@ -93,6 +99,7 @@ function calculate(group){
     var default_unit = {
       'angle': 3,
       'distance': 5,
+      'fuel': 1,
       'mass': 1,
       'speed': 3,
       'time': 9,
@@ -138,6 +145,7 @@ function calculate_all(){
     calculate('angle');
     calculate('area');
     calculate('distance');
+    calculate('fuel');
     calculate('mass');
     calculate('speed');
     calculate('temperature');
@@ -154,34 +162,34 @@ function calculate_temperature(){
 
     document.getElementById('temperature-result').value = [
       [
-        i,                            // Celsius -> Celsius
-        (100 - i) * 1.5,              // Celsius -> Delisle
-        i * 1.8 + 32,                 // Celsius -> Fahrenheit
-        i + 273.15,                   // Celsius -> Kelvin
-        i * .33,                      // Celsius -> Newton
-        (i + 273.15) * 1.8,           // Celsius -> Rankine
-        i / 1.25,                     // Celsius -> Réaumur
-        i * 21 / 40 + 7.5,            // Celsius -> Rømer
+        i,                  // Celsius -> Celsius
+        (100 - i) * 1.5,    // Celsius -> Delisle
+        i * 1.8 + 32,       // Celsius -> Fahrenheit
+        i + 273.15,         // Celsius -> Kelvin
+        i * .33,            // Celsius -> Newton
+        (i + 273.15) * 1.8, // Celsius -> Rankine
+        i / 1.25,           // Celsius -> Réaumur
+        i * 21 / 40 + 7.5,  // Celsius -> Rømer
       ][document.getElementById('temperature-output').value],
       [
-        100 - i / 1.5,                // Delisle -> Celsius
-        i,                            // Delisle -> Delisle
-        212 - i * 1.2,                // Delisle -> Fahrenheit
-        373.15 - i / 1.5,             // Delisle -> Kelvin
-        33 - (i * 11 / 50),           // Delisle -> Newton
-        671.67 - i * 1.2,             // Delisle -> Rankine
-        80 - (i * 8 / 15),            // Delisle -> Réaumur
-        60 - (i * 7 / 20),            // Delisle -> Rømer
+        100 - i / 1.5,      // Delisle -> Celsius
+        i,                  // Delisle -> Delisle
+        212 - i * 1.2,      // Delisle -> Fahrenheit
+        373.15 - i / 1.5,   // Delisle -> Kelvin
+        33 - (i * 11 / 50), // Delisle -> Newton
+        671.67 - i * 1.2,   // Delisle -> Rankine
+        80 - (i * 8 / 15),  // Delisle -> Réaumur
+        60 - (i * 7 / 20),  // Delisle -> Rømer
       ][document.getElementById('temperature-output').value],
       [
-        (i - 32) / 1.8,               // Fahrenheit -> Celsius
-        (212 - i) / 1.2,              // Fahrenheit -> Delisle
-        i,                            // Fahrenheit -> Fahrenheit
-        (i - 32) / 1.8 + 273.15,      // Fahrenheit -> Kelvin
-        (i - 32) * 11 / 60,           // Fahrenheit -> Newton
-        i + 459.67,                   // Fahrenheit -> Rankine
-        (i - 32) * 4 / 9,             // Fahrenheit -> Réaumur
-        (i - 32) * 7 / 24 + 7.5,      // Fahrenheit -> Rømer
+        (i - 32) / 1.8,          // Fahrenheit -> Celsius
+        (212 - i) / 1.2,         // Fahrenheit -> Delisle
+        i,                       // Fahrenheit -> Fahrenheit
+        (i - 32) / 1.8 + 273.15, // Fahrenheit -> Kelvin
+        (i - 32) * 11 / 60,      // Fahrenheit -> Newton
+        i + 459.67,              // Fahrenheit -> Rankine
+        (i - 32) * 4 / 9,        // Fahrenheit -> Réaumur
+        (i - 32) * 7 / 24 + 7.5, // Fahrenheit -> Rømer
       ][document.getElementById('temperature-output').value],
       [
         i - 273.15,                   // Kelvin -> Celsius
@@ -194,34 +202,34 @@ function calculate_temperature(){
         (i - 273.15) * 21 / 40 + 7.5, // Kelvin -> Rømer
       ][document.getElementById('temperature-output').value],
       [
-        i / .33,                      // Newton -> Celsius
-        (33 - i) * 50 / 11,           // Newton -> Delisle
-        i * 60 / 11 + 32,             // Newton -> Fahrenheit
-        i / .33 + 273.15,             // Newton -> Kelvin
-        i,                            // Newton -> Newton
-        i * 60 / 11 + 491.67,         // Newton -> Rankine
-        i * 80 / 33,                  // Newton -> Réaumur
-        i * 35 / 22 + 7.5,            // Newton -> Rømer
+        i / .33,              // Newton -> Celsius
+        (33 - i) * 50 / 11,   // Newton -> Delisle
+        i * 60 / 11 + 32,     // Newton -> Fahrenheit
+        i / .33 + 273.15,     // Newton -> Kelvin
+        i,                    // Newton -> Newton
+        i * 60 / 11 + 491.67, // Newton -> Rankine
+        i * 80 / 33,          // Newton -> Réaumur
+        i * 35 / 22 + 7.5,    // Newton -> Rømer
       ][document.getElementById('temperature-output').value],
       [
-        (i - 491.67) / 1.8,           // Rankine -> Celsius
-        (671.67 - i) / 1.2,           // Rankine -> Delisle
-        i - 459.67,                   // Rankine -> Fahrenheit
-        i / 1.8,                      // Rankine -> Kelvin
-        (i - 491.67) * 11 / 60,       // Rankine -> Newton
-        i,                            // Rankine -> Rankine
-        (i - 491.67) * 4 / 9,         // Rankine -> Réaumur
-        (i - 491.67) * 7 / 24 + 7.5,  // Rankine -> Rømer
+        (i - 491.67) / 1.8,          // Rankine -> Celsius
+        (671.67 - i) / 1.2,          // Rankine -> Delisle
+        i - 459.67,                  // Rankine -> Fahrenheit
+        i / 1.8,                     // Rankine -> Kelvin
+        (i - 491.67) * 11 / 60,      // Rankine -> Newton
+        i,                           // Rankine -> Rankine
+        (i - 491.67) * 4 / 9,        // Rankine -> Réaumur
+        (i - 491.67) * 7 / 24 + 7.5, // Rankine -> Rømer
       ][document.getElementById('temperature-output').value],
       [
-        i * 1.25,                     // Réaumur -> Celsius
-        (80 - i) * 15 / 8,            // Réaumur -> Delisle
-        i * 9/4 + 32,                 // Réaumur -> Fahrenheit
-        i * 1.25 + 273.15,            // Réaumur -> Kelvin
-        i * 80 / 33,                  // Réaumur -> Newton
-        i * 9 / 4 + 491.67,           // Réaumur -> Rankine
-        i,                            // Réaumur -> Réaumur
-        i * 21 / 32 + 7.5,            // Réaumur -> Rømer
+        i * 1.25,           // Réaumur -> Celsius
+        (80 - i) * 15 / 8,  // Réaumur -> Delisle
+        i * 9/4 + 32,       // Réaumur -> Fahrenheit
+        i * 1.25 + 273.15,  // Réaumur -> Kelvin
+        i * 80 / 33,        // Réaumur -> Newton
+        i * 9 / 4 + 491.67, // Réaumur -> Rankine
+        i,                  // Réaumur -> Réaumur
+        i * 21 / 32 + 7.5,  // Réaumur -> Rømer
       ][document.getElementById('temperature-output').value],
       [
         (i - 7.5) * 40 / 21,          // Rømer -> Celsius
@@ -248,6 +256,7 @@ window.onload = function(e){
       'angle',
       'area',
       'distance',
+      'fuel',
       'mass',
       'speed',
       //'temperature',
