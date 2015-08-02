@@ -44,26 +44,21 @@ function calculate(group){
       'mass': [
         100,            // gram -> centigram
         1,              // gram -> gram
-        1 / 1016050,    // gram -> imperial ton
+        1 / 1016046.08, // gram -> long ton
         .001,           // gram -> kilogram
         .000001,        // gram -> metric tonne
         1000,           // gram -> milligram
         1 / 28.3495,    // gram -> ounce
         1 / 453.592,    // gram -> pound
+        1 / 907184,     // gram -> short ton
         1 / 6350.29318, // gram -> stone
-        1 / 907185,     // gram -> US ton
       ],
       'speed': [
-        100,            // gram -> centigram
-        1,              // gram -> gram
-        1 / 1016050,    // gram -> imperial ton
-        .001,           // gram -> kilogram
-        .000001,        // gram -> metric tonne
-        1000,           // gram -> milligram
-        1 / 28.3495,    // gram -> ounce
-        1 / 453.592,    // gram -> pound
-        1 / 6350.29318, // gram -> stone
-        1 / 907185,     // gram -> US ton
+        1 / 0.3048,  // metres per second -> feet per second
+        3.6,         // metres per second -> kilometres per hour
+        1.94384,     // metres per second -> knots
+        1,           // metres per second -> metres per second
+        2.23694,     // metres per second -> miles per hour
       ],
       'time': [
         1 / 86400,      // second -> day
