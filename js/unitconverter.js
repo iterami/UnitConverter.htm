@@ -59,6 +59,7 @@ function calculate(group){
         1 / 453.592,    // gram -> pound
         1 / 907184,     // gram -> short ton
         1 / 6350.29318, // gram -> stone
+        1 / 31.1034768, // gram -> troy ounce
       ],
       'speed': [
         1 / 0.3048, // metres per second -> feet per second
