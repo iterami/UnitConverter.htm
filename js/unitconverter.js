@@ -1,10 +1,12 @@
 'use strict';
 
 function calculate(group){
-    group = group.substring(
-      0,
-      group.indexOf('-')
-    );
+    if(group.indexOf('-') !== -1){
+        group = group.substring(
+          0,
+          group.indexOf('-')
+        );
+    }
 
     // If entered input is not a number, clear result field and return.
     if(isNaN(document.getElementById(group + '-value').value)){
@@ -149,7 +151,7 @@ function calculate_all(){
     calculate('fuel');
     calculate('mass');
     calculate('speed');
-    calculate('temperature');
+    calculate_temperature();
     calculate('time');
     calculate('volume');
 }
