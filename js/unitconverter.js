@@ -255,6 +255,19 @@ function calculate_temperature(){
     }
 }
 
+function reverse(id){
+    var temp = document.getElementById(id + '-input').value;
+    document.getElementById(id + '-input').value = document.getElementById(id + '-output').value;
+    document.getElementById(id + '-output').value = temp;
+
+    if(id === 'temperature'){
+        calculate_temperature();
+
+    }else{
+        calculate(id);
+    }
+}
+
 window.onload = function(e){
     var types = [
       'angle',
