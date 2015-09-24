@@ -35,6 +35,7 @@ function calculate(group){
         100,          // metre -> centimetre
         1 / .4572,    // metre -> cubit
         3.280839895,  // metre -> foot
+        1 / 0.1016,   // meter -> hand
         39.3701,      // metre -> inch
         .001,         // metre -> kilometre
         1,            // metre -> metre
