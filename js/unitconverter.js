@@ -70,11 +70,12 @@ function calculate(group){
         1 / 31.1034768, // gram -> troy ounce
       ],
       'speed': [
-        1 / .3048, // metres per second -> feet per second
-        3.6,       // metres per second -> kilometres per hour
-        1.94384,   // metres per second -> knots
-        1,         // metres per second -> metres per second
-        2.23694,   // metres per second -> miles per hour
+        1 / .3048,  // metres per second -> feet per second
+        3.6,        // metres per second -> kilometres per hour
+        1.94384,    // metres per second -> knots
+        1 / 340.29, // metres per second -> mach
+        1,          // metres per second -> metres per second
+        2.23694,    // metres per second -> miles per hour
       ],
       'time': [
         1 / 86400,      // second -> day
@@ -108,10 +109,11 @@ function calculate(group){
     }[group];
     var default_unit = {
       'angle': 3,
-      'distance': 5,
+      'area': 5,
+      'distance': 6,
       'fuel': 1,
       'mass': 1,
-      'speed': 3,
+      'speed': 4,
       'time': 9,
       'volume': 6,
     }[group];
