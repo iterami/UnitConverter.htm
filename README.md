@@ -67,8 +67,10 @@ Speed:
 * feet per second (ft/s)
 * kilometres per hour (kph)
 * knots
+* mach (M)
 * metres per second (m/s)
 * miles per hour (mph)
+* speed of light (c)
 
 ---
 

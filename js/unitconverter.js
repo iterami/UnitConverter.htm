@@ -70,12 +70,13 @@ function calculate(group){
         1 / 31.1034768, // gram -> troy ounce
       ],
       'speed': [
-        1 / .3048,  // metres per second -> feet per second
-        3.6,        // metres per second -> kilometres per hour
-        1.94384,    // metres per second -> knots
-        1 / 340.29, // metres per second -> mach
-        1,          // metres per second -> metres per second
-        2.23694,    // metres per second -> miles per hour
+        1 / .3048,     // metres per second -> feet per second
+        3.6,           // metres per second -> kilometres per hour
+        1.94384,       // metres per second -> knots
+        1 / 340.29,    // metres per second -> mach
+        1,             // metres per second -> metres per second
+        2.23694,       // metres per second -> miles per hour
+        1 / 299792458, // metres per second -> speed of light
       ],
       'time': [
         1 / 86400,      // second -> day
