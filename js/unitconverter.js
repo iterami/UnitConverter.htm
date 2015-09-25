@@ -1,6 +1,11 @@
 'use strict';
 
 function calculate(group){
+    if(group.indexOf('temperature') !== -1){
+        calculate_temperature();
+        return;
+    }
+
     if(group.indexOf('-') !== -1){
         group = group.substring(
           0,
@@ -152,7 +157,7 @@ function calculate_all(){
     calculate('fuel');
     calculate('mass');
     calculate('speed');
-    calculate_temperature();
+    calculate('temperature');
     calculate('time');
     calculate('volume');
 }
@@ -260,12 +265,7 @@ function reverse(id){
     document.getElementById(id + '-input').value = document.getElementById(id + '-output').value;
     document.getElementById(id + '-output').value = temp;
 
-    if(id === 'temperature'){
-        calculate_temperature();
-
-    }else{
-        calculate(id);
-    }
+    calculate(id);
 }
 
 window.onload = function(e){
@@ -276,7 +276,7 @@ window.onload = function(e){
       'fuel',
       'mass',
       'speed',
-      //'temperature',
+      'temperature',
       'time',
       'volume',
     ];
@@ -288,11 +288,6 @@ window.onload = function(e){
             calculate(this.id);
         };
     }
-
-    // Temperature is different, for now.
-    document.getElementById('temperature-input').onchange
-      = document.getElementById('temperature-output').onchange
-      = document.getElementById('temperature-value').oninput = calculate_temperature;
 
     document.getElementById('decimals').oninput = calculate_all;
 };
