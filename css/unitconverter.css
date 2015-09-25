@@ -1,6 +1,9 @@
-a,
-select{
+a{
+    color: #4c4;
     cursor: pointer;
+}
+a:hover{
+    color: #777;
 }
 body,
 input{
@@ -18,4 +21,7 @@ div{
 }
 .output{
     text-align: left;
+}
+select{
+    cursor: pointer;
 }
