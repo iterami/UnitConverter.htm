@@ -96,6 +96,7 @@ Time:
 * Martian solar day (sol)
 * microcentury (µc.)
 * minute (min)
+* month
 * second (s)
 * week
 * year (a)

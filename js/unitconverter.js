@@ -88,6 +88,7 @@ function calculate(group){
         1 / 88775.2,    // second -> Martian solar day
         1 / 3154,       // second -> microcentury
         1 / 60,         // second -> minute
+        1 / 2592000,    // second -> month
         1,              // second -> second
         1 / 604800,     // second -> week
         1 / 31556908.8, // second -> year
@@ -115,7 +116,7 @@ function calculate(group){
       'fuel': 1,
       'mass': 1,
       'speed': 4,
-      'time': 9,
+      'time': 10,
       'volume': 6,
     }[group];
 
