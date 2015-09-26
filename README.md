@@ -63,6 +63,7 @@ Mass:
 * ounce (oz)
 * pound (lb)
 * short ton
+* slug
 * stone (st)
 * troy ounce (oz t)
 

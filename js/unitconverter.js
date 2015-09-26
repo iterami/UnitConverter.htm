@@ -71,6 +71,7 @@ function calculate(group){
         1 / 28.3495,    // gram -> ounce
         1 / 453.592,    // gram -> pound
         1 / 907184,     // gram -> short ton
+        .0000685217659, // gram -> slug
         1 / 6350.29318, // gram -> stone
         1 / 31.1034768, // gram -> troy ounce
       ],
