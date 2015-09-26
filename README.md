@@ -46,6 +46,7 @@ Length:
 * mile (mi)
 * millimetre (mm)
 * nautical mile (nmi)
+* parsec (pc)
 * yard (yd)
 
 ---

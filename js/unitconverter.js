@@ -43,20 +43,21 @@ function calculate(group){
         2.35215, // kilometres per litre -> US miles per gallon
       ],
       'length': [
-        1 / 149597870700,     // metre -> astronomical unit
-        100,                  // metre -> centimetre
-        1 / .4572,            // metre -> cubit
-        1 / 1.8288,           // metre -> fathom
-        3.280839895,          // metre -> foot
-        1 / .1016,            // meter -> hand
-        39.3701,              // metre -> inch
-        .001,                 // metre -> kilometre
-        1 / 9460730472580800, // metre -> lightyear
-        1,                    // metre -> metre
-        1 / 1609.344,         // metre -> mile
-        1000,                 // metre -> millimetre
-        1 / 1852,             // metre -> nautical mile
-        1.09361,              // metre -> yard
+        1 / 149597870700,      // metre -> astronomical unit
+        100,                   // metre -> centimetre
+        1 / .4572,             // metre -> cubit
+        1 / 1.8288,            // metre -> fathom
+        3.280839895,           // metre -> foot
+        1 / .1016,             // meter -> hand
+        39.3701,               // metre -> inch
+        .001,                  // metre -> kilometre
+        1 / 9460730472580800,  // metre -> lightyear
+        1,                     // metre -> metre
+        1 / 1609.344,          // metre -> mile
+        1000,                  // metre -> millimetre
+        1 / 1852,              // metre -> nautical mile
+        1 / 30856775800000000, // metre -> parsec
+        1.09361,               // metre -> yard
       ],
       'mass': [
         5,              // gram -> caret
