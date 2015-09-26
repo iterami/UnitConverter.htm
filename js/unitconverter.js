@@ -56,6 +56,7 @@ function calculate(group){
         1.09361,      // metre -> yard
       ],
       'mass': [
+        5,              // gram -> caret
         100,            // gram -> centigram
         1,              // gram -> gram
         1 / 1016046.08, // gram -> long ton
@@ -120,7 +121,7 @@ function calculate(group){
       'area': 5,
       'fuel': 1,
       'length': 6,
-      'mass': 1,
+      'mass': 2,
       'speed': 4,
       'time': 10,
       'volume': 9,

@@ -48,6 +48,7 @@ Length:
 ---
 
 Mass:
+* caret (ct)
 * centigram (cg)
 * gram (g)
 * long ton
