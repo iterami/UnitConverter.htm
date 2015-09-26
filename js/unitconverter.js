@@ -43,6 +43,7 @@ function calculate(group){
         2.35215, // kilometres per litre -> US miles per gallon
       ],
       'length': [
+        1 / 149597870700,     // metre -> astronomical unit
         100,                  // metre -> centimetre
         1 / .4572,            // metre -> cubit
         1 / 1.8288,           // metre -> fathom
@@ -122,7 +123,7 @@ function calculate(group){
       'angle': 3,
       'area': 5,
       'fuel': 1,
-      'length': 8,
+      'length': 9,
       'mass': 2,
       'speed': 4,
       'time': 10,
