@@ -100,6 +100,8 @@ function calculate(group){
         1 / 4.546094188, // litre -> imperial fluid gallon
         1.75975326,      // litre -> imperial fluid pint
         .879877,         // litre -> imperial fluid quart
+        56.3121,         // litre -> imperial tablespoon
+        168.936,         // litre -> imperial teaspoon
         .0001,           // litre -> kilolitre
         1,               // litre -> litre
         1000,            // litre -> millilitre
@@ -109,6 +111,7 @@ function calculate(group){
         2.11338,         // litre -> US fluid pint
         1.05669,         // litre -> US fluid quart
         1 / .0148,       // litre -> US tablespoon
+        202.884,         // litre -> US teaspoon
         1 / 1.4206537,   // liter -> yard of ale
       ],
     }[group];
@@ -120,7 +123,7 @@ function calculate(group){
       'mass': 1,
       'speed': 4,
       'time': 10,
-      'volume': 7,
+      'volume': 9,
     }[group];
 
     // Fetch entered input and selected units.
