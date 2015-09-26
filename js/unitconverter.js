@@ -112,6 +112,7 @@ function calculate(group){
         168.936,         // litre -> imperial teaspoon
         .0001,           // litre -> kilolitre
         1,               // litre -> litre
+        4,               // litre -> metric cup
         1000,            // litre -> millilitre
         4.22675,         // litre -> US cup
         33.8140227,      // litre -> US fluid ounce

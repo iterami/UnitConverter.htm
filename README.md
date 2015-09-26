@@ -122,6 +122,7 @@ Volume:
 * imperial teaspoon (tbsp)
 * kilolitre (kl)
 * litre (l)
+* metric cup
 * millilitre (ml)
 * US cup
 * US fluid ounce (fl oz)
