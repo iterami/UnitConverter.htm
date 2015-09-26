@@ -108,6 +108,7 @@ function calculate(group){
         1 / 3.785411784, // litre -> US fluid gallon
         2.11338,         // litre -> US fluid pint
         1.05669,         // litre -> US fluid quart
+        1 / .0148,       // litre -> US tablespoon
         1 / 1.4206537,   // liter -> yard of ale
       ],
     }[group];
