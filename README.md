@@ -39,6 +39,7 @@ Length:
 * cubit
 * fathom
 * foot (ft)
+* furlong
 * hand (h)
 * inch (in)
 * kilometre (km)
