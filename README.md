@@ -24,7 +24,15 @@ Area:
 
 ---
 
-Distance:
+Fuel:
+* imperial miles per gallon (MPG)
+* kilometres per litre (km/l)
+* litres per 100 kilometres (l/100km)
+* US miles per gallon (MPG)
+
+---
+
+Length:
 * centimetre (cm)
 * cubit
 * foot (ft)
@@ -36,14 +44,6 @@ Distance:
 * millimetre (mm)
 * nautical mile (nmi)
 * yard (yd)
-
----
-
-Fuel:
-* imperial miles per gallon (MPG)
-* kilometres per litre (km/l)
-* litres per 100 kilometres (l/100km)
-* US miles per gallon (MPG)
 
 ---
 

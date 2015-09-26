@@ -36,7 +36,13 @@ function calculate(group){
         1,           // metres squared -> metres squared
         1 / 2589990, // metres squared -> miles
       ],
-      'distance': [
+      'fuel': [
+        2.82481, // kilometres per litre -> imperial miles per gallon
+        1,       // kilometres per litre -> kilometres per litre
+        100,     // kilometres per litre -> litres per 100 kilometres
+        2.35215, // kilometres per litre -> US miles per gallon
+      ],
+      'length': [
         100,          // metre -> centimetre
         1 / .4572,    // metre -> cubit
         3.280839895,  // metre -> foot
@@ -48,12 +54,6 @@ function calculate(group){
         1000,         // metre -> millimetre
         1 / 1852,     // metre -> nautical mile
         1.09361,      // metre -> yard
-      ],
-      'fuel': [
-        2.82481, // kilometres per litre -> imperial miles per gallon
-        1,       // kilometres per litre -> kilometres per litre
-        100,     // kilometres per litre -> litres per 100 kilometres
-        2.35215, // kilometres per litre -> US miles per gallon
       ],
       'mass': [
         100,            // gram -> centigram
@@ -112,8 +112,8 @@ function calculate(group){
     var default_unit = {
       'angle': 3,
       'area': 5,
-      'distance': 6,
       'fuel': 1,
+      'length': 6,
       'mass': 1,
       'speed': 4,
       'time': 10,
@@ -158,8 +158,8 @@ function calculate_all(){
 
     calculate('angle');
     calculate('area');
-    calculate('distance');
     calculate('fuel');
+    calculate('length');
     calculate('mass');
     calculate('speed');
     calculate('temperature');
@@ -277,8 +277,8 @@ window.onload = function(e){
     var types = [
       'angle',
       'area',
-      'distance',
       'fuel',
+      'length',
       'mass',
       'speed',
       'temperature',

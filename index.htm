@@ -23,7 +23,15 @@
     </select>
     <input id=area-value size=15><br>
 
-    <select id=distance-input>
+    <select id=fuel-input>
+      <option value=0>imperial miles per gallon (MPG)</option>
+      <option value=1>kilometres per litre (km/l)</option>
+      <option value=2>litres per 100 kilometres (l/100km)</option>
+      <option value=3 selected>US miles per gallon (MPG)</option>
+    </select>
+    <input id=fuel-value size=15><br>
+
+    <select id=length-input>
       <option value=0>centimetre (cm)</option>
       <option value=1>cubit</option>
       <option value=2>foot (ft)</option>
@@ -36,15 +44,7 @@
       <option value=9>nautical mile (nmi)</option>
       <option value=10>yard (yd)</option>
     </select>
-    <input id=distance-value size=15><br>
-
-    <select id=fuel-input>
-      <option value=0>imperial miles per gallon (MPG)</option>
-      <option value=1>kilometres per litre (km/l)</option>
-      <option value=2>litres per 100 kilometres (l/100km)</option>
-      <option value=3 selected>US miles per gallon (MPG)</option>
-    </select>
-    <input id=fuel-value size=15><br>
+    <input id=length-value size=15><br>
 
     <select id=mass-input>
       <option value=0>centigram (cg)</option>
@@ -123,8 +123,8 @@
 <div>
     <a onclick=reverse('angle')>≈</a><br>
     <a onclick=reverse('area')>≈</a><br>
-    <a onclick=reverse('distance')>≈</a><br>
     <a onclick=reverse('fuel')>≈</a><br>
+    <a onclick=reverse('length')>≈</a><br>
     <a onclick=reverse('mass')>≈</a><br>
     <a onclick=reverse('speed')>≈</a><br>
     <a onclick=reverse('temperature')>≈</a><br>
@@ -152,8 +152,16 @@
       <option value=6>miles squared (mi²)</option>
     </select><br>
 
-    <input id=distance-result readonly size=15>
-    <select id=distance-output>
+    <input id=fuel-result readonly size=15>
+    <select id=fuel-output>
+      <option value=0>imperial miles per gallon (MPG)</option>
+      <option value=1 selected>kilometres per litre (km/l)</option>
+      <option value=2>litres per 100 kilometres (l/100km)</option>
+      <option value=3>US miles per gallon (MPG)</option>
+    </select><br>
+
+    <input id=length-result readonly size=15>
+    <select id=length-output>
       <option value=0>centimetre (cm)</option>
       <option value=1>cubit</option>
       <option value=2>foot (ft)</option>
@@ -165,14 +173,6 @@
       <option value=8>millimetre (mm)</option>
       <option value=9>nautical mile (nmi)</option>
       <option value=10>yard (yd)</option>
-    </select><br>
-
-    <input id=fuel-result readonly size=15>
-    <select id=fuel-output>
-      <option value=0>imperial miles per gallon (MPG)</option>
-      <option value=1 selected>kilometres per litre (km/l)</option>
-      <option value=2>litres per 100 kilometres (l/100km)</option>
-      <option value=3>US miles per gallon (MPG)</option>
     </select><br>
 
     <input id=mass-result readonly size=15>
