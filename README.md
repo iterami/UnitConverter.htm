@@ -35,6 +35,7 @@ Fuel:
 Length:
 * centimetre (cm)
 * cubit
+* fathom
 * foot (ft)
 * hand (h)
 * inch (in)
