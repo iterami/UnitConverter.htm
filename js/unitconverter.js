@@ -28,13 +28,14 @@ function calculate(group){
         1,           // turn -> turn
       ],
       'area': [
-        1 / 4046.86, // metres squared -> acre
-        .01,         // metres squared -> are
-        10.7639,     // metres squared -> feet squared
-        .0001,       // metres squared -> hectare
-        .000001,     // metres squared -> kilometres squared
-        1,           // metres squared -> metres squared
-        1 / 2589990, // metres squared -> miles
+        1 / 4046.86,     // metres squared -> acre
+        .01,             // metres squared -> are
+        1 / 3930.395625, // metres squared -> cuerda
+        10.7639,         // metres squared -> feet squared
+        .0001,           // metres squared -> hectare
+        .000001,         // metres squared -> kilometres squared
+        1,               // metres squared -> metres squared
+        1 / 2589990,     // metres squared -> miles
       ],
       'fuel': [
         2.82481, // kilometres per litre -> imperial miles per gallon
@@ -123,7 +124,7 @@ function calculate(group){
     }[group];
     var default_unit = {
       'angle': 3,
-      'area': 5,
+      'area': 6,
       'fuel': 1,
       'length': 9,
       'mass': 2,

@@ -16,6 +16,7 @@ Angle:
 Area:
 * acre (ac)
 * are (a)
+* cuerda
 * feet squared (ft²)
 * hectare (ha)
 * kilometres squared (km²)
