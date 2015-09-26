@@ -40,6 +40,7 @@ Length:
 * hand (h)
 * inch (in)
 * kilometre (km)
+* lightyear (ly)
 * metre (m)
 * mile (mi)
 * millimetre (mm)
