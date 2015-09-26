@@ -105,6 +105,7 @@ Time:
 
 Volume:
 * centilitre (cl)
+* imperial cup
 * imperial fluid ounce (fl oz)
 * imperial gallon (gal)
 * imperial pint (pt)
@@ -112,6 +113,7 @@ Volume:
 * kilolitre (kl)
 * litre (l)
 * millilitre (ml)
+* US cup
 * US fluid ounce (fl oz)
 * US gallon (gal)
 * US pint (pt)

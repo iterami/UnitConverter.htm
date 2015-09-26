@@ -95,6 +95,7 @@ function calculate(group){
       ],
       'volume': [
         100,             // litre -> centilitre
+        1 / .284,        // litre -> imperial cup
         35.1950652,      // litre -> imperial fluid ounce
         1 / 4.546094188, // litre -> imperial fluid gallon
         1.75975326,      // litre -> imperial fluid pint
@@ -102,6 +103,7 @@ function calculate(group){
         .0001,           // litre -> kilolitre
         1,               // litre -> litre
         1000,            // litre -> millilitre
+        4.22675,         // litre -> US cup
         33.8140227,      // litre -> US fluid ounce
         1 / 3.785411784, // litre -> US fluid gallon
         2.11338,         // litre -> US fluid pint
@@ -117,7 +119,7 @@ function calculate(group){
       'mass': 1,
       'speed': 4,
       'time': 10,
-      'volume': 6,
+      'volume': 7,
     }[group];
 
     // Fetch entered input and selected units.
