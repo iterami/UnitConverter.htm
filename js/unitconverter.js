@@ -56,6 +56,7 @@ function calculate(group){
         39.3701,               // metre -> inch
         .001,                  // metre -> kilometre
         1 / 9460730472580800,  // metre -> lightyear
+        1 / .201168,           // metre -> link
         1,                     // metre -> metre
         1 / 1609.344,          // metre -> mile
         1000,                  // metre -> millimetre
@@ -135,7 +136,7 @@ function calculate(group){
       'angle': 3,
       'area': 6,
       'fuel': 1,
-      'length': 11,
+      'length': 12,
       'mass': 2,
       'speed': 4,
       'time': 10,

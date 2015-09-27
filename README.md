@@ -50,6 +50,7 @@ hand              | h
 inch              | in
 kilometre         | km
 lightyear         | ly
+link              | l.
 metre             | m
 mile              | mi
 millimetre        | mm
