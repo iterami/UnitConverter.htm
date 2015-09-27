@@ -22,6 +22,7 @@ Area:
 * kilometres squared (km²)
 * metres squared (m²)
 * miles squared (mi²)
+* rood
 
 ---
 

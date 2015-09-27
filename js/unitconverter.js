@@ -36,6 +36,7 @@ function calculate(group){
         .000001,         // metres squared -> kilometres squared
         1,               // metres squared -> metres squared
         1 / 2589990,     // metres squared -> miles
+        1 / 1011.71,     // metres squared -> rood
       ],
       'fuel': [
         2.82481, // kilometres per litre -> imperial miles per gallon
