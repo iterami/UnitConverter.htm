@@ -37,6 +37,13 @@ US miles per gallon       | MPG
 
 ---
 
+Illuminance | Unit
+------------|-----
+lux         | lx
+phot        | ph
+
+---
+
 Length            | Unit
 ------------------|-----
 astronomical unit | au

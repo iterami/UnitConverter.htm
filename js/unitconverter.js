@@ -44,6 +44,10 @@ function calculate(group){
         100,     // kilometres per litre -> litres per 100 kilometres
         2.35215, // kilometres per litre -> US miles per gallon
       ],
+      'illuminance': [
+        1,     // lux -> lux
+        .0001, // lux -> phot
+      ],
       'length': [
         1 / 149597870700,      // metre -> astronomical unit
         100,                   // metre -> centimetre
@@ -136,6 +140,7 @@ function calculate(group){
       'angle': 3,
       'area': 6,
       'fuel': 1,
+      'illuminance': 0,
       'length': 12,
       'mass': 2,
       'speed': 4,
@@ -182,6 +187,7 @@ function calculate_all(){
     calculate('angle');
     calculate('area');
     calculate('fuel');
+    calculate('illuminance');
     calculate('length');
     calculate('mass');
     calculate('speed');
@@ -301,6 +307,7 @@ window.onload = function(e){
       'angle',
       'area',
       'fuel',
+      'illuminance',
       'length',
       'mass',
       'speed',

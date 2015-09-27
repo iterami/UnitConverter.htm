@@ -33,6 +33,12 @@
     </select>
     <input id=fuel-value size=15><br>
 
+    <select id=illuminance-input>
+      <option value=0>lux (lx)</option>
+      <option value=1>phot (ph)</option>
+    </select>
+    <input id=illuminance-value size=15><br>
+
     <select id=length-input>
       <option value=0>astronomical unit (au)</option>
       <option value=1>centimetre (cm)</option>
@@ -147,6 +153,7 @@
     <a onclick=reverse('angle')>≈</a><br>
     <a onclick=reverse('area')>≈</a><br>
     <a onclick=reverse('fuel')>≈</a><br>
+    <a onclick=reverse('illuminance')>≈</a><br>
     <a onclick=reverse('length')>≈</a><br>
     <a onclick=reverse('mass')>≈</a><br>
     <a onclick=reverse('speed')>≈</a><br>
@@ -183,6 +190,12 @@
       <option value=1 selected>kilometres per litre (km/l)</option>
       <option value=2>litres per 100 kilometres (l/100km)</option>
       <option value=3>US miles per gallon (MPG)</option>
+    </select><br>
+
+    <input id=illuminance-result readonly size=15>
+    <select id=illuminance-output>
+      <option value=0>lux (lx)</option>
+      <option value=1>phot (ph)</option>
     </select><br>
 
     <input id=length-result readonly size=15>
