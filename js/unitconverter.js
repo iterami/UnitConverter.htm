@@ -105,6 +105,7 @@ function calculate(group){
       ],
       'volume': [
         100,             // litre -> centilitre
+        1 / 36.368735,   // litre -> imperial bushel
         1 / .284,        // litre -> imperial cup
         35.1950652,      // litre -> imperial fluid ounce
         1 / 4.546094188, // litre -> imperial fluid gallon
@@ -116,6 +117,7 @@ function calculate(group){
         1,               // litre -> litre
         4,               // litre -> metric cup
         1000,            // litre -> millilitre
+        1 / 35.239072,   // litre -> US bushel
         4.22675,         // litre -> US cup
         33.8140227,      // litre -> US fluid ounce
         1 / 3.785411784, // litre -> US fluid gallon
@@ -134,7 +136,7 @@ function calculate(group){
       'mass': 2,
       'speed': 4,
       'time': 10,
-      'volume': 9,
+      'volume': 10,
     }[group];
 
     // Fetch entered input and selected units.
