@@ -175,16 +175,6 @@ function calculate(group){
 }
 
 function calculate_all(){
-    if(isNaN(document.getElementById('decimals').value)){
-        document.getElementById('decimals').value = 5;
-
-    }else if(document.getElementById('decimals').value < 0){
-        document.getElementById('decimals').value = 0;
-
-    }else if(document.getElementById('decimals').value > 20){
-        document.getElementById('decimals').value = 20;
-    }
-
     calculate('angle');
     calculate('area');
     calculate('fuel');
