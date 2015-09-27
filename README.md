@@ -39,6 +39,7 @@ US miles per gallon       | MPG
 
 Illuminance | Unit
 ------------|-----
+foot-candle | fc
 lux         | lx
 phot        | ph
 

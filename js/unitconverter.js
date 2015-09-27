@@ -45,8 +45,9 @@ function calculate(group){
         2.35215, // kilometres per litre -> US miles per gallon
       ],
       'illuminance': [
-        1,     // lux -> lux
-        .0001, // lux -> phot
+        .09290304, // lux -> foot-candle
+        1,         // lux -> lux
+        .0001,     // lux -> phot
       ],
       'length': [
         1 / 149597870700,      // metre -> astronomical unit
@@ -140,7 +141,7 @@ function calculate(group){
       'angle': 3,
       'area': 6,
       'fuel': 1,
-      'illuminance': 0,
+      'illuminance': 1,
       'length': 12,
       'mass': 2,
       'speed': 4,
