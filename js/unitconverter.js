@@ -47,6 +47,7 @@ function calculate(group){
       'length': [
         1 / 149597870700,      // metre -> astronomical unit
         100,                   // metre -> centimetre
+        1 / 20.1168,           // metre -> chain
         1 / .4572,             // metre -> cubit
         1 / 1.8288,            // metre -> fathom
         3.280839895,           // metre -> foot
@@ -129,7 +130,7 @@ function calculate(group){
       'angle': 3,
       'area': 6,
       'fuel': 1,
-      'length': 10,
+      'length': 11,
       'mass': 2,
       'speed': 4,
       'time': 10,

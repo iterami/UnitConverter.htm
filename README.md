@@ -37,6 +37,7 @@ Fuel:
 Length:
 * astronomical unit (au)
 * centimetre (cm)
+* chain (ch)
 * cubit
 * fathom
 * foot (ft)
