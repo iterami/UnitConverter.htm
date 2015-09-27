@@ -104,28 +104,30 @@ function calculate(group){
         1 / 31556908.8, // second -> year
       ],
       'volume': [
-        100,             // litre -> centilitre
-        1 / 36.368735,   // litre -> imperial bushel
-        1 / .284,        // litre -> imperial cup
-        35.1950652,      // litre -> imperial fluid ounce
-        1 / 4.546094188, // litre -> imperial fluid gallon
-        1.75975326,      // litre -> imperial fluid pint
-        .879877,         // litre -> imperial fluid quart
-        56.3121,         // litre -> imperial tablespoon
-        168.936,         // litre -> imperial teaspoon
-        .0001,           // litre -> kilolitre
-        1,               // litre -> litre
-        4,               // litre -> metric cup
-        1000,            // litre -> millilitre
-        1 / 35.239072,   // litre -> US bushel
-        4.22675,         // litre -> US cup
-        33.8140227,      // litre -> US fluid ounce
-        1 / 3.785411784, // litre -> US fluid gallon
-        2.11338,         // litre -> US fluid pint
-        1.05669,         // litre -> US fluid quart
-        1 / .0148,       // litre -> US tablespoon
-        202.884,         // litre -> US teaspoon
-        1 / 1.4206537,   // liter -> yard of ale
+        100,               // litre -> centilitre
+        1 / 36.368735,     // litre -> imperial bushel
+        1 / .284,          // litre -> imperial cup
+        35.1950652,        // litre -> imperial fluid ounce
+        1 / 4.546094188,   // litre -> imperial gallon
+        1 / 9.09218,       // litre -> imperial peck
+        1.75975326,        // litre -> imperial pint
+        .879877,           // litre -> imperial quart
+        56.3121,           // litre -> imperial tablespoon
+        168.936,           // litre -> imperial teaspoon
+        .0001,             // litre -> kilolitre
+        1,                 // litre -> litre
+        4,                 // litre -> metric cup
+        1000,              // litre -> millilitre
+        1 / 35.239072,     // litre -> US bushel
+        4.22675,           // litre -> US cup
+        33.8140227,        // litre -> US fluid ounce
+        1 / 3.785411784,   // litre -> US gallon
+        1 / 8.80976754172, // litre -> US peck
+        2.11338,           // litre -> US pint
+        1.05669,           // litre -> US quart
+        1 / .0148,         // litre -> US tablespoon
+        202.884,           // litre -> US teaspoon
+        1 / 1.4206537,     // liter -> yard of ale
       ],
     }[group];
     var default_unit = {
@@ -136,7 +138,7 @@ function calculate(group){
       'mass': 2,
       'speed': 4,
       'time': 10,
-      'volume': 10,
+      'volume': 11,
     }[group];
 
     // Fetch entered input and selected units.

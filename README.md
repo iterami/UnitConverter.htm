@@ -119,6 +119,7 @@ Volume:
 * imperial cup
 * imperial fluid ounce (fl oz)
 * imperial gallon (gal)
+* imperial peck
 * imperial pint (pt)
 * imperial quart (qt)
 * imperial tablespoon (tbsp)
@@ -131,6 +132,7 @@ Volume:
 * US cup
 * US fluid ounce (fl oz)
 * US gallon (gal)
+* US peck
 * US pint (pt)
 * US quart (qt)
 * US tablespoon (tbsp)
