@@ -138,6 +138,7 @@ imperial bushel       |
 imperial cup          |
 imperial fluid ounce  | fl oz
 imperial gallon       | gal
+imperial gill         |
 imperial peck         |
 imperial pint         | pt
 imperial quart        | qt
@@ -151,6 +152,7 @@ US bushel             |
 US cup                |
 US fluid ounce        | fl oz
 US gallon             | gal
+US gill               |
 US peck               |
 US pint               | pt
 US quart              | qt
