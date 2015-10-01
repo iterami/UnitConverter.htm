@@ -24,6 +24,7 @@ hectare            | ha
 kilometres squared | km²
 metres squared     | m²
 miles squared      | mi²
+plaza              |
 rood               |
 
 ---
