@@ -131,7 +131,7 @@ year              | a
 
 ---
 
-Volume:               | Unit
+Volume                | Unit
 ----------------------|------
 Australian tablespoon |
 centilitre            | cl
