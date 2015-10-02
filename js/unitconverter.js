@@ -142,17 +142,7 @@ function calculate(group){
         1 / 1.4206537,     // liter -> yard of ale
       ],
     }[group];
-    var default_unit = {
-      'angle': 3,
-      'area': 6,
-      'fuel': 1,
-      'illuminance': 1,
-      'length': 12,
-      'mass': 2,
-      'speed': 4,
-      'time': 10,
-      'volume': 13,
-    }[group];
+    var default_unit = types()[group];
     var input = document.getElementById(group + '-input').value;
     var output = document.getElementById(group + '-output').value;
 
@@ -177,21 +167,8 @@ function calculate(group){
 }
 
 function calculate_all(){
-    var types = [
-      'angle',
-      'area',
-      'fuel',
-      'illuminance',
-      'length',
-      'mass',
-      'speed',
-      'temperature',
-      'time',
-      'volume',
-    ];
-
-    for(var type in types){
-        calculate(types[type]);
+    for(var type in types()){
+        calculate(type);
     }
 }
 
@@ -301,24 +278,26 @@ function reverse(id){
     calculate(id);
 }
 
-window.onload = function(e){
-    var types = [
-      'angle',
-      'area',
-      'fuel',
-      'illuminance',
-      'length',
-      'mass',
-      'speed',
-      'temperature',
-      'time',
-      'volume',
-    ];
+function types(){
+    return {
+      'angle': 3,
+      'area': 6,
+      'fuel': 1,
+      'illuminance': 1,
+      'length': 12,
+      'mass': 2,
+      'speed': 4,
+      'temperature': 0,
+      'time': 10,
+      'volume': 13,
+    };
+}
 
-    for(var type in types){
-        document.getElementById(types[type] + '-input').onchange
-          = document.getElementById(types[type] + '-output').onchange
-          = document.getElementById(types[type] + '-value').oninput = function(){
+window.onload = function(e){
+    for(var type in types()){
+        document.getElementById(type + '-input').onchange
+          = document.getElementById(type + '-output').onchange
+          = document.getElementById(type + '-value').oninput = function(){
             calculate(this.id);
         };
     }
