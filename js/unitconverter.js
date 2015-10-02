@@ -125,7 +125,7 @@ function calculate(group){
         .879877,           // litre -> imperial quart
         56.3121,           // litre -> imperial tablespoon
         168.936,           // litre -> imperial teaspoon
-        .0001,             // litre -> kilolitre
+        .001,              // litre -> kilolitre
         1,                 // litre -> litre
         4,                 // litre -> metric cup
         1000,              // litre -> millilitre
@@ -147,9 +147,9 @@ function calculate(group){
     var output = document.getElementById(group + '-output').value;
 
     // Only calculate stuff if the input unit is not the same as the output unit.
-    if(input != output){
+    if(input !== output){
         // If the input unit is not the default unit, convert to the default unit.
-        if(input != default_unit){
+        if(input !== default_unit){
             value /= formula[input];
         }
 
