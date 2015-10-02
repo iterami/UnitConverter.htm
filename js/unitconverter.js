@@ -177,16 +177,22 @@ function calculate(group){
 }
 
 function calculate_all(){
-    calculate('angle');
-    calculate('area');
-    calculate('fuel');
-    calculate('illuminance');
-    calculate('length');
-    calculate('mass');
-    calculate('speed');
-    calculate('temperature');
-    calculate('time');
-    calculate('volume');
+    var types = [
+      'angle',
+      'area',
+      'fuel',
+      'illuminance',
+      'length',
+      'mass',
+      'speed',
+      'temperature',
+      'time',
+      'volume',
+    ];
+
+    for(var type in types){
+        calculate(types[type]);
+    }
 }
 
 function calculate_temperature(){
