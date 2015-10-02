@@ -13,8 +13,10 @@ function calculate(group){
         );
     }
 
+    var value = document.getElementById(group + '-value').value;
+
     // If entered input is not a number, clear result field and return.
-    if(isNaN(document.getElementById(group + '-value').value)){
+    if(isNaN(value)){
         document.getElementById(group + '-result').value = '';
         return;
     }
@@ -151,30 +153,27 @@ function calculate(group){
       'time': 10,
       'volume': 13,
     }[group];
-
-    // Fetch entered input and selected units.
     var input = document.getElementById(group + '-input').value;
     var output = document.getElementById(group + '-output').value;
-    var result = document.getElementById(group + '-value').value;
 
     // Only calculate stuff if the input unit is not the same as the output unit.
     if(input != output){
         // If the input unit is not the default unit, convert to the default unit.
         if(input != default_unit){
-            result /= formula[input];
+            value /= formula[input];
         }
 
         // Convert the entered input from the default unit to the output unit.
-        result *= formula[output];
+        value *= formula[output];
     }
 
     // Make sure only allowed number of decimal places are displayed.
-    if(result % 1 !== 0){
-        result = parseFloat(result).toFixed(document.getElementById('decimals').value);
+    if(value % 1 !== 0){
+        value = parseFloat(value).toFixed(document.getElementById('decimals').value);
     }
 
     // Display result.
-    document.getElementById(group + '-result').value = result;
+    document.getElementById(group + '-result').value = value;
 }
 
 function calculate_all(){
