@@ -48,6 +48,7 @@ phot        | ph
 
 Length            | Unit
 ------------------|-----
+ångström          | Å
 arpent            |
 astronomical unit | au
 centimetre        | cm

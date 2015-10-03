@@ -53,6 +53,7 @@ function calculate(group){
         .0001,     // lux -> phot
       ],
       'length': [
+        1 / .0000000001,       // metre -> ångström
         1 / 58.47109,          // metre -> arpent
         1 / 149597870700,      // metre -> astronomical unit
         100,                   // metre -> centimetre
@@ -285,7 +286,7 @@ function types(){
       'area': 6,
       'fuel': 1,
       'illuminance': 1,
-      'length': 13,
+      'length': 14,
       'mass': 2,
       'speed': 4,
       'temperature': 0,
