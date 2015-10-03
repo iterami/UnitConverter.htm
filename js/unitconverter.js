@@ -115,6 +115,7 @@ function calculate(group){
         1 / 31556908.8, // second -> year
       ],
       'volume': [
+        1 / 1233480,       // litre -> acre-foot
         50,                // litre -> Australian tablespoon
         100,               // litre -> centilitre
         1 / 36.368735,     // litre -> imperial bushel
@@ -291,7 +292,7 @@ function types(){
       'speed': 4,
       'temperature': 0,
       'time': 10,
-      'volume': 13,
+      'volume': 14,
     };
 }
 
