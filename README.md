@@ -29,10 +29,11 @@ rood               |
 
 ---
 
-Force  | Unit
--------|-----
-dyne   | dyn
-newton | N
+Force          | Unit
+---------------|-----
+dyne           | dyn
+kilogram-force | kgf
+newton         | N
 
 ---
 
