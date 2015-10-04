@@ -36,6 +36,7 @@ kilogram-force | kgf
 newton         | N
 ounce-force    | ozf
 pound-force    | lbf
+poundal        | pdl
 
 ---
 
