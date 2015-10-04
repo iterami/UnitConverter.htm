@@ -34,6 +34,7 @@ Force          | Unit
 dyne           | dyn
 kilogram-force | kgf
 newton         | N
+pound-force    | lbf
 
 ---
 
