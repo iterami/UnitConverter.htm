@@ -42,10 +42,11 @@ function calculate(group){
         1 / 1011.71,     // metres squared -> rood
       ],
       'force': [
-        100000,      // newton -> dyne
-        1 / 9.80665, // newton -> kilogram-force
-        1,           // newton -> newton
-        .224809      // newton -> pound-force
+        100000,        // newton -> dyne
+        1 / 9.80665,   // newton -> kilogram-force
+        1,             // newton -> newton
+        3.59694310194, // newton -> ounce-force
+        .224809        // newton -> pound-force
       ],
       'fuel': [
         2.82481, // kilometres per litre -> imperial miles per gallon
