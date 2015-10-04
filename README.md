@@ -33,6 +33,7 @@ Force          | Unit
 ---------------|-----
 dyne           | dyn
 kilogram-force | kgf
+kip            |
 newton         | N
 ounce-force    | ozf
 pound-force    | lbf

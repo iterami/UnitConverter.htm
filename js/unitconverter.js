@@ -44,6 +44,7 @@ function calculate(group){
       'force': [
         100000,        // newton -> dyne
         1 / 9.80665,   // newton -> kilogram-force
+        1 / 4448.2216, // newton -> kip
         1,             // newton -> newton
         3.59694310194, // newton -> ounce-force
         .224809,       // newton -> pound-force
@@ -293,7 +294,7 @@ function types(){
     return {
       'angle': 3,
       'area': 6,
-      'force': 2,
+      'force': 3,
       'fuel': 1,
       'illuminance': 1,
       'length': 14,
