@@ -304,7 +304,11 @@ function types(){
 }
 
 window.onload = function(e){
+    var reverse = '';
+
     for(var type in types()){
+        reverse += '<a onclick="reverse(\'' + type + '\')">≈</a><br>';
+
         document.getElementById(type + '-input').onchange
           = document.getElementById(type + '-output').onchange
           = document.getElementById(type + '-value').oninput = function(){
@@ -313,4 +317,5 @@ window.onload = function(e){
     }
 
     document.getElementById('decimals').oninput = calculate_all;
+    document.getElementById('reverse').innerHTML = reverse;
 };
