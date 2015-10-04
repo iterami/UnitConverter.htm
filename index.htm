@@ -26,6 +26,12 @@
     </select>
     <input id=area-value><br>
 
+    <select id=force-input>
+      <option selected value=0>dyne (dyn)</option>
+      <option value=1>newton (N)</option>
+    </select>
+    <input id=force-value><br>
+
     <select id=fuel-input>
       <option value=0>imperial miles per gallon (MPG)</option>
       <option value=1>kilometres per litre (km/l)</option>
@@ -159,6 +165,7 @@
 <div>
     <a onclick="reverse('angle')">≈</a><br>
     <a onclick="reverse('area')">≈</a><br>
+    <a onclick="reverse('force')">≈</a><br>
     <a onclick="reverse('fuel')">≈</a><br>
     <a onclick="reverse('illuminance')">≈</a><br>
     <a onclick="reverse('length')">≈</a><br>
@@ -190,6 +197,12 @@
       <option value=7>miles squared (mi²)</option>
       <option value=8>plaza</option>
       <option value=9>rood</option>
+    </select><br>
+
+    <input id=force-result readonly>
+    <select id=force-output>
+      <option value=0>dyne (dyn)</option>
+      <option selected value=1>newton (N)</option>
     </select><br>
 
     <input id=fuel-result readonly>

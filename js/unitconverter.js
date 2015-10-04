@@ -41,6 +41,10 @@ function calculate(group){
         .00015625,       // metres squared -> plaza
         1 / 1011.71,     // metres squared -> rood
       ],
+      'force': [
+        100000, // newton -> dyne
+        1,      // newton -> newton
+      ],
       'fuel': [
         2.82481, // kilometres per litre -> imperial miles per gallon
         1,       // kilometres per litre -> kilometres per litre
@@ -285,6 +289,7 @@ function types(){
     return {
       'angle': 3,
       'area': 6,
+      'force': 1,
       'fuel': 1,
       'illuminance': 1,
       'length': 14,

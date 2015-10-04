@@ -29,6 +29,13 @@ rood               |
 
 ---
 
+Force  | Unit
+-------|-----
+dyne   | dyn
+newton | N
+
+---
+
 Fuel                      | Unit
 --------------------------|--------
 imperial miles per gallon | MPG
