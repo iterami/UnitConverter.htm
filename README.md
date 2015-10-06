@@ -26,6 +26,7 @@ metres squared     | m²
 miles squared      | mi²
 plaza              |
 rood               |
+strema             |
 
 ---
 

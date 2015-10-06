@@ -40,6 +40,7 @@ function calculate(group){
         1 / 2589990,     // metres squared -> miles
         .00015625,       // metres squared -> plaza
         1 / 1011.71,     // metres squared -> rood
+        .001,            // metres squared -> strema
       ],
       'force': [
         100000,        // newton -> dyne
