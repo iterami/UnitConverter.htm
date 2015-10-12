@@ -74,6 +74,8 @@ function calculate(group){
         1 / 201.168,           // metre -> furlong
         1 / .1016,             // meter -> hand
         39.3701,               // metre -> inch
+        100 / 33,              // metre -> jō
+        10 / 33,               // metre -> kanejaku
         .001,                  // metre -> kilometre
         1 / 9460730472580800,  // metre -> lightyear
         1 / .201168,           // metre -> link
@@ -93,6 +95,7 @@ function calculate(group){
         .000001,        // gram -> metric tonne
         1000000,        // gram -> microgram
         1000,           // gram -> milligram
+        15 / 4,         // gram -> momme
         1 / 28.3495,    // gram -> ounce
         1 / 453.592,    // gram -> pound
         1 / 907184,     // gram -> short ton
@@ -142,6 +145,7 @@ function calculate(group){
         1,                 // litre -> litre
         4,                 // litre -> metric cup
         1000,              // litre -> millilitre
+        2401 / 1331,       // litre -> shō
         1 / 35.239072,     // litre -> US bushel
         4.22675,           // litre -> US cup
         33.8140227,        // litre -> US fluid ounce
@@ -298,7 +302,7 @@ function types(){
       'force': 3,
       'fuel': 1,
       'illuminance': 1,
-      'length': 14,
+      'length': 16,
       'mass': 2,
       'speed': 4,
       'temperature': 0,

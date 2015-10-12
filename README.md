@@ -72,6 +72,8 @@ foot              | ft
 furlong           |
 hand              | h
 inch              | in
+jō                | 丈
+kanejaku          | 曲尺
 kilometre         | km
 lightyear         | ly
 link              | l.
@@ -94,6 +96,7 @@ kilogram     | kg
 metric tonne | t
 microgram    | µg
 milligram    | mg
+momme        | 匁
 ounce        | oz
 pound        | lb
 short ton    |
@@ -165,6 +168,7 @@ kilolitre             | kl
 litre                 | l
 metric cup            |
 millilitre            | ml
+shō                   | 升
 US bushel             |
 US cup                |
 US fluid ounce        | fl oz
