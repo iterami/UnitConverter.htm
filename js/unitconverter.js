@@ -190,7 +190,7 @@ function calculate_all(){
 }
 
 function calculate_temperature(){
-    var i = document.getElementById('temperature-value').value;
+    var i = parseFloat(document.getElementById('temperature-value').value);
     if(isNaN(i)){
         document.getElementById('temperature-result').value = '';
         return;
