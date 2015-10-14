@@ -13,7 +13,7 @@ function calculate(group){
         );
     }
 
-    var value = document.getElementById(group + '-value').value;
+    var value = parseFloat(document.getElementById(group + '-value').value);
 
     // If entered input is not a number, clear result field and return.
     if(isNaN(value)){
@@ -176,7 +176,7 @@ function calculate(group){
 
     // Make sure only allowed number of decimal places are displayed.
     if(value % 1 !== 0){
-        value = parseFloat(value).toFixed(document.getElementById('decimals').value);
+        value = value.toFixed(document.getElementById('decimals').value);
     }
 
     // Display result.
