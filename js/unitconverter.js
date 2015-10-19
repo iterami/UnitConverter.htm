@@ -68,6 +68,7 @@ function calculate(group){
         1 / 149597870700,      // metre -> astronomical unit
         100,                   // metre -> centimetre
         1 / 20.1168,           // metre -> chain
+        3,                     // metre -> chi
         1 / .4572,             // metre -> cubit
         1 / 1.8288,            // metre -> fathom
         3.280839895,           // metre -> foot
@@ -303,7 +304,7 @@ function types(){
       'force': 3,
       'fuel': 1,
       'illuminance': 1,
-      'length': 16,
+      'length': 17,
       'mass': 2,
       'speed': 4,
       'temperature': 0,

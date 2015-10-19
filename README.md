@@ -66,6 +66,7 @@ arpent            |
 astronomical unit | au
 centimetre        | cm
 chain             | ch
+chi               | 尺
 cubit             |
 fathom            |
 foot              | ft
