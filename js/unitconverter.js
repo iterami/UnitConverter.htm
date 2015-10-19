@@ -130,6 +130,7 @@ function calculate(group){
       'volume': [
         1 / 1233480,       // litre -> acre-foot
         50,                // litre -> Australian tablespoon
+        1 / 2.359737225,   // litre -> board-foot
         100,               // litre -> centilitre
         1 / 36.368735,     // litre -> imperial bushel
         1 / .284,          // litre -> imperial cup
@@ -307,7 +308,7 @@ function types(){
       'speed': 4,
       'temperature': 0,
       'time': 10,
-      'volume': 14,
+      'volume': 15,
     };
 }
 

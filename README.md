@@ -153,6 +153,7 @@ Volume                | Unit
 ----------------------|------
 acre-foot             |
 Australian tablespoon |
+board-foot            | FBM
 centilitre            | cl
 imperial bushel       |
 imperial cup          |
