@@ -23,143 +23,143 @@ function calculate(group){
 
     // Load appropriate formulas and defaults.
     var formula = {
-      'angle': [
-        360,         // turn -> degree
-        400,         // turn -> gradian
-        Math.PI * 2, // turn -> radian
-        1,           // turn -> turn
-      ],
-      'area': [
-        1 / 4046.86,     // metres squared -> acre
-        .01,             // metres squared -> are
-        1 / 3930.395625, // metres squared -> cuerda
-        10.7639,         // metres squared -> feet squared
-        .0001,           // metres squared -> hectare
-        .000001,         // metres squared -> kilometres squared
-        1,               // metres squared -> metres squared
-        1 / 2589990,     // metres squared -> miles
-        .00015625,       // metres squared -> plaza
-        1 / 1011.71,     // metres squared -> rood
-        .001,            // metres squared -> strema
-      ],
-      'force': [
-        100000,        // newton -> dyne
-        1 / 9.80665,   // newton -> kilogram-force
-        1 / 4448.2216, // newton -> kip
-        1,             // newton -> newton
-        3.59694310194, // newton -> ounce-force
-        .224809,       // newton -> pound-force
-        7.23301,       // newton -> poundal
-      ],
-      'fuel': [
-        2.82481, // kilometres per litre -> imperial miles per gallon
-        1,       // kilometres per litre -> kilometres per litre
-        100,     // kilometres per litre -> litres per 100 kilometres
-        2.35215, // kilometres per litre -> US miles per gallon
-      ],
-      'illuminance': [
-        .09290304, // lux -> foot-candle
-        1,         // lux -> lux
-        .0001,     // lux -> phot
-      ],
-      'length': [
-        1 / .0000000001,       // metre -> ångström
-        1 / 58.47109,          // metre -> arpent
-        1 / 149597870700,      // metre -> astronomical unit
-        100,                   // metre -> centimetre
-        1 / 20.1168,           // metre -> chain
-        3,                     // metre -> chi
-        1 / .4572,             // metre -> cubit
-        1 / 1.8288,            // metre -> fathom
-        3.280839895,           // metre -> foot
-        1 / 201.168,           // metre -> furlong
-        1 / .1016,             // meter -> hand
-        39.3701,               // metre -> inch
-        100 / 33,              // metre -> jō
-        10 / 33,               // metre -> kanejaku
-        .001,                  // metre -> kilometre
-        1 / 9460730472580800,  // metre -> lightyear
-        1 / .201168,           // metre -> link
-        1,                     // metre -> metre
-        1 / 1609.344,          // metre -> mile
-        1000,                  // metre -> millimetre
-        1 / 1852,              // metre -> nautical mile
-        1 / 30856775800000000, // metre -> parsec
-        1.09361,               // metre -> yard
-      ],
-      'mass': [
-        5,              // gram -> caret
-        100,            // gram -> centigram
-        1,              // gram -> gram
-        1 / 1016046.08, // gram -> long ton
-        .001,           // gram -> kilogram
-        .000001,        // gram -> metric tonne
-        1000000,        // gram -> microgram
-        1000,           // gram -> milligram
-        15 / 4,         // gram -> momme
-        1 / 28.3495,    // gram -> ounce
-        1 / 453.592,    // gram -> pound
-        1 / 907184,     // gram -> short ton
-        .0000685217659, // gram -> slug
-        1 / 6350.29318, // gram -> stone
-        1 / 31.1034768, // gram -> troy ounce
-      ],
-      'speed': [
-        1 / .3048,     // metres per second -> feet per second
-        3.6,           // metres per second -> kilometres per hour
-        1.94384,       // metres per second -> knots
-        1 / 340.29,    // metres per second -> mach
-        1,             // metres per second -> metres per second
-        2.23694,       // metres per second -> miles per hour
-        1 / 299792458, // metres per second -> speed of light
-      ],
-      'time': [
-        1 / 86400,      // second -> day
-        1 / 1209600,    // second -> fortnight
-        .3,             // second -> helek
-        1 / 3600,       // second -> hour
-        .01157,         // second -> Internet Time
-        1 / 2360592,    // second -> lunar day
-        1 / 88775.2,    // second -> Martian solar day
-        1 / 3154,       // second -> microcentury
-        1 / 60,         // second -> minute
-        1 / 2592000,    // second -> month
-        1,              // second -> second
-        1 / 604800,     // second -> week
-        1 / 31556908.8, // second -> year
-      ],
-      'volume': [
-        1 / 1233480,       // litre -> acre-foot
-        50,                // litre -> Australian tablespoon
-        1 / 2.359737225,   // litre -> board-foot
-        100,               // litre -> centilitre
-        1 / 36.368735,     // litre -> imperial bushel
-        1 / .284,          // litre -> imperial cup
-        35.1950652,        // litre -> imperial fluid ounce
-        1 / 4.546094188,   // litre -> imperial gallon
-        1 / .1420653125,   // litre -> imperial gill
-        1 / 9.09218,       // litre -> imperial peck
-        1.75975326,        // litre -> imperial pint
-        .879877,           // litre -> imperial quart
-        56.3121,           // litre -> imperial tablespoon
-        168.936,           // litre -> imperial teaspoon
-        .001,              // litre -> kilolitre
-        1,                 // litre -> litre
-        4,                 // litre -> metric cup
-        1000,              // litre -> millilitre
-        2401 / 1331,       // litre -> shō
-        1 / 35.239072,     // litre -> US bushel
-        4.22675,           // litre -> US cup
-        33.8140227,        // litre -> US fluid ounce
-        1 / 3.785411784,   // litre -> US gallon
-        1 / .11829411825,  // litre -> US gill
-        1 / 8.80976754172, // litre -> US peck
-        2.11338,           // litre -> US pint
-        1.05669,           // litre -> US quart
-        1 / .0148,         // litre -> US tablespoon
-        202.884,           // litre -> US teaspoon
-        1 / 1.4206537,     // liter -> yard of ale
-      ],
+      'angle': { // turn -->
+        'degree': 360,
+        'gradian': 400,
+        'radian': Math.PI * 2,
+        'turn': 1,
+      },
+      'area': { // metres squared -->
+        'acre': 1 / 4046.86,
+        'are': .01,
+        'cuerda': 1 / 3930.395625,
+        'feet squared': 10.7639,
+        'hectare': .0001,
+        'kilometres-squared': .000001,
+        'metres-squared': 1,
+        'miles': 1 / 2589990,
+        'plaza': .00015625,
+        'rood': 1 / 1011.71,
+        'strema': .001,
+      },
+      'force': { // newton -->
+        'dyne': 100000,
+        'kilogram-force': 1 / 9.80665,
+        'kip': 1 / 4448.2216,
+        'newton': 1,
+        'ounce-force': 3.59694310194,
+        'pound-force': .224809,
+        'poundal': 7.23301,
+      },
+      'fuel': { // kilometres-per-litre -->
+        'imperial-miles-per-gallon': 2.82481,
+        'kilometres-per-litre': 1,
+        'litres-per-100-kilometres': 100,
+        'us-miles-per-gallon': 2.35215,
+      },
+      'illuminance': { // lux -->
+        'foot-candle': .09290304,
+        'lux': 1,
+        'phot': .0001,
+      },
+      'length': { // metre -->
+        'ångström': 1 / .0000000001,
+        'arpent': 1 / 58.47109,
+        'astronomical-unit': 1 / 149597870700,
+        'centimetre': 100,
+        'chain': 1 / 20.1168,
+        'chi': 3,
+        'cubit': 1 / .4572,
+        'fathom': 1 / 1.8288,
+        'foot': 3.280839895,
+        'furlong': 1 / 201.168,
+        'hand': 1 / .1016,
+        'inch': 39.3701,
+        'jō': 100 / 33,
+        'kanejaku': 10 / 33,
+        'kilometre': .001,
+        'lightyear': 1 / 9460730472580800,
+        'link': 1 / .201168,
+        'metre': 1,
+        'mile': 1 / 1609.344,
+        'millimetre': 1000,
+        'nautical-mile': 1 / 1852,
+        'parsec': 1 / 30856775800000000,
+        'yard': 1.09361,
+      },
+      'mass': { // gram -->
+        'caret': 5,
+        'centigram': 100,
+        'gram': 1,
+        'long-ton': 1 / 1016046.08,
+        'kilogram': .001,
+        'metric-tonne': .000001,
+        'microgram': 1000000,
+        'milligram': 1000,
+        'momme': 15 / 4,
+        'ounce': 1 / 28.3495,
+        'pound': 1 / 453.592,
+        'short-ton': 1 / 907184,
+        'slug': .0000685217659,
+        'stone': 1 / 6350.29318,
+        'troy-ounce': 1 / 31.1034768,
+      },
+      'speed': { // metres-per-second -->
+        'feet-per-second': 1 / .3048,
+        'kilometres-per-hour': 3.6,
+        'knots': 1.94384,
+        'mach': 1 / 340.29,
+        'metres-per-second': 1,
+        'miles-per-hour': 2.23694,
+        'speed-of-light': 1 / 299792458,
+      },
+      'time': { // second -->
+        'day': 1 / 86400,
+        'fortnight': 1 / 1209600,
+        'helek': .3,
+        'hour': 1 / 3600,
+        'internet-time': .01157,
+        'lunar-day': 1 / 2360592,
+        'martian-solar-day': 1 / 88775.2,
+        'microcentury': 1 / 3154,
+        'minute': 1 / 60,
+        'month': 1 / 2592000,
+        'second': 1,
+        'week': 1 / 604800,
+        'year': 1 / 31556908.8,
+      },
+      'volume': { // litre -->
+        'acre-foot': 1 / 1233480,
+        'australian-tablespoon': 50,
+        'board-foot': 1 / 2.359737225,
+        'centrilitre': 100,
+        'imperial-bushel': 1 / 36.368735,
+        'imperial-cup': 1 / .284,
+        'imperial-fluid-ounce': 35.1950652,
+        'imperial-gallon': 1 / 4.546094188,
+        'imperial-gill': 1 / .1420653125,
+        'imperial-peck': 1 / 9.09218,
+        'imperial-pint': 1.75975326,
+        'imperial-quart': .879877,
+        'imperial-tablespoon': 56.3121,
+        'imperial-teaspoon': 168.936,
+        'kilolitre': .001,
+        'litre': 1,
+        'metric-cup': 4,
+        'millilitre': 1000,
+        'shō': 2401 / 1331,
+        'us-bushel': 1 / 35.239072,
+        'us-cup': 4.22675,
+        'us-fluid-ounce': 33.8140227,
+        'us-gallon': 1 / 3.785411784,
+        'us-gill': 1 / .11829411825,
+        'us-peck': 1 / 8.80976754172,
+        'us-pint': 2.11338,
+        'us-quart': 1.05669,
+        'us-tablespoon': 1 / .0148,
+        'us-teaspoon': 202.884,
+        'yard-of-ale': 1 / 1.4206537,
+      },
     }[group];
     var default_unit = types()[group];
     var input = document.getElementById(group + '-input').value;
@@ -198,88 +198,90 @@ function calculate_temperature(){
         return;
     }
 
-    document.getElementById('temperature-result').value = [
-      [
-        i,                  // Celsius -> Celsius
-        (100 - i) * 1.5,    // Celsius -> Delisle
-        i * 1.8 + 32,       // Celsius -> Fahrenheit
-        i + 273.15,         // Celsius -> Kelvin
-        i * .33,            // Celsius -> Newton
-        (i + 273.15) * 1.8, // Celsius -> Rankine
-        i / 1.25,           // Celsius -> Réaumur
-        i * 21 / 40 + 7.5,  // Celsius -> Rømer
-      ][document.getElementById('temperature-output').value],
-      [
-        100 - i / 1.5,      // Delisle -> Celsius
-        i,                  // Delisle -> Delisle
-        212 - i * 1.2,      // Delisle -> Fahrenheit
-        373.15 - i / 1.5,   // Delisle -> Kelvin
-        33 - (i * 11 / 50), // Delisle -> Newton
-        671.67 - i * 1.2,   // Delisle -> Rankine
-        80 - (i * 8 / 15),  // Delisle -> Réaumur
-        60 - (i * 7 / 20),  // Delisle -> Rømer
-      ][document.getElementById('temperature-output').value],
-      [
-        (i - 32) / 1.8,          // Fahrenheit -> Celsius
-        (212 - i) / 1.2,         // Fahrenheit -> Delisle
-        i,                       // Fahrenheit -> Fahrenheit
-        (i - 32) / 1.8 + 273.15, // Fahrenheit -> Kelvin
-        (i - 32) * 11 / 60,      // Fahrenheit -> Newton
-        i + 459.67,              // Fahrenheit -> Rankine
-        (i - 32) * 4 / 9,        // Fahrenheit -> Réaumur
-        (i - 32) * 7 / 24 + 7.5, // Fahrenheit -> Rømer
-      ][document.getElementById('temperature-output').value],
-      [
-        i - 273.15,                   // Kelvin -> Celsius
-        (373.15 - i) * 1.5,           // Kelvin -> Delisle
-        (i - 273.15) * 1.8 + 32,      // Kelvin -> Fahrenheit
-        i,                            // Kelvin -> Kelvin
-        (i - 273.15) * .33,           // Kelvin -> Newton
-        i * 1.8,                      // Kelvin -> Rankine
-        (i - 273.15) / 1.25,          // Kelvin -> Réaumur
-        (i - 273.15) * 21 / 40 + 7.5, // Kelvin -> Rømer
-      ][document.getElementById('temperature-output').value],
-      [
-        i / .33,              // Newton -> Celsius
-        (33 - i) * 50 / 11,   // Newton -> Delisle
-        i * 60 / 11 + 32,     // Newton -> Fahrenheit
-        i / .33 + 273.15,     // Newton -> Kelvin
-        i,                    // Newton -> Newton
-        i * 60 / 11 + 491.67, // Newton -> Rankine
-        i * 80 / 33,          // Newton -> Réaumur
-        i * 35 / 22 + 7.5,    // Newton -> Rømer
-      ][document.getElementById('temperature-output').value],
-      [
-        (i - 491.67) / 1.8,          // Rankine -> Celsius
-        (671.67 - i) / 1.2,          // Rankine -> Delisle
-        i - 459.67,                  // Rankine -> Fahrenheit
-        i / 1.8,                     // Rankine -> Kelvin
-        (i - 491.67) * 11 / 60,      // Rankine -> Newton
-        i,                           // Rankine -> Rankine
-        (i - 491.67) * 4 / 9,        // Rankine -> Réaumur
-        (i - 491.67) * 7 / 24 + 7.5, // Rankine -> Rømer
-      ][document.getElementById('temperature-output').value],
-      [
-        i * 1.25,           // Réaumur -> Celsius
-        (80 - i) * 15 / 8,  // Réaumur -> Delisle
-        i * 9/4 + 32,       // Réaumur -> Fahrenheit
-        i * 1.25 + 273.15,  // Réaumur -> Kelvin
-        i * 80 / 33,        // Réaumur -> Newton
-        i * 9 / 4 + 491.67, // Réaumur -> Rankine
-        i,                  // Réaumur -> Réaumur
-        i * 21 / 32 + 7.5,  // Réaumur -> Rømer
-      ][document.getElementById('temperature-output').value],
-      [
-        (i - 7.5) * 40 / 21,          // Rømer -> Celsius
-        (60 - i) * 20 / 7,            // Rømer -> Delisle
-        (i - 7.5) * 24 / 7 + 32,      // Rømer -> Fahrenheit
-        (i - 7.5) * 40 / 21 + 273.15, // Rømer -> Kelvin
-        (i - 7.5) * 22 / 35,          // Rømer -> Newton
-        (i - 7.5) * 24 / 7 + 491.67,  // Rømer -> Rankine
-        (i - 7.5) * 32 / 21,          // Rømer -> Réaumur
-        i,                            // Rømer -> Rømer
-      ][document.getElementById('temperature-output').value],
-    ][document.getElementById('temperature-input').value];
+    var formula = { // celius -->
+      'celsius': {
+        'celsius': i,
+        'delisle': (100 - i) * 1.5,
+        'fahrenheit': i * 1.8 + 32,
+        'kelvin': i + 273.15,
+        'newton': i * .33,
+        'rankine': (i + 273.15) * 1.8,
+        'réaumur': i / 1.25,
+        'rømer': i * 21 / 40 + 7.5,
+      }, // delisle -->
+      'delisle': {
+        'celsius': 100 - i / 1.5,
+        'delisle': i,
+        'fahrenheit': 212 - i * 1.2,
+        'kelvin': 373.15 - i / 1.5,
+        'newton': 33 - (i * 11 / 50),
+        'rankine': 671.67 - i * 1.2,
+        'réaumur': 80 - (i * 8 / 15),
+        'rømer': 60 - (i * 7 / 20),
+      }, // fahrenheit -->
+      'fahrenheit': {
+        'celsius': (i - 32) / 1.8,
+        'delisle': (212 - i) / 1.2,
+        'fahrenheit': i,
+        'kelvin': (i - 32) / 1.8 + 273.15,
+        'newton': (i - 32) * 11 / 60,
+        'rankine': i + 459.67,
+        'réaumur': (i - 32) * 4 / 9,
+        'rømer': (i - 32) * 7 / 24 + 7.5,
+      }, // kelvin -->
+      'kelvin': {
+        'celsius': i - 273.15,
+        'delisle': (373.15 - i) * 1.5,
+        'fahrenheit': (i - 273.15) * 1.8 + 32,
+        'kelvin': i,
+        'newton': (i - 273.15) * .33,
+        'rankine': i * 1.8,
+        'réaumur': (i - 273.15) / 1.25,
+        'rømer': (i - 273.15) * 21 / 40 + 7.5,
+      },
+      'newton': { // Newton -->
+        'celsius': i / .33,
+        'delisle': (33 - i) * 50 / 11,
+        'fahrenheit': i * 60 / 11 + 32,
+        'kelvin': i / .33 + 273.15,
+        'newton': i,
+        'rankine': i * 60 / 11 + 491.67,
+        'réaumur': i * 80 / 33,
+        'rømer': i * 35 / 22 + 7.5,
+      },
+      'rankine': { // Rankine -->
+        'celsius': (i - 491.67) / 1.8,
+        'delisle': (671.67 - i) / 1.2,
+        'fahrenheit': i - 459.67,
+        'kelvin': i / 1.8,
+        'newton': (i - 491.67) * 11 / 60,
+        'rankine': i,
+        'réaumur': (i - 491.67) * 4 / 9,
+        'rømer': (i - 491.67) * 7 / 24 + 7.5,
+      },
+      'réaumur': { // Réaumur -->
+        'celsius': i * 1.25,
+        'delisle': (80 - i) * 15 / 8,
+        'fahrenheit': i * 9/4 + 32,
+        'kelvin': i * 1.25 + 273.15,
+        'newton': i * 80 / 33,
+        'rankine': i * 9 / 4 + 491.67,
+        'réaumur': i,
+        'rømer': i * 21 / 32 + 7.5,
+      },
+      'rømer': { // Rømer -->
+        'celsius': (i - 7.5) * 40 / 21,
+        'delisle': (60 - i) * 20 / 7,
+        'fahrenheit': (i - 7.5) * 24 / 7 + 32,
+        'kelvin': (i - 7.5) * 40 / 21 + 273.15,
+        'newton': (i - 7.5) * 22 / 35,
+        'rankine': (i - 7.5) * 24 / 7 + 491.67,
+        'réaumur': (i - 7.5) * 32 / 21,
+        'rømer': i,
+      },
+    }[document.getElementById('temperature-input').value];
+    document.getElementById('temperature-result').value =
+      formula[document.getElementById('temperature-output').value];
 
     if(document.getElementById('temperature-result').value % 1 !== 0){
         document.getElementById('temperature-result').value =
@@ -299,17 +301,17 @@ function reverse(id){
 
 function types(){
     return {
-      'angle': 3,
-      'area': 6,
-      'force': 3,
-      'fuel': 1,
-      'illuminance': 1,
-      'length': 17,
-      'mass': 2,
-      'speed': 4,
-      'temperature': 0,
-      'time': 10,
-      'volume': 15,
+      'angle': 'turn',
+      'area': 'metres-squared',
+      'force': 'newton',
+      'fuel': 'kilometres-per-litre',
+      'illuminance': 'lux',
+      'length': 'metre',
+      'mass': 'kilogram',
+      'speed': 'metres-per-second',
+      'temperature': 'kelvin',
+      'time': 'second',
+      'volume': 'litre',
     };
 }
 
