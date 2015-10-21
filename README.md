@@ -157,6 +157,7 @@ Australian tablespoon |
 board-foot            | FBM
 centilitre            | cl
 coomb                 |
+gō                    | 合
 imperial bushel       |
 imperial cup          |
 imperial fluid ounce  | fl oz

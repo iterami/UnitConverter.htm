@@ -134,6 +134,7 @@ function calculate(group){
         'board-foot': 1 / 2.359737225,
         'centilitre': 100,
         'coomb': 1 / 145.47494,
+        'gō': 1 / .1804,
         'imperial-bushel': 1 / 36.368735,
         'imperial-cup': 1 / .284,
         'imperial-fluid-ounce': 35.1950652,
