@@ -156,6 +156,7 @@ acre-foot             |
 Australian tablespoon |
 board-foot            | FBM
 centilitre            | cl
+coomb                 |
 imperial bushel       |
 imperial cup          |
 imperial fluid ounce  | fl oz
