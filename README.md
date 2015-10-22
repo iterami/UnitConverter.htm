@@ -18,15 +18,22 @@ Area               | Unit
 -------------------|-----
 acre               | ac
 are                | a
+chō                | 町
 cuerda             |
 feet squared       | ft²
+gō                 | 合
 hectare            | ha
+jō                 | 畳
 kilometres squared | km²
 metres squared     | m²
 miles squared      | mi²
 plaza              |
 rood               |
+se                 | 畝
+shaku              | 勺
 strema             |
+tan                | 段, 反
+tsubo              | 坪
 
 ---
 
