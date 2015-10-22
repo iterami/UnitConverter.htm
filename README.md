@@ -169,10 +169,14 @@ imperial quart        | qt
 imperial tablespoon   | tbsp
 imperial teaspoon     | tbsp
 kilolitre             | kl
+koku                  | 石
 litre                 | l
 metric cup            |
 millilitre            | ml
+sai                   | 才
+shaku                 | 勺
 shō                   | 升
+to                    | 斗
 US bushel             |
 US cup                |
 US fluid ounce        | fl oz
