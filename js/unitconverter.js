@@ -96,7 +96,7 @@ function calculate(group){
         'metric-tonne': .000001,
         'microgram': 1000000,
         'milligram': 1000,
-        'momme': 15 / 4,
+        'momme': 4 / 15,
         'ounce': 1 / 28.3495,
         'pound': 1 / 453.592,
         'short-ton': 1 / 907184,
