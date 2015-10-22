@@ -91,9 +91,13 @@ Mass         | Unit
 -------------|-----
 caret        | ct
 centigram    | cg
+fun          | 分
 gram         | g
-long ton     |
+hyakume      | 百目
+kanme        | 貫目
 kilogram     | kg
+kin          | 斤
+long ton     |
 metric tonne | t
 microgram    | µg
 milligram    | mg
