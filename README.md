@@ -70,26 +70,35 @@ Length            | Unit
 ------------------|-----
 ångström          | Å
 arpent            |
+bu                | 分
 astronomical unit | au
 centimetre        | cm
 chain             | ch
 chi               | 尺
+chō               | 町
 cubit             |
 fathom            |
 foot              | ft
 furlong           |
 hand              | h
+hiro              | 尋
 inch              | in
 jō                | 丈
 kanejaku          | 曲尺
+ken               | 間
 kilometre         | km
 lightyear         | ly
 link              | l.
 metre             | m
 mile              | mi
 millimetre        | mm
+mō                | 毛, 毫
 nautical mile     | nmi
 parsec            | pc
+ri                | 里
+rin               | 厘
+shaku             | 尺
+sun               | 寸
 yard              | yd
 
 ---
