@@ -49,6 +49,10 @@ function calculate(group){
         'tan': 1 / 991.736,
         'tsubo': 1 / 3.306,
       },
+      'energy': { // joule -->
+        'joule': 1,
+        'thermochemical-calorie': 1 / 4.184,
+      },
       'force': { // newton -->
         'dyne': 100000,
         'kilogram-force': 1 / 9.80665,
@@ -329,6 +333,7 @@ function types(){
     return {
       'angle': 'turn',
       'area': 'metres-squared',
+      'energy': 'joule',
       'force': 'newton',
       'fuel': 'kilometres-per-litre',
       'illuminance': 'lux',

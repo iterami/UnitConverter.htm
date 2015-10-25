@@ -37,6 +37,13 @@ tsubo              | 坪
 
 ---
 
+Energy                | Unit
+----------------------|-----
+joule                 | J
+therochemical calorie | cal<sub>th</sub>
+
+---
+
 Force          | Unit
 ---------------|-----
 dyne           | dyn
