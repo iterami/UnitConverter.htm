@@ -50,6 +50,7 @@ function calculate(group){
         'tsubo': 1 / 3.306,
       },
       'energy': { // joule -->
+        'erg': 10000000,
         'joule': 1,
         'thermochemical-calorie': 1 / 4.184,
       },
