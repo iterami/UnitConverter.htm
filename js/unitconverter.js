@@ -53,6 +53,7 @@ function calculate(group){
         'erg': 10000000,
         'joule': 1,
         'thermochemical-calorie': 1 / 4.184,
+        'ton-of-tnt': 1 / 4184000000,
       },
       'force': { // newton -->
         'dyne': 100000,

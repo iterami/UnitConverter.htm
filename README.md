@@ -42,6 +42,7 @@ Energy                | Unit
 erg                   |
 joule                 | J
 therochemical calorie | cal<sub>th</sub>
+ton of TNT            |
 
 ---
 
