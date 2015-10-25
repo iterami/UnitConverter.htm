@@ -37,12 +37,15 @@ tsubo              | 坪
 
 ---
 
-Energy                | Unit
-----------------------|-----
-erg                   |
-joule                 | J
-therochemical calorie | cal<sub>th</sub>
-ton of TNT            |
+Energy                 | Unit
+-----------------------|-----
+erg                    |
+joule                  | J
+mean BTU               | Btu<sub>mean</sub>
+mean calorie           | cal<sub>mean</sub>
+thermochemical BTU     | Btu<sub>th</sub>
+thermochemical calorie | cal<sub>th</sub>
+ton of TNT             |
 
 ---
 

@@ -52,6 +52,9 @@ function calculate(group){
       'energy': { // joule -->
         'erg': 10000000,
         'joule': 1,
+        'mean-btu': 1 / 1055.87,
+        'mean-calorie': 1 / 4.190,
+        'thermochemical-btu': 1 / 1054.35026444,
         'thermochemical-calorie': 1 / 4.184,
         'ton-of-tnt': 1 / 4184000000,
       },
