@@ -18,6 +18,7 @@ Area               | Unit
 -------------------|-----
 acre               | ac
 are                | a
+barn               | b
 chō                | 町
 cuerda             |
 feet squared       | ft²

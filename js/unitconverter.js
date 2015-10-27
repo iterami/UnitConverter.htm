@@ -32,6 +32,7 @@ function calculate(group){
       'area': { // metres squared -->
         'acre': 1 / 4046.86,
         'are': .01,
+        'barn': .0000000000000000000000000001,
         'chō': 1 / 9917.36,
         'cuerda': 1 / 3930.395625,
         'feet-squared': 10.7639,
