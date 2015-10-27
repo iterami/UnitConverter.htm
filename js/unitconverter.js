@@ -103,6 +103,7 @@ function calculate(group){
         'lightyear': 1 / 9460730472580800,
         'link': 1 / .201168,
         'metre': 1,
+        'mil': 39370.1,
         'mile': 1 / 1609.344,
         'millimetre': 1000,
         'mō': 33000,

@@ -104,6 +104,7 @@ kilometre         | km
 lightyear         | ly
 link              | l.
 metre             | m
+mil               |
 mile              | mi
 millimetre        | mm
 mō                | 毛, 毫
