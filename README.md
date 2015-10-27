@@ -139,6 +139,13 @@ troy ounce   | oz t
 
 ---
 
+Power                 | Unit
+----------------------|-----
+mechanical horsepower | hp
+watt                  | W
+
+---
+
 Speed               | Unit
 --------------------|-----
 feet per second     | ft/s

@@ -133,6 +133,10 @@ function calculate(group){
         'stone': 1 / 6350.29318,
         'troy-ounce': 1 / 31.1034768,
       },
+      'power': { // watt -->
+        'mechanical-horsepower': 1 / 745.7,
+        'watt': 1,
+      },
       'speed': { // metres-per-second -->
         'feet-per-second': 1 / .3048,
         'kilometres-per-hour': 3.6,
@@ -344,6 +348,7 @@ function types(){
       'illuminance': 'lux',
       'length': 'metre',
       'mass': 'kilogram',
+      'power': 'watt',
       'speed': 'metres-per-second',
       'temperature': 'kelvin',
       'time': 'second',
