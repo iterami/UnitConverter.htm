@@ -358,8 +358,9 @@ function types(){
 
 window.onload = function(e){
     var reverse = '';
+    var typelist = types();
 
-    for(var type in types()){
+    for(var type in typelist){
         reverse += '<a onclick="reverse(\'' + type + '\')">≈</a><br>';
 
         document.getElementById(type + '-input').onchange
@@ -367,6 +368,7 @@ window.onload = function(e){
           = document.getElementById(type + '-value').oninput = function(){
             calculate(this.id);
         };
+        document.getElementById(type + '-output').value = typelist[type];
     }
 
     document.getElementById('decimals').oninput = calculate_all;
