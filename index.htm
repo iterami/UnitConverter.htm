@@ -4,6 +4,13 @@
 <link href=css/unitconverter.css rel=stylesheet>
 
 <div class=input>
+    <select id=acceleration-input>
+      <option value=gal>gal (Gal)</option>
+      <option value=metre-per-second-squared>metre per second squared (m/s²)</option>
+      <option selected value=standard-gravity>standard gravity (ɡ₀)</option>
+    </select>
+    <input id=acceleration-value><br>
+
     <select id=angle-input>
       <option value=degree>degree (°)</option>
       <option value=gradian>gradian (gon)</option>
@@ -223,6 +230,13 @@
 <div id=reverse></div>
 
 <div class=output>
+    <input id=acceleration-result readonly>
+    <select id=acceleration-output>
+      <option value=gal>gal (Gal)</option>
+      <option value=metre-per-second-squared>metre per second squared (m/s²)</option>
+      <option selected value=standard-gravity>standard gravity (ɡ₀)</option>
+    </select><br>
+
     <input id=angle-result readonly>
     <select id=angle-output>
       <option value=degree>degree (°)</option>

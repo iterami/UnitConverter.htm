@@ -5,6 +5,14 @@ Unit conversion tool that can convert units of various types to a specified numb
 
 ---
 
+Acceleration             | Unit
+-------------------------|----------------
+gal                      | Gal
+metre per second squared | m/s<sup>2</sup>
+standard gravity         | ɡ<sub>0</sub>
+
+---
+
 Angle   | Unit
 --------|-----
 degree  | °
@@ -40,7 +48,7 @@ tsubo              | 坪
 ---
 
 Energy                 | Unit
------------------------|-----
+-----------------------|-------------------
 erg                    |
 joule                  | J
 mean BTU               | Btu<sub>mean</sub>

@@ -23,6 +23,11 @@ function calculate(group){
 
     // Load appropriate formulas and defaults.
     var formula = {
+      'acceleration': { // metre per second squared -->
+        'gal': 100,
+        'metre-per-second-squared': 1,
+        'standard-gravity': 1 / 9.80665,
+      },
       'angle': { // turn -->
         'degree': 360,
         'gradian': 400,
@@ -343,6 +348,7 @@ function reverse(id){
 
 function types(){
     return {
+      'acceleration': 'metre-per-second-squared',
       'angle': 'turn',
       'area': 'metres-squared',
       'energy': 'joule',
