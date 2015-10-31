@@ -1,6 +1,7 @@
 a{
     color: #4c4;
     cursor: pointer;
+    display: block;
 }
 a:hover{
     color: #777;

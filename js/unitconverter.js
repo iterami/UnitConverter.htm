@@ -372,7 +372,7 @@ window.onload = function(e){
     for(var type in typelist){
         reverse += '<a onclick="reverse(\'' + type + '\')">'
           + type
-          + '</a><br>';
+          + '</a>';
 
         document.getElementById(type + '-input').onchange
           = document.getElementById(type + '-output').onchange
