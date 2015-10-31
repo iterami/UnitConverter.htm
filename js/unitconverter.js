@@ -143,6 +143,7 @@ function calculate(group){
       },
       'power': { // watt -->
         'mechanical-horsepower': 1 / 745.7,
+        'metric-horsepower': 1 / 735.49875,
         'watt': 1,
       },
       'speed': { // metres-per-second -->
@@ -349,7 +350,7 @@ function reverse(id){
 function types(){
     return {
       'acceleration': 'metre-per-second-squared',
-      'angle': 'turn',
+      'angle': 'radian',
       'area': 'metres-squared',
       'energy': 'joule',
       'force': 'newton',

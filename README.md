@@ -153,6 +153,7 @@ troy ounce   | oz t
 Power                 | Unit
 ----------------------|-----
 mechanical horsepower | hp
+metric horsepower     | PS
 watt                  | W
 
 ---
