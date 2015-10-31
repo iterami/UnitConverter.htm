@@ -28,11 +28,11 @@ function calculate(group){
         'metre-per-second-squared': 1,
         'standard-gravity': 1 / 9.80665,
       },
-      'angle': { // turn -->
-        'degree': 360,
-        'gradian': 400,
-        'radian': Math.PI * 2,
-        'turn': 1,
+      'angle': { // radian -->
+        'degree': 57.2958,
+        'gradian': 63.662,
+        'radian': 1,
+        'turn': .159154943,
       },
       'area': { // metres squared -->
         'acre': 1 / 4046.86,
