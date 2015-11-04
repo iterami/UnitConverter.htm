@@ -7,6 +7,7 @@ Unit conversion tool that can convert units of various types to a specified numb
 
 Acceleration             | Unit
 -------------------------|----------------
+foot per second squared  | ft/s<sup>2</sup>
 gal                      | Gal
 metre per second squared | m/s<sup>2</sup>
 standard gravity         | ɡ<sub>0</sub>

@@ -24,6 +24,7 @@ function calculate(group){
     // Load appropriate formulas and defaults.
     var formula = {
       'acceleration': { // metre per second squared -->
+        'foot-per-second-squared': 3.2808399,
         'gal': 100,
         'metre-per-second-squared': 1,
         'standard-gravity': 1 / 9.80665,
