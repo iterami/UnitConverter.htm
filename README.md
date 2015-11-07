@@ -220,6 +220,7 @@ imperial pint         | pt
 imperial quart        | qt
 imperial tablespoon   | tbsp
 imperial teaspoon     | tbsp
+Japanese cup          |
 kilolitre             | kl
 koku                  | 石
 litre                 | l

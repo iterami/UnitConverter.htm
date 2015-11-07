@@ -188,6 +188,7 @@ function calculate(group){
         'imperial-quart': .879877,
         'imperial-tablespoon': 56.3121,
         'imperial-teaspoon': 168.936,
+        'japanese-cup': 5,
         'kilolitre': .001,
         'koku': 1331 / 240100,
         'litre': 1,
