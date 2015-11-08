@@ -57,6 +57,12 @@ function calculate(group){
         'tan': 1 / 991.736,
         'tsubo': 1 / 3.306,
       },
+      'density': { // kilograms per cubic metre -->
+        'grams-per-millilitre': .001,
+        'kilograms-per-cubic-metre': 1,
+        'kilograms-per-litre': 1000,
+        'metric-tons-per-cubic-metre': 1000,
+      },
       'energy': { // joule -->
         'erg': 10000000,
         'joule': 1,
@@ -354,6 +360,7 @@ function types(){
       'acceleration': 'metre-per-second-squared',
       'angle': 'radian',
       'area': 'metres-squared',
+      'density': 'kilograms-per-cubic-metre',
       'energy': 'joule',
       'force': 'newton',
       'fuel': 'kilometres-per-litre',

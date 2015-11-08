@@ -48,6 +48,15 @@ tsubo              | 坪
 
 ---
 
+Density                     | Unit
+----------------------------|-----------------
+grams per millilitre        | g/ml
+kilograms per cubic metre   | kg/m<sup>3</sup>
+kilograms per litre         | kg/l
+metric tons per cubic metre | t/m<sup>3</sup>
+
+---
+
 Energy                 | Unit
 -----------------------|-------------------
 erg                    |
