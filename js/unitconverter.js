@@ -248,103 +248,104 @@ function calculate_all(){
 }
 
 function calculate_temperature(){
-    var i = parseFloat(document.getElementById('temperature-value').value);
-    if(isNaN(i)){
+    var value = parseFloat(document.getElementById('temperature-value').value);
+
+    if(isNaN(value)){
         document.getElementById('temperature-result').value = '';
         return;
     }
 
     var formula = { // Celsius -->
       'celsius': {
-        'celsius': i,
-        'delisle': (100 - i) * 1.5,
-        'fahrenheit': i * 1.8 + 32,
-        'kelvin': i + 273.15,
-        'newton': i * .33,
-        'rankine': (i + 273.15) * 1.8,
-        'réaumur': i / 1.25,
-        'rømer': i * 21 / 40 + 7.5,
+        'celsius': value,
+        'delisle': (100 - value) * 1.5,
+        'fahrenheit': value * 1.8 + 32,
+        'kelvin': value + 273.15,
+        'newton': value * .33,
+        'rankine': (value + 273.15) * 1.8,
+        'réaumur': value / 1.25,
+        'rømer': value * 21 / 40 + 7.5,
       }, // Delisle -->
       'delisle': {
-        'celsius': 100 - i / 1.5,
-        'delisle': i,
-        'fahrenheit': 212 - i * 1.2,
-        'kelvin': 373.15 - i / 1.5,
-        'newton': 33 - (i * 11 / 50),
-        'rankine': 671.67 - i * 1.2,
-        'réaumur': 80 - (i * 8 / 15),
-        'rømer': 60 - (i * 7 / 20),
+        'celsius': 100 - value / 1.5,
+        'delisle': value,
+        'fahrenheit': 212 - value * 1.2,
+        'kelvin': 373.15 - value / 1.5,
+        'newton': 33 - (value * 11 / 50),
+        'rankine': 671.67 - value * 1.2,
+        'réaumur': 80 - (value * 8 / 15),
+        'rømer': 60 - (value * 7 / 20),
       }, // Fahrenheit -->
       'fahrenheit': {
-        'celsius': (i - 32) / 1.8,
-        'delisle': (212 - i) / 1.2,
-        'fahrenheit': i,
-        'kelvin': (i - 32) / 1.8 + 273.15,
-        'newton': (i - 32) * 11 / 60,
-        'rankine': i + 459.67,
-        'réaumur': (i - 32) * 4 / 9,
-        'rømer': (i - 32) * 7 / 24 + 7.5,
+        'celsius': (value - 32) / 1.8,
+        'delisle': (212 - value) / 1.2,
+        'fahrenheit': value,
+        'kelvin': (value - 32) / 1.8 + 273.15,
+        'newton': (value - 32) * 11 / 60,
+        'rankine': value + 459.67,
+        'réaumur': (value - 32) * 4 / 9,
+        'rømer': (value - 32) * 7 / 24 + 7.5,
       }, // Kelvin -->
       'kelvin': {
-        'celsius': i - 273.15,
-        'delisle': (373.15 - i) * 1.5,
-        'fahrenheit': (i - 273.15) * 1.8 + 32,
-        'kelvin': i,
-        'newton': (i - 273.15) * .33,
-        'rankine': i * 1.8,
-        'réaumur': (i - 273.15) / 1.25,
-        'rømer': (i - 273.15) * 21 / 40 + 7.5,
+        'celsius': value - 273.15,
+        'delisle': (373.15 - value) * 1.5,
+        'fahrenheit': (value - 273.15) * 1.8 + 32,
+        'kelvin': value,
+        'newton': (value - 273.15) * .33,
+        'rankine': value * 1.8,
+        'réaumur': (value - 273.15) / 1.25,
+        'rømer': (value - 273.15) * 21 / 40 + 7.5,
       },
       'newton': { // Newton -->
-        'celsius': i / .33,
-        'delisle': (33 - i) * 50 / 11,
-        'fahrenheit': i * 60 / 11 + 32,
-        'kelvin': i / .33 + 273.15,
-        'newton': i,
-        'rankine': i * 60 / 11 + 491.67,
-        'réaumur': i * 80 / 33,
-        'rømer': i * 35 / 22 + 7.5,
+        'celsius': value / .33,
+        'delisle': (33 - value) * 50 / 11,
+        'fahrenheit': value * 60 / 11 + 32,
+        'kelvin': value / .33 + 273.15,
+        'newton': value,
+        'rankine': value * 60 / 11 + 491.67,
+        'réaumur': value * 80 / 33,
+        'rømer': value * 35 / 22 + 7.5,
       },
       'rankine': { // Rankine -->
-        'celsius': (i - 491.67) / 1.8,
-        'delisle': (671.67 - i) / 1.2,
-        'fahrenheit': i - 459.67,
-        'kelvin': i / 1.8,
-        'newton': (i - 491.67) * 11 / 60,
-        'rankine': i,
-        'réaumur': (i - 491.67) * 4 / 9,
-        'rømer': (i - 491.67) * 7 / 24 + 7.5,
+        'celsius': (value - 491.67) / 1.8,
+        'delisle': (671.67 - value) / 1.2,
+        'fahrenheit': value - 459.67,
+        'kelvin': value / 1.8,
+        'newton': (value - 491.67) * 11 / 60,
+        'rankine': value,
+        'réaumur': (value - 491.67) * 4 / 9,
+        'rømer': (value - 491.67) * 7 / 24 + 7.5,
       },
       'réaumur': { // Réaumur -->
-        'celsius': i * 1.25,
-        'delisle': (80 - i) * 15 / 8,
-        'fahrenheit': i * 9/4 + 32,
-        'kelvin': i * 1.25 + 273.15,
-        'newton': i * 80 / 33,
-        'rankine': i * 9 / 4 + 491.67,
-        'réaumur': i,
-        'rømer': i * 21 / 32 + 7.5,
+        'celsius': value * 1.25,
+        'delisle': (80 - value) * 15 / 8,
+        'fahrenheit': value * 9/4 + 32,
+        'kelvin': value * 1.25 + 273.15,
+        'newton': value * 80 / 33,
+        'rankine': value * 9 / 4 + 491.67,
+        'réaumur': value,
+        'rømer': value * 21 / 32 + 7.5,
       },
       'rømer': { // Rømer -->
-        'celsius': (i - 7.5) * 40 / 21,
-        'delisle': (60 - i) * 20 / 7,
-        'fahrenheit': (i - 7.5) * 24 / 7 + 32,
-        'kelvin': (i - 7.5) * 40 / 21 + 273.15,
-        'newton': (i - 7.5) * 22 / 35,
-        'rankine': (i - 7.5) * 24 / 7 + 491.67,
-        'réaumur': (i - 7.5) * 32 / 21,
-        'rømer': i,
+        'celsius': (value - 7.5) * 40 / 21,
+        'delisle': (60 - value) * 20 / 7,
+        'fahrenheit': (value - 7.5) * 24 / 7 + 32,
+        'kelvin': (value - 7.5) * 40 / 21 + 273.15,
+        'newton': (value - 7.5) * 22 / 35,
+        'rankine': (value - 7.5) * 24 / 7 + 491.67,
+        'réaumur': (value - 7.5) * 32 / 21,
+        'rømer': value,
       },
     }[document.getElementById('temperature-input').value];
-    document.getElementById('temperature-result').value =
-      formula[document.getElementById('temperature-output').value];
+    value = formula[document.getElementById('temperature-output').value];
 
-    if(document.getElementById('temperature-result').value % 1 !== 0){
-        document.getElementById('temperature-result').value =
-          parseFloat(document.getElementById('temperature-result').value).toFixed(
-            document.getElementById('decimals').value
-          );
+    // Make sure only allowed number of decimal places are displayed.
+    if(value % 1 !== 0){
+        value = value.toFixed(document.getElementById('decimals').value);
     }
+
+    // Display result.
+    document.getElementById('temperature-result').value = value;
 }
 
 function reverse(id){
