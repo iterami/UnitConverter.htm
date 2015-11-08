@@ -254,7 +254,7 @@ function calculate_temperature(){
         return;
     }
 
-    var formula = { // celius -->
+    var formula = { // Celsius -->
       'celsius': {
         'celsius': i,
         'delisle': (100 - i) * 1.5,
@@ -264,7 +264,7 @@ function calculate_temperature(){
         'rankine': (i + 273.15) * 1.8,
         'réaumur': i / 1.25,
         'rømer': i * 21 / 40 + 7.5,
-      }, // delisle -->
+      }, // Delisle -->
       'delisle': {
         'celsius': 100 - i / 1.5,
         'delisle': i,
@@ -274,7 +274,7 @@ function calculate_temperature(){
         'rankine': 671.67 - i * 1.2,
         'réaumur': 80 - (i * 8 / 15),
         'rømer': 60 - (i * 7 / 20),
-      }, // fahrenheit -->
+      }, // Fahrenheit -->
       'fahrenheit': {
         'celsius': (i - 32) / 1.8,
         'delisle': (212 - i) / 1.2,
@@ -284,7 +284,7 @@ function calculate_temperature(){
         'rankine': i + 459.67,
         'réaumur': (i - 32) * 4 / 9,
         'rømer': (i - 32) * 7 / 24 + 7.5,
-      }, // kelvin -->
+      }, // Kelvin -->
       'kelvin': {
         'celsius': i - 273.15,
         'delisle': (373.15 - i) * 1.5,
