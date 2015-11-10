@@ -1,11 +1,6 @@
 'use strict';
 
 function calculate(group){
-    if(group.indexOf('temperature') !== -1){
-        calculate_temperature();
-        return;
-    }
-
     if(group.indexOf('-') !== -1){
         group = group.substring(
           0,
@@ -24,15 +19,29 @@ function calculate(group){
     var input = document.getElementById(group + '-input').value;
     var output = document.getElementById(group + '-output').value;
 
-    // Only calculate stuff if the input unit is not the same as the output unit.
-    if(input !== output){
-        // If the input unit is not the default unit, convert to the default unit.
-        if(input !== units[group]['default']){
-            value /= units[group]['units'][input];
+    if(group.indexOf('temperature') !== -1){
+        var formulae = temperature_formulae(value);
+
+        // If not converting from Celsius, convert to Celsius first.
+        if(input !== 'Celsius (°C)'){
+            value = formulae[input];
+            formulae = temperature_formulae(value);
         }
 
-        // Convert the entered input from the default unit to the output unit.
-        value *= units[group]['units'][output];
+        // Convert from Celsius to output unit.
+        value = formulae['Celsius (°C)'][output];
+
+    }else{
+        // Only calculate stuff if the input unit is not the same as the output unit.
+        if(input !== output){
+            // If the input unit is not the default unit, convert to the default unit.
+            if(input !== units[group]['default']){
+                value /= units[group]['units'][input];
+            }
+
+            // Convert the entered input from the default unit to the output unit.
+            value *= units[group]['units'][output];
+        }
     }
 
     // Make sure only allowed number of decimal places are displayed.
@@ -48,36 +57,6 @@ function calculate_all(){
     for(var type in types()){
         calculate(type);
     }
-}
-
-function calculate_temperature(){
-    var value = parseFloat(document.getElementById('temperature-value').value);
-
-    if(isNaN(value)){
-        document.getElementById('temperature-result').value = '';
-        return;
-    }
-
-    var formulae = temperature_formulae(value);
-    var input = document.getElementById('temperature-input').value;
-    var output = document.getElementById('temperature-output').value;
-
-    // If not converting from Celsius, convert to Celsius first.
-    if(input !== 'Celsius (°C)'){
-        value = formulae[input];
-        formulae = temperature_formulae(value);
-    }
-
-    // Convert from Celsius to output unit.
-    value = formulae['Celsius (°C)'][output];
-
-    // Make sure only allowed number of decimal places are displayed.
-    if(value % 1 !== 0){
-        value = value.toFixed(document.getElementById('decimals').value);
-    }
-
-    // Display result.
-    document.getElementById('temperature-result').value = value;
 }
 
 function reverse(id){
@@ -399,12 +378,9 @@ window.onload = function(e){
     for(type in units){
         document.getElementById(type + '-input').onchange
           = document.getElementById(type + '-output').onchange
-          = document.getElementById(type + '-value').oninput =
-            type === 'temperature'
-              ? calculate_temperature
-              : function(){
-                    calculate(this.id);
-                };
+          = document.getElementById(type + '-value').oninput = function(){
+            calculate(this.id);
+        };
         document.getElementById(type + '-output').value = units[type]['default'];
     }
 };
