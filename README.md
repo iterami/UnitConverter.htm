@@ -18,7 +18,9 @@ Angle   | Unit
 --------|-----
 degree  | °
 gradian | gon
+minute  | m
 radian  | rad
+second  | s
 turn    |
 
 ---

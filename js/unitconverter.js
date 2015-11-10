@@ -32,7 +32,9 @@ function calculate(group){
       'angle': { // radian -->
         'degree': 57.2958,
         'gradian': 63.662,
+        'minute': 3437.748,
         'radian': 1,
+        'second': 206264.88,
         'turn': .159154943,
       },
       'area': { // metres squared -->
