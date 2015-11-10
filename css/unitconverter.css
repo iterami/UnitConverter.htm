@@ -17,10 +17,10 @@ div{
     display: inline-block;
     line-height: 2em;
 }
-.input{
+#input{
     text-align: right;
 }
-.output{
+#output{
     text-align: left;
 }
 select{
