@@ -58,18 +58,18 @@ function calculate_temperature(){
         return;
     }
 
-    var formulas = temperature_formulas(value);
+    var formulae = temperature_formulae(value);
     var input = document.getElementById('temperature-input').value;
     var output = document.getElementById('temperature-output').value;
 
     // If not converting from Celsius, convert to Celsius first.
     if(input !== 'Celsius (°C)'){
-        value = formulas[input];
-        formulas = temperature_formulas(value);
+        value = formulae[input];
+        formulae = temperature_formulae(value);
     }
 
     // Convert from Celsius to output unit.
-    value = formulas['Celsius (°C)'][output];
+    value = formulae['Celsius (°C)'][output];
 
     // Make sure only allowed number of decimal places are displayed.
     if(value % 1 !== 0){
@@ -88,7 +88,7 @@ function reverse(id){
     calculate(id);
 }
 
-function temperature_formulas(value){
+function temperature_formulae(value){
     return {
       'Celsius (°C)': {
         'Celsius (°C)': value,
