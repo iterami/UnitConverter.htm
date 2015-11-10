@@ -146,6 +146,7 @@ fun          | 分
 gram         | g
 hyakume      | 百目
 kanme        | 貫目
+keel         |
 kilogram     | kg
 kin          | 斤
 long ton     |
@@ -155,6 +156,8 @@ milligram    | mg
 momme        | 匁
 ounce        | oz
 pound        | lb
+room         |
+ship load    |
 short ton    |
 slug         |
 stone        | st
