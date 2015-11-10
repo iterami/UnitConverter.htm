@@ -58,35 +58,18 @@ function calculate_temperature(){
         return;
     }
 
-    var formula = {
-      'Celsius (°C)': {
-        'Celsius (°C)': value,
-        'Delisle (°D)': (100 - value) * 1.5,
-        'Fahrenheit (°F)': value * 1.8 + 32,
-        'Kelvin (K)': value + 273.15,
-        'Newton (°N)': value * .33,
-        'Rankine (°Ra)': (value + 273.15) * 1.8,
-        'Réaumur (°Ré)': value / 1.25,
-        'Rømer (°Rø)': value * 21 / 40 + 7.5,
-      },
-      'Delisle (°D)': 100 - value / 1.5,
-      'Fahrenheit (°F)': (value - 32) / 1.8,
-      'Kelvin (K)': value - 273.15,
-      'Newton (°N)': value / .33,
-      'Rankine (°Ra)': (value - 491.67) / 1.8,
-      'Réaumur (°Ré)': value * 1.25,
-      'Rømer (°Rø)': (value - 7.5) * 40 / 21,
-    };
+    var formulas = temperature_formulas(value);
     var input = document.getElementById('temperature-input').value;
     var output = document.getElementById('temperature-output').value;
 
     // If not converting from Celsius, convert to Celsius first.
     if(input !== 'Celsius (°C)'){
-        value = formula[output];
+        value = formulas[input];
+        formulas = temperature_formulas(value);
     }
 
     // Convert from Celsius to output unit.
-    value = formula['Celsius (°C)'][output];
+    value = formulas['Celsius (°C)'][output];
 
     // Make sure only allowed number of decimal places are displayed.
     if(value % 1 !== 0){
@@ -103,6 +86,30 @@ function reverse(id){
     document.getElementById(id + '-output').value = temp;
 
     calculate(id);
+}
+
+function temperature_formulas(value){
+    return {
+      'Celsius (°C)': {
+        'Celsius (°C)': value,
+        'Delisle (°D)': (100 - value) * 1.5,
+        'Fahrenheit (°F)': value * 1.8 + 32,
+        'Gas Mark (G)': (value - 121) / 14,
+        'Kelvin (K)': value + 273.15,
+        'Newton (°N)': value * .33,
+        'Rankine (°Ra)': (value + 273.15) * 1.8,
+        'Réaumur (°Ré)': value / 1.25,
+        'Rømer (°Rø)': value * 21 / 40 + 7.5,
+      },
+      'Delisle (°D)': 100 - value / 1.5,
+      'Fahrenheit (°F)': (value - 32) / 1.8,
+      'Gas Mark (G)': value * 14 + 121,
+      'Kelvin (K)': value - 273.15,
+      'Newton (°N)': value / .33,
+      'Rankine (°Ra)': (value - 491.67) / 1.8,
+      'Réaumur (°Ré)': value * 1.25,
+      'Rømer (°Rø)': (value - 7.5) * 40 / 21,
+    };
 }
 
 var units = {
@@ -290,6 +297,7 @@ var units = {
       'Celsius (°C)': void 0,
       'Delisle (°D)': void 0,
       'Fahrenheit (°F)': void 0,
+      'Gas Mark (G)': void 0,
       'Kelvin (K)': void 0,
       'Newton (°N)': void 0,
       'Rankine (°Ra)': void 0,
