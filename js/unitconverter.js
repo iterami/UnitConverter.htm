@@ -322,6 +322,7 @@ var units = {
     'units': {
       'mechanical horsepower (hp)': 1 / 745.7,
       'metric horsepower (PS)': 1 / 735.49875,
+      'ton of refridgeration (TR)': 1 / 3516.8525,
       'watt (W)': 1,
     },
   },
