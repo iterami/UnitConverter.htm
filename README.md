@@ -188,6 +188,7 @@ Temperature | Unit
 Celsius     | °C
 Delisle     | °D
 Fahrenheit  | °F
+Gas Mark    | G
 Kelvin      | K
 Newton      | °N
 Rankine     | °Ra

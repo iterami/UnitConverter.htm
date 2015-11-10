@@ -69,78 +69,24 @@ function calculate_temperature(){
         'Réaumur (°Ré)': value / 1.25,
         'Rømer (°Rø)': value * 21 / 40 + 7.5,
       },
-      'Delisle (°D)': {
-        'Celsius (°C)': 100 - value / 1.5,
-        'Delisle (°D)': value,
-        'Fahrenheit (°F)': 212 - value * 1.2,
-        'Kelvin (K)': 373.15 - value / 1.5,
-        'Newton (°N)': 33 - (value * 11 / 50),
-        'Rankine (°Ra)': 671.67 - value * 1.2,
-        'Réaumur (°Ré)': 80 - (value * 8 / 15),
-        'Rømer (°Rø)': 60 - (value * 7 / 20),
-      },
-      'Fahrenheit (°F)': {
-        'Celsius (°C)': (value - 32) / 1.8,
-        'Delisle (°D)': (212 - value) / 1.2,
-        'Fahrenheit (°F)': value,
-        'Kelvin (K)': (value - 32) / 1.8 + 273.15,
-        'Newton (°N)': (value - 32) * 11 / 60,
-        'Rankine (°Ra)': value + 459.67,
-        'Réaumur (°Ré)': (value - 32) * 4 / 9,
-        'Rømer (°Rø)': (value - 32) * 7 / 24 + 7.5,
-      },
-      'Kelvin (K)': {
-        'Celsius (°C)': value - 273.15,
-        'Delisle (°D)': (373.15 - value) * 1.5,
-        'Fahrenheit (°F)': (value - 273.15) * 1.8 + 32,
-        'Kelvin (K)': value,
-        'Newton (°N)': (value - 273.15) * .33,
-        'Rankine (°Ra)': value * 1.8,
-        'Réaumur (°Ré)': (value - 273.15) / 1.25,
-        'Rømer (°Rø)': (value - 273.15) * 21 / 40 + 7.5,
-      },
-      'Newton (°N)': {
-        'Celsius (°C)': value / .33,
-        'Delisle (°D)': (33 - value) * 50 / 11,
-        'Fahrenheit (°F)': value * 60 / 11 + 32,
-        'Kelvin (K)': value / .33 + 273.15,
-        'Newton (°N)': value,
-        'Rankine (°Ra)': value * 60 / 11 + 491.67,
-        'Réaumur (°Ré)': value * 80 / 33,
-        'Rømer (°Rø)': value * 35 / 22 + 7.5,
-      },
-      'Rankine (°Ra)': {
-        'Celsius (°C)': (value - 491.67) / 1.8,
-        'Delisle (°D)': (671.67 - value) / 1.2,
-        'Fahrenheit (°F)': value - 459.67,
-        'Kelvin (K)': value / 1.8,
-        'Newton (°N)': (value - 491.67) * 11 / 60,
-        'Rankine (°Ra)': value,
-        'Réaumur (°Ré)': (value - 491.67) * 4 / 9,
-        'Rømer (°Rø)': (value - 491.67) * 7 / 24 + 7.5,
-      },
-      'Réaumur (°Ré)': {
-        'Celsius (°C)': value * 1.25,
-        'Delisle (°D)': (80 - value) * 15 / 8,
-        'Fahrenheit (°F)': value * 9/4 + 32,
-        'Kelvin (K)': value * 1.25 + 273.15,
-        'Newton (°N)': value * 80 / 33,
-        'Rankine (°Ra)': value * 9 / 4 + 491.67,
-        'Réaumur (°Ré)': value,
-        'Rømer (°Rø)': value * 21 / 32 + 7.5,
-      },
-      'Rømer (°Rø)': {
-        'Celsius (°C)': (value - 7.5) * 40 / 21,
-        'Delisle (°D)': (60 - value) * 20 / 7,
-        'Fahrenheit (°F)': (value - 7.5) * 24 / 7 + 32,
-        'Kelvin (K)': (value - 7.5) * 40 / 21 + 273.15,
-        'Newton (°N)': (value - 7.5) * 22 / 35,
-        'Rankine (°Ra)': (value - 7.5) * 24 / 7 + 491.67,
-        'Réaumur (°Ré)': (value - 7.5) * 32 / 21,
-        'Rømer (°Rø)': value,
-      },
-    }[document.getElementById('temperature-input').value];
-    value = formula[document.getElementById('temperature-output').value];
+      'Delisle (°D)': 100 - value / 1.5,
+      'Fahrenheit (°F)': (value - 32) / 1.8,
+      'Kelvin (K)': value - 273.15,
+      'Newton (°N)': value / .33,
+      'Rankine (°Ra)': (value - 491.67) / 1.8,
+      'Réaumur (°Ré)': value * 1.25,
+      'Rømer (°Rø)': (value - 7.5) * 40 / 21,
+    };
+    var input = document.getElementById('temperature-input').value;
+    var output = document.getElementById('temperature-output').value;
+
+    // If not converting from Celsius, convert to Celsius first.
+    if(input !== 'Celsius (°C)'){
+        value = formula[output];
+    }
+
+    // Convert from Celsius to output unit.
+    value = formula['Celsius (°C)'][output];
 
     // Make sure only allowed number of decimal places are displayed.
     if(value % 1 !== 0){
@@ -341,14 +287,14 @@ var units = {
   'temperature': {
     'default': 'Kelvin (K)',
     'units': {
-      'Celsius (°C)': '',
-      'Delisle (°D)': '',
-      'Fahrenheit (°F)': '',
-      'Kelvin (K)': '',
-      'Newton (°N)': '',
-      'Rankine (°Ra)': '',
-      'Réaumur (°Ré)': '',
-      'Rømer (°Rø)': '',
+      'Celsius (°C)': void 0,
+      'Delisle (°D)': void 0,
+      'Fahrenheit (°F)': void 0,
+      'Kelvin (K)': void 0,
+      'Newton (°N)': void 0,
+      'Rankine (°Ra)': void 0,
+      'Réaumur (°Ré)': void 0,
+      'Rømer (°Rø)': void 0,
     },
   },
   'time': {
