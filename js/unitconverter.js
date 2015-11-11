@@ -314,6 +314,7 @@ var units = {
       'centilitre (cl)': 100,
       'coomb': 1 / 145.47494,
       'gō (合)': 1331 / 240.1,
+      'hekat': 1 / 4.8,
       'imperial bushel': 1 / 36.368735,
       'imperial cup': 1 / .284,
       'imperial fluid-ounce (fl oz)': 35.1950652,

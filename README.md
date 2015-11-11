@@ -226,6 +226,7 @@ board-foot            | FBM
 centilitre            | cl
 coomb                 |
 gō                    | 合
+hekat                 |
 imperial bushel       |
 imperial cup          |
 imperial fluid ounce  | fl oz
