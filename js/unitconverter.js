@@ -261,6 +261,15 @@ var units = {
       'watt (W)': 1,
     },
   },
+  'pressure': {
+    'default': 'pascal (Pa)',
+    'units': {
+      'bar': .00001,
+      'pascal (Pa)': 1,
+      'pound-force per square inch (psi)': .000145038,
+      'standard atmosphere (atm)': 1 / 101325,
+    },
+  },
   'speed': {
     'default': 'metres per second (m/s)',
     'units': {
@@ -303,6 +312,13 @@ var units = {
       'second (s)': 1,
       'week': 1 / 604800,
       'year (a)': 1 / 31556908.8,
+    },
+  },
+  'torque': {
+    'default': 'newton metre (N·m)',
+    'units': {
+      'newton metre (N·m)': 1,
+      'pound-foot (lb·ft)': 1 / 1.355818,
     },
   },
   'volume': {

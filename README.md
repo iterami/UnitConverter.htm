@@ -174,6 +174,15 @@ watt                  | W
 
 ---
 
+Pressure                    | Unit
+----------------------------|-----
+bar                         |
+pascal                      | Pa
+pound-force per square inch | psi
+standard atmosphere         | atm
+
+---
+
 Speed               | Unit
 --------------------|-----
 feet per second     | ft/s
@@ -215,6 +224,13 @@ month             |
 second            | s
 week              |
 year              | a
+
+---
+
+Torque       | Unit
+-------------|-------
+newton metre | N·m
+pound-foot   | lb·ft
 
 ---
 
