@@ -14,14 +14,14 @@ standard gravity         | ɡ<sub>0</sub>
 
 ---
 
-Angle   | Unit
---------|-----
-degree  | °
-gradian | gon
-minute  | m
-radian  | rad
-second  | s
-turn    |
+Angle     | Unit
+----------|-----
+arcminute | ′
+arcsecond | ″
+degree    | °
+gradian   | gon
+radian    | rad
+turn      |
 
 ---
 

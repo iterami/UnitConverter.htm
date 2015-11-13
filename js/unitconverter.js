@@ -104,11 +104,11 @@ var units = {
   'angle': {
     'default': 'radian (rad)',
     'units': {
+      'arcminute (′)': 3437.748,
+      'arcsecond (″)': 206264.88,
       'degree (°)': 57.2958,
       'gradian (gon)': 63.662,
-      'minute (m)': 3437.748,
       'radian (rad)': 1,
-      'second (s)': 206264.88,
       'turn': .159154943,
     },
   },
