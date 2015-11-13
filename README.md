@@ -227,10 +227,11 @@ year              | a
 
 ---
 
-Torque       | Unit
--------------|-------
-newton metre | N·m
-pound-foot   | lb·ft
+Torque         | Unit
+---------------|-------
+kilogram metre | kg·m
+newton metre   | N·m
+pound-foot     | lb·ft
 
 ---
 

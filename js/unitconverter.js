@@ -317,6 +317,7 @@ var units = {
   'torque': {
     'default': 'newton metre (N·m)',
     'units': {
+      'kilogram metre (kg·m)': 1 / 9.80665,
       'newton metre (N·m)': 1,
       'pound-foot (lb·ft)': 1 / 1.355818,
     },
