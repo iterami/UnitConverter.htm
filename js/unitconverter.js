@@ -54,7 +54,7 @@ function calculate(group){
 }
 
 function calculate_all(){
-    for(var type in types()){
+    for(var type in units){
         calculate(type);
     }
 }
