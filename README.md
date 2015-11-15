@@ -36,6 +36,7 @@ cuerda             |
 feet squared       | ft²
 gō                 | 合
 hectare            | ha
+inches squared     | in²
 jō                 | 畳
 kilometres squared | km²
 metres squared     | m²
@@ -191,6 +192,7 @@ knots               |
 mach                | M
 metres per second   | m/s
 miles per hour      | mph
+miles per second    |
 speed of light      | c
 
 ---
