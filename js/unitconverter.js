@@ -267,7 +267,7 @@ var units = {
     'units': {
       'bar': .00001,
       'pascal (Pa)': 1,
-      'pound-force per square inch (psi)': .000145038,
+      'pound-force per square inch absolute (psia)': .000145038,
       'standard atmosphere (atm)': 1 / 101325,
     },
   },

@@ -175,12 +175,12 @@ watt                  | W
 
 ---
 
-Pressure                    | Unit
-----------------------------|-----
-bar                         |
-pascal                      | Pa
-pound-force per square inch | psi
-standard atmosphere         | atm
+Pressure                             | Unit
+-------------------------------------|-----
+bar                                  |
+pascal                               | Pa
+pound-force per square inch absolute | psia
+standard atmosphere                  | atm
 
 ---
 
