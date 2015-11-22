@@ -348,6 +348,7 @@ var units = {
       'kilolitre (kl)': .001,
       'koku (石)': 1331 / 240100,
       'litre (l)': 1,
+      'metretes': 1 / 37.4,
       'metric cup': 4,
       'millilitre (ml)': 1000,
       'sai (才)': 1331 / 2.401,

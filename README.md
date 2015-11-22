@@ -260,6 +260,7 @@ Japanese cup          |
 kilolitre             | kl
 koku                  | 石
 litre                 | l
+metretes              |
 metric cup            |
 millilitre            | ml
 sai                   | 才
