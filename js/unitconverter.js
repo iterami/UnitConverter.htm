@@ -244,7 +244,7 @@ var units = {
       'milligram (mg)': 1000,
       'momme (匁)': 1 / 3.75,
       'ounce (oz)': 1 / 28.3495,
-      'pound (lb)': 1 / 453.592,
+      'pound (lb)': 1 / 453.59237,
       'room': 1 / 7112.328360594,
       'ship load': 1 / 430803.8893312,
       'short-ton': 1 / 907184,
