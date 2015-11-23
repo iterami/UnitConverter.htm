@@ -60,15 +60,16 @@ metric tons per cubic metre | t/m<sup>3</sup>
 
 ---
 
-Energy                 | Unit
------------------------|-------------------
-erg                    |
-joule                  | J
-mean BTU               | Btu<sub>mean</sub>
-mean calorie           | cal<sub>mean</sub>
-thermochemical BTU     | Btu<sub>th</sub>
-thermochemical calorie | cal<sub>th</sub>
-ton of TNT             |
+Energy                            | Unit
+----------------------------------|-------------------
+erg                               |
+international steam table calorie | cal<sub>it</sub>
+joule                             | J
+mean BTU                          | Btu<sub>mean</sub>
+mean calorie                      | cal<sub>mean</sub>
+thermochemical BTU                | Btu<sub>th</sub>
+thermochemical calorie            | cal<sub>th</sub>
+ton of TNT                        |
 
 ---
 
