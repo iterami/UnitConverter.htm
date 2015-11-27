@@ -157,6 +157,7 @@ microgram    | µg
 milligram    | mg
 momme        | 匁
 ounce        | oz
+pennyweight  | dwt
 pound        | lb
 room         |
 ship load    |
