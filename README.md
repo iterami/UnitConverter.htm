@@ -157,6 +157,7 @@ microgram    | µg
 milligram    | mg
 momme        | 匁
 ounce        | oz
+passeree     |
 pennyweight  | dwt
 pound        | lb
 room         |

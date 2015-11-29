@@ -245,6 +245,7 @@ var units = {
       'milligram (mg)': 1000,
       'momme (匁)': 1 / 3.75,
       'ounce (oz)': 1 / 28.3495,
+      'passeree': 1 / 4677,
       'pennyweight (dwt)': 1 / 1.55517384,
       'pound (lb)': 1 / 453.59237,
       'room': 1 / 7112.328360594,
