@@ -239,6 +239,7 @@ var units = {
       'keel': 1 / 21540.19446656,
       'kilogram (kg)': 1,
       'kin (斤)': 1 / .6,
+      'large sack': 1 / 101.60469088,
       'long-ton': 1 / 1016.04608,
       'metric-tonne (t)': .001,
       'microgram (µg)': 1000000000,

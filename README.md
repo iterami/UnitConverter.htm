@@ -151,6 +151,7 @@ kanme        | 貫目
 keel         |
 kilogram     | kg
 kin          | 斤
+large sack   |
 long ton     |
 metric tonne | t
 microgram    | µg
