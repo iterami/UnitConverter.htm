@@ -69,7 +69,9 @@ function reverse(id){
 
 function temperature_formulae(value){
     return {
+      'Amonton': (4.65116 * value) - 239.535,
       'Celsius (°C)': {
+        'Amonton': (.215 * value) + 51.5,
         'Celsius (°C)': value,
         'Delisle (°D)': (100 - value) * 1.5,
         'Fahrenheit (°F)': value * 1.8 + 32,
@@ -291,6 +293,7 @@ var units = {
   'temperature': {
     'default': 'Kelvin (K)',
     'units': {
+      'Amonton': void 0,
       'Celsius (°C)': void 0,
       'Delisle (°D)': void 0,
       'Fahrenheit (°F)': void 0,

@@ -203,6 +203,7 @@ speed of light      | c
 
 Temperature | Unit
 ------------|-----
+Amonton     |
 Celsius     | °C
 Delisle     | °D
 Fahrenheit  | °F
