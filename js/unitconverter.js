@@ -94,7 +94,7 @@ function temperature_formulae(value){
         'De Lyon': value * .984375,
         'de Revillas': value / -.673609334 + 148.454,
         'de Suede': value * .995999 + .040011,
-        'de Villeneuve': value * (4 / 3);
+        'de Villeneuve': value * (4 / 3),
         'Du Crest': value * 1.17118 - 17.0992,
         'Edinburgh': value * .386714 + 8.25,
         'electron volts': value / 11604.9669 + .0235383,
@@ -123,7 +123,7 @@ function temperature_formulae(value){
         'Rankine (°Ra)': (value + 273.15) * 1.8,
         'Réaumur (°Ré)': value / 1.25,
         'Richter': value * .82125 + 18,
-        'Rinaldini': value * .12
+        'Rinaldini': value * .12,
         'Rømer (°Rø)': value * 21 / 40 + 7.5,
         'Sagredo': value * 4.73934 + 100,
         'Sulzer': value * 1.57075 - 1.07547,
