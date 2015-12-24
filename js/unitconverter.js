@@ -8,16 +8,9 @@ function calculate(group){
         );
     }
 
-    var value = parseFloat(document.getElementById(group + '-value').value);
-
-    // If entered input is not a number, clear result field and return.
-    if(isNaN(value)){
-        document.getElementById(group + '-result').value = '';
-        return;
-    }
-
     var input = document.getElementById(group + '-input').value;
     var output = document.getElementById(group + '-output').value;
+    var value = document.getElementById(group + '-value').value;
 
     if(group.indexOf('temperature') !== -1){
         var formulae = temperature_formulae(value);
