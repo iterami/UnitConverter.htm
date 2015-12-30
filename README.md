@@ -124,6 +124,7 @@ kanejaku          | 曲尺
 ken               | 間
 kilometre         | km
 lightyear         | ly
+ligne             |
 link              | l.
 metre             | m
 mil               |

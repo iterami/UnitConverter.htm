@@ -289,6 +289,7 @@ var units = {
       'ken (間)': .55,
       'kilometre (km)': .001,
       'lightyear (ly)': 1 / 9460730472580800,
+      'ligne': 1 / .0022558291,
       'link (l.)': 1 / .201168,
       'metre (m)': 1,
       'mil': 39370.1,
