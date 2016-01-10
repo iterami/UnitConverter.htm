@@ -308,6 +308,9 @@ var units = {
   'mass': {
     'default': 'kilogram (kg)',
     'units': {
+      'abucco': 1 / .19644,
+      'agiro': 1 / .39288,
+      'biza': 1 / 1.57152,
       'caret (ct)': 5000,
       'centigram (cg)': 100000,
       'fun (分)': 4 / .0015,
@@ -332,6 +335,7 @@ var units = {
       'short-ton': 1 / 907.184,
       'slug': .0685217659,
       'stone (st)': 1 / 6.35029318,
+      'teccalis': 1 / .0157152,
       'troy-ounce (oz t)': 1 / .0311034768,
     },
   },

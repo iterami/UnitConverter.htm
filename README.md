@@ -143,6 +143,9 @@ yard              | yd
 
 Mass         | Unit
 -------------|-----
+abucco       |
+agiro        |
+biza         |
 caret        | ct
 centigram    | cg
 fun          | 分
@@ -167,6 +170,7 @@ ship load    |
 short ton    |
 slug         |
 stone        | st
+teccalis     |
 troy ounce   | oz t
 
 ---
