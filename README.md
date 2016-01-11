@@ -141,37 +141,39 @@ yard              | yd
 
 ---
 
-Mass         | Unit
--------------|-----
-abucco       |
-agiro        |
-biza         |
-caret        | ct
-centigram    | cg
-fun          | 分
-gram         | g
-hyakume      | 百目
-kanme        | 貫目
-keel         |
-kilogram     | kg
-kin          | 斤
-large sack   |
-long ton     |
-metric tonne | t
-microgram    | µg
-milligram    | mg
-momme        | 匁
-ounce        | oz
-passeree     |
-pennyweight  | dwt
-pound        | lb
-room         |
-ship load    |
-short ton    |
-slug         |
-stone        | st
-teccalis     |
-troy ounce   | oz t
+Mass          | Unit
+--------------|-----
+abucco        |
+adowlie       |
+agiro         |
+biza          |
+caret         | ct
+centigram     | cg
+fun           | 分
+gram          | g
+heavy adowlie |
+hyakume       | 百目
+kanme         | 貫目
+keel          |
+kilogram      | kg
+kin           | 斤
+large sack    |
+long ton      |
+metric tonne  | t
+microgram     | µg
+milligram     | mg
+momme         | 匁
+ounce         | oz
+passeree      |
+pennyweight   | dwt
+pound         | lb
+room          |
+ship load     |
+short ton     |
+slug          |
+stone         | st
+teccalis      |
+troy ounce    | oz t
 
 ---
 
@@ -291,6 +293,7 @@ pound-foot     | lb·ft
 Volume                | Unit
 ----------------------|------
 acre-foot             |
+adowlie               |
 Australian tablespoon |
 board-foot            | FBM
 centilitre            | cl

@@ -309,12 +309,14 @@ var units = {
     'default': 'kilogram (kg)',
     'units': {
       'abucco': 1 / .19644,
+      'adowlie': 1 / 1.982,
       'agiro': 1 / .39288,
       'biza': 1 / 1.57152,
       'caret (ct)': 5000,
       'centigram (cg)': 100000,
       'fun (分)': 4 / .0015,
       'gram (g)': 1000,
+      'heavy adowlie': 1 / 2.031,
       'hyakume (百目)': 1 / .375,
       'kanme (貫目)': 1 / 3.75,
       'keel': 1 / 21540.19446656,
@@ -453,6 +455,7 @@ var units = {
     'default': 'litre (l)',
     'units': {
       'acre-foot': 1 / 1233480,
+      'adowlie': 1 / 2.509,
       'Australian tablespoon': 50,
       'board-foot (FBM)': 1 / 2.359737225,
       'centilitre (cl)': 100,
