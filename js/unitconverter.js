@@ -15,14 +15,14 @@ function calculate(group){
     if(group.indexOf('temperature') !== -1){
         var formulae = temperature_formulae(value);
 
-        // If not converting from Celsius, convert to Celsius first.
-        if(input !== 'Celsius (°C)'){
+        // If not converting from default temperature, convert to default temperature first.
+        if(input !== formulae['_default']){
             value = formulae[input];
             formulae = temperature_formulae(value);
         }
 
-        // Convert from Celsius to output unit.
-        value = formulae['Celsius (°C)'][output];
+        // Convert from default temperature to output unit.
+        value = formulae[formulae['_default']][output];
 
     }else{
         // Only calculate stuff if the input unit is not the same as the output unit.
@@ -62,6 +62,7 @@ function reverse(id){
 
 function temperature_formulae(value){
     return {
+      '_default': 'Celsius (°C)',
       'Amonton': value * 4.65116 - 239.535,
       'Barnsdorf': value * 3.80952 - 13.9683,
       'Beaumuir': value * 1.23862,
