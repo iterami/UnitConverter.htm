@@ -270,6 +270,7 @@ Sulzer            |
 
 Time              | Unit
 ------------------|------
+atom              |
 day               | d
 fortnight         |
 helek             | hl
@@ -277,6 +278,7 @@ hour              | h
 Internet Time     | .beat
 lunar day         |
 Martian solar day | sol
+momentum          |
 microcentury      | µc.
 minute            | min
 month             |

@@ -432,6 +432,7 @@ var units = {
   'time': {
     'default': 'second (s)',
     'units': {
+      'atom': 1 / .15957446808,
       'day (d)': 1 / 86400,
       'fortnight': 1 / 1209600,
       'helek (hl)': .3,
@@ -441,6 +442,7 @@ var units = {
       'Martian solar day (sol)': 1 / 88775.2,
       'microcentury (µc.)': 1 / 3154,
       'minute (min)': 1 / 60,
+      'momentum': 1 / 90,
       'month': 1 / 2592000,
       'second (s)': 1,
       'week': 1 / 604800,
