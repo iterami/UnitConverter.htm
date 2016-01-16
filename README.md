@@ -104,6 +104,7 @@ phot        | ph
 
 Length            | Unit
 ------------------|-----
+ald               |
 ångström          | Å
 arpent            |
 bu                | 分

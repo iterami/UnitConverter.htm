@@ -269,6 +269,7 @@ var units = {
   'length': {
     'default': 'metre (m)',
     'units': {
+      'ald': 1 / 1.6,
       'ångström (Å)': 1 / .0000000001,
       'arpent': 1 / 58.47109,
       'astronomical unit (au)': 1 / 149597870700,
