@@ -108,6 +108,7 @@ ald               |
 alen              |
 aln               |
 ångström          | Å
+Aṅgula            |
 arpent            |
 bu                | 分
 astronomical unit | au

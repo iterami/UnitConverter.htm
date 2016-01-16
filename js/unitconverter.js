@@ -273,6 +273,7 @@ var units = {
       'alen': 1 / .6277,
       'aln': 1 / .5938,
       'ångström (Å)': 1 / .0000000001,
+      'Aṅgula': 1 / .01763,
       'arpent': 1 / 58.47109,
       'astronomical unit (au)': 1 / 149597870700,
       'bu (分)': 330,
