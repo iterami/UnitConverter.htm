@@ -298,7 +298,7 @@ pound-foot     | lb·ft
 ---
 
 Volume                | Unit
-----------------------|------
+----------------------|---------------
 acre-foot             |
 adowlie               |
 Australian tablespoon |
@@ -306,6 +306,9 @@ board-foot            | FBM
 centilitre            | cl
 chungah               |
 coomb                 |
+cubic inch            | in<sup>3</sup>
+cubic foot            | ft<sup>3</sup>
+cubic yard            | yd<sup>3</sup>
 gō                    | 合
 hekat                 |
 imperial bushel       |
