@@ -6,10 +6,10 @@ Unit conversion tool that can convert units of various types to a specified numb
 ---
 
 Acceleration             | Unit
--------------------------|----------------
-foot per second squared  | ft/s<sup>2</sup>
+-------------------------|--------------
+foot per second squared  | ft/s²
 gal                      | Gal
-metre per second squared | m/s<sup>2</sup>
+metre per second squared | m/s²
 standard gravity         | ɡ<sub>0</sub>
 
 ---
@@ -53,11 +53,11 @@ tsubo              | 坪
 ---
 
 Density                     | Unit
-----------------------------|-----------------
+----------------------------|------
 grams per millilitre        | g/ml
-kilograms per cubic metre   | kg/m<sup>3</sup>
+kilograms per cubic metre   | kg/m³
 kilograms per litre         | kg/l
-metric tons per cubic metre | t/m<sup>3</sup>
+metric tons per cubic metre | t/m³
 
 ---
 
@@ -298,7 +298,7 @@ pound-foot     | lb·ft
 ---
 
 Volume                | Unit
-----------------------|---------------
+----------------------|------
 acre-foot             |
 adowlie               |
 Australian tablespoon |
@@ -306,9 +306,9 @@ board-foot            | FBM
 centilitre            | cl
 chungah               |
 coomb                 |
-cubic inch            | in<sup>3</sup>
-cubic foot            | ft<sup>3</sup>
-cubic yard            | yd<sup>3</sup>
+cubic inch            | in³
+cubic foot            | ft³
+cubic yard            | yd³
 gō                    | 合
 hekat                 |
 imperial bushel       |
