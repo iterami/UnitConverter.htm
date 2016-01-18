@@ -31,6 +31,7 @@ acre               | ac
 are                | a
 barn               | b
 bu                 | 歩
+cawnie             |
 chō                | 町
 cuerda             |
 feet squared       | ft²
