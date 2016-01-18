@@ -466,6 +466,7 @@ var units = {
       'Australian tablespoon': 50,
       'board-foot (FBM)': 1 / 2.359737225,
       'centilitre (cl)': 100,
+      'chungah': 1 / .75768236466,
       'coomb': 1 / 145.47494,
       'gō (合)': 1331 / 240.1,
       'hekat': 1 / 4.8,

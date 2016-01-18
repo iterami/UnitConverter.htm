@@ -304,6 +304,7 @@ adowlie               |
 Australian tablespoon |
 board-foot            | FBM
 centilitre            | cl
+chungah               |
 coomb                 |
 gō                    | 合
 hekat                 |
