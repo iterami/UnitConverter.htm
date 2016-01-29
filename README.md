@@ -154,6 +154,7 @@ agiro         |
 biza          |
 caret         | ct
 centigram     | cg
+cullingey     |
 fun           | 分
 gram          | g
 heavy adowlie |
@@ -178,6 +179,7 @@ short ton     |
 slug          |
 stone         | st
 teccalis      |
+troy grain    | gr
 troy ounce    | oz t
 
 ---
