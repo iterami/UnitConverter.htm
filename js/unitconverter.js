@@ -468,6 +468,7 @@ var units = {
       'centilitre (cl)': 100,
       'chungah': 1 / .75768236466,
       'coomb': 1 / 145.47494,
+      'cran': 1 / 170.47853205,
       'cubic inch (in³)': 61.0237440947323,
       'cubic foot (ft³)': 1 / 28.316846592,
       'cubic yard (yd³)': 1 / 764.5549,

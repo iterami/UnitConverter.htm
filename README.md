@@ -306,6 +306,7 @@ board-foot            | FBM
 centilitre            | cl
 chungah               |
 coomb                 |
+cran                  |
 cubic inch            | in³
 cubic foot            | ft³
 cubic yard            | yd³
