@@ -253,10 +253,10 @@ var units = {
   'fuel': {
     'default': 'kilometres per litre (km/l)',
     'units': {
-      'imperial miles per gallon (MPG)': 2.82481,
       'kilometres per litre (km/l)': 1,
       'litres per 100 kilometres (l/100km)': 100,
-      'US miles per gallon (MPG)': 2.35215,
+      'miles per imperial gallon (MPG)': 2.82481,
+      'miles per US gallon (MPG)': 2.35215,
     },
   },
   'illuminance': {

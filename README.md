@@ -88,10 +88,10 @@ poundal        | pdl
 
 Fuel                      | Unit
 --------------------------|--------
-imperial miles per gallon | MPG
 kilometres per litre      | km/l
 litres per 100 kilometres | l/100km
-US miles per gallon       | MPG
+miles per imperial gallon | MPG
+miles per US gallon       | MPG
 
 ---
 
