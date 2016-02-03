@@ -5,12 +5,14 @@ Unit conversion tool that can convert units of various types to a specified numb
 
 ---
 
-Acceleration             | Unit
--------------------------|--------------
-foot per second squared  | ft/s²
-gal                      | Gal
-metre per second squared | m/s²
-standard gravity         | ɡ<sub>0</sub>
+Acceleration                | Unit
+----------------------------|--------------
+foot per second squared     | ft/s²
+kilometres per hour squared | kph²
+gal                         | Gal
+metre per second squared    | m/s²
+miles per hour squared      | mph²
+standard gravity            | ɡ<sub>0</sub>
 
 ---
 

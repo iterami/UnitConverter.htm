@@ -173,8 +173,10 @@ var units = {
     'default': 'metre per second squared (m/s²)',
     'units': {
       'foot per second squared (ft/s²)': 3.280839895,
+      'kilometres per hour squared (kph²)': 3.6,
       'gal (Gal)': 100,
       'metre per second squared (m/s²)': 1,
+      'miles per hour squared (mph²)': 1 / (1.4 + (2 / 30)),
       'standard gravity (ɡ₀)': 1 / 9.80665,
     },
   },
