@@ -318,6 +318,7 @@ cran                  |
 cubic inch            | in³
 cubic foot            | ft³
 cubic yard            | yd³
+demiard               |
 gō                    | 合
 hekat                 |
 imperial bushel       |
