@@ -34,6 +34,7 @@ bu                 | 歩
 cawnie             |
 chō                | 町
 cuerda             |
+decimal            |
 feet squared       | ft²
 gō                 | 合
 hectare            | ha

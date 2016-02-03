@@ -199,6 +199,7 @@ var units = {
       'cawnie': 1 / 5349,
       'chō (町)': 1 / 9917.36,
       'cuerda': 1 / 3930.395625,
+      'decimal': 1 / 40.4686,
       'feet squared (ft²)': 10.7639,
       'gō (合)': 1 / .3306,
       'hectare (ha)': .0001,
