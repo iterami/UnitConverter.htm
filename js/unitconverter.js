@@ -479,6 +479,7 @@ var units = {
       'cran': 1 / 170.47853205,
       'cubic inch (in³)': 61.0237440947323,
       'cubic foot (ft³)': 1 / 28.316846592,
+      'cubic metre (m³)': .001,
       'cubic yard (yd³)': 1 / 764.5549,
       'demiard': 1 / .284,
       'gō (合)': 1331 / 240.1,
