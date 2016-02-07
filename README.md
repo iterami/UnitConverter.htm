@@ -154,10 +154,13 @@ Mass          | Unit
 abucco        |
 adowlie       |
 agiro         |
+bisauli       | बिसौलि
 biza          |
+boṛi          | बोड़ि
 caret         | ct
 centigram     | cg
 cullingey     |
+dharni        | धार्नि
 fun           | 分
 gram          | g
 heavy adowlie |
@@ -174,6 +177,7 @@ milligram     | mg
 momme         | 匁
 ounce         | oz
 passeree      |
+pāu           | पाउ
 pennyweight   | dwt
 pound         | lb
 room          |
