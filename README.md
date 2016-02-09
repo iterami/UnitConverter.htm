@@ -130,6 +130,7 @@ hand              | h
 hiro              | 尋
 inch              | in
 jō                | 丈
+jow               |
 kanejaku          | 曲尺
 ken               | 間
 kilometre         | km

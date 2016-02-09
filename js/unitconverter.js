@@ -295,6 +295,7 @@ var units = {
       'hiro (尋)': .55,
       'inch (in)': 39.3701,
       'jō (丈)': .33,
+      'jow': 1 / .00635,
       'kanejaku (曲尺)': 3.3,
       'ken (間)': .55,
       'kilometre (km)': .001,
