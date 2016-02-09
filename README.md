@@ -124,6 +124,7 @@ cubit             |
 fathom            |
 foot              | ft
 furlong           |
+girah             |
 hand              | h
 hiro              | 尋
 inch              | in
