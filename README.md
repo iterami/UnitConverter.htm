@@ -161,6 +161,7 @@ caret         | ct
 centigram     | cg
 cullingey     |
 dharni        | धार्नि
+esterling     |
 fun           | 分
 gram          | g
 heavy adowlie |
