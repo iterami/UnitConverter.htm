@@ -318,6 +318,7 @@ Volume                | Unit
 acre-foot             |
 adowlie               |
 Australian tablespoon |
+bath                  |
 board-foot            | FBM
 centilitre            | cl
 chungah               |
@@ -332,6 +333,7 @@ garce (India)         |
 garce (Sri Lanka)     |
 gō                    | 合
 hekat                 |
+homer                 |
 imperial bushel       |
 imperial cup          |
 imperial fluid ounce  | fl oz
