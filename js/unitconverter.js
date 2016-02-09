@@ -204,6 +204,7 @@ var units = {
       'decimal': 1 / 40.4686,
       'feet squared (ft²)': 10.7639,
       'gō (合)': 1 / .3306,
+      'ground': 1 / 203,
       'hectare (ha)': .0001,
       'inches squared (in²)': 1550.0031,
       'jō (畳)': 1 / 1.653,

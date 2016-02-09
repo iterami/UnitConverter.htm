@@ -39,6 +39,7 @@ cuerda             |
 decimal            |
 feet squared       | ft²
 gō                 | 合
+ground             |
 hectare            | ha
 inches squared     | in²
 jō                 | 畳
