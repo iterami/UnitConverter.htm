@@ -174,6 +174,7 @@ kanme         | 貫目
 keel          |
 kilogram      | kg
 kin           | 斤
+kula          |
 large sack    |
 long ton      |
 metric tonne  | t
@@ -186,6 +187,7 @@ pāu           | पाउ
 pennyweight   | dwt
 pound         | lb
 room          |
+rotal         |
 ship load     |
 short ton     |
 slug          |
