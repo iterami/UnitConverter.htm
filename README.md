@@ -163,6 +163,7 @@ cullingey     |
 dharni        | धार्नि
 esterling     |
 fun           | 分
+garce         |
 gram          | g
 heavy adowlie |
 hyakume       | 百目
@@ -325,6 +326,8 @@ cubic foot            | ft³
 cubic metre           | m³
 cubic yard            | yd³
 demiard               |
+garce (India)         |
+garce (Sri Lanka)     |
 gō                    | 合
 hekat                 |
 imperial bushel       |
