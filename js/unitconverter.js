@@ -512,6 +512,7 @@ var units = {
       'japanese cup': 5,
       'kilolitre (kl)': .001,
       'koku (石)': 1331 / 240100,
+      'lambda (λ)': 1000000,
       'litre (l)': 1,
       'metretes': 1 / 37.4,
       'metric cup': 4,
