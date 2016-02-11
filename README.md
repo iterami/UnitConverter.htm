@@ -347,6 +347,7 @@ imperial gill         |
 imperial peck         |
 imperial pint         | pt
 imperial quart        | qt
+imperial shipping ton |
 imperial tablespoon   | tbsp
 imperial teaspoon     | tbsp
 Japanese cup          |
@@ -369,6 +370,7 @@ US gill               |
 US peck               |
 US pint               | pt
 US quart              | qt
+US shipping ton       |
 US tablespoon         | tbsp
 US teaspoon           | tsp
 yard of ale           |
