@@ -44,6 +44,7 @@ hectare            | ha
 inches squared     | in²
 jō                 | 畳
 kilometres squared | km²
+marabba            |
 metres squared     | m²
 miles squared      | mi²
 plaza              |

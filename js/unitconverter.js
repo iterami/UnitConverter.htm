@@ -209,6 +209,7 @@ var units = {
       'inches squared (in²)': 1550.0031,
       'jō (畳)': 1 / 1.653,
       'kilometres squared (km²)': .000001,
+      'marabba': 1 / 101171,
       'metres squared (m²)': 1,
       'miles squared (mi²)': 1 / 2589990,
       'plaza': .00015625,
