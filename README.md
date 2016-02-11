@@ -182,6 +182,7 @@ metric tonne  | t
 microgram     | µg
 milligram     | mg
 momme         | 匁
+munjandie     |
 ounce         | oz
 passeree      |
 pāu           | पाउ

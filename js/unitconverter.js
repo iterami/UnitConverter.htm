@@ -347,6 +347,7 @@ var units = {
       'microgram (µg)': 1000000000,
       'milligram (mg)': 1000000,
       'momme (匁)': 1 / .00375,
+      'munjandie': 1 / .00025919564,
       'ounce (oz)': 35.274,
       'passeree': 1 / 4.677,
       'pāu (पाउ)': 1 / .194375,
