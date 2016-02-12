@@ -358,6 +358,7 @@ litre                 | l
 metretes              |
 metric cup            |
 millilitre            | ml
+octave                |
 sai                   | 才
 shaku                 | 勺
 shō                   | 升

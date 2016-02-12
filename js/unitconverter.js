@@ -520,6 +520,7 @@ var units = {
       'metretes': 1 / 37.4,
       'metric cup': 4,
       'millilitre (ml)': 1000,
+      'octave': 1 / 73,
       'sai (才)': 1331 / 2.401,
       'shaku (勺)': 1331 / 24.01,
       'shō (升)': 1331 / 2401,
