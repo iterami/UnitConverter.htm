@@ -181,6 +181,7 @@ long ton      |
 metric tonne  | t
 microgram     | µg
 milligram     | mg
+mina          |
 momme         | 匁
 munjandie     |
 ounce         | oz
@@ -334,6 +335,7 @@ cubic foot            | ft³
 cubic metre           | m³
 cubic yard            | yd³
 demiard               |
+ephah                 | עֵיפָה‎
 garce (India)         |
 garce (Sri Lanka)     |
 gō                    | 合
@@ -355,10 +357,14 @@ kilolitre             | kl
 koku                  | 石
 lambda                | λ
 litre                 | l
+log                   |
+maris                 |
 metretes              |
 metric cup            |
 millilitre            | ml
+mina                  |
 octave                |
+omer                  | עמר‎
 sai                   | 才
 shaku                 | 勺
 shō                   | 升
