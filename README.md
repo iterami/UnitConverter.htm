@@ -153,51 +153,53 @@ yard              | yd
 
 ---
 
-Mass          | Unit
---------------|-----
-abucco        |
-adowlie       |
-agiro         |
-bisauli       | बिसौलि
-biza          |
-boṛi          | बोड़ि
-caret         | ct
-centigram     | cg
-cullingey     |
-dharni        | धार्नि
-esterling     |
-fun           | 分
-garce         |
-gram          | g
-heavy adowlie |
-hyakume       | 百目
-kanme         | 貫目
-keel          |
-kilogram      | kg
-kin           | 斤
-kula          |
-large sack    |
-long ton      |
-metric tonne  | t
-microgram     | µg
-milligram     | mg
-mina          |
-momme         | 匁
-munjandie     |
-ounce         | oz
-passeree      |
-pāu           | पाउ
-pennyweight   | dwt
-pound         | lb
-room          |
-rotal         |
-ship load     |
-short ton     |
-slug          |
-stone         | st
-teccalis      |
-troy grain    | gr
-troy ounce    | oz t
+Mass               | Unit
+-------------------|-----
+abucco             |
+adowlie            |
+agiro              |
+bisauli            | बिसौलि
+biza               |
+boṛi               | बोड़ि
+caret              | ct
+centigram          | cg
+cullingey          |
+dharni             | धार्नि
+esterling          |
+fun                | 分
+garce              |
+gram               | g
+heavy adowlie      |
+hyakume            | 百目
+kanme              | 貫目
+keel               |
+kilogram           | kg
+kin                | 斤
+kula               |
+large sack         |
+long ton           |
+metric tonne       | t
+microgram          | µg
+milligram          | mg
+mina               |
+momme              | 匁
+munjandie          |
+ounce              | oz
+passeree           |
+pāu                | पाउ
+pennyweight        | dwt
+pound              | lb
+room               |
+rotal              |
+seer (Afghanistan) |
+seer (India)       |
+ship load          |
+short ton          |
+slug               |
+stone              | st
+teccalis           |
+troy grain         | gr
+troy ounce         | oz t
 
 ---
 
