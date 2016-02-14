@@ -216,6 +216,7 @@ Pressure                             | Unit
 -------------------------------------|-----
 bar                                  |
 pascal                               | Pa
+pièze                                | pz
 pound-force per square inch absolute | psia
 standard atmosphere                  | atm
 
