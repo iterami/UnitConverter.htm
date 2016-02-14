@@ -367,6 +367,7 @@ millilitre            | ml
 mina                  |
 octave                |
 omer                  | עמר‎
+pau                   |
 sai                   | 才
 shaku                 | 勺
 shō                   | 升
