@@ -207,6 +207,7 @@ Power                 | Unit
 ----------------------|-----
 mechanical horsepower | hp
 metric horsepower     | PS
+poncelet              | p
 ton of refridgeration | TR
 watt                  | W
 
