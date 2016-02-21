@@ -181,6 +181,7 @@ function temperature_formulae(value){
 }
 
 var prefixes = {
+  'hella ²⁷': 27,
   'yotta (Y)²⁴': 24,
   'zetta (Z)²¹': 21,
   'exa (E)¹⁸': 18,
