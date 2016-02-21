@@ -583,14 +583,14 @@ window.onload = function(e){
 
     for(var type in units){
         input += '<select id=' + type + '-input-prefix>';
-        output += '<select id=' + type + '-output-prefix>';
+        output += '<input id=' + type + '-result readonly><select id=' + type + '-output-prefix>';
         for(var prefix in prefixes){
             input += '<option value=' + prefixes[prefix] + '>' + prefix + '</option>';
             output += '<option value=' + prefixes[prefix] + '>' + prefix + '</option>';
         }
 
         input += '</select><select id=' + type + '-input>';
-        output += '</select><input id=' + type + '-result readonly> <select id=' + type + '-output>';
+        output += '</select><select id=' + type + '-output>';
         reverse += '<a onclick="reverse(\'' + type + '\')">'
           + type
           + '</a>';
@@ -600,7 +600,7 @@ window.onload = function(e){
             output += '<option value="' + unit + '">' + unit + '</option>';
         }
 
-        input += '</select> <input id=' + type + '-value><br>';
+        input += '</select><input id=' + type + '-value><br>';
         output += '</select><br>';
     }
 
