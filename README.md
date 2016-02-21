@@ -8,8 +8,8 @@ Unit conversion tool that can convert units of various types to a specified numb
 Acceleration                | Unit
 ----------------------------|--------------
 foot per second squared     | ft/s²
-kilometres per hour squared | kph²
 gal                         | Gal
+metre per hour squared      | m/h²
 metre per second squared    | m/s²
 miles per hour squared      | mph²
 standard gravity            | ɡ<sub>0</sub>
@@ -43,7 +43,6 @@ ground             |
 hectare            | ha
 inches squared     | in²
 jō                 | 畳
-kilometres squared | km²
 marabba            |
 metres squared     | m²
 miles squared      | mi²
@@ -59,9 +58,8 @@ tsubo              | 坪
 
 Density                     | Unit
 ----------------------------|------
-grams per millilitre        | g/ml
-kilograms per cubic metre   | kg/m³
-kilograms per litre         | kg/l
+grams per cubic metre       | g/m³
+grams per litre             | g/l
 metric tons per cubic metre | t/m³
 
 ---
@@ -82,7 +80,7 @@ ton of TNT                        |
 Force          | Unit
 ---------------|-----
 dyne           | dyn
-kilogram-force | kgf
+gram-force     | gf
 kip            |
 newton         | N
 ounce-force    | ozf
@@ -118,7 +116,6 @@ Aṅgula            |
 arpent            |
 bu                | 分
 astronomical unit | au
-centimetre        | cm
 chain             | ch
 chi               | 尺
 chō               | 町
@@ -134,14 +131,12 @@ jō                | 丈
 jow               |
 kanejaku          | 曲尺
 ken               | 間
-kilometre         | km
 lightyear         | ly
 ligne             |
 link              | l.
 metre             | m
 mil               |
 mile              | mi
-millimetre        | mm
 mō                | 毛, 毫
 nautical mile     | nmi
 parsec            | pc
@@ -227,9 +222,9 @@ torr                                 | Torr
 Speed               | Unit
 --------------------|-----
 feet per second     | ft/s
-kilometres per hour | kph
 knots               |
 mach                | M
+metres per hour     | m/h
 metres per second   | m/s
 miles per hour      | mph
 miles per second    |
@@ -296,6 +291,7 @@ Sulzer            |
 Time                | Unit
 --------------------|------
 atom                |
+century             | c.
 day                 | d
 fortnight           |
 helek               | hl
@@ -304,7 +300,6 @@ Internet Time       | .beat
 lunar day           |
 Martian solar day   | sol
 momentum            |
-microcentury        | µc.
 minute              | min
 month               |
 radar kilometre     |
@@ -318,7 +313,7 @@ year                | a
 
 Torque         | Unit
 ---------------|-------
-kilogram metre | kg·m
+gram metre     | g·m
 newton metre   | N·m
 pound-foot     | lb·ft
 
@@ -331,7 +326,6 @@ adowlie               |
 Australian tablespoon |
 bath                  |
 board-foot            | FBM
-centilitre            | cl
 chungah               |
 coomb                 |
 cran                  |
@@ -358,7 +352,6 @@ imperial shipping ton |
 imperial tablespoon   | tbsp
 imperial teaspoon     | tbsp
 Japanese cup          |
-kilolitre             | kl
 koku                  | 石
 lambda                | λ
 litre                 | l
@@ -366,7 +359,6 @@ log                   |
 maris                 |
 metretes              |
 metric cup            |
-millilitre            | ml
 mina                  |
 octave                |
 omer                  | עמר‎

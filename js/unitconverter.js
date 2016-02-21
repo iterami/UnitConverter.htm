@@ -12,6 +12,12 @@ function calculate(group){
     var output = document.getElementById(group + '-output').value;
     var value = document.getElementById(group + '-value').value;
 
+    // Adjust input based on input prefix.
+    value *= Math.pow(
+      10,
+      document.getElementById(group + '-input-prefix').value
+    );
+
     if(group.indexOf('temperature') !== -1){
         var formulae = temperature_formulae(value);
 
@@ -36,6 +42,12 @@ function calculate(group){
             value *= units[group]['units'][output];
         }
     }
+
+    // Adjust output based on output prefix.
+    value /= Math.pow(
+      10,
+      document.getElementById(group + '-output-prefix').value
+    );
 
     // Make sure only allowed number of decimal places are displayed.
     if(value % 1 !== 0){
@@ -168,13 +180,36 @@ function temperature_formulae(value){
     };
 }
 
+var prefixes = {
+  'yotta (Y)': 24,
+  'zetta (Z)': 21,
+  'exa (E)': 18,
+  'peta (P)': 15,
+  'tera (T)': 12,
+  'giga (G)': 9,
+  'mega (M)': 6,
+  'kilo (k)': 3,
+  'hecto (h)': 2,
+  'deca (da)': 1,
+  '': 0,
+  'deci (d)': -1,
+  'centi (c)': -2,
+  'milli (m)': -3,
+  'micro (μ)': -6,
+  'nano (n)': -9,
+  'pico (p)': -12,
+  'femto (f)': -15,
+  'atto (a)': -18,
+  'zepto (z)': -21,
+  'yocto (y)': -24,
+};
 var units = {
   'acceleration': {
     'default': 'metre per second squared (m/s²)',
     'units': {
       'foot per second squared (ft/s²)': 3.280839895,
-      'kilometres per hour squared (kph²)': 3.6,
       'gal (Gal)': 100,
+      'metre per hour squared (m/h²)': 3600,
       'metre per second squared (m/s²)': 1,
       'miles per hour squared (mph²)': 1 / (1.4 + (2 / 30)),
       'standard gravity (ɡ₀)': 1 / 9.80665,
@@ -208,7 +243,6 @@ var units = {
       'hectare (ha)': .0001,
       'inches squared (in²)': 1550.0031,
       'jō (畳)': 1 / 1.653,
-      'kilometres squared (km²)': .000001,
       'marabba': 1 / 101171,
       'metres squared (m²)': 1,
       'miles squared (mi²)': 1 / 2589990,
@@ -222,12 +256,11 @@ var units = {
     },
   },
   'density': {
-    'default': 'kilograms per cubic metre (kg/m³)',
+    'default': 'grams per cubic metre (g/m³)',
     'units': {
-      'grams per millilitre (g/ml)': .001,
-      'kilograms per cubic metre (kg/m³)': 1,
-      'kilograms per litre (kg/l)': 1000,
-      'metric tons per cubic metre (t/m³)': 1000,
+      'grams per cubic metre (g/m³)': 1,
+      'grams per litre (g/l)': 1000,
+      'metric tons per cubic metre (t/m³)': 1000000,
     },
   },
   'energy': {
@@ -247,7 +280,7 @@ var units = {
     'default': 'newton (N)',
     'units': {
       'dyne (dyn)': 100000,
-      'kilogram-force (kgf)': 1 / 9.80665,
+      'gram-force (gf)': 1 / .00980665,
       'kip': 1 / 4448.2216,
       'newton (N)': 1,
       'ounce-force (ozf)': 3.59694310194,
@@ -256,12 +289,12 @@ var units = {
     },
   },
   'fuel': {
-    'default': 'kilometres per litre (km/l)',
+    'default': 'metres per litre (m/l)',
     'units': {
-      'kilometres per litre (km/l)': 1,
-      'litres per 100 kilometres (l/100km)': 100,
-      'miles per imperial gallon (MPG)': 2.82481,
-      'miles per US gallon (MPG)': 2.35215,
+      'metres per litre (m/l)': 1,
+      'litres per 100 kilometres (l/100km)': 100000,
+      'miles per imperial gallon (MPG)': .00282481,
+      'miles per US gallon (MPG)': .00235215,
     },
   },
   'illuminance': {
@@ -283,7 +316,6 @@ var units = {
       'arpent': 1 / 58.47109,
       'astronomical unit (au)': 1 / 149597870700,
       'bu (分)': 330,
-      'centimetre (cm)': 100,
       'chain (ch)': 1 / 20.1168,
       'chi (尺)': 3,
       'chō (町)': 3.3 / 360,
@@ -299,14 +331,12 @@ var units = {
       'jow': 1 / .00635,
       'kanejaku (曲尺)': 3.3,
       'ken (間)': .55,
-      'kilometre (km)': .001,
       'lightyear (ly)': 1 / 9460730472580800,
       'ligne': 1 / .0022558291,
       'link (l.)': 1 / .201168,
       'metre (m)': 1,
       'mil': 39370.1,
       'mile (mi)': 1 / 1609.344,
-      'millimetre (mm)': 1000,
       'mō (毛, 毫)': 33000,
       'nautical-mile (nmi)': 1 / 1852,
       'parsec (pc)': 1 / 30856775800000000,
@@ -318,53 +348,49 @@ var units = {
     },
   },
   'mass': {
-    'default': 'kilogram (kg)',
+    'default': 'gram (g)',
     'units': {
-      'abucco': 1 / .19644,
-      'adowlie': 1 / 1.982,
-      'agiro': 1 / .39288,
-      'bisauli (बिसौलि)': 1 / 1.16625,
-      'biza': 1 / 1.57152,
-      'boṛi (बोड़ि)': 1 / .583125,
-      'caret (ct)': 5000,
-      'centigram (cg)': 100000,
-      'cullingey': 1 / .005265,
-      'dharni (धार्नि)': 1 / 2.3325,
-      'esterling': 705.48,
-      'fun (分)': 4 / .0015,
-      'garce': 1 / 4198.518,
-      'gram (g)': 1000,
-      'heavy adowlie': 1 / 2.031,
-      'hyakume (百目)': 1 / .375,
-      'kanme (貫目)': 1 / 3.75,
-      'keel': 1 / 21540.19446656,
-      'kilogram (kg)': 1,
-      'kin (斤)': 1 / .6,
-      'kula': 1 / 11.165,
-      'large sack': 1 / 101.60469088,
-      'long-ton': 1 / 1016.04608,
-      'metric-tonne (t)': .001,
-      'microgram (µg)': 1000000000,
-      'milligram (mg)': 1000000,
-      'mina': 1 / .571,
-      'momme (匁)': 1 / .00375,
-      'munjandie': 1 / .00025919564,
-      'ounce (oz)': 35.274,
-      'passeree': 1 / 4.6655,
-      'pāu (पाउ)': 1 / .194375,
-      'pennyweight (dwt)': 1 / .00155517384,
-      'pound (lb)': 1 / .45359237,
-      'room': 1 / 7112.328360594,
-      'rotal': 1 / .5075,
-      'seer (Afghanistan)': 1 / 7.066,
-      'seer (India)': 1 / .93310,
-      'ship load': 1 / 430803.8893312,
-      'short-ton': 1 / 907.184,
-      'slug': .0685217659,
-      'stone (st)': 1 / 6.35029318,
-      'teccalis': 1 / .0157152,
-      'troy grain (gr)': 1 / .00006479891,
-      'troy-ounce (oz t)': 1 / .0311034768,
+      'abucco': 1 / 196.44,
+      'adowlie': 1 / 1982,
+      'agiro': 1 / 392.88,
+      'bisauli (बिसौलि)': 1 / 1166.25,
+      'biza': 1 / 1571.52,
+      'boṛi (बोड़ि)': 1 / 583.125,
+      'caret (ct)': 5,
+      'cullingey': 1 / 5.265,
+      'dharni (धार्नि)': 1 / 2332.5,
+      'esterling': .70548,
+      'fun (分)': 4 / 1.5,
+      'garce': 1 / 4198518,
+      'gram (g)': 1,
+      'heavy adowlie': 1 / 2031,
+      'hyakume (百目)': 1 / 375,
+      'kanme (貫目)': 1 / 3750,
+      'keel': 1 / 21540194.46656,
+      'kin (斤)': 1 / 600,
+      'kula': 1 / 11165,
+      'large sack': 1 / 101604.69088,
+      'long-ton': 1 / 1016046.08,
+      'metric-tonne (t)': .00001,
+      'mina': 1 / 571,
+      'momme (匁)': 1 / 3.75,
+      'munjandie': 1 / .25919564,
+      'ounce (oz)': .035274,
+      'passeree': 1 / 4665.5,
+      'pāu (पाउ)': 1 / 194.375,
+      'pennyweight (dwt)': 1 / 1.55517384,
+      'pound (lb)': 1 / 453.59237,
+      'room': 1 / 7112328.360594,
+      'rotal': 1 / 507.5,
+      'seer (Afghanistan)': 1 / 7066,
+      'seer (India)': 1 / 933.10,
+      'ship load': 1 / 430803889.3312,
+      'short-ton': 1 / 907184,
+      'slug': 68.5217659,
+      'stone (st)': 1 / 6350.29318,
+      'teccalis': 1 / 15.7152,
+      'troy grain (gr)': 1 / .06479891,
+      'troy-ounce (oz t)': 1 / 31.1034768,
     },
   },
   'power': {
@@ -392,9 +418,9 @@ var units = {
     'default': 'metres per second (m/s)',
     'units': {
       'feet per second (ft/s)': 1 / .3048,
-      'kilometres per hour (kph)': 3.6,
       'knots': 1.94384,
       'mach (M)': 1 / 340.29,
+      'metres per hour (m/h)': 3600,
       'metres per second (m/s)': 1,
       'miles per hour (mph)': 2.23694,
       'miles per second': 1 / 1609.34,
@@ -458,6 +484,7 @@ var units = {
     'default': 'second (s)',
     'units': {
       'atom': 1 / .15957446808,
+      'century (c.)': 1 / 3155690880,
       'day (d)': 1 / 86400,
       'fortnight': 1 / 1209600,
       'helek (hl)': .3,
@@ -465,7 +492,6 @@ var units = {
       'Internet Time (.beat)': .01157,
       'lunar day': 1 / 2360592,
       'Martian solar day (sol)': 1 / 88775.2,
-      'microcentury (µc.)': 1 / 3154,
       'minute (min)': 1 / 60,
       'momentum': 1 / 90,
       'month': 1 / 2592000,
@@ -480,7 +506,7 @@ var units = {
   'torque': {
     'default': 'newton metre (N·m)',
     'units': {
-      'kilogram metre (kg·m)': 1 / 9.80665,
+      'gram metre (g·m)': 1 / 9806.65,
       'newton metre (N·m)': 1,
       'pound-foot (lb·ft)': 1 / 1.355818,
     },
@@ -493,7 +519,6 @@ var units = {
       'Australian tablespoon': 50,
       'bath': 1 / 2200,
       'board-foot (FBM)': 1 / 2.359737225,
-      'centilitre (cl)': 100,
       'chungah': 1 / .75768236466,
       'coomb': 1 / 145.47494,
       'cran': 1 / 170.47853205,
@@ -520,7 +545,6 @@ var units = {
       'imperial tablespoon (tbsp)': 56.3121,
       'imperial teaspoon (tsp)': 168.936,
       'japanese cup': 5,
-      'kilolitre (kl)': .001,
       'koku (石)': 1331 / 240100,
       'lambda (λ)': 1000000,
       'litre (l)': 1,
@@ -528,7 +552,6 @@ var units = {
       'maris': 1 / 30.3,
       'metretes': 1 / 37.4,
       'metric cup': 4,
-      'millilitre (ml)': 1000,
       'mina': 1 / .505,
       'octave': 1 / 73,
       'omer (עמר‎)': 1 / 3.636,
@@ -559,8 +582,15 @@ window.onload = function(e){
     var reverse = '';
 
     for(var type in units){
-        input += '<select id=' + type + '-input>';
-        output += '<input id=' + type + '-result readonly> <select id=' + type + '-output>';
+        input += '<select id=' + type + '-input-prefix>';
+        output += '<select id=' + type + '-output-prefix>';
+        for(var prefix in prefixes){
+            input += '<option value=' + prefixes[prefix] + '>' + prefix + '</option>';
+            output += '<option value=' + prefixes[prefix] + '>' + prefix + '</option>';
+        }
+
+        input += '</select><select id=' + type + '-input>';
+        output += '</select><input id=' + type + '-result readonly> <select id=' + type + '-output>';
         reverse += '<a onclick="reverse(\'' + type + '\')">'
           + type
           + '</a>';
@@ -581,10 +611,15 @@ window.onload = function(e){
 
     for(type in units){
         document.getElementById(type + '-input').onchange
+          = document.getElementById(type + '-input-prefix').onchange
           = document.getElementById(type + '-output').onchange
+          = document.getElementById(type + '-output-prefix').onchange
           = document.getElementById(type + '-value').oninput = function(){
             calculate(this.id);
         };
+
+        document.getElementById(type + '-input-prefix').value = 0;
+        document.getElementById(type + '-output-prefix').value = 0;
         document.getElementById(type + '-output').value = units[type]['default'];
     }
 };
