@@ -69,6 +69,10 @@ function reverse(id){
     document.getElementById(id + '-input').value = document.getElementById(id + '-output').value;
     document.getElementById(id + '-output').value = temp;
 
+    temp = document.getElementById(id + '-input-prefix').value;
+    document.getElementById(id + '-input-prefix').value = document.getElementById(id + '-output-prefix').value;
+    document.getElementById(id + '-output-prefix').value = temp;
+
     calculate(id);
 }
 
