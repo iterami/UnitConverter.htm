@@ -6,13 +6,13 @@ Unit conversion tool that can convert units of various types and prefixes to a s
 ---
 
 Acceleration                | Unit
-----------------------------|--------------
+----------------------------|------
 foot per second squared     | ft/s²
 gal                         | Gal
 metre per hour squared      | m/h²
 metre per second squared    | m/s²
 miles per hour squared      | mph²
-standard gravity            | ɡ<sub>0</sub>
+standard gravity            | ɡₒ
 
 ---
 
