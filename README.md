@@ -124,6 +124,7 @@ fathom            |
 foot              | ft
 furlong           |
 girah             |
+Hammer unit       |
 hand              | h
 hiro              | 尋
 inch              | in

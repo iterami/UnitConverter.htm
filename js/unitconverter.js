@@ -331,6 +331,7 @@ var units = {
       'foot (ft)': 3.280839895,
       'furlong': 1 / 201.168,
       'girah': 1 / .05715,
+      'Hammer unit': 1 / .01905,
       'hand (h)': 1 / .1016,
       'hiro (尋)': .55,
       'inch (in)': 39.3701,
