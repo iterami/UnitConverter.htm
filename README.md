@@ -5,6 +5,35 @@ Unit conversion tool that can convert units of various types and prefixes to a s
 
 ---
 
+Prefix |  10^x | Name
+-------|-------|------
+hella  |  27   | hella
+Y      |  24   | yotta
+Z      |  21   | zetta
+E      |  18   | exa
+P      |  15   | peta
+T      |  12   | tera
+G      |   9   | giga
+M      |   6   | mega
+myria  |   4   | myria
+k      |   3   | kilo
+h      |   2   | hecto
+da     |   1   | deca
+       |   0   |
+d      |  -1   | deci
+c      |  -2   | centi
+m      |  -3   | milli
+demi   |  -4   | demi
+μ      |  -6   | micro
+n      |  -9   | nano
+p      | -12   | pico
+f      | -15   | femto
+a      | -18   | atto
+z      | -21   | zepto
+y      | -24   | yocto
+
+---
+
 Acceleration                | Unit
 ----------------------------|------
 foot per second squared     | ft/s²
