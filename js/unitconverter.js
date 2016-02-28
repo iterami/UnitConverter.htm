@@ -293,6 +293,7 @@ var units = {
       'ounce-force (ozf)': 3.59694310194,
       'pound-force (lbf)': .224809,
       'poundal (pdl)': 7.23301,
+      'sthène (sn)': .001,
     },
   },
   'fuel': {
