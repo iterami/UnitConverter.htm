@@ -337,7 +337,7 @@ cubic foot            | ft³
 cubic metre           | m³
 cubic yard            | yd³
 demiard               |
-ephah                 | עֵיפָה‎
+ephah                 | ה‎עֵיפָ
 garce (India)         |
 garce (Sri Lanka)     |
 gō                    | 合
@@ -364,9 +364,10 @@ metretes              |
 metric cup            |
 mina                  |
 octave                |
-omer                  | עמר‎
+omer                  | ר‎עמ
 pau                   |
 sai                   | 才
+seah                  | האס
 shaku                 | 勺
 shō                   | 升
 to                    | 斗
