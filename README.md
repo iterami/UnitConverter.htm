@@ -163,6 +163,7 @@ cullingey          |
 dharni             | धार्नि
 esterling          |
 fun                | 分
+funt               | фунт
 garce              |
 gram               | g
 heavy adowlie      |
@@ -184,6 +185,7 @@ ounce              | oz
 passeree           |
 pāu                | पाउ
 pennyweight        | dwt
+pood               | пуд
 pound              | lb
 room               |
 rotal              |
