@@ -402,6 +402,7 @@ var units = {
       'teccalis': 1 / 15.7152,
       'troy grain (gr)': 1 / .06479891,
       'troy-ounce (oz t)': 1 / 31.1034768,
+      'zolotnik (zol.)': 1 / 4.2658,
     },
   },
   'power': {

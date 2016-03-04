@@ -228,6 +228,7 @@ stone              | st
 teccalis           |
 troy grain         | gr
 troy ounce         | oz t
+zolotnik           | zol.
 
 ---
 
