@@ -424,6 +424,7 @@ var units = {
       'pièze (pz)': .001,
       'pound-force per square inch absolute (psia)': .000145038,
       'standard atmosphere (atm)': 1 / 101325,
+      'technical atmosphere (at)': 1 / 98066.5,
       'torr (Torr)': 760 / 101325,
       'Vickers pyramid number (HV)': 1 / 9807000,
     },
