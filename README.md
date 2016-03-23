@@ -361,18 +361,24 @@ pound-foot     | lb·ft
 
 Volume                | Unit
 ----------------------|------
+acetabulum            |
 acre-foot             |
 adowlie               |
+amphora quadrantal    |
 Australian tablespoon |
 bath                  |
 board-foot            | FBM
+culeus                |
 chungah               |
+congius               |
 coomb                 |
+cotyla                |
 cran                  |
 cubic inch            | in³
 cubic foot            | ft³
 cubic metre           | m³
 cubic yard            | yd³
+cyathus               |
 demiard               |
 ephah                 | ה‎עֵיפָ
 garce (India)         |
@@ -394,6 +400,7 @@ imperial teaspoon     | tbsp
 Japanese cup          |
 koku                  | 石
 lambda                | λ
+ligula                |
 litre                 | l
 log                   |
 maris                 |
@@ -403,11 +410,14 @@ mina                  |
 octave                |
 omer                  | ר‎עמ
 pau                   |
+quartarius            |
 sai                   | 才
 seah                  | האס
+sextarius             |
 shaku                 | 勺
 shō                   | 升
 to                    | 斗
+urna                  |
 US bushel             |
 US cup                |
 US fluid ounce        | fl oz
