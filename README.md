@@ -270,59 +270,61 @@ speed of light      | c
 
 ---
 
-Temperature       | Unit
-------------------|-----
-Amonton           |
-Barnsdorf         |
-Beaumuir          |
-Bénart            |
-Bergen            |
-Brisson           |
-Celsius           | °C
-Cimento           |
-Cruquius          |
-Dalencé           |
-Daniell           |
-De la Hire        |
-De la Ville       |
-Delisle           | °D
-De Luc            |
-De Lyon           |
-de Revillas       |
-de Suede          |
-de Villeneuve     |
-Du Crest          |
-Edinburgh         |
-electron volts    |
-Fahrenheit        | °F
-Florentine Magnum |
-Fowler            |
-Frick             |
-Gas Mark          | G
-Goubert           |
-Hales             |
-Hauksbee          |
-Jacobs-Holborn    |
-Kelvin            | K
-La Court          |
-Lambert           |
-Lange             |
-Leiden            |
-Ludolf            |
-Mariotte          |
-Miles             |
-Murray            |
-Newton            | °N
-Oertel            |
-Paris             |
-Poleni            |
-Rankine           | °Ra
-Réaumur           | °Ré
-Richter           |
-Rinaldini         |
-Rømer             | °Rø
-Sagredo           |
-Sulzer            |
+Temperature         | Unit
+--------------------|-----
+Amonton             |
+Barnsdorf           |
+Beaumuir            |
+Bénart              |
+Bergen              |
+Brisson             |
+Celsius             | °C
+Cimento             |
+Cruquius            |
+Dalencé             |
+Daniell             |
+De la Hire          |
+De la Ville         |
+Delisle             | °D
+De Luc              |
+De Lyon             |
+de Revillas         |
+de Suede            |
+de Villeneuve       |
+Du Crest            |
+Edinburgh           |
+electron volts      |
+Fahrenheit          | °F
+Florentine Magnum   |
+Fowler              |
+Frick               |
+Gas Mark            | G
+Goubert             |
+Hales               |
+Hauksbee            |
+Jacobs-Holborn      |
+Kelvin              | K
+La Court            |
+Lambert             |
+Lange               |
+Leiden              |
+Ludolf              |
+Mariotte            |
+Miles               |
+Murray              |
+Newton              | °N
+Oertel              |
+Paris               |
+Poleni              |
+Rankine             | °Ra
+Réaumur             | °Ré
+Richter             |
+Rinaldini           |
+Rømer               | °Rø
+Sagredo             |
+Sulzer              |
+Wedgwood [modern]   |
+Wedgwood [original] |
 
 ---
 
