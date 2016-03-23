@@ -251,6 +251,7 @@ pièze                                | pz
 pound-force per square inch absolute | psia
 standard atmosphere                  | atm
 torr                                 | Torr
+Vickers pyramid number               | HV
 
 ---
 
