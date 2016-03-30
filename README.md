@@ -364,11 +364,14 @@ Volume                | Unit
 acetabulum            |
 acre-foot             |
 adowlie               |
+ale/beer barrel       |
 ale/beer firkin       |
+ale/beer hogshead     |
 amphora quadrantal    |
 Australian tablespoon |
 bath                  |
 board-foot            | FBM
+butt of beer          |
 culeus                |
 chungah               |
 congius               |
@@ -399,6 +402,7 @@ imperial shipping ton |
 imperial tablespoon   | tbsp
 imperial teaspoon     | tbsp
 Japanese cup          |
+kinderkin             |
 koku                  | 石
 lambda                | λ
 ligula                |
@@ -411,6 +415,7 @@ mina                  |
 octave                |
 omer                  | ר‎עמ
 pau                   |
+pin                   |
 quartarius            |
 sai                   | 才
 seah                  | האס
@@ -418,6 +423,7 @@ sextarius             |
 shaku                 | 勺
 shō                   | 升
 to                    | 斗
+tun                   |
 urna                  |
 US bushel             |
 US cup                |
