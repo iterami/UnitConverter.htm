@@ -364,6 +364,7 @@ Volume                | Unit
 acetabulum            |
 acre-foot             |
 adowlie               |
+ale/beer firkin       |
 amphora quadrantal    |
 Australian tablespoon |
 bath                  |

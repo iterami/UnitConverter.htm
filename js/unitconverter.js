@@ -539,6 +539,7 @@ var units = {
       'acetabulum': 1 / .068125,
       'acre-foot': 1 / 1233480,
       'adowlie': 1 / 2.509,
+      'ale/beer firkin': 1 / 40.91481,
       'amphora quadrantal': 1 / 26.16,
       'Australian tablespoon': 50,
       'bath': 1 / 2200,
