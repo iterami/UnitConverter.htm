@@ -147,7 +147,7 @@ arpent            |
 bu                | 分
 astronomical unit | au
 barleycorn        |
-bu                |
+bu                | 分
 chain             | ch
 chi               | 尺
 chō               | 町
