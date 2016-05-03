@@ -278,6 +278,7 @@ var units = {
     'default': 'joule (J)',
     'units': {
       'erg': 10000000,
+      'foot-pound (ft·lb)': 1 / 1.3558179483314,
       'international steam table calorie (calᵢₜ)': 1 / 4.1868,
       'joule (J)': 1,
       'mean BTU (Btuₘₑₐₙ)': 1 / 1055.87,
@@ -285,6 +286,7 @@ var units = {
       'thermochemical BTU (Btuₜₕ)': 1 / 1054.35026444,
       'thermochemical calorie (calₜₕ)': 1 / 4.184,
       'ton of TNT': 1 / 4184000000,
+      'watt-hour (W·h)': 1 / 3600,
     },
   },
   'force': {

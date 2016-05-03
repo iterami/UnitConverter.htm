@@ -96,6 +96,7 @@ metric tons per cubic metre | t/m³
 Energy                            | Unit
 ----------------------------------|-------------------
 erg                               |
+foot-pound                        | ft·lb
 international steam table calorie | cal<sub>it</sub>
 joule                             | J
 mean BTU                          | Btu<sub>mean</sub>
@@ -103,6 +104,7 @@ mean calorie                      | cal<sub>mean</sub>
 thermochemical BTU                | Btu<sub>th</sub>
 thermochemical calorie            | cal<sub>th</sub>
 ton of TNT                        |
+watt-hour                         | W·h
 
 ---
 
