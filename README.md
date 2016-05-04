@@ -51,6 +51,7 @@ arcminute | ′
 arcsecond | ″
 degree    | °
 gradian   | gon
+mil       |
 radian    | rad
 turn      |
 

@@ -233,6 +233,7 @@ var units = {
       'arcsecond (″)': 206264.88,
       'degree (°)': 57.2958,
       'gradian (gon)': 63.662,
+      'mil': 6283.183,
       'radian (rad)': 1,
       'turn': .159154943,
     },
