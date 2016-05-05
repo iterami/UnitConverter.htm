@@ -197,6 +197,8 @@ caret              | ct
 centigram          | cg
 cullingey          |
 dharni             | धार्नि
+dram               | dr
+dram apothecaries  | dr ap
 esterling          |
 fun                | 分
 funt               | фунт
@@ -390,6 +392,7 @@ cubic yard            | yd³
 cyathus               |
 demiard               |
 ephah                 | ה‎עֵיפָ
+fluid dram            | fl dr
 garce (India)         |
 garce (Sri Lanka)     |
 gō                    | 合
@@ -432,6 +435,7 @@ tun                   |
 urna                  |
 US bushel             |
 US cup                |
+US fluid dram         | fl dr
 US fluid ounce        | fl oz
 US gallon             | gal
 US gill               |
