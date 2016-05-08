@@ -180,6 +180,7 @@ ri                | 里
 rin               | 厘
 shaku             | 尺
 sun               | 寸
+thou              |
 unglie            |
 yard              | yd
 
