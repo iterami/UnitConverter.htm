@@ -139,50 +139,52 @@ phot        | ph
 
 ---
 
-Length            | Unit
-------------------|-----
-ald               |
-alen              |
-aln               |
-ångström          | Å
-Aṅgula            |
-arpent            |
-bu                | 分
-astronomical unit | au
-barleycorn        |
-bu                | 分
-chain             | ch
-chi               | 尺
-chō               | 町
-cubit             |
-fathom            |
-foot              | ft
-furlong           |
-girah             |
-Hammer unit       |
-hand              | h
-hiro              | 尋
-inch              | in
-jō                | 丈
-jow               |
-kanejaku          | 曲尺
-ken               | 間
-lightyear         | ly
-ligne             |
-link              | l.
-metre             | m
-mil               |
-mile              | mi
-mō                | 毛, 毫
-nautical mile     | nmi
-parsec            | pc
-ri                | 里
-rin               | 厘
-shaku             | 尺
-sun               | 寸
-thou              |
-unglie            |
-yard              | yd
+Length             | Unit
+-------------------|-----
+ald                |
+alen               |
+aln                |
+ångström           | Å
+Aṅgula             |
+arpent             |
+bu                 | 分
+astronomical unit  | au
+barleycorn         |
+bu                 | 分
+chain              | ch
+chi                | 尺
+chō                | 町
+cubit              |
+fathom             |
+foot               | ft
+furlong            |
+girah              |
+Hammer unit        |
+hand               | h
+hiro               | 尋
+inch               | in
+Indian survey foot |
+jō                 | 丈
+jow                |
+kanejaku           | 曲尺
+ken                | 間
+lightyear          | ly
+ligne              |
+link               | l.
+metre              | m
+mil                |
+mile               | mi
+mō                 | 毛, 毫
+nautical mile      | nmi
+parsec             | pc
+ri                 | 里
+rin                | 厘
+shaku              | 尺
+sun                | 寸
+US survey foot     |
+thou               |
+unglie             |
+yard               | yd
 
 ---
 
