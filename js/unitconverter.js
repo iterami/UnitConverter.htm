@@ -565,6 +565,7 @@ var units = {
       'cubic inch (in³)': 61.0237440947323,
       'cubic foot (ft³)': 1 / 28.316846592,
       'cubic metre (m³)': .001,
+      'cubic mile (mi³)': .000000000000239912758579,
       'cubic yard (yd³)': 1 / 764.5549,
       'cyathus': 1 / (3.27 / 72),
       'demiard': 1 / .284,

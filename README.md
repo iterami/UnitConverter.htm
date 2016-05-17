@@ -391,6 +391,7 @@ cran                  |
 cubic inch            | in³
 cubic foot            | ft³
 cubic metre           | m³
+cubic mile            | mi³
 cubic yard            | yd³
 cyathus               |
 demiard               |
