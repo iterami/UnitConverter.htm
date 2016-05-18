@@ -30,17 +30,14 @@ function calculate(group){
         // Convert from default temperature to output unit.
         value = formulae[units['temperature']['default']][output];
 
-    }else{
-        // Only calculate stuff if the input unit is not the same as the output unit.
-        if(input !== output){
-            // If the input unit is not the default unit, convert to the default unit.
-            if(input !== units[group]['default']){
-                value /= units[group]['units'][input];
-            }
-
-            // Convert the entered input from the default unit to the output unit.
-            value *= units[group]['units'][output];
+    }else if(input !== output){
+        // If the input unit is not the default unit, convert to the default unit.
+        if(input !== units[group]['default']){
+            value /= units[group]['units'][input];
         }
+
+        // Convert the entered input from the default unit to the output unit.
+        value *= units[group]['units'][output];
     }
 
     // Adjust output based on output prefix.
