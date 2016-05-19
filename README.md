@@ -96,6 +96,7 @@ metric tons per cubic metre | t/m³
 
 Energy                            | Unit
 ----------------------------------|-------------------
+electron volt                     | eV
 erg                               |
 foot-pound                        | ft·lb
 international steam table calorie | cal<sub>it</sub>
