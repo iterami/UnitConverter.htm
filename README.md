@@ -169,7 +169,7 @@ bisauli            | बिसौलि
 biza               |
 boṛi               | बोड़ि
 caret              | ct
-centigram          | cg
+cental             |
 cullingey          |
 dharni             | धार्नि
 dram               | dr
