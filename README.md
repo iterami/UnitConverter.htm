@@ -188,8 +188,6 @@ kula               |
 large sack         |
 long ton           |
 metric tonne       | t
-microgram          | µg
-milligram          | mg
 mina               |
 momme              | 匁
 munjandie          |
