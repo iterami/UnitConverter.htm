@@ -261,7 +261,7 @@ var units = {
   'energy': {
     'default': 'joule (J)',
     'units': {
-      'electron volt (eV)': 6241509000000000000,
+      'electron volt (eV)': 6241509343300000000,
       'erg': 10000000,
       'foot-pound (ft·lb)': 1 / 1.3558179483314,
       'international steam table calorie (calᵢₜ)': 1 / 4.1868,
