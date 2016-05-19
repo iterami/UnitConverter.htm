@@ -12,10 +12,10 @@ function calculate(group){
     var output = document.getElementById(group + '-output').value;
     var value = document.getElementById(group + '-value').value;
 
-    // Adjust input based on input prefix.
-    value *= Math.pow(
-      10,
-      document.getElementById(group + '-input-prefix').value
+    // Adjust input based on input power, converted to a number.
+    value *= power(
+      value,
+      group + '-input-power'
     );
 
     if(group.indexOf('temperature') !== -1){
@@ -40,10 +40,11 @@ function calculate(group){
         value *= units[group]['units'][output];
     }
 
-    // Adjust output based on output prefix.
-    value /= Math.pow(
-      10,
-      document.getElementById(group + '-output-prefix').value
+    // Adjust output based on output power.
+
+    value /= power(
+      value,
+      group + '-output-power'
     );
 
     // Make sure only allowed number of decimal places are displayed.
@@ -61,14 +62,25 @@ function calculate_all(){
     }
 }
 
+function power(value, id){
+    var power = +document.getElementById(id).value;
+    if(isNaN(power)){
+        power = 0;
+    }
+    return Math.pow(
+      10,
+      power
+    );
+}
+
 function reverse(id){
     var temp = document.getElementById(id + '-input').value;
     document.getElementById(id + '-input').value = document.getElementById(id + '-output').value;
     document.getElementById(id + '-output').value = temp;
 
-    temp = document.getElementById(id + '-input-prefix').value;
-    document.getElementById(id + '-input-prefix').value = document.getElementById(id + '-output-prefix').value;
-    document.getElementById(id + '-output-prefix').value = temp;
+    temp = document.getElementById(id + '-input-power').value;
+    document.getElementById(id + '-input-power').value = document.getElementById(id + '-output-power').value;
+    document.getElementById(id + '-output-power').value = temp;
 
     calculate(id);
 }
@@ -185,32 +197,6 @@ function temperature_formulae(value){
     };
 }
 
-var prefixes = {
-  'hella²⁷': 27,
-  'yotta²⁴(Y)': 24,
-  'zetta²¹(Z)': 21,
-  'exa¹⁸(E)': 18,
-  'peta¹⁵(P)': 15,
-  'tera¹²(T)': 12,
-  'giga⁹(G)': 9,
-  'mega⁶(M)': 6,
-  'myria⁴': 4,
-  'kilo³(k)': 3,
-  'hecto²(h)': 2,
-  'deca¹(da)': 1,
-  '': 0,
-  'deci⁻¹(d)': -1,
-  'centi⁻²(c)': -2,
-  'milli⁻³(m)': -3,
-  'dimi⁻⁴': -4,
-  'micro⁻⁶(μ)': -6,
-  'nano⁻⁹(n)': -9,
-  'pico⁻¹²(p)': -12,
-  'femto⁻¹⁵(f)': -15,
-  'atto⁻¹⁸(a)': -18,
-  'zepto⁻²¹(z)': -21,
-  'yocto⁻²⁴(y)': -24,
-};
 var units = {
   'acceleration': {
     'default': 'metre per second squared (m/s²)',
@@ -632,15 +618,8 @@ window.onload = function(e){
     var reverse = '';
 
     for(var type in units){
-        input += '<select id=' + type + '-input-prefix>';
-        output += '<input id=' + type + '-result readonly><select id=' + type + '-output-prefix>';
-        for(var prefix in prefixes){
-            input += '<option value=' + prefixes[prefix] + '>' + prefix + '</option>';
-            output += '<option value=' + prefixes[prefix] + '>' + prefix + '</option>';
-        }
-
-        input += '</select><select id=' + type + '-input>';
-        output += '</select><select id=' + type + '-output>';
+        input += '<select id=' + type + '-input>';
+        output += '<input id=' + type + '-result readonly>*10^<input class=power id=' + type + '-output-power value=0><select id=' + type + '-output>';
         reverse += '<a onclick="reverse(\'' + type + '\')">'
           + type
           + '</a>';
@@ -650,7 +629,7 @@ window.onload = function(e){
             output += '<option value="' + unit + '">' + unit + '</option>';
         }
 
-        input += '</select><input id=' + type + '-value><br>';
+        input += '</select><input id=' + type + '-value>*10^<input class=power id=' + type + '-input-power value=0><br>';
         output += '</select><br>';
     }
 
@@ -661,15 +640,15 @@ window.onload = function(e){
 
     for(type in units){
         document.getElementById(type + '-input').onchange
-          = document.getElementById(type + '-input-prefix').onchange
+          = document.getElementById(type + '-input-power').oninput
           = document.getElementById(type + '-output').onchange
-          = document.getElementById(type + '-output-prefix').onchange
+          = document.getElementById(type + '-output-power').oninput
           = document.getElementById(type + '-value').oninput = function(){
             calculate(this.id);
         };
 
-        document.getElementById(type + '-input-prefix').value = 0;
-        document.getElementById(type + '-output-prefix').value = 0;
+        document.getElementById(type + '-input-power').value = 0;
+        document.getElementById(type + '-output-power').value = 0;
         document.getElementById(type + '-output').value = units[type]['default'];
     }
 };

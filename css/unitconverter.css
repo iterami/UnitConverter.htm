@@ -23,6 +23,9 @@ div{
 #output{
     text-align: left;
 }
+.power{
+    width: 50px;
+}
 select{
     cursor: pointer;
 }
