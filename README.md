@@ -183,7 +183,6 @@ heavy adowlie      |
 hyakume            | 百目
 kanme              | 貫目
 keel               |
-kilogram           | kg
 kin                | 斤
 kula               |
 large sack         |
