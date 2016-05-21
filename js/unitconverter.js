@@ -371,6 +371,7 @@ var units = {
       'fun (分)': 4 / 1.5,
       'funt (фунт)': 1 / 409.5,
       'garce': 1 / 4198518,
+      'grain': 1 / .06479891,
       'gram (g)': 1,
       'heavy adowlie': 1 / 2031,
       'hyakume (百目)': 1 / 375,

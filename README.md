@@ -178,6 +178,7 @@ esterling          |
 fun                | 分
 funt               | фунт
 garce              |
+grain              |
 gram               | g
 heavy adowlie      |
 hyakume            | 百目
