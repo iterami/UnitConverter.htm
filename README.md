@@ -20,10 +20,15 @@ Angle     | Unit
 ----------|-----
 arcminute | ′
 arcsecond | ″
+circle    |
 degree    | °
 gradian   | gon
 mil       |
+octant    |
+quadrant  |
 radian    | rad
+sextant   |
+sign      |
 turn      |
 
 ---
