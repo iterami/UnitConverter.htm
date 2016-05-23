@@ -252,7 +252,9 @@ var units = {
       'shaku (勺)': 1 / .03306,
       'strema': .001,
       'tan (段, 反)': 1 / 991.736,
+      'township': 1 / 93239571.972095996141,
       'tsubo (坪)': 1 / 3.306,
+      'yard squared (yd²)': .83612736,
     },
   },
   'density': {
@@ -521,6 +523,7 @@ var units = {
       'radar nautical mile': 1 / .000012355,
       'radar statute mile': 1 / .00001075,
       'second (s)': 1,
+      'shake': 1 / .00000001,
       'week': 1 / 604800,
       'year (a)': 1 / 31556908.8,
     },

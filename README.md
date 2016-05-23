@@ -58,7 +58,9 @@ se                 | 畝
 shaku              | 勺
 strema             |
 tan                | 段, 反
+township           |
 tsubo              | 坪
+yard squared       | yd²
 
 ---
 
@@ -331,6 +333,7 @@ radar kilometre     |
 radar nautical mile |
 radar statute mile  |
 second              | s
+shake               |
 week                |
 year                | a
 
