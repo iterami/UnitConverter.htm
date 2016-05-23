@@ -254,7 +254,7 @@ var units = {
       'tan (段, 反)': 1 / 991.736,
       'township': 1 / 93239571.972095996141,
       'tsubo (坪)': 1 / 3.306,
-      'yard squared (yd²)': .83612736,
+      'yards squared (yd²)': .83612736,
     },
   },
   'density': {

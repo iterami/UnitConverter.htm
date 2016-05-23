@@ -33,34 +33,34 @@ turn      |
 
 ---
 
-Area               | Unit
--------------------|-----
-acre               | ac
-are                | a
-barn               | b
-bu                 | 歩
-cawnie             |
-chō                | 町
-cuerda             |
-decimal            |
-feet squared       | ft²
-gō                 | 合
-ground             |
-hectare            | ha
-inches squared     | in²
-jō                 | 畳
-marabba            |
-metres squared     | m²
-miles squared      | mi²
-plaza              |
-rood               |
-se                 | 畝
-shaku              | 勺
-strema             |
-tan                | 段, 反
-township           |
-tsubo              | 坪
-yard squared       | yd²
+Area           | Unit
+---------------|-----
+acre           | ac
+are            | a
+barn           | b
+bu             | 歩
+cawnie         |
+chō            | 町
+cuerda         |
+decimal        |
+feet squared   | ft²
+gō             | 合
+ground         |
+hectare        | ha
+inches squared | in²
+jō             | 畳
+marabba        |
+metres squared | m²
+miles squared  | mi²
+plaza          |
+rood           |
+se             | 畝
+shaku          | 勺
+strema         |
+tan            | 段, 反
+township       |
+tsubo          | 坪
+yards squared  | yd²
 
 ---
 
@@ -88,16 +88,16 @@ watt-hour                         | W·h
 
 ---
 
-Force          | Unit
----------------|-----
-dyne           | dyn
-gram-force     | gf
-kip            |
-newton         | N
-ounce-force    | ozf
-pound-force    | lbf
-poundal        | pdl
-sthène         | sn
+Force       | Unit
+------------|-----
+dyne        | dyn
+gram-force  | gf
+kip         |
+newton      | N
+ounce-force | ozf
+pound-force | lbf
+poundal     | pdl
+sthène      | sn
 
 ---
 
@@ -244,16 +244,16 @@ Vickers pyramid number               | HV
 
 ---
 
-Speed               | Unit
---------------------|-----
-feet per second     | ft/s
-knots               |
-mach                | M
-metres per hour     | m/h
-metres per second   | m/s
-miles per hour      | mph
-miles per second    |
-speed of light      | c
+Speed             | Unit
+------------------|-----
+feet per second   | ft/s
+knots             |
+mach              | M
+metres per hour   | m/h
+metres per second | m/s
+miles per hour    | mph
+miles per second  |
+speed of light    | c
 
 ---
 
@@ -339,11 +339,11 @@ year                | a
 
 ---
 
-Torque         | Unit
----------------|-------
-gram metre     | g·m
-newton metre   | N·m
-pound-foot     | lb·ft
+Torque       | Unit
+-------------|-------
+gram metre   | g·m
+newton metre | N·m
+pound-foot   | lb·ft
 
 ---
 
