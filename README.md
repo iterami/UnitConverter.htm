@@ -320,6 +320,7 @@ Time                | Unit
 atom                |
 century             | c.
 day                 | d
+decade              |
 fortnight           |
 helek               | hl
 hour                | h

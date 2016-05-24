@@ -510,6 +510,7 @@ var units = {
       'atom': 1 / .15957446808,
       'century (c.)': 1 / 3155690880,
       'day (d)': 1 / 86400,
+      'decade': 1 / 315569088,
       'fortnight': 1 / 1209600,
       'helek (hl)': .3,
       'hour (h)': 1 / 3600,
