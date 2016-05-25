@@ -361,7 +361,6 @@ Australian tablespoon |
 bath                  |
 board-foot            | FBM
 butt of beer          |
-culeus                |
 chungah               |
 congius               |
 coomb                 |
@@ -372,6 +371,7 @@ cubic foot            | ft³
 cubic metre           | m³
 cubic mile            | mi³
 cubic yard            | yd³
+culeus                |
 cyathus               |
 demiard               |
 ephah                 | ה‎עֵיפָ
