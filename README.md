@@ -118,52 +118,52 @@ phot        | ph
 
 ---
 
-Length             | Unit
--------------------|-----
-ald                |
-alen               |
-aln                |
-ångström           | Å
-Aṅgula             |
-arpent             |
-bu                 | 分
-astronomical unit  | au
-barleycorn         |
-bu                 | 分
-chain              | ch
-chi                | 尺
-chō                | 町
-cubit              |
-fathom             |
-foot               | ft
-furlong            |
-girah              |
-Hammer unit        |
-hand               | h
-hiro               | 尋
-inch               | in
-Indian survey foot |
-jō                 | 丈
-jow                |
-kanejaku           | 曲尺
-ken                | 間
-lightyear          | ly
-ligne              |
-link               | l.
-metre              | m
-mil                |
-mile               | mi
-mō                 | 毛, 毫
-nautical mile      | nmi
-parsec             | pc
-ri                 | 里
-rin                | 厘
-shaku              | 尺
-sun                | 寸
-US survey foot     |
-thou               |
-unglie             |
-yard               | yd
+Length              | Unit
+--------------------|-----
+ald                 |
+alen                |
+aln                 |
+ångström            | Å
+Aṅgula              |
+arpent              |
+bu                  | 分
+astronomical unit   | au
+barleycorn          |
+bu                  | 分
+chain               | ch
+chi                 | 尺
+chō                 | 町
+cubit               |
+fathom              |
+foot                | ft
+furlong             |
+girah               |
+Hammer unit         |
+hand                | h
+hiro                | 尋
+inch                | in
+jō                  | 丈
+jow                 |
+kanejaku            | 曲尺
+ken                 | 間
+lightyear           | ly
+ligne               |
+link                | l.
+metre               | m
+mil                 |
+mile                | mi
+mō                  | 毛, 毫
+nautical mile       | nmi
+parsec              | pc
+ri                  | 里
+rin                 | 厘
+shaku               | 尺
+sun                 | 寸
+survey foot (India) |
+survey foot (US)    |
+thou                |
+unglie              |
+yard                | yd
 
 ---
 
@@ -310,8 +310,8 @@ Rinaldini           |
 Rømer               | °Rø
 Sagredo             |
 Sulzer              |
-Wedgwood [modern]   |
-Wedgwood [original] |
+Wedgwood (modern)   |
+Wedgwood (original) |
 
 ---
 
@@ -348,84 +348,84 @@ pound-foot   | lb·ft
 
 ---
 
-Volume                | Unit
-----------------------|------
-acetabulum            |
-acre-foot             |
-adowlie               |
-ale/beer barrel       |
-ale/beer firkin       |
-ale/beer hogshead     |
-amphora quadrantal    |
-Australian tablespoon |
-bath                  |
-board-foot            | FBM
-butt of beer          |
-chungah               |
-congius               |
-coomb                 |
-cotyla                |
-cran                  |
-cubic inch            | in³
-cubic foot            | ft³
-cubic metre           | m³
-cubic mile            | mi³
-cubic yard            | yd³
-culeus                |
-cyathus               |
-demiard               |
-ephah                 | ה‎עֵיפָ
-fluid dram            | fl dr
-garce (India)         |
-garce (Sri Lanka)     |
-gō                    | 合
-hekat                 |
-homer                 |
-imperial bushel       |
-imperial cup          |
-imperial fluid ounce  | fl oz
-imperial gallon       | gal
-imperial gill         |
-imperial peck         |
-imperial pint         | pt
-imperial quart        | qt
-imperial shipping ton |
-imperial tablespoon   | tbsp
-imperial teaspoon     | tbsp
-Japanese cup          |
-kinderkin             |
-koku                  | 石
-lambda                | λ
-ligula                |
-litre                 | l
-log                   |
-maris                 |
-metretes              |
-metric cup            |
-mina                  |
-octave                |
-omer                  | ר‎עמ
-pau                   |
-pin                   |
-quartarius            |
-sai                   | 才
-seah                  | האס
-sextarius             |
-shaku                 | 勺
-shō                   | 升
-to                    | 斗
-tun                   |
-urna                  |
-US bushel             |
-US cup                |
-US fluid dram         | fl dr
-US fluid ounce        | fl oz
-US gallon             | gal
-US gill               |
-US peck               |
-US pint               | pt
-US quart              | qt
-US shipping ton       |
-US tablespoon         | tbsp
-US teaspoon           | tsp
-yard of ale           |
+Volume                  | Unit
+------------------------|------
+acetabulum              |
+acre-foot               |
+adowlie                 |
+ale/beer barrel         |
+ale/beer firkin         |
+ale/beer hogshead       |
+amphora quadrantal      |
+Australian tablespoon   |
+bath                    |
+board-foot              | FBM
+bushel (imperial)       |
+bushel (US)             |
+butt of beer            |
+chungah                 |
+congius                 |
+coomb                   |
+cotyla                  |
+cran                    |
+cubic inch              | in³
+cubic foot              | ft³
+cubic metre             | m³
+cubic mile              | mi³
+cubic yard              | yd³
+culeus                  |
+cup (imperial)          |
+cup (US)                |
+cyathus                 |
+demiard                 |
+ephah                   | ה‎עֵיפָ
+fluid dram              | fl dr
+fluid dram (US)         | fl dr
+fluid ounce (imperial)  | fl oz
+fluid ounce (US)        | fl oz
+gallon (imperial)       | gal
+gallon (US)             | gal
+garce (India)           |
+garce (Sri Lanka)       |
+gill (imperial)         |
+gill (US)               |
+gō                      | 合
+hekat                   |
+homer                   |
+Japanese cup            |
+kinderkin               |
+koku                    | 石
+lambda                  | λ
+ligula                  |
+litre                   | l
+log                     |
+maris                   |
+metretes                |
+metric cup              |
+mina                    |
+octave                  |
+omer                    | ר‎עמ
+pau                     |
+peck (imperial)         |
+peck (US)               |
+pin                     |
+pint (imperial)         | pt
+pint (US)               | pt
+quart (imperial)        | qt
+quart (US)              | qt
+quartarius              |
+sai                     | 才
+seah                    | האס
+sextarius               |
+shaku                   | 勺
+shipping ton (imperial) |
+shipping ton (US)       |
+shō                     | 升
+tablespoon (imperial)   | tbsp
+tablespoon (US)         | tbsp
+teaspoon (imperial)     | tbsp
+teaspoon (US)           | tsp
+to                      | 斗
+tun                     |
+urna                    |
+yard of ale             |
