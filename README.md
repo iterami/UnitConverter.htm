@@ -172,6 +172,7 @@ Mass               | Unit
 abucco             |
 adowlie            |
 agiro              |
+atomic mass unit   | AMU
 bisauli            | बिसौलि
 biza               |
 boṛi               | बोड़ि
