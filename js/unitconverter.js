@@ -365,7 +365,7 @@ var units = {
       'abucco': 1 / 196.44,
       'adowlie': 1 / 1982,
       'agiro': 1 / 392.88,
-      'atomic mass unit (AMU)': 1.6605390402e23,
+      'atomic mass unit (AMU)': 1 / 1.6605390402e-24,
       'bisauli [बिसौलि]': 1 / 1166.25,
       'biza': 1 / 1571.52,
       'boṛi [बोड़ि]': 1 / 583.125,
