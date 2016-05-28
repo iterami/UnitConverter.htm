@@ -289,6 +289,7 @@ var units = {
       'kip': 1 / 4448.2216,
       'newton [N]': 1,
       'ounce-force [ozf]': 3.59694310194,
+      'pond': 1 / .009806649999788,
       'pound-force [lbf]': .224809,
       'poundal [pdl]': 7.23301,
       'sthène [sn]': .001,

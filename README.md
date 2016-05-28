@@ -95,6 +95,7 @@ gram-force  | gf
 kip         |
 newton      | N
 ounce-force | ozf
+pond        |
 pound-force | lbf
 poundal     | pdl
 sthène      | sn
