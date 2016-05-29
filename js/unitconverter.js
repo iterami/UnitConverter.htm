@@ -310,6 +310,7 @@ var units = {
       'foot-candle [fc]': .09290304,
       'lux [lx]': 1,
       'phot [ph]': .0001,
+      'skot [sk]': 3141.69,
     },
   },
   'length': {

@@ -116,6 +116,7 @@ Illuminance | Unit
 foot-candle | fc
 lux         | lx
 phot        | ph
+skot        | sk
 
 ---
 
