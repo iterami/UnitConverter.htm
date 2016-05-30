@@ -596,6 +596,8 @@ var units = {
       'metretes': 1 / 37.4,
       'metric cup': 4,
       'mina': 1 / .505,
+      'minim (imperial) [min]': 35.1950652 * 480,
+      'minim (US) [min]': 33.8140227 * 480,
       'octave': 1 / 73,
       'omer [ר‎עמ]': 1 / 3.636,
       'pau': 1 / .284130625,

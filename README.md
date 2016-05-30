@@ -406,6 +406,8 @@ maris                   |
 metretes                |
 metric cup              |
 mina                    |
+minim (imperial)        | min
+minim (US)              | min
 octave                  |
 omer                    | ר‎עמ
 pau                     |
