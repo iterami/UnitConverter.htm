@@ -170,7 +170,7 @@ yard                | yd
 ---
 
 Mass               | Unit
--------------------|-----
+-------------------|--------------
 abucco             |
 adowlie            |
 agiro              |
@@ -206,6 +206,7 @@ ounce              | oz
 passeree           |
 pāu                | पाउ
 pennyweight        | dwt
+Planck mass        | m<sub>P</sub>
 pood               | пуд
 pound              | lb
 room               |
