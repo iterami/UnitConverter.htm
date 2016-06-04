@@ -155,6 +155,7 @@ metre               | m
 mil                 |
 mile                | mi
 mō                  | 毛, 毫
+nautical league     |
 nautical mile       | nmi
 parsec              | pc
 ri                  | 里
