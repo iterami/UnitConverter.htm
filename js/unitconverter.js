@@ -665,8 +665,6 @@ window.onload = function(e){
             calculate(this.id);
         };
 
-        document.getElementById(type + '-input-power').value = 0;
-        document.getElementById(type + '-output-power').value = 0;
         document.getElementById(type + '-output').value = units[type]['default'];
     }
 };
