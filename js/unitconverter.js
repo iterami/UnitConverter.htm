@@ -496,7 +496,7 @@ var units = {
     'minute [min]': 1 / 60,
     'momentum': 1 / 90,
     'month': 1 / 2592000,
-    'radar kilometre': 1 / .00000666,
+    'radar metre': 1 / .00000000666,
     'radar nautical mile': 1 / .000012355,
     'radar statute mile': 1 / .00001075,
     'second [s]': 1,

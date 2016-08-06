@@ -104,8 +104,8 @@ sthène      | sn
 
 Fuel                      | Unit
 --------------------------|--------
-kilometres per litre      | km/l
 litres per 100 kilometres | l/100km
+metres per litre          | m/l
 miles per imperial gallon | MPG
 miles per US gallon       | MPG
 
@@ -335,7 +335,7 @@ Martian solar day   | sol
 momentum            |
 minute              | min
 month               |
-radar kilometre     |
+radar metre         |
 radar nautical mile |
 radar statute mile  |
 second              | s
