@@ -161,6 +161,7 @@ parsec              | pc
 ri                  | 里
 rin                 | 厘
 shaku               | 尺
+spat                | S
 sun                 | 寸
 survey foot (India) |
 survey foot (US)    |
