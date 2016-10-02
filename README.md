@@ -136,6 +136,12 @@ chain               | ch
 chi                 | 尺
 chō                 | 町
 cubit               |
+ell (Danish)        |
+ell (Flemish)       |
+ell (French)        |
+ell (German)        |
+ell (Polish)        |
+ell (Scottish)      |
 fathom              |
 foot                | ft
 furlong             |
