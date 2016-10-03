@@ -366,6 +366,7 @@ var units = {
     'dram [dr]': 1 / 1.7718451953125,
     'dram apothecaries [dr ap]': 1 / 3.8879346,
     'esterling': .70548,
+    'firkin': 1 / 40823.3133,
     'fun [分]': 4 / 1.5,
     'funt [фунт]': 1 / 409.5,
     'garce': 1 / 4198518,

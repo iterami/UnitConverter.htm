@@ -193,6 +193,7 @@ dharni             | धार्नि
 dram               | dr
 dram apothecaries  | dr ap
 esterling          |
+firkin             |
 fun                | 分
 funt               | фунт
 garce              |
