@@ -3,8 +3,6 @@ iterami/UnitConverter.htm
 
 Unit conversion tool that can convert units of various types to a specified power and number of decimal places.
 
----
-
 Acceleration                | Unit
 ----------------------------|------
 foot per second squared     | ft/s²
@@ -13,8 +11,6 @@ metre per hour squared      | m/h²
 metre per second squared    | m/s²
 miles per hour squared      | mph²
 standard gravity            | ɡₒ
-
----
 
 Angle     | Unit
 ----------|-----
@@ -30,8 +26,6 @@ radian    | rad
 sextant   |
 sign      |
 turn      |
-
----
 
 Area           | Unit
 ---------------|-----
@@ -62,15 +56,11 @@ township       |
 tsubo          | 坪
 yards squared  | yd²
 
----
-
 Density                     | Unit
 ----------------------------|------
 grams per cubic metre       | g/m³
 grams per litre             | g/l
 metric tons per cubic metre | t/m³
-
----
 
 Energy                            | Unit
 ----------------------------------|-------------------
@@ -86,8 +76,6 @@ thermochemical calorie            | cal<sub>th</sub>
 ton of TNT                        |
 watt-hour                         | W·h
 
----
-
 Force       | Unit
 ------------|-----
 dyne        | dyn
@@ -100,8 +88,6 @@ pound-force | lbf
 poundal     | pdl
 sthène      | sn
 
----
-
 Fuel                      | Unit
 --------------------------|--------
 litres per 100 kilometres | l/100km
@@ -109,16 +95,12 @@ metres per litre          | m/l
 miles per imperial gallon | MPG
 miles per US gallon       | MPG
 
----
-
 Illuminance | Unit
 ------------|-----
 foot-candle | fc
 lux         | lx
 phot        | ph
 skot        | sk
-
----
 
 Length              | Unit
 --------------------|-----
@@ -175,8 +157,6 @@ thou                |
 unglie              |
 yard                | yd
 
----
-
 Mass               | Unit
 -------------------|--------------
 abucco             |
@@ -232,8 +212,6 @@ troy ounce         | oz t
 Whey (Essex)       |
 zolotnik           | zol.
 
----
-
 Power                 | Unit
 ----------------------|-----
 mechanical horsepower | hp
@@ -241,8 +219,6 @@ metric horsepower     | PS
 poncelet              | p
 ton of refrigeration  | TR
 watt                  | W
-
----
 
 Pressure                             | Unit
 -------------------------------------|-----
@@ -255,8 +231,6 @@ technical atmosphere                 | at
 torr                                 | Torr
 Vickers pyramid number               | HV
 
----
-
 Speed             | Unit
 ------------------|-----
 feet per second   | ft/s
@@ -267,8 +241,6 @@ metres per second | m/s
 miles per hour    | mph
 miles per second  |
 speed of light    | c
-
----
 
 Temperature         | Unit
 --------------------|-----
@@ -326,8 +298,6 @@ Sulzer              |
 Wedgwood (modern)   |
 Wedgwood (original) |
 
----
-
 Time                | Unit
 --------------------|------
 atom                |
@@ -351,15 +321,11 @@ shake               |
 week                |
 year                | a
 
----
-
 Torque       | Unit
 -------------|-------
 gram metre   | g·m
 newton metre | N·m
 pound-foot   | lb·ft
-
----
 
 Volume                  | Unit
 ------------------------|------
