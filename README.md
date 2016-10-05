@@ -157,6 +157,11 @@ thou                |
 unglie              |
 yard                | yd
 
+Magnetism | Unit
+----------|-----
+gauss     | G
+tesla     | T
+
 Mass               | Unit
 -------------------|--------------
 abucco             |

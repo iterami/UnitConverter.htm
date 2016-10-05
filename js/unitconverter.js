@@ -350,6 +350,11 @@ var units = {
     'survey foot (US)': 3937 / 1200,
     'yard [yd]': 1.09361,
   },
+  'magnetism': {
+    '_default': 'tesla [T]',
+    'gauss [G]': 10000,
+    'tesla [T]': 1,
+  },
   'mass': {
     '_default': 'gram [g]',
     'abucco': 1 / 196.44,
