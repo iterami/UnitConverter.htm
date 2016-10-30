@@ -350,6 +350,11 @@ var units = {
     'survey foot (US)': 3937 / 1200,
     'yard [yd]': 1.09361,
   },
+  'level': {
+    '_default': 'bel [B]',
+    'bel [B]': 1,
+    'nepers [Np]': 1 / .868589,
+  },
   'magnetism': {
     '_default': 'tesla [T]',
     'gauss [G]': 10000,

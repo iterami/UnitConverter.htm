@@ -157,6 +157,11 @@ thou                |
 unglie              |
 yard                | yd
 
+Level | Unit
+------|-----
+bel   | B
+neper | Np
+
 Magnetism | Unit
 ----------|-----
 gauss     | G
