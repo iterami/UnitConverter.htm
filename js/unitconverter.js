@@ -614,33 +614,26 @@ var units = {
 };
 
 window.onload = function(e){
-    var input = '';
-    var output = '';
-    var reverse = '';
+    var unittable = '';
 
     for(var type in units){
-        input += '<select id=' + type + '-input>';
-        output += '<input id=' + type + '-result readonly>*10^<input class=power id=' + type + '-output-power value=0><select id=' + type + '-output>';
-        reverse += '<a onclick="reverse(\'' + type + '\')">'
-          + type
-          + '</a>';
-
+        var options = '';
         for(var unit in units[type]){
             if(unit === '_default'){
                 continue;
             }
-            input += '<option value="' + unit + '">' + unit + '</option>';
-            output += '<option value="' + unit + '">' + unit + '</option>';
+            options += '<option value="' + unit + '">' + unit + '</option>';
         }
 
-        input += '</select><input id=' + type + '-value>*10^<input class=power id=' + type + '-input-power value=0><br>';
-        output += '</select><br>';
+        unittable += '<tr><td><input id=' + type + '-value>*10^<input class=power id=' + type + '-input-power value=0><br><select id=' + type + '-input>' + options + '</select>';
+        unittable += '<td><a onclick="reverse(\'' + type + '\')">'
+          + type
+          + '</a>';
+        unittable += '<td><input id=' + type + '-result readonly>*10^<input class=power id=' + type + '-output-power value=0><br><select id=' + type + '-output>' + options + '</select>';
     }
 
     document.getElementById('decimals').oninput = calculate_all;
-    document.getElementById('input').innerHTML = input;
-    document.getElementById('output').innerHTML = output;
-    document.getElementById('reverse').innerHTML = reverse;
+    document.getElementById('units').innerHTML = unittable;
 
     for(type in units){
         document.getElementById(type + '-input').onchange
