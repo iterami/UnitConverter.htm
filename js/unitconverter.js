@@ -72,6 +72,41 @@ function power(value, id){
     );
 }
 
+function repo_init(){
+    var unittable = '';
+
+    for(var type in units){
+        var options = '';
+        for(var unit in units[type]){
+            if(unit === '_default'){
+                continue;
+            }
+            options += '<option value="' + unit + '">' + unit + '</option>';
+        }
+
+        unittable += '<tr><td><input id=' + type + '-value>*10^<input class=power id=' + type + '-input-power value=0><br><select id=' + type + '-input>' + options + '</select>';
+        unittable += '<td><a onclick="reverse(\'' + type + '\')">'
+          + type
+          + '</a>';
+        unittable += '<td><input id=' + type + '-result readonly>*10^<input class=power id=' + type + '-output-power value=0><br><select id=' + type + '-output>' + options + '</select>';
+    }
+
+    document.getElementById('decimals').oninput = calculate_all;
+    document.getElementById('units').innerHTML = unittable;
+
+    for(type in units){
+        document.getElementById(type + '-input').onchange
+          = document.getElementById(type + '-input-power').oninput
+          = document.getElementById(type + '-output').onchange
+          = document.getElementById(type + '-output-power').oninput
+          = document.getElementById(type + '-value').oninput = function(){
+            calculate(this.id);
+        };
+
+        document.getElementById(type + '-output').value = units[type]['_default'];
+    }
+}
+
 function reverse(id){
     var temp = document.getElementById(id + '-input').value;
     document.getElementById(id + '-input').value = document.getElementById(id + '-output').value;
@@ -611,39 +646,4 @@ var units = {
     'urna': 1 / 13.08,
     'yard of ale': 1 / 1.4206537,
   },
-};
-
-window.onload = function(e){
-    var unittable = '';
-
-    for(var type in units){
-        var options = '';
-        for(var unit in units[type]){
-            if(unit === '_default'){
-                continue;
-            }
-            options += '<option value="' + unit + '">' + unit + '</option>';
-        }
-
-        unittable += '<tr><td><input id=' + type + '-value>*10^<input class=power id=' + type + '-input-power value=0><br><select id=' + type + '-input>' + options + '</select>';
-        unittable += '<td><a onclick="reverse(\'' + type + '\')">'
-          + type
-          + '</a>';
-        unittable += '<td><input id=' + type + '-result readonly>*10^<input class=power id=' + type + '-output-power value=0><br><select id=' + type + '-output>' + options + '</select>';
-    }
-
-    document.getElementById('decimals').oninput = calculate_all;
-    document.getElementById('units').innerHTML = unittable;
-
-    for(type in units){
-        document.getElementById(type + '-input').onchange
-          = document.getElementById(type + '-input-power').oninput
-          = document.getElementById(type + '-output').onchange
-          = document.getElementById(type + '-output-power').oninput
-          = document.getElementById(type + '-value').oninput = function(){
-            calculate(this.id);
-        };
-
-        document.getElementById(type + '-output').value = units[type]['_default'];
-    }
 };
