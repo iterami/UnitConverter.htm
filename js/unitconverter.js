@@ -73,6 +73,10 @@ function power(value, id){
 }
 
 function repo_init(){
+    core_repo_init({
+      'title': 'UnitConverter.htm',
+    });
+
     var unittable = '';
 
     for(var type in units){
