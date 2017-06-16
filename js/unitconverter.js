@@ -48,7 +48,7 @@ function calculate(group){
 
     // Make sure only allowed number of decimal places are displayed.
     if(value % 1 !== 0){
-        value = value.toFixed(document.getElementById('decimals').value);
+        value = value.toFixed(core_storage_data['decimals']);
     }
 
     // Display result.
@@ -74,7 +74,10 @@ function power(value, id){
 
 function repo_init(){
     core_repo_init({
-      'storage-menu': '<input id=decimals value=5>Decimals',
+      'storage': {
+        'decimals': 5,
+      },
+      'storage-menu': '<table><tr><td><input id=decimals><td>Decimals</table>',
       'title': 'UnitConverter.htm',
     });
 
@@ -96,7 +99,6 @@ function repo_init(){
         unittable += '<td><input id=' + type + '-result readonly>*10^<input class=power id=' + type + '-output-power value=0><br><select id=' + type + '-output>' + options + '</select>';
     }
 
-    document.getElementById('decimals').oninput = calculate_all;
     document.getElementById('units').innerHTML = unittable;
 
     for(type in units){
