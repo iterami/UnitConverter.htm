@@ -74,10 +74,6 @@ function power(value, id){
 
 function repo_init(){
     core_repo_init({
-      'storage': {
-        'decimals': 5,
-      },
-      'storage-menu': '<table><tr><td><input id=decimals><td>Decimals</table>',
       'title': 'UnitConverter.htm',
     });
 
