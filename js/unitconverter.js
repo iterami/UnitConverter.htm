@@ -88,11 +88,9 @@ function repo_init(){
             options += '<option value="' + unit + '">' + unit + '</option>';
         }
 
-        unittable += '<tr><td><input id=' + type + '-value>*10^<input class=power id=' + type + '-input-power value=0><br><select id=' + type + '-input>' + options + '</select>';
-        unittable += '<td><a onclick="reverse(\'' + type + '\')">'
-          + type
-          + '</a>';
-        unittable += '<td><input id=' + type + '-result readonly>*10^<input class=power id=' + type + '-output-power value=0><br><select id=' + type + '-output>' + options + '</select>';
+        unittable += '<tr><td><input id=' + type + '-value>*10^<input class=power id=' + type + '-input-power value=0><br><select id=' + type + '-input>' + options + '</select>'
+          + '<td><input onclick="reverse(\'' + type + '\')" type=button value="' + type + '">'
+          + '<td><input id=' + type + '-result readonly>*10^<input class=power id=' + type + '-output-power value=0><br><select id=' + type + '-output>' + options + '</select>';
     }
 
     document.getElementById('units').innerHTML = unittable;
