@@ -165,6 +165,7 @@ function repo_init(){
           },
           'magnetism': {
             '_default': 'tesla [T]',
+            'gamma [γ]': 1000000000,
             'gauss [G]': 10000,
             'tesla [T]': 1,
           },
