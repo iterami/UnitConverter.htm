@@ -112,7 +112,7 @@ function repo_init(){
             'Aṅgula': 1 / .01763,
             'arpent': 1 / 58.47109,
             'astronomical unit [au]': 1 / 149597870700,
-            'barleycorn': 1 / (.254 / 3),
+            'barleycorn': 118.11,
             'bu [分]': 330,
             'chain [ch]': 1 / 20.1168,
             'chi [尺]': 3,
