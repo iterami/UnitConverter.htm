@@ -264,8 +264,8 @@ function repo_init(){
             'mach [M]': 1 / 340.29,
             'metres per hour [m/h]': 3600,
             'metres per second [m/s]': 1,
-            'miles per hour [mph]': 2.23694,
-            'miles per second': 1 / 1609.34,
+            'miles per hour [mph]': 1 / .44704,
+            'miles per second': 1 / 1609.344,
             'speed of light [c]': 1 / 299792458,
           },
           'temperature': {
