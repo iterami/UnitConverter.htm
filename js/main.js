@@ -394,7 +394,7 @@ function repo_init(){
             'gō [合]': 1331 / 240.1,
             'hekat': 1 / 4.8,
             'homer': 1 / 220,
-            'japanese cup': 5,
+            'Japanese cup': 5,
             'kinderkin': 1 / 81.82962,
             'koku [石]': 1331 / 240100,
             'lambda [λ]': 1000000,
