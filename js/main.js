@@ -340,7 +340,7 @@ function repo_init(){
             'radar nautical mile': 1 / .000012355,
             'radar statute mile': 1 / .00001075,
             'second [s]': 1,
-            'shake': 1 / .00000001,
+            'shake': 100000000,
             'week': 1 / 604800,
             'year [a]': 1 / 31556908.8,
           },
