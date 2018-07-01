@@ -160,10 +160,10 @@ function repo_init(){
             'stick': 39.3701 / 2,
             'story': 1 / 3.3,
             'sun [寸]': 33,
-            'thou': 1 / .0000254,
-            'unglie': 1 / .01905,
             'survey foot (India)': 1 / .3047996,
             'survey foot (US)': 3937 / 1200,
+            'thou': 1 / .0000254,
+            'unglie': 1 / .01905,
             'yard [yd]': 39.3701 / 36,
           },
           'level': {
