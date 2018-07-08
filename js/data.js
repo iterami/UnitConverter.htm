@@ -8,9 +8,9 @@ function calculate(group){
         );
     }
 
-    var input = document.getElementById(group + '-input').value;
-    var output = document.getElementById(group + '-output').value;
-    var value = document.getElementById(group + '-value').value;
+    let input = document.getElementById(group + '-input').value;
+    let output = document.getElementById(group + '-output').value;
+    let value = document.getElementById(group + '-value').value;
 
     // Adjust input based on input power, converted to a number.
     value *= power(
@@ -19,7 +19,7 @@ function calculate(group){
     );
 
     if(group.indexOf('temperature') !== -1){
-        var formulae = temperature_formulae(value);
+        let formulae = temperature_formulae(value);
 
         // If not converting from default temperature, convert to default temperature first.
         if(input !== units['temperature']['_default']){
@@ -56,13 +56,13 @@ function calculate(group){
 }
 
 function calculate_all(){
-    for(var type in units){
+    for(let type in units){
         calculate(type);
     }
 }
 
 function power(value, id){
-    var power = +document.getElementById(id).value;
+    let power = +document.getElementById(id).value;
     if(Number.isNaN(power)){
         power = 0;
     }
@@ -73,7 +73,7 @@ function power(value, id){
 }
 
 function reverse(id){
-    var temp = document.getElementById(id + '-input').value;
+    let temp = document.getElementById(id + '-input').value;
     document.getElementById(id + '-input').value = document.getElementById(id + '-output').value;
     document.getElementById(id + '-output').value = temp;
 

@@ -439,11 +439,11 @@ function repo_init(){
       'title': 'UnitConverter.htm',
     });
 
-    var unittable = '';
+    let unittable = '';
 
-    for(var type in units){
-        var options = '';
-        for(var unit in units[type]){
+    for(let type in units){
+        let options = '';
+        for(let unit in units[type]){
             if(unit === '_default'){
                 continue;
             }
@@ -457,7 +457,7 @@ function repo_init(){
 
     document.getElementById('units').innerHTML = unittable;
 
-    for(type in units){
+    for(let type in units){
         document.getElementById(type + '-input').onchange
           = document.getElementById(type + '-input-power').oninput
           = document.getElementById(type + '-output').onchange
