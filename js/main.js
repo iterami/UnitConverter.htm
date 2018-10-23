@@ -143,6 +143,7 @@ function repo_init(){
             'lightyear [ly]': 1 / 9460730472580800,
             'ligne': 1 / .0022558291,
             'link [l.]': 1 / .201168,
+            'lunar distance [LD]': 1 / 384402000,
             'metre [m]': 1,
             'mil': 39370.1,
             'mile [mi]': 39.3701 / 63360,
