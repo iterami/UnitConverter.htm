@@ -153,6 +153,7 @@ function repo_init(){
             'nautical mile [nmi]': 1 / 1852,
             'palm': 39.3701 / 3,
             'parsec [pc]': 1 / 30856775800000000,
+            'rack unit [U]': 39.3701 / 1.75,
             'ri [里]': 3.3 / 12960,
             'rin [厘]': 3300,
             'shackle': 39.3701 / 1080,
