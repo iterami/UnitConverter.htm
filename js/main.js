@@ -158,6 +158,7 @@ function repo_init(){
             'rin [厘]': 3300,
             'shackle': 39.3701 / 1080,
             'shaku [尺]': 3.3,
+            'smoot': 1 / 1.702,
             'spat [S]': .00000001,
             'stick': 39.3701 / 2,
             'story': 1 / 3.3,
