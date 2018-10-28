@@ -337,6 +337,7 @@ function repo_init(){
             'fortnight': 1 / 1209600,
             'helek [hl]': .3,
             'hour [h]': 1 / 3600,
+            'Hubble time': 1 / 454419486720000000,
             'Internet Time [.beat]': .01157,
             'lunar day': 1 / 2360592,
             'Martian solar day [sol]': 1 / 88775.2,
