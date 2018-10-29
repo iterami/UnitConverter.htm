@@ -10,7 +10,7 @@ function repo_init(){
             'gal [Gal]': 100,
             'metre per hour squared [m/h²]': 3600,
             'metre per second squared [m/s²]': 1,
-            'miles per hour squared [mph²]': 1 / (1.4 + 2 / 30),
+            'miles per hour squared [mph²]': 1 / .44704,
             'standard gravity [ɡ₀]': 1 / 9.80665,
           },
           'angle': {
