@@ -142,6 +142,7 @@ function repo_init(){
             'jow': 1 / .00635,
             'kanejaku [曲尺]': 3.3,
             'ken [間]': .55,
+            'kos': 1 / 3075,
             'league': 9.3701 / 216000,
             'lightyear [ly]': 1 / 9460730472580800,
             'ligne': 1 / .0022558291,
