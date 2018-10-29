@@ -65,6 +65,8 @@ function repo_init(){
             'metric tons per cubic metre [t/m³]': 1000000,
             'pounds per cubic inch [lb/in³]': 1 / 27679900,
             'pounds per cubic foot [lb/ft³]': 1 / 16018.46,
+            'slugs per cubic foot': 1 / 515378.8184,
+            'slugs per cubic yard': 1 / 19088.1044,
           },
           'energy': {
             '_default': 'joule [J]',
