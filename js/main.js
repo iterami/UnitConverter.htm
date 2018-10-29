@@ -242,6 +242,7 @@ function repo_init(){
           },
           'power': {
             '_default': 'watt [W]',
+            'donkeypower': .004,
             'mechanical horsepower [hp]': 1 / 745.7,
             'metric horsepower [PS]': 1 / 735.49875,
             'poncelet [p]': 1 / 980.665,
