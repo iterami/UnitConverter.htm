@@ -63,6 +63,8 @@ function repo_init(){
             'grams per cubic metre [g/m³]': 1,
             'grams per litre [g/l]': 1000,
             'metric tons per cubic metre [t/m³]': 1000000,
+            'pounds per cubic inch [lb/in³]': 1 / 27679900,
+            'pounds per cubic foot [lb/ft³]': 1 / 16018.46,
           },
           'energy': {
             '_default': 'joule [J]',
