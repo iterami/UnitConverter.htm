@@ -180,9 +180,10 @@ function repo_init(){
             'yard [yd]': 39.3701 / 36,
           },
           'level': {
-            '_default': 'bel [B]',
-            'bel [B]': 1,
-            'nepers [Np]': 1 / .868589,
+            '_default': 'decibel [dB]',
+            'bel [B]': .1,
+            'decibel [dB]': 1,
+            'nepers [Np]': 1 / 8.68589,
           },
           'magnetism': {
             '_default': 'tesla [T]',
