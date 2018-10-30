@@ -183,7 +183,7 @@ function repo_init(){
             '_default': 'decibel [dB]',
             'bel [B]': .1,
             'decibel [dB]': 1,
-            'nepers [Np]': 1 / 8.68589,
+            'neper [Np]': 1 / 8.68589,
           },
           'magnetism': {
             '_default': 'tesla [T]',
