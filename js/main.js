@@ -461,6 +461,8 @@ function repo_init(){
             'pin': 1 / 20.457405,
             'pint (imperial) [pt]': 1.75975326,
             'pint (US) [pt]': 2.11338,
+            'puddee (Chennai)': 1 / 1.591264,
+            'puddee (Government)': 1 / 1.64,
             'quart (imperial) [qt]': .879877,
             'quart (US) [qt]': 1.05669,
             'quartarius': 1 / .13625,
