@@ -143,6 +143,7 @@ function repo_init(){
             'Hammer unit': 1 / .01905,
             'hand [h]': 39.3701 / 4,
             'hiro [尋]': .55,
+            'Hubble length': 1 / (9460730472580800 * 14400000000),
             'inch [in]': 39.3701,
             'jō [丈]': .33,
             'jow': 1 / .00635,
