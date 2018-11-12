@@ -140,7 +140,7 @@ function repo_init(){
             'furlong': 39.3701 / 7920,
             'girah': 1 / .05715,
             'Gunter\'s chain': 39.3701 / 792,
-            'Hammer unit': 1 / .01905,
+            'Hammer unit': (39.3701 / 12) * 16,
             'hand [h]': 39.3701 / 4,
             'hiro [尋]': .55,
             'Hubble length': 1 / (9460730472580800 * 14400000000),
