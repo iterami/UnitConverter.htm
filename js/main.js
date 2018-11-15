@@ -376,6 +376,7 @@ function repo_init(){
             'day [d]': 1 / 86400,
             'decade': 1 / 315569088,
             'fortnight': 1 / 1209600,
+            'ghurry': 1 / 1440,
             'helek [hl]': .3,
             'hour [h]': 1 / 3600,
             'Hubble time': 1 / 454419486720000000,
