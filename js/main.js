@@ -127,6 +127,7 @@ function repo_init(){
             'chain [ch]': 1 / 20.1168,
             'chi [尺]': 3,
             'chō [町]': 3.3 / 360,
+            'covid': 1 / .464,
             'cubit': 1 / .4572,
             'digit': 39.3701 / .75,
             'ell (Danish)': 1 / .941318,
