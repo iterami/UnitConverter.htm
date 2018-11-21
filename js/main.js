@@ -193,6 +193,7 @@ function repo_init(){
             'survey foot (US)': 3937 / 1200,
             'thou': 1 / .0000254,
             'unglie': 1 / .01905,
+            'vara': 39.3701 / 33.384,
             'yard [yd]': 39.3701 / 36,
           },
           'level': {
