@@ -39,6 +39,8 @@ function repo_init(){
             'chō [町]': 1 / 9917.36,
             'cuerda': 1 / 3930.395625,
             'decimal': 1 / 40.4686,
+            'desiatina (official)': 1 / 10925.4,
+            'desiatina (proprietor\'s)': 1 / 14567.2,
             'feet squared [ft²]': 10.7639,
             'gō [合]': 1 / .3306,
             'ground': 1 / 203,
