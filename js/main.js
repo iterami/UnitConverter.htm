@@ -243,6 +243,7 @@ function repo_init(){
             'grain': 1 / .06479891,
             'gram [g]': 1,
             'heavy adowlie': 1 / 2031,
+            'hocsep': 1 / 60000,
             'hyakume [百目]': 1 / 375,
             'kanme [貫目]': 1 / 3750,
             'keel': 1 / 21540194.46656,
