@@ -432,6 +432,7 @@ function repo_init(){
             'ale/beer firkin': 1 / 40.91481,
             'ale/beer hogshead': 1 / 245.48886,
             'amphora quadrantal': 1 / 26.16,
+            'arroba': 1 / 16.137,
             'Australian tablespoon': 50,
             'bath': 1 / 2200,
             'board-foot [FBM]': 1 / 2.359737225,
