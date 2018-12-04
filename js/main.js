@@ -38,6 +38,7 @@ function repo_init(){
             'cawnie': 1 / 5349,
             'chō [町]': 1 / 9917.36,
             'cuerda': 1 / 3930.395625,
+            'darat': .000125,
             'decimal': 1 / 40.4686,
             'desiatina (official)': 1 / 10925.4,
             'desiatina (proprietor\'s)': 1 / 14567.2,
