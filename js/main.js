@@ -443,6 +443,7 @@ function repo_init(){
             'bushel (imperial)': 1 / 36.368735,
             'bushel (US)': 1 / 35.239072,
             'butt of beer': 1 / 490.97772,
+            'cajuela': 1 / 16.6,
             'cash': 1 / 227.11,
             'chungah': 1 / .75768236466,
             'congius': 1 / 3.27,
