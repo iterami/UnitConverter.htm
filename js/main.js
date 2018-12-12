@@ -46,6 +46,7 @@ function repo_init(){
             'gō [合]': 1 / .3306,
             'ground': 1 / 203,
             'hectare [ha]': .0001,
+            'hold': 1 / 4316,
             'inches squared [in²]': 1550.0031,
             'jitro': 1 / 5756,
             'jō [畳]': 1 / 1.653,
