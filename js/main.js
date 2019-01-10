@@ -275,6 +275,7 @@ function repo_init(){
             'pound [lb]': 1 / 453.59237,
             'room': 1 / 7112328.360594,
             'rotal': 1 / 507.5,
+            'scruple [℈]': 1 / 1.2959782,
             'seer (Afghanistan)': 1 / 7066,
             'seer (India)': 1 / 933.10,
             'ship load': 1 / 430803889.3312,
