@@ -421,6 +421,7 @@ function repo_init(){
             'radar statute mile': 1 / .00001075,
             'second [s]': 1,
             'shake': 100000000,
+            'time unit [TU]': 1 / .001024,
             'tun': 1 / 31104000,
             'week': 1 / 604800,
             'winal': 1 / 1728000,
