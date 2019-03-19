@@ -46,13 +46,10 @@ function calculate(group){
       group + '-output-power'
     );
 
-    // Make sure only allowed number of decimal places are displayed.
-    if(value % 1 !== 0){
-        value = value.toFixed(core_storage_data['decimals']);
-    }
-
-    // Display result.
-    document.getElementById(group + '-result').value = value;
+    // Display rounded result.
+    document.getElementById(group + '-result').value = core_round({
+      'number': value,
+    });
 }
 
 function calculate_all(){
