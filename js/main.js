@@ -80,6 +80,7 @@ function repo_init(){
             '_default': 'joule [J]',
             'electron volt [eV]': 6241509343300000000,
             'erg': 10000000,
+            'foe': 1 / 1e44,
             'foot-pound [ft·lb]': 1 / 1.3558179483314,
             'international steam table calorie [calᵢₜ]': 1 / 4.1868,
             'joule [J]': 1,
