@@ -395,6 +395,7 @@ function repo_init(){
             'Rømer [°Rø]': void 0,
             'Sagredo': void 0,
             'Sulzer': void 0,
+            'Urist [°U]': void 0,
             'Wedgwood (modern)': void 0,
             'Wedgwood (original)': void 0,
           },

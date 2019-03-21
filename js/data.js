@@ -141,6 +141,7 @@ function temperature_formulae(value){
         'Rømer [°Rø]': value * 21 / 40 + 7.5,
         'Sagredo': value * 4.73934 + 100,
         'Sulzer': value * 1.57075 - 1.07547,
+        'Urist [°U]': value * 1.8 + 10000,
         'Wedgwood (modern)': value / 24.8571954 - 10.8218,
         'Wedgwood (original)': value / 72.2219815 - 8.04188,
       },
@@ -188,6 +189,7 @@ function temperature_formulae(value){
       'Rømer [°Rø]': (value - 7.5) * 40 / 21,
       'Sagredo': value * .211 - 21.1,
       'Sulzer': value * .636637 + .684685,
+      'Urist [°U]': (value - 10000) / 1.8,
       'Wedgwood (modern)': value * 24.8572 + 269,
       'Wedgwood (original)': value * 72.2219 + 580.8,
     };
