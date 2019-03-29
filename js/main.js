@@ -437,6 +437,7 @@ function repo_init(){
             'radar metre': 1 / .00000000666,
             'radar nautical mile': 1 / .000012355,
             'radar statute mile': 1 / .00001075,
+            'RuneScape tick': 1 / .6,
             'second [s]': 1,
             'shake': 100000000,
             'time unit [TU]': 1 / .001024,
