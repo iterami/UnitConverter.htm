@@ -229,8 +229,8 @@ function repo_init(){
           },
           'luminous_intensity': {
             '_default': 'candela [cd]',
-            'candlepower [cp]': 1 / .981,
             'candela [cd]': 1,
+            'candlepower [cp]': 1 / .981,
             'Carcel': 1 / 9.74,
             'Hefnerkerze': 1 / .920,
             'Violle': 1 / 20.17,
