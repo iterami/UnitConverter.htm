@@ -188,6 +188,7 @@ function repo_init(){
             'ohra': 1 / .571,
             'palm': 39.3701 / 3,
             'parsec [pc]': 1 / 30856775800000000,
+            'peninkulma': 1 / 10688,
             'perche': 1 / 6.497,
             'pic': 1 / .582,
             'pied': 1 / .32485,
