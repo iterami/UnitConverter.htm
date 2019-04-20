@@ -278,7 +278,7 @@ function repo_init(){
             'kula': 1 / 11165,
             'large sack': 1 / 101604.69088,
             'libra': 1 / 453.59237 / 1.014286,
-            'long ton': 1 / 1016046.08,
+            'long ton': 1 / 453.59237 / 2400,
             'mane': 1 / (453.59237 * 2.0071),
             'metric tonne [t]': .00001,
             'mina': 1 / 571,
