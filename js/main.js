@@ -218,7 +218,7 @@ function repo_init(){
             'survey foot (US)': 3937 / 1200,
             'thou': 1 / .0000254,
             'toise': 1 / 1.9488,
-            'unglie': 1 / .01905,
+            'unglie': 39.3701 / .75,
             'vara': 39.3701 / 33.384,
             'yard [yd]': 39.3701 / 36,
           },
