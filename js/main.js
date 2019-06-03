@@ -133,6 +133,7 @@ function repo_init(){
             'barleycorn': 118.11,
             'bu [分]': 330,
             'cable': 39.3701 / 7200,
+            'cana': 1 / 1.57,
             'chain [ch]': 1 / 20.1168,
             'chi [尺]': 3,
             'chō [町]': 3.3 / 360,
