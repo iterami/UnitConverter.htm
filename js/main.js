@@ -334,8 +334,8 @@ function repo_init(){
             'Vickers pyramid number [HV]': 1 / 9807000,
           },
           'radioactivity_absorbed_dose': {
-            '_default': 'becquerel [Bq]',
-            'becquerel [Bq]': 1,
+            '_default': 'gray [Gy]',
+            'gray [Gy]': 1,
             'joules per kilogram [J/kg]': .01,
             'rad': 100,
           },
