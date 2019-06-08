@@ -333,18 +333,18 @@ function repo_init(){
             'torr [Torr]': 760 / 101325,
             'Vickers pyramid number [HV]': 1 / 9807000,
           },
-          'radioactivity_absorbed_dose': {
+          'radioactivity<br>absorbed dose': {
             '_default': 'gray [Gy]',
             'gray [Gy]': 1,
             'joules per kilogram [J/kg]': .01,
             'rad': 100,
           },
-          'radioactivity_dose_equivalent': {
+          'radioactivity<br>dose equivalent': {
             '_default': 'sievert [Sv]',
             'sievert [Sv]': 1,
             'röntgen equivalent man [rem]': 100,
           },
-          'radioactivity_specific_activity': {
+          'radioactivity<br>specific activity': {
             '_default': 'becquerel [Bq]',
             'becquerel [Bq]': 1,
             'curie [Ci]': 1 / 3.7e10,
@@ -599,9 +599,9 @@ function repo_init(){
             options += '<option value="' + unit + '">' + unit + '</option>';
         }
 
-        unittable += '<tr><td><input id=' + type + '-value>*10^<input id=' + type + '-input-power style="width:40px" value=0><br><select id=' + type + '-input>' + options + '</select>'
-          + '<td><input id=' + type + ' type=button value="' + type + '">'
-          + '<td><input id=' + type + '-result readonly>*10^<input id=' + type + '-output-power style="width:40px" value=0><br><select id=' + type + '-output>' + options + '</select>';
+        unittable += '<tr><td><input id="' + type + '-value">*10^<input id="' + type + '-input-power" style="width:40px" value=0><br><select id="' + type + '-input">' + options + '</select>'
+          + '<td>' + type + '<br><input id="' + type + '" type=button value=↔>'
+          + '<td><input id="' + type + '-result" readonly>*10^<input id="' + type + '-output-power" style="width:40px" value=0><br><select id="' + type + '-output">' + options + '</select>';
     }
 
     document.getElementById('units').innerHTML = unittable;
