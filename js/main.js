@@ -333,11 +333,22 @@ function repo_init(){
             'torr [Torr]': 760 / 101325,
             'Vickers pyramid number [HV]': 1 / 9807000,
           },
-          'radiation': {
-            '_default': 'gray [Gy]',
-            'gray [Gy]': 1,
+          'radioactivity_absorbed_dose': {
+            '_default': 'becquerel [Bq]',
+            'becquerel [Bq]': 1,
             'joules per kilogram [J/kg]': .01,
             'rad': 100,
+          },
+          'radioactivity_dose_equivalent': {
+            '_default': 'sievert [Sv]',
+            'sievert [Sv]': 1,
+            'röntgen equivalent man [rem]': 100,
+          },
+          'radioactivity_specific_activity': {
+            '_default': 'becquerel [Bq]',
+            'becquerel [Bq]': 1,
+            'curie [Ci]': 1 / 3.7e10,
+            'rutherford [Rd]': 1e-6,
           },
           'speed': {
             '_default': 'metres per second [m/s]',
