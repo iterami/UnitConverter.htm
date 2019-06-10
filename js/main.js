@@ -230,7 +230,7 @@ function repo_init(){
             'decibel [dB]': 1,
             'neper [Np]': 1 / 8.68589,
           },
-          'luminous_intensity': {
+          'luminous intensity': {
             '_default': 'candela [cd]',
             'candela [cd]': 1,
             'candlepower [cp]': 1 / .981,
