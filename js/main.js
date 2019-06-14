@@ -485,6 +485,7 @@ function repo_init(){
             'year (Saturn)': 1 / (31556908.8 * 29.46),
             'year (Uranus)': 1 / (31556908.8 * 84.01),
             'year (Venus)': 1 / (31556908.8 * .615),
+            'yén': 1 / 4544294400,
           },
           'torque': {
             '_default': 'newton metre [N·m]',
