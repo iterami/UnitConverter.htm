@@ -131,7 +131,7 @@ function repo_init(){
             'arpent': 1 / 58.47109,
             'astronomical unit [au]': 1 / 149597870700,
             'barleycorn': 118.11,
-            'bu [分]': 330,
+            'bu [分]': 1 / 330,
             'cable': 39.3701 / 7200,
             'cana': 1 / 1.57,
             'chain [ch]': 1 / 20.1168,
