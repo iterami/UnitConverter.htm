@@ -183,6 +183,8 @@ function repo_init(){
             'metric inch': 1 / .025,
             'mil': 39370.1,
             'mile [mi]': 39.3701 / 63360,
+            'Minecraft chunk (horizontal)': .0625,
+            'Minecraft chunk (vertical)': .00390625,
             'mō [毛, 毫]': 33000,
             'nail': 39.3701 / .25,
             'nautical league': 1 / 5556,
