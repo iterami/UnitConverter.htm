@@ -133,6 +133,7 @@ function repo_init(){
             'arpent': 1 / 58.47109,
             'astronomical unit [au]': 1 / 149597870700,
             'barleycorn': 118.11,
+            'bloit': 39.3701 / 42333.6,
             'bu [分]': 1 / 330,
             'cable': 39.3701 / 7200,
             'cana': 1 / 1.57,
@@ -229,6 +230,7 @@ function repo_init(){
             'toise': 1 / 1.9488,
             'unglie': 39.3701 / .75,
             'vara': 39.3701 / 33.384,
+            'wiffle': 1 / .089,
             'yard [yd]': 39.3701 / 36,
           },
           'level': {
