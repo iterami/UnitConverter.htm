@@ -486,6 +486,7 @@ function repo_init(){
             'shake': 100000000,
             'time unit [TU]': 1 / .001024,
             'tun': 1 / 31104000,
+            'Warhol': 1 / 900,
             'week': 1 / 604800,
             'winal': 1 / 1728000,
             'year (Earth) [a]': 1 / 31556908.8,
