@@ -359,6 +359,12 @@ function repo_init(){
             'curie [Ci]': 1 / 3.7e10,
             'rutherford [Rd]': 1e-6,
           },
+          'solid angle': {
+            '_default': 'steradian [sr]',
+            'spat [sp]': 1 / (Math.PI * 4),
+            'square degree [deg²]': Math.pow(180 / Math.PI, 2),
+            'steradian [sr]': 1,
+          },
           'speed': {
             '_default': 'metres per second [m/s]',
             'feet per hour [ft/h]': 39.3701 / 12 * 3600,
