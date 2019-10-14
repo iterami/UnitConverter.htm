@@ -564,6 +564,8 @@ function repo_init(){
             'gō [合]': 1331 / 240.1,
             'hekat': 1 / 4.8,
             'homer': 1 / 220,
+            'hoppus cubic foot [h ft]': 1 / 36.0473457116,
+            'hoppus ton [HT]': 1 / 1802.36728558,
             'Japanese cup': 5,
             'kinderkin': 1 / 81.82962,
             'koku [石]': 1331 / 240100,
