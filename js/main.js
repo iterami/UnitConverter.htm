@@ -60,6 +60,7 @@ function repo_init(){
             'miles squared [mi²]': 1 / 2589990,
             'morgen': .0001 / .856532,
             'plaza': .00015625,
+            'quinaria': 2384.6201538,
             'rood': 1 / 1011.71,
             'se [畝]': 1 / 99.1736,
             'shaku [勺]': 1 / .03306,
