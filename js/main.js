@@ -538,6 +538,8 @@ function repo_init(){
             'chungah': 1 / .75768236466,
             'congius': 1 / 3.27,
             'coomb': 1 / 145.47494,
+            'cord': 1 / 3624.56,
+            'cord-foot [cd-ft]': 1 / 453.07,
             'cotyla': 1 / .2725,
             'cran': 1 / 170.47853205,
             'cubic inch [in³]': 61.0237440947323,
