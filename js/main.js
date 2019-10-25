@@ -493,6 +493,8 @@ function repo_init(){
             'Savart': 1 / 315569.088,
             'second [s]': 1,
             'shake': 100000000,
+            'takk': 1 / 28.8,
+            'tik': 1 / 28800,
             'time unit [TU]': 1 / .001024,
             'tun': 1 / 31104000,
             'Warhol': 1 / 900,
