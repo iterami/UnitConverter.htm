@@ -554,6 +554,7 @@ function repo_init(){
             'cubic mile [mi³]': .000000000000239912758579,
             'cubic yard [yd³]': 1 / 764.5549,
             'culeus': 1 / 523.2,
+            'cullishigay': 1 / 45.4609188,
             'cup (imperial)': 35.1950652 / 8,
             'cup (US)': 33.8140227 / 8,
             'cyathus': 1 / (3.27 / 72),
