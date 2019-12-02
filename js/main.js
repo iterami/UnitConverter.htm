@@ -219,7 +219,7 @@ function repo_init(){
             'shaku [尺]': 3.3,
             'Sheppey': 39.3701 / 55440,
             'siriometer [sir]': 1 / 149597870700000000,
-            'Skyrim unit': 39.3701 / (12 * .046875),
+            'Skyrim unit': 39.3701 / .5625,
             'smoot': 1 / 1.702,
             'spat [S]': .00000001,
             'stick': 39.3701 / 2,
