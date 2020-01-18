@@ -304,7 +304,7 @@ function repo_init(){
             'momme [匁]': 1 / 3.75,
             'munjandie': 1 / .25919564,
             'oka (Ottoman)': 1 / 1282.9,
-            'ounce [oz]': 1 / 453.59237 / 16,
+            'ounce [oz]': 1 / (453.59237 / 16),
             'passeree': 1 / 4665.5,
             'pāu [पाउ]': 1 / 194.375,
             'pennyweight [dwt]': 1 / 1.55517384,
