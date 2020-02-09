@@ -46,10 +46,12 @@ function calculate(group){
       group + '-output-power'
     );
 
-    // Display rounded result.
-    document.getElementById(group + '-result').value = core_round({
-      'number': value,
-    });
+    // Optionally round result.
+    document.getElementById(group + '-result').value = core_storage_data['rounding']
+      ? core_round({
+        'number': value,
+      })
+      : value;
 }
 
 function calculate_all(){
