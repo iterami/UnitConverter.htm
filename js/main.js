@@ -90,6 +90,7 @@ function repo_init(){
             'joule [J]': 1,
             'mean BTU [Btuₘₑₐₙ]': 1 / 1055.87,
             'mean calorie [calₘₑₐₙ]': 1 / 4.19002,
+            'quad': 1 / 1.055e18,
             'thermochemical BTU [Btuₜₕ]': 1 / 1054.35026444,
             'thermochemical calorie [calₜₕ]': 1 / 4.184,
             'ton of TNT': 1 / 4184000000,
