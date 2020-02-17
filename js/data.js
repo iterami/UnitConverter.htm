@@ -8,8 +8,8 @@ function calculate(group){
         );
     }
 
-    let input = document.getElementById(group + '-input').value;
-    let output = document.getElementById(group + '-output').value;
+    const input = document.getElementById(group + '-input').value;
+    const output = document.getElementById(group + '-output').value;
     let value = document.getElementById(group + '-value').value;
 
     // Adjust input based on input power, converted to a number.
@@ -55,7 +55,7 @@ function calculate(group){
 }
 
 function calculate_all(){
-    for(let type in units){
+    for(const type in units){
         calculate(type);
     }
 }

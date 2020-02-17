@@ -640,9 +640,9 @@ function repo_init(){
 
     let unittable = '';
 
-    for(let type in units){
+    for(const type in units){
         let options = '';
-        for(let unit in units[type]){
+        for(const unit in units[type]){
             if(unit === '_default'){
                 continue;
             }
@@ -656,7 +656,7 @@ function repo_init(){
 
     document.getElementById('units').innerHTML = unittable;
 
-    for(let type in units){
+    for(const type in units){
         document.getElementById(type + '-input').onchange
           = document.getElementById(type + '-input-power').oninput
           = document.getElementById(type + '-output').onchange
