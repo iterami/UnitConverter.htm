@@ -376,6 +376,7 @@ function repo_init(){
           },
           'speed': {
             '_default': 'metres per second [m/s]',
+            'Bubnoff unit [B]': 31556908800000,
             'feet per hour [ft/h]': 39.3701 / 12 * 3600,
             'feet per minute [ft/min]': 39.3701 / 12 * 60,
             'feet per second [ft/s]': 39.3701 / 12,
