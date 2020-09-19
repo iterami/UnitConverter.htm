@@ -381,6 +381,7 @@ function repo_init(){
             'feet per hour [ft/h]': 39.3701 / 12 * 3600,
             'feet per minute [ft/min]': 39.3701 / 12 * 60,
             'feet per second [ft/s]': 39.3701 / 12,
+            'furlongs per fortnight': 6012.8727971,
             'inches per hour [in/h]': 141732.36,
             'inches per minute [in/min]': 2362.206,
             'inches per second [in/s]': 39.3701,
