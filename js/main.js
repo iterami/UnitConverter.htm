@@ -360,6 +360,7 @@ function repo_init(){
           },
           'radioactivity<br>dose equivalent': {
             '_default': 'sievert [Sv]',
+            'banana equivalent dose [BED]': 10000000,
             'sievert [Sv]': 1,
             'röntgen equivalent man [rem]': 100,
           },
