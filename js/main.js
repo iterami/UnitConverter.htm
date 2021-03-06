@@ -501,6 +501,7 @@ function repo_init(){
             'radar statute mile': 1 / .00001075,
             'RuneScape tick': 1 / .6,
             'Savart': 1 / 315569.088,
+            'Schrute Buck': 1000 / 300,
             'second [s]': 1,
             'shake': 100000000,
             'takk': 1 / 28.8,
