@@ -86,6 +86,7 @@ function repo_init(){
             'erg': 10000000,
             'foe': 1 / 1e44,
             'foot-pound [ft·lb]': 1 / 1.3558179483314,
+            'gallon gasoline equivalent': 1 / 121320000,
             'international steam table calorie [calᵢₜ]': 1 / 4.1868,
             'joule [J]': 1,
             'mean BTU [Btuₘₑₐₙ]': 1 / 1055.87,
