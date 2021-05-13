@@ -561,6 +561,7 @@ function repo_init(){
             'cubic foot [ft³]': 1 / 28.316846592,
             'cubic metre [m³]': .001,
             'cubic mile [mi³]': .000000000000239912758579,
+            'cubic ton': 1 / 28.316846592 / 40,
             'cubic yard [yd³]': 1 / 764.5549,
             'culeus': 1 / 523.2,
             'cullishigay': 1 / 45.4609188,
