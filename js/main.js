@@ -338,6 +338,7 @@ function repo_init(){
             'donkeypower': .004,
             'mechanical horsepower [hp]': 1 / 745.7,
             'metric horsepower [PS]': 1 / 735.49875,
+            'pirate-ninja [pn]': 1 / 40.55,
             'poncelet [p]': 1 / 980.665,
             'ton of refrigeration [TR]': 1 / 3516.8525,
             'watt [W]': 1,
