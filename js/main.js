@@ -4,7 +4,7 @@ function repo_init(){
     core_repo_init({
       'globals': {
         'units': {
-          'acceleration': {
+          'Acceleration': {
             '_default': 'metre per second squared [m/s²]',
             'foot per second squared [ft/s²]': 3.280839895,
             'gal [Gal]': 100,
@@ -13,7 +13,7 @@ function repo_init(){
             'miles per hour squared [mph²]': 1 / .44704,
             'standard gravity [ɡ₀]': 1 / 9.80665,
           },
-          'angle': {
+          'Angle': {
             '_default': 'radian [rad]',
             'arcminute [′]': 180 / Math.PI * 60,
             'arcsecond [″]': 180 / Math.PI * 3600,
@@ -29,7 +29,7 @@ function repo_init(){
             'sign': 180 / Math.PI / 30,
             'turn': 180 / Math.PI / 360,
           },
-          'area': {
+          'Area': {
             '_default': 'metres squared [m²]',
             'acre [ac]': 1 / 4046.86,
             'are [a]': .01,
@@ -70,7 +70,7 @@ function repo_init(){
             'tsubo [坪]': 1 / 3.306,
             'yards squared [yd²]': .83612736,
           },
-          'density': {
+          'Density': {
             '_default': 'grams per cubic metre [g/m³]',
             'grams per cubic metre [g/m³]': 1,
             'grams per litre [g/l]': 1000,
@@ -80,7 +80,7 @@ function repo_init(){
             'slugs per cubic foot': 1 / 515378.8184,
             'slugs per cubic yard': 1 / 19088.1044,
           },
-          'energy': {
+          'Energy': {
             '_default': 'joule [J]',
             'electron volt [eV]': 6241509343300000000,
             'erg': 10000000,
@@ -97,7 +97,7 @@ function repo_init(){
             'ton of TNT': 1 / 4184000000,
             'watt-hour [W·h]': 1 / 3600,
           },
-          'force': {
+          'Force': {
             '_default': 'newton [N]',
             'dyne [dyn]': 100000,
             'gram-force [gf]': 1 / .00980665,
@@ -112,21 +112,21 @@ function repo_init(){
             'sthène [sn]': .001,
             'tonne-force [tf]': 1 / 9806.65,
           },
-          'fuel': {
+          'Fuel': {
             '_default': 'metres per litre [m/l]',
             'litres per 100 kilometres [l/100km]': 100000,
             'metres per litre [m/l]': 1,
             'miles per imperial gallon [MPG]': .00282481,
             'miles per US gallon [MPG]': .00235215,
           },
-          'illuminance': {
+          'Illuminance': {
             '_default': 'lux [lx]',
             'foot-candle [fc]': .09290304,
             'lux [lx]': 1,
             'phot [ph]': .0001,
             'skot [sk]': 3141.69,
           },
-          'length': {
+          'Length': {
             '_default': 'metre [m]',
             'ald': 1 / 1.6,
             'alen': 1 / .6277,
@@ -239,13 +239,13 @@ function repo_init(){
             'wiffle': 1 / .089,
             'yard [yd]': 39.3701 / 36,
           },
-          'level': {
+          'Level': {
             '_default': 'decibel [dB]',
             'bel [B]': .1,
             'decibel [dB]': 1,
             'neper [Np]': 1 / 8.68589,
           },
-          'luminous intensity': {
+          'Luminous Intensity': {
             '_default': 'candela [cd]',
             'candela [cd]': 1,
             'candlepower [cp]': 1 / .981,
@@ -253,13 +253,13 @@ function repo_init(){
             'Hefnerkerze': 1 / .920,
             'Violle': 1 / 20.17,
           },
-          'magnetism': {
+          'Magnetism': {
             '_default': 'tesla [T]',
             'gamma [γ]': 1000000000,
             'gauss [G]': 10000,
             'tesla [T]': 1,
           },
-          'mass': {
+          'Mass': {
             '_default': 'gram [g]',
             'abucco': 1 / 196.44,
             'adowlie': 1 / 1982,
@@ -335,7 +335,7 @@ function repo_init(){
             'Whey (Essex)': 1 / 107047.79932,
             'zolotnik [zol.]': 1 / 4.2658,
           },
-          'power': {
+          'Power': {
             '_default': 'watt [W]',
             'donkeypower': .004,
             'mechanical horsepower [hp]': 1 / 745.7,
@@ -345,7 +345,7 @@ function repo_init(){
             'ton of refrigeration [TR]': 1 / 3516.8525,
             'watt [W]': 1,
           },
-          'pressure': {
+          'Pressure': {
             '_default': 'pascal [Pa]',
             'bar': .00001,
             'pascal [Pa]': 1,
@@ -356,31 +356,31 @@ function repo_init(){
             'torr [Torr]': 760 / 101325,
             'Vickers pyramid number [HV]': 1 / 9807000,
           },
-          'radioactivity<br>absorbed dose': {
+          'Radioactivity<br>Absorbed Dose': {
             '_default': 'gray [Gy]',
             'gray [Gy]': 1,
             'joules per kilogram [J/kg]': .01,
             'rad': 100,
           },
-          'radioactivity<br>dose equivalent': {
+          'Radioactivity<br>Dose Equivalent': {
             '_default': 'sievert [Sv]',
             'banana equivalent dose [BED]': 10000000,
             'sievert [Sv]': 1,
             'röntgen equivalent man [rem]': 100,
           },
-          'radioactivity<br>specific activity': {
+          'Radioactivity<br>Specific Activity': {
             '_default': 'becquerel [Bq]',
             'becquerel [Bq]': 1,
             'curie [Ci]': 1 / 3.7e10,
             'rutherford [Rd]': 1e-6,
           },
-          'solid angle': {
+          'Solid Angle': {
             '_default': 'steradian [sr]',
             'spat [sp]': 1 / (Math.PI * 4),
             'square degree [deg²]': Math.pow(180 / Math.PI, 2),
             'steradian [sr]': 1,
           },
-          'speed': {
+          'Speed': {
             '_default': 'metres per second [m/s]',
             'Bubnoff unit [B]': 31556908800000,
             'feet per hour [ft/h]': 39.3701 / 12 * 3600,
@@ -403,7 +403,7 @@ function repo_init(){
             'yards per minute [yd/min]': 39.3701 / 36 * 60,
             'yards per second [yd/s]': 39.3701 / 36,
           },
-          'temperature': {
+          'Temperature': {
             '_default': 'Celsius [°C]',
             'Amonton': void 0,
             'Barnsdorf': void 0,
@@ -460,7 +460,7 @@ function repo_init(){
             'Wedgwood (modern)': void 0,
             'Wedgwood (original)': void 0,
           },
-          'time': {
+          'Time': {
             '_default': 'second [s]',
             'alautun': 1 / 1990656000000000,
             'atom': 1 / .15957446808,
@@ -528,13 +528,13 @@ function repo_init(){
             'year (Venus)': 1 / (31556908.8 * .615),
             'yén': 1 / 4544294400,
           },
-          'torque': {
+          'Torque': {
             '_default': 'newton metre [N·m]',
             'gram metre [g·m]': 1 / 9806.65,
             'newton metre [N·m]': 1,
             'pound-foot [lb·ft]': 1 / 1.355818,
           },
-          'volume': {
+          'Volume': {
             '_default': 'litre [l]',
             'acetabulum': 1 / .068125,
             'acre-foot': 1 / 1233480,
