@@ -62,7 +62,7 @@ function calculate_all(){
 
 function power(value, id){
     let power = +document.getElementById(id).value;
-    if(Number.isNaN(power)){
+    if(globalThis.isNaN(power)){
         power = 0;
     }
     return Math.pow(
