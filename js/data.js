@@ -18,17 +18,17 @@ function calculate(group){
       group + '-input-power'
     );
 
-    if(group.indexOf('temperature') !== -1){
+    if(group.indexOf('Temperature') !== -1){
         let formulae = temperature_formulae(value);
 
         // If not converting from default temperature, convert to default temperature first.
-        if(input !== units['temperature']['_default']){
+        if(input !== units['Temperature']['_default']){
             value = formulae[input];
             formulae = temperature_formulae(value);
         }
 
         // Convert from default temperature to output unit.
-        value = formulae[units['temperature']['_default']][output];
+        value = formulae[units['Temperature']['_default']][output];
 
     }else if(input !== output){
         // If the input unit is not the default unit, convert to the default unit.
