@@ -642,6 +642,7 @@ function repo_init(){
           },
         },
       },
+      'info': '<a href=../Docs.htm/repositories/unitconverter-htm.htm>Docs</a>',
       'storage': {
         'rounding': false,
       },
