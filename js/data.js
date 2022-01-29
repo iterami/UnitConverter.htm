@@ -12,7 +12,6 @@ function calculate(group){
     const output = document.getElementById(group + '-output').value;
     let value = document.getElementById(group + '-value').value;
 
-    // Adjust input based on input power, converted to a number.
     value *= power(
       value,
       group + '-input-power'
@@ -21,32 +20,26 @@ function calculate(group){
     if(group.indexOf('Temperature') !== -1){
         let formulae = temperature_formulae(value);
 
-        // If not converting from default temperature, convert to default temperature first.
         if(input !== units['Temperature']['_default']){
             value = formulae[input];
             formulae = temperature_formulae(value);
         }
 
-        // Convert from default temperature to output unit.
         value = formulae[units['Temperature']['_default']][output];
 
     }else if(input !== output){
-        // If the input unit is not the default unit, convert to the default unit.
         if(input !== units[group]['_default']){
             value /= units[group][input];
         }
 
-        // Convert the entered input from the default unit to the output unit.
         value *= units[group][output];
     }
 
-    // Adjust output based on output power.
     value /= power(
       value,
       group + '-output-power'
     );
 
-    // Optionally round result.
     document.getElementById(group + '-result').value = core_storage_data['rounding']
       ? core_round({
         'number': value,
