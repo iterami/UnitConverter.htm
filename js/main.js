@@ -651,7 +651,6 @@ function repo_init(){
     });
 
     let unittable = '';
-
     for(const type in units){
         let options = '';
         for(const unit in units[type]){
@@ -662,10 +661,9 @@ function repo_init(){
         }
 
         unittable += '<tr><td class=right><input id="' + type + '-value" step=any type=number>*10^<input class=mini id="' + type + '-input-power" step=any type=number value=0><br><select id="' + type + '-input">' + options + '</select>'
-          + '<td>' + type + '<br><input id="' + type + '" type=button value=↔>'
+          + '<td class=center>' + type + '<br><input id="' + type + '" type=button value=↔>'
           + '<td class=left><input id="' + type + '-result" readonly>*10^<input class=mini id="' + type + '-output-power" step=any type=number value=0><br><select id="' + type + '-output">' + options + '</select>';
     }
-
     document.getElementById('units').innerHTML = unittable;
 
     for(const type in units){
