@@ -664,7 +664,7 @@ function repo_init(){
 
         unittable += '<tr><td class=right><input id="' + type + '-value" step=any type=number>*10^<input class=mini id="' + type + '-input-power" step=any type=number value=0><br><select id="' + type + '-input">' + options + '</select>'
           + '<td class=center>' + type + '<br><input id="' + type + '" type=button value=↔>'
-          + '<td class=left><input id="' + type + '-result" readonly>*10^<input class=mini id="' + type + '-output-power" step=any type=number value=0><br><select id="' + type + '-output">' + options + '</select>';
+          + '<td class=left><input id="' + type + '-result" readonly type=text>*10^<input class=mini id="' + type + '-output-power" step=any type=number value=0><br><select id="' + type + '-output">' + options + '</select>';
     }
     document.getElementById('units').innerHTML = unittable;
 
