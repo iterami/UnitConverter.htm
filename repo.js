@@ -55,7 +55,7 @@ function calculate_all(){
 
 function power(value, id){
     let power = +document.getElementById(id).value;
-    if(globalThis.isNaN(power)){
+    if(Number.isNaN(power)){
         power = 0;
     }
     return Math.pow(
