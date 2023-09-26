@@ -749,15 +749,20 @@ function repo_init(){
 }
 
 function reverse(id){
-    let temp = document.getElementById(id + '-input').value;
-    document.getElementById(id + '-input').value = document.getElementById(id + '-output').value;
-    document.getElementById(id + '-output').value = temp;
+    const input_element = document.getElementById(id + '-input');
+    const output_element = document.getElementById(id + '-output');
+    let temp = input_element.value;
+    input_element.value = output_element.value;
+    output_element.value = temp;
 
-    temp = document.getElementById(id + '-input-power').value;
-    document.getElementById(id + '-input-power').value = document.getElementById(id + '-output-power').value;
-    document.getElementById(id + '-output-power').value = temp;
+    const input_power_element = document.getElementById(id + '-input-power');
+    const output_power_element = document.getElementById(id + '-output-power');
+    temp = input_power_element.value;
+    input_power_element.value = output_power_element.value;
+    output_power_element.value = temp;
 
     calculate(id);
+    document.getElementById(id + '-value').focus();
 }
 
 function temperature_formulae(value){
