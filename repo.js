@@ -39,12 +39,18 @@ function calculate(group){
       value,
       group + '-output-power'
     );
+    const value_rounded = core_round({
+      'number': value,
+    });
+    const output_unit = output.substring(
+      output.indexOf('[') + 1,
+      output.indexOf(']')
+    );
 
     document.getElementById(group + '-result').value = core_storage_data['rounding']
-      ? core_round({
-        'number': value,
-      })
+      ? value_rounded
       : value;
+    document.title = value_rounded + ' ' + output_unit + ' - ' + core_repo_title;
 }
 
 function calculate_all(){
