@@ -42,10 +42,13 @@ function calculate(group){
     const value_rounded = core_round({
       'number': value,
     });
-    const output_unit = output.substring(
+    let output_unit = output.substring(
       output.indexOf('[') + 1,
       output.indexOf(']')
     );
+    if(output_unit.length === 0){
+        output_unit = output;
+    }
 
     document.getElementById(group + '-result').value = core_storage_data['rounding']
       ? value_rounded
