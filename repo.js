@@ -732,7 +732,7 @@ function repo_init(){
             if(unit === '_default'){
                 continue;
             }
-            options += '<option value="' + unit + '">' + unit + '</option>';
+            options += '<option value="' + unit + '">' + unit;
         }
 
         unittable += '<tr><td class=right><input id="' + type + '-value" step=any type=number>*10^<input class=mini id="' + type + '-input-power" step=any type=number value=0><br><select id="' + type + '-input">' + options + '</select>'
