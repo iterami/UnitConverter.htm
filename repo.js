@@ -16,6 +16,9 @@ function calculate(group){
       value,
       group + '-input-power'
     );
+    const input_rounded = core_round({
+      'number': value,
+    });
 
     if(group.indexOf('Temperature') !== -1){
         let formulae = temperature_formulae(value);
@@ -42,6 +45,13 @@ function calculate(group){
     const value_rounded = core_round({
       'number': value,
     });
+    let input_unit = input.substring(
+      input.indexOf('[') + 1,
+      input.indexOf(']')
+    );
+    if(input_unit.length === 0){
+        input_unit = input;
+    }
     let output_unit = output.substring(
       output.indexOf('[') + 1,
       output.indexOf(']')
@@ -53,7 +63,7 @@ function calculate(group){
     document.getElementById(group + '-result').value = core_storage_data['rounding']
       ? value_rounded
       : value;
-    document.title = value_rounded + ' ' + output_unit + ' - ' + core_repo_title;
+    document.title = value_rounded + ' ' + output_unit + ' ≈ ' + input_rounded + ' ' + input_unit;
 }
 
 function calculate_all(){
