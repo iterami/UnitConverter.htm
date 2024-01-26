@@ -701,6 +701,7 @@ function repo_init(){
             'minim (imperial) [min]': 16893.631296,
             'minim (US) [min]': 16230.730896,
             'naggin': 5,
+            'ngogn': 1 / .0022633484517438173216473,
             'octave': 1 / 73,
             'omer [ר‎עמ]': 1 / 3.636,
             'pau': 1 / .284130625,
