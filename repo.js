@@ -330,7 +330,7 @@ function repo_init(){
             'decibel [dB]': 1,
             'neper [Np]': 1 / 8.68589,
           },
-          'Luminous Intensity': {
+          'Luminous<br>Intensity': {
             '_default': 'candela [cd]',
             'candela [cd]': 1,
             'candlepower [cp]': 1 / .981,
@@ -419,6 +419,12 @@ function repo_init(){
             'troy ounce [oz t]': 1 / 31.1034768,
             'Whey (Essex)': 1 / 107047.79932,
             'zolotnik [zol.]': 1 / 4.2658,
+          },
+          'Mass Flow': {
+            '_default': 'gram per second [g/s]',
+            'gram per second [g/s]': 1,
+            'pound per second [lb/s]': .00045359237,
+            'slug per second': .014593903,
           },
           'Power': {
             '_default': 'watt [W]',
@@ -726,6 +732,13 @@ function repo_init(){
             'urna': 1 / 13.08,
             'velt': 1 / 227.11 * 30,
             'yard of ale': 1 / 1.4206537,
+          },
+          'Volumetric Flow': {
+            '_default': 'cubic metre per second [m³/s]',
+            'cubic foot per second [ft³/s]': 1 / .028316846592,
+            'cubic metre per second [m³/s]': 1,
+            'gallon per second [gal/s]': .0037854118,
+            'sverdrup [Sv]': .000001,
           },
         },
       },
