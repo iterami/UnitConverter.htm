@@ -601,6 +601,7 @@ function repo_init(){
             'second [s]': 1,
             'shake': 100000000,
             'takk': 1 / 28.8,
+            'third': 60,
             'tik': 1 / 28800,
             'time unit [TU]': 1 / .001024,
             'tun': 1 / 31104000,
