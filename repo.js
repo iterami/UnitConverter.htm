@@ -8,9 +8,9 @@ function calculate(group){
         );
     }
 
-    const input = document.getElementById(group + '-input').value;
-    const output = document.getElementById(group + '-output').value;
-    let value = document.getElementById(group + '-value').value;
+    const input = core_elements[group + '-input'].value;
+    const output = core_elements[group + '-output'].value;
+    let value = core_elements[group + '-value'].value;
 
     value *= power(
       value,
@@ -60,7 +60,7 @@ function calculate(group){
         output_unit = output;
     }
 
-    document.getElementById(group + '-result').value = core_storage_data['rounding']
+    core_elements[group + '-result'].value = core_storage_data['rounding']
       ? value_rounded
       : value;
     document.title = value_rounded + ' ' + output_unit + ' ≈ ' + input_rounded + ' ' + input_unit;
@@ -73,7 +73,7 @@ function calculate_all(){
 }
 
 function power(value, id){
-    let power = +document.getElementById(id).value;
+    let power = +core_elements[id].value;
     if(globalThis.isNaN(power)){
         power = 0;
     }
@@ -777,15 +777,22 @@ function repo_init(){
     document.getElementById('units').innerHTML = unittable;
 
     for(const type in units){
-        document.getElementById(type + '-input').onchange
-          = document.getElementById(type + '-input-power').oninput
-          = document.getElementById(type + '-output').onchange
-          = document.getElementById(type + '-output-power').oninput
-          = document.getElementById(type + '-value').oninput = function(){
+        core_elements[type + '-input'] = document.getElementById(type + '-input');
+        core_elements[type + '-input-power'] = document.getElementById(type + '-input-power');
+        core_elements[type + '-output'] = document.getElementById(type + '-output');
+        core_elements[type + '-output-power'] = document.getElementById(type + '-output-power');
+        core_elements[type + '-result'] = document.getElementById(type + '-result');
+        core_elements[type + '-value'] = document.getElementById(type + '-value');
+
+        core_elements[type + '-input'].onchange
+          = core_elements[type + '-input-power'].oninput
+          = core_elements[type + '-output'].onchange
+          = core_elements[type + '-output-power'].oninput
+          = core_elements[type + '-value'].oninput = function(){
             calculate(this.id);
         };
 
-        document.getElementById(type + '-output').value = units[type]['_default'];
+        core_elements[type + '-output'].value = units[type]['_default'];
         document.getElementById(type).onclick = function(){
             reverse(this.id);
         }
@@ -793,20 +800,16 @@ function repo_init(){
 }
 
 function reverse(id){
-    const input_element = document.getElementById(id + '-input');
-    const output_element = document.getElementById(id + '-output');
-    let temp = input_element.value;
-    input_element.value = output_element.value;
-    output_element.value = temp;
+    let temp = core_elements[id + '-input'].value;
+    core_elements[id + '-input'].value = core_elements[id + '-output'].value;
+    core_elements[id + '-output'].value = temp;
 
-    const input_power_element = document.getElementById(id + '-input-power');
-    const output_power_element = document.getElementById(id + '-output-power');
-    temp = input_power_element.value;
-    input_power_element.value = output_power_element.value;
-    output_power_element.value = temp;
+    temp = core_elements[id + '-input-power'].value;
+    core_elements[id + '-input-power'].value = core_elements[id + '-output-power'].value;
+    core_elements[id + '-output-power'].value = temp;
 
     calculate(id);
-    document.getElementById(id + '-value').focus();
+    core_elements[id + '-value'].focus();
 }
 
 function temperature_formulae(value){
