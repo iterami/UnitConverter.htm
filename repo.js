@@ -800,13 +800,10 @@ function repo_init(){
 }
 
 function reverse(id){
-    let temp = core_elements[id + '-input'].value;
-    core_elements[id + '-input'].value = core_elements[id + '-output'].value;
-    core_elements[id + '-output'].value = temp;
-
-    temp = core_elements[id + '-input-power'].value;
-    core_elements[id + '-input-power'].value = core_elements[id + '-output-power'].value;
-    core_elements[id + '-output-power'].value = temp;
+    [core_elements[id + '-input'].value, core_elements[id + '-output'].value]
+      = [core_elements[id + '-output'].value, core_elements[id + '-input'].value];
+    [core_elements[id + '-input-power'].value, core_elements[id + '-output-power'].value]
+      = [core_elements[id + '-output-power'].value, core_elements[id + '-input-power'].value];
 
     calculate(id);
     core_elements[id + '-value'].focus();
