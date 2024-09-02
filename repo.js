@@ -585,6 +585,7 @@ function repo_init(){
             'k\'inchiltun': 1 / 99532800000000,
             'kalabtun': 1 / 4976640000000,
             'kermit': 1 / 864,
+            'kilogirl': 1 / 3600000,
             'lustrum': 1 / 157784544,
             'Martian solar day [sol]': 1 / 88775.2,
             'Minecraft tick': 20,
