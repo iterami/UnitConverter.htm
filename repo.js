@@ -1,7 +1,7 @@
 'use strict';
 
 function calculate(group){
-    if(group.indexOf('-') !== -1){
+    if(~group.indexOf('-')){
         group = group.substring(
           0,
           group.indexOf('-')
@@ -20,7 +20,7 @@ function calculate(group){
       'number': value,
     });
 
-    if(group.indexOf('Temperature') !== -1){
+    if(~group.indexOf('Temperature')){
         let formulae = temperature_formulae(value);
 
         if(input !== units['Temperature']['_default']){
