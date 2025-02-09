@@ -437,6 +437,8 @@ function repo_init(){
             'metric horsepower [PS]': 1 / 735.49875,
             'pirate-ninja [pn]': 1 / 40.55,
             'poncelet [p]': 1 / 980.665,
+            'quad': 3.412142 / 1e15,
+            'therm': 3.412142 / 1e5,
             'ton of refrigeration [TR]': 1 / 3516.8525,
             'watt [W]': 1,
           },
