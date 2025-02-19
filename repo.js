@@ -559,6 +559,7 @@ function repo_init(){
           },
           'Time': {
             '_default': 'second [s]',
+            'aeon': 1 / (31556908.8 * 1e9),
             'alautun': 1 / 1990656000000000,
             'atom': 1 / .15957446808,
             'b\'ak\'tun': 1 / 12441600000,
