@@ -925,7 +925,7 @@ function temperature_formulae(value){
       'Sagredo': value * .211 - 21.1,
       'Sulzer': value * .636637 + .684685,
       'Urist [°U]': (value - 10000) / 1.8,
-      'Wedgwood (modern)': value * 24.8572 + 269,
-      'Wedgwood (original)': value * 72.2219 + 580.8,
+      'Wedgwood (modern) [°W]': value * 24.8572 + 269,
+      'Wedgwood (original) [°W]: value * 72.2219 + 580.8,
     };
 }
