@@ -1,10 +1,11 @@
 'use strict';
 
 function calculate(group){
-    if(~group.indexOf('_')){
+    const index_underscore = group.indexOf('_');
+    if(~index_underscore){
         group = group.substring(
           0,
-          group.indexOf('_')
+          index_underscore
         );
     }
 
