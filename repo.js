@@ -1,10 +1,10 @@
 'use strict';
 
 function calculate(group){
-    if(~group.indexOf('-')){
+    if(~group.indexOf('_')){
         group = group.substring(
           0,
-          group.indexOf('-')
+          group.indexOf('_')
         );
     }
 
@@ -60,7 +60,7 @@ function calculate(group){
         output_unit = output;
     }
 
-    core_elements[group + '-result'].value = core_storage_data.rounding
+    core_elements[group + '_result'].value = core_storage_data.rounding
       ? value_rounded
       : value;
     document.title = value_rounded + ' ' + output_unit + ' ≈ ' + input_rounded + ' ' + input_unit;
@@ -787,7 +787,7 @@ function repo_init(){
 
         unittable += '<tr><td class=right><input id="' + type + '_value" step=any type=number>*10^<input class=mini id="' + type + '_input_power" step=any type=number value=0><br><select id="' + type + '_input">' + options + '</select>'
           + '<td><button id="' + type + '" type=button>' + type + '</button>'
-          + '<td class=left><input id="' + type + '-result" readonly type=text>*10^<input class=mini id="' + type + '_output_power" step=any type=number value=0><br><select id="' + type + '_output">' + options + '</select>';
+          + '<td class=left><input id="' + type + '_result" readonly type=text>*10^<input class=mini id="' + type + '_output_power" step=any type=number value=0><br><select id="' + type + '_output">' + options + '</select>';
     }
     document.getElementById('units').innerHTML = unittable;
 
@@ -796,7 +796,7 @@ function repo_init(){
         core_elements[type + '_input_power'] = document.getElementById(type + '_input_power');
         core_elements[type + '_output'] = document.getElementById(type + '_output');
         core_elements[type + '_output_power'] = document.getElementById(type + '_output_power');
-        core_elements[type + '-result'] = document.getElementById(type + '-result');
+        core_elements[type + '_result'] = document.getElementById(type + '_result');
         core_elements[type + '_value'] = document.getElementById(type + '_value');
 
         core_elements[type + '_input'].onchange
