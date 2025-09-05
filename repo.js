@@ -405,6 +405,7 @@ function repo_init(){
             'passeree': 1 / 4665.5,
             'pāu [पाउ]': 1 / 194.375,
             'pennyweight [dwt]': 1 / 1.55517384,
+            'pfund': .002,
             'Planck mass [mₚ]': 1 / .0000217645,
             'point': 500,
             'pood [пуд]': 1 / 16380,
