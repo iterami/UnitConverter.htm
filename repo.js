@@ -435,6 +435,18 @@ function repo_init(){
             'pound per second [lb/s]': .00045359237,
             'slug per second': .014593903,
           },
+          'Numbers': {
+            '_default': 'decimal',
+            'arab': 1e-9,
+            'crore [cr]': 1e-7,
+            'decimal': 1,
+            'kharab': 1e-11,
+            'lakh [L]': 1e-5,
+            'mahashankh': 1e-19,
+            'nil': 1e-13,
+            'padma': 1e-15,
+            'shankh': 1e-17,
+          },
           'Power': {
             '_default': 'watt [W]',
             'boiler horsepower [bhp]': 1 / 9809.5,
