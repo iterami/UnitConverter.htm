@@ -64,7 +64,12 @@ function calculate(group){
     core_elements[group + '_result'].value = core_storage_data.rounding
       ? value_rounded
       : value;
-    document.title = value_rounded + ' ' + output_unit + ' ≈ ' + input_rounded + ' ' + input_unit;
+    document.title = core_number_format({
+        'number': value_rounded,
+      }) + ' ' + output_unit + ' ≈ '
+      + core_number_format({
+        'number': input_rounded,
+      }) + ' ' + input_unit;
 }
 
 function calculate_all(){
