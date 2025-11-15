@@ -641,6 +641,7 @@ function repo_init(){
             'third': 60,
             'tik': 1 / 28800,
             'time unit [TU]': 1 / .001024,
+            'Tron Cycle [TC]': 50 / 31556908.8,
             'tun': 1 / 31104000,
             'Warhol': 1 / 900,
             'week': 1 / 604800,
