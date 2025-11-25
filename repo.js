@@ -642,6 +642,7 @@ function repo_init(){
             'second [s]': 1,
             'semester': 1 / 10886400,
             'shake': 1e8,
+            'Skew': 1 / 131,
             'svedberg [S]': 1e13,
             'takk': 1 / 28.8,
             'third': 60,
