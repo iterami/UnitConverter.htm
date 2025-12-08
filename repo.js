@@ -216,6 +216,12 @@ function repo_init(){
             'phot [ph]': .0001,
             'skot [sk]': 3141.69,
           },
+          'Information': {
+            '_default': 'natural unit of information [nat]',
+            'hartley [Hart]': 1 / Math.LN10,
+            'natural unit of information [nat]': 1,
+            'shannon [Sh]': 1 / Math.LN2,
+          },
           'Length': {
             '_default': 'metre [m]',
             'ald': 1 / 1.6,
