@@ -797,7 +797,7 @@ function repo_init(){
           },
         },
       },
-      'info': '<a href=../Docs.htm/repos/unitconverter-htm.htm>Docs</a>',
+      'info': '<a href=../Docs.htm/repos/unitconverter-htm.htm target=_blank>View Docs for UnitConverter.htm</a>',
       'storage': {
         'rounding': false,
       },
