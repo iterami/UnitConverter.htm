@@ -235,6 +235,7 @@ function repo_init(){
             'arpent': 1 / 58.47109,
             'astronomical unit [au]': 1 / 149597870700,
             'barleycorn': 118.11,
+            'beard-second': 1 / 5e-9,
             'bloit': 1 / .0254 / 42333.6,
             'bu [分]': 1 / 330,
             'cable': 1 / .0254 / 7200,
