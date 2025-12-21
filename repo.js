@@ -458,6 +458,7 @@ function repo_init(){
             'mahashankh': 1e-19,
             'nil': 1e-13,
             'padma': 1e-15,
+            'sagan': 1 / 4e10,
             'shankh': 1e-17,
           },
           'Power': {
