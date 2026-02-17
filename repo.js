@@ -46,20 +46,20 @@ function calculate(group){
     const value_rounded = core_round({
       'number': value,
     });
-    let input_unit = input.substring(
-      input.indexOf('[') + 1,
-      input.indexOf(']')
-    );
-    if(input_unit.length === 0){
-        input_unit = input;
-    }
-    let output_unit = output.substring(
-      output.indexOf('[') + 1,
-      output.indexOf(']')
-    );
-    if(output_unit.length === 0){
-        output_unit = output;
-    }
+    const index_input = input.indexOf('[');
+    const input_unit = index_input === -1
+      ? input
+      : input.substring(
+          index_input + 1,
+          input.indexOf(']')
+        );
+    const index_output = output.indexOf('[');
+    const output_unit = index_output === -1
+      ? output
+      : output.substring(
+          index_output + 1,
+          output.indexOf(']')
+        );
 
     core_elements[group + '_result'].value = core_storage_data.rounding
       ? value_rounded
