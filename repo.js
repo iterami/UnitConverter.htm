@@ -278,7 +278,7 @@ function repo_init(){
             'league': 9.3701 / 216000,
             'light-second': 1 / 299792458,
             'light-year [ly]': 1 / 9460730472580800,
-            'ligne': 1 / .0022558291,
+            'ligne [L]': 1 / .0022558291,
             'link [l.]': 1 / .201168,
             'loket (Bohemia)': 1 / .593,
             'loket (Moravia)': 1 / .594,
