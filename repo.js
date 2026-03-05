@@ -806,7 +806,7 @@ function repo_init(){
       'storage': {
         'rounding': false,
       },
-      'storage_menu': '<table><tr><td><input id=rounding type=checkbox><td>Apply Rounding</table>',
+      'storage_menu': '<table><tr><td><input id=rounding type=checkbox><td><label for=rounding>Apply Rounding</label></table>',
       'title': 'UnitConverter.htm',
     });
 
