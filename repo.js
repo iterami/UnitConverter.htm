@@ -17,9 +17,7 @@ function calculate(group){
       value,
       group + '_input_power'
     );
-    const input_rounded = core_round({
-      'number': value,
-    });
+    const value_input = value;
 
     if(~group.indexOf('Temperature')){
         let formulae = temperature_formulae(value);
@@ -43,9 +41,6 @@ function calculate(group){
       value,
       group + '_output_power'
     );
-    const value_rounded = core_round({
-      'number': value,
-    });
     const index_input = input.indexOf('[');
     const input_unit = index_input === -1
       ? input
@@ -61,14 +56,20 @@ function calculate(group){
           output.indexOf(']')
         );
 
-    core_elements[group + '_result'].value = core_storage_data.rounding
-      ? value_rounded
-      : value;
+    let final_output = value;
+    if(core_storage_data.rounding){
+        final_output = core_round({
+          'decimals': core_storage_data.decimals,
+          'number': value,
+        });
+    }
+
+    core_elements[group + '_result'].value = final_output;
     document.title = core_number_format({
-        'number': value_rounded,
+        'number': final_output,
       }) + ' ' + output_unit + ' ≈ '
       + core_number_format({
-        'number': input_rounded,
+        'number': value_input,
       }) + ' ' + input_unit;
 }
 
@@ -804,9 +805,10 @@ function repo_init(){
       },
       'info': '<a href=../Docs.htm/repos/unitconverter-htm.htm target=_blank>View Docs for UnitConverter.htm</a>',
       'storage': {
-        'rounding': false,
+        'decimals': 7,
+        'rounding': true,
       },
-      'storage_menu': '<table><tr><td><input id=rounding type=checkbox><td><label for=rounding>Apply Rounding</label></table>',
+      'storage_menu': '<table><tr><td><label><input id=rounding type=checkbox> Round to &lt;=</label><input class=mini id=decimals step=1 type=number> Decimals</table>',
       'title': 'UnitConverter.htm',
     });
 
