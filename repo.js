@@ -267,6 +267,7 @@ function repo_init(){
             'hand [h]': 1 / .0254 / 4,
             'hiro [尋]': .55,
             'Hubble length': 1 / (9460730472580800 * 14400000000),
+            'hydrogen line': 1 / .2110611405416,
             'inch [in]': 1 / .0254,
             'jacktan': 1 / 3.658,
             'Jimmy Griffin Snow Index': 1 / .0254 / 4,
